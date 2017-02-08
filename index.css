@@ -1,0 +1,58 @@
+.navbar {
+  display: block;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding-top: 20px;
+  padding-left: 20px;
+  clear: both;
+}
+
+#nav-mobile {
+  display: none;
+}
+
+.button-collapse {
+  display: none;
+}
+
+.logo {
+  float: left;
+  height: 70%;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+.navlink {
+  color: #000;
+  clear: left;
+  float: left;
+}
+
+.nav-right {
+  float: right;
+  clear: right;
+}
+
+.nav-pill {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 5px;
+  color: #000;
+}
+
+.active {
+  color: red;
+}
+
+#about:hover {
+
+}
+
