@@ -1,16 +1,36 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
+import NavLink from './NavLink';
 
 class Home extends React.Component {
   render() {
     return (
       <div>
-        <Grid>
-          <Row className="show-grid">
-            <Col xs={8} md={8}>home page first half</Col>
-            <Col xs={4} md={4}>2nd half</Col>
-          </Row>
-        </Grid>
+        <section className="home-sec1 header-image">
+            No Child should live in Poverty
+        </section>
+        <section className="home-sec2">
+          <div className="card">
+            <img src="modules/assets/BrickNBuilder-0.jpg"/>
+            <h3>BUILDING PROJECTS</h3>
+            <span>Help us create more spaces that transform children’s lives</span>
+            <div><NavLink className="home-learnmore" to="/buildingprojects">LEARN MORE</NavLink></div>
+          </div>
+          <div className="card">
+            <img src="modules/assets/Classroom.jpg"/>
+            <h3>THE SCHOOLS</h3>
+            <span>Check out the projects that are already flourishing</span>
+            <div><NavLink className="home-learnmore" to="/inclass">LEARN MORE</NavLink></div>
+          </div>
+          <div className="card">
+            <img src="modules/assets/Solar.jpg"/>
+            <h3>FUNDRAISE</h3>
+            <span>Your ideas and energy can change lives. Get involved today!</span>
+            <div><NavLink className="home-learnmore" to="/fundraise">LEARN MORE</NavLink></div>
+          </div>
+        </section>
+        <section className="home-sec3">gallery</section>
+        <section className="home-sec4">SCOOP NEWS</section>
       </div>
       );
   }

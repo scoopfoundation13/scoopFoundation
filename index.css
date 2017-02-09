@@ -1,7 +1,7 @@
 .navbar {
   display: block;
   width: 100%;
-  height: 70px;
+  height: 100px;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,12 +11,20 @@
 .navbar ul li {
   display: inline-block;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 30px;
   clear: both;
+  line-height: 90px;
 }
 
 #nav-mobile {
-  display: none;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  line-height: 20px;
+  float: left;
 }
 
 .button-collapse {
@@ -25,15 +33,23 @@
 
 .logo {
   float: left;
-  height: 70%;
+  height: 90%;
   padding-top: 15px;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .navlink {
   color: #000;
   clear: left;
   float: left;
+}
+
+.nav-sublink {
+  float: none;
+  display: list-item;
+  list-style: none;
+  position: relative;
 }
 
 .nav-right {
@@ -44,15 +60,108 @@
 .nav-pill {
   border: 1px solid black;
   border-radius: 8px;
-  padding: 5px;
+  padding: 7px;
   color: #000;
 }
 
 .active {
+  
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  margin-top: 60px;
+  line-height: 30px;
+  left: 250px;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
   color: red;
 }
 
-#about:hover {
+/* HOME */
+
+.header-image {
+  height: 600px;
+  background-image: url(modules/assets/SCAO7.jpg);
+  background-size: cover;
+  width: 100%;
+  font-size: 4em;
+  color: #fff;
+  vertical-align: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.home-sec2 {
+/*  position: absolute;
+  top: 700px;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  height: 400px;
+  width: 350px;
+  padding: 20px;
+  margin: 20px;
+  border: 5px solid #dddbd9;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.card img {
+  width: 100%;
+}
+
+.home-learnmore {
+  color: #47e8e5;
+}
+
+.home-sec4 {
+  background-image: url(modules/assets/IMG_4138_2.jpg);
+  height: 600px;
+  background-size: cover;
+  color: #fff;
+  font-size: 5em;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+@media (max-width : 1000px) {
+
+  .nav-full {
+    display: none;
+  }
+
+  .button-collapse {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .navbar ul li {
+  padding-top: 10px;
+  padding-left: 10px;
+  clear: both;
+  line-height: 30px;
+}
 
 }
 
