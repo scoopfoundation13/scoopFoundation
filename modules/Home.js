@@ -6,8 +6,11 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <section className="home-sec1 header-image">
-            No Child should live in Poverty
+        <section>
+            No Child should live in Poverty 
+          <video autoplay loop id="video-background" muted>
+            <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4"/>
+          </video>
         </section>
         <section className="home-sec2">
           <div className="card">

@@ -57,9 +57,9 @@ class App extends React.Component {
             : null }
             <i className="fa fa-bars fa-2x button-collapse" aria-hidden="true" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}></i>
             </div>
-            {this.props.children}
-   
+            
         </nav>
+            {this.props.children}
       </div>
     );
   }

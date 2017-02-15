@@ -74,6 +74,14 @@
 
 	var _BuildingProjects2 = _interopRequireDefault(_BuildingProjects);
 
+	var _donate = __webpack_require__(478);
+
+	var _donate2 = _interopRequireDefault(_donate);
+
+	var _fundraise = __webpack_require__(479);
+
+	var _fundraise2 = _interopRequireDefault(_fundraise);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _reactDom.render)(_react2.default.createElement(
@@ -85,7 +93,9 @@
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/inclass', component: _InClass2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/buildingprojects', component: _BuildingProjects2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/buildingprojects', component: _BuildingProjects2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/donate', component: _donate2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/fundraise', component: _fundraise2.default })
 	  )
 	), document.getElementById('app'));
 
@@ -25468,15 +25478,22 @@
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 
-	  function App() {
+	  function App(props) {
 	    _classCallCheck(this, App);
 
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+	    _this.state = {
+	      isDropdown: false
+	    };
+	    return _this;
 	  }
 
 	  _createClass(App, [{
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -25484,92 +25501,113 @@
 	          'nav',
 	          { className: 'navbar', role: 'navigation' },
 	          _react2.default.createElement(
-	            'div',
-	            { className: 'container' },
+	            _reactBootstrap.Grid,
+	            { className: 'nav-full' },
 	            _react2.default.createElement(
-	              _reactBootstrap.Grid,
-	              null,
+	              _reactBootstrap.Row,
+	              { className: 'show-grid' },
 	              _react2.default.createElement(
-	                _reactBootstrap.Row,
-	                { className: 'show-grid' },
+	                _reactBootstrap.Col,
+	                { xs: 8, md: 8 },
 	                _react2.default.createElement(
-	                  _reactBootstrap.Col,
-	                  { xs: 8, md: 8 },
-	                  _react2.default.createElement(
-	                    _NavLink2.default,
-	                    { to: '/', id: 'logo-container' },
-	                    _react2.default.createElement('img', { className: 'logo', src: 'modules/assets/scoop-logo-kl3.png' })
-	                  ),
-	                  _react2.default.createElement(
-	                    'ul',
-	                    { className: '', role: 'nav' },
-	                    _react2.default.createElement(
-	                      'li',
-	                      null,
-	                      _react2.default.createElement(
-	                        _NavLink2.default,
-	                        { to: '/about', id: 'about', className: 'navlink' },
-	                        'About'
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      'li',
-	                      null,
-	                      _react2.default.createElement(
-	                        _NavLink2.default,
-	                        { to: '/inclass', className: 'navlink' },
-	                        'In Class'
-	                      )
-	                    ),
-	                    _react2.default.createElement(
-	                      'li',
-	                      null,
-	                      _react2.default.createElement(
-	                        _NavLink2.default,
-	                        { to: '/buildingprojects', className: 'navlink' },
-	                        'Building Projects'
-	                      )
-	                    )
-	                  )
+	                  _NavLink2.default,
+	                  { to: '/', id: 'logo-container' },
+	                  _react2.default.createElement('img', { className: 'logo', src: 'modules/assets/scoop-logo-kl3.png' })
 	                ),
 	                _react2.default.createElement(
-	                  _reactBootstrap.Col,
-	                  { xs: 4, md: 4 },
+	                  'ul',
+	                  null,
 	                  _react2.default.createElement(
-	                    'ul',
-	                    { className: 'nav-right' },
+	                    'li',
+	                    null,
 	                    _react2.default.createElement(
-	                      'li',
-	                      null,
-	                      _react2.default.createElement(
-	                        _NavLink2.default,
-	                        { to: '/buildingprojects', className: 'nav-pill' },
-	                        'Donate'
-	                      )
+	                      _NavLink2.default,
+	                      { to: '/about', id: 'about', className: 'navlink' },
+	                      'ABOUT'
 	                    ),
 	                    _react2.default.createElement(
-	                      'li',
-	                      null,
+	                      'ul',
+	                      { className: 'drop' },
 	                      _react2.default.createElement(
 	                        _NavLink2.default,
-	                        { to: '/buildingprojects', className: 'nav-pill' },
-	                        'Fundraise'
+	                        { to: '/team', className: 'nav-sublink' },
+	                        'Team'
+	                      ),
+	                      _react2.default.createElement(
+	                        _NavLink2.default,
+	                        { to: '/schools', className: 'nav-sublink' },
+	                        'Impact'
+	                      ),
+	                      _react2.default.createElement(
+	                        _NavLink2.default,
+	                        { to: '/syriasvibes', className: 'nav-sublink' },
+	                        'Syrias Vibes'
 	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      _NavLink2.default,
+	                      { to: '/inclass', className: 'navlink' },
+	                      'IN CLASS'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      _NavLink2.default,
+	                      { to: '/buildingprojects', className: 'navlink' },
+	                      'BUILDING PROJECTS'
+	                    )
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                _reactBootstrap.Col,
+	                { xs: 4, md: 4 },
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'nav-right' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      _NavLink2.default,
+	                      { to: '/donate', className: 'nav-pill' },
+	                      'DONATE'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      _NavLink2.default,
+	                      { to: '/fundraise', className: 'nav-pill' },
+	                      'FUNDRAISE'
 	                    )
 	                  )
 	                )
 	              )
-	            ),
-	            _react2.default.createElement(
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            this.state.isDropdown ? _react2.default.createElement(
 	              'ul',
-	              { id: 'nav-mobile', className: 'side-nav' },
+	              { id: 'nav-mobile', className: 'side-nav', onClick: function onClick() {
+	                  return _this2.setState({ isDropdown: !_this2.state.isDropdown });
+	                } },
 	              _react2.default.createElement(
 	                'li',
 	                null,
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/', className: 'brand-logo logo' },
-	                  'Home'
+	                  { to: '/' },
+	                  'HOME'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -25577,8 +25615,8 @@
 	                null,
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/about', className: 'navlink' },
-	                  'About'
+	                  { to: '/about' },
+	                  'ABOUT'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -25586,8 +25624,8 @@
 	                null,
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/inclass', className: 'navlink' },
-	                  'In Class'
+	                  { to: '/team', className: 'nav-sublink' },
+	                  '\xA0\xA0Team'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -25595,8 +25633,8 @@
 	                null,
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/buildingprojects', className: 'navlink' },
-	                  'Building Projects'
+	                  { to: '/schools', className: 'nav-sublink' },
+	                  '\xA0\xA0Impact'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -25604,8 +25642,8 @@
 	                null,
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/buildingprojects', className: 'navlink' },
-	                  'Donate'
+	                  { to: '/syriasvibes', className: 'nav-sublink' },
+	                  '\xA0\xA0Syrias Vibes'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -25613,23 +25651,44 @@
 	                null,
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/buildingprojects', className: 'navlink' },
-	                  'Fundraise'
+	                  { to: '/inclass' },
+	                  'IN CLASS'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _NavLink2.default,
+	                  { to: '/buildingprojects' },
+	                  'BUILDING PROJECTS'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _NavLink2.default,
+	                  { to: '/buildingprojects' },
+	                  'DONATE'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _NavLink2.default,
+	                  { to: '/buildingprojects' },
+	                  'FUNDRAISE'
 	                )
 	              )
-	            ),
-	            _react2.default.createElement(
-	              'a',
-	              { href: '#', 'data-activates': 'nav-mobile', className: 'button-collapse' },
-	              _react2.default.createElement(
-	                'i',
-	                { className: 'material-icons' },
-	                'menu'
-	              )
-	            ),
-	            this.props.children
+	            ) : null,
+	            _react2.default.createElement('i', { className: 'fa fa-bars fa-2x button-collapse', 'aria-hidden': 'true', onClick: function onClick() {
+	                return _this2.setState({ isDropdown: !_this2.state.isDropdown });
+	              } })
 	          )
-	        )
+	        ),
+	        this.props.children
 	      );
 	    }
 	  }]);
@@ -25663,6 +25722,7 @@
 	exports.default = _react2.default.createClass({
 	  displayName: 'NavLink',
 	  render: function render() {
+	    console.log(this.props, 'what is props in NavLink');
 	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'active' }));
 	  }
 	});
@@ -44412,6 +44472,10 @@
 
 	var _reactBootstrap = __webpack_require__(224);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44436,22 +44500,100 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
-	          _reactBootstrap.Grid,
+	          'section',
 	          null,
+	          'No Child should live in Poverty',
 	          _react2.default.createElement(
-	            _reactBootstrap.Row,
-	            { className: 'show-grid' },
+	            'video',
+	            { autoplay: true, loop: true, id: 'video-background', muted: true },
+	            _react2.default.createElement('source', { src: 'https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761', type: 'video/mp4' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'home-sec2' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'card' },
+	            _react2.default.createElement('img', { src: 'modules/assets/BrickNBuilder-0.jpg' }),
 	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { xs: 8, md: 8 },
-	              'home page first half'
+	              'h3',
+	              null,
+	              'BUILDING PROJECTS'
 	            ),
 	            _react2.default.createElement(
-	              _reactBootstrap.Col,
-	              { xs: 4, md: 4 },
-	              '2nd half'
+	              'span',
+	              null,
+	              'Help us create more spaces that transform children\u2019s lives'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { className: 'home-learnmore', to: '/buildingprojects' },
+	                'LEARN MORE'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'card' },
+	            _react2.default.createElement('img', { src: 'modules/assets/Classroom.jpg' }),
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'THE SCHOOLS'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Check out the projects that are already flourishing'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { className: 'home-learnmore', to: '/inclass' },
+	                'LEARN MORE'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'card' },
+	            _react2.default.createElement('img', { src: 'modules/assets/Solar.jpg' }),
+	            _react2.default.createElement(
+	              'h3',
+	              null,
+	              'FUNDRAISE'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Your ideas and energy can change lives. Get involved today!'
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { className: 'home-learnmore', to: '/fundraise' },
+	                'LEARN MORE'
+	              )
 	            )
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'home-sec3' },
+	          'gallery'
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'home-sec4' },
+	          'SCOOP NEWS'
 	        )
 	      );
 	    }
@@ -44559,6 +44701,104 @@
 	}(_react2.default.Component);
 
 	exports.default = BuildingProjects;
+
+/***/ },
+/* 478 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Donate = function (_React$Component) {
+	  _inherits(Donate, _React$Component);
+
+	  function Donate() {
+	    _classCallCheck(this, Donate);
+
+	    return _possibleConstructorReturn(this, (Donate.__proto__ || Object.getPrototypeOf(Donate)).apply(this, arguments));
+	  }
+
+	  _createClass(Donate, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'Donate'
+	      );
+	    }
+	  }]);
+
+	  return Donate;
+	}(_react2.default.Component);
+
+	exports.default = Donate;
+
+/***/ },
+/* 479 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Fundraise = function (_React$Component) {
+	  _inherits(Fundraise, _React$Component);
+
+	  function Fundraise() {
+	    _classCallCheck(this, Fundraise);
+
+	    return _possibleConstructorReturn(this, (Fundraise.__proto__ || Object.getPrototypeOf(Fundraise)).apply(this, arguments));
+	  }
+
+	  _createClass(Fundraise, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'Fundraise'
+	      );
+	    }
+	  }]);
+
+	  return Fundraise;
+	}(_react2.default.Component);
+
+	exports.default = Fundraise;
 
 /***/ }
 /******/ ]);
