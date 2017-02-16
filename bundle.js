@@ -66,19 +66,19 @@
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _InClass = __webpack_require__(476);
+	var _InClass = __webpack_require__(477);
 
 	var _InClass2 = _interopRequireDefault(_InClass);
 
-	var _BuildingProjects = __webpack_require__(477);
+	var _BuildingProjects = __webpack_require__(478);
 
 	var _BuildingProjects2 = _interopRequireDefault(_BuildingProjects);
 
-	var _donate = __webpack_require__(478);
+	var _donate = __webpack_require__(479);
 
 	var _donate2 = _interopRequireDefault(_donate);
 
-	var _fundraise = __webpack_require__(479);
+	var _fundraise = __webpack_require__(480);
 
 	var _fundraise2 = _interopRequireDefault(_fundraise);
 
@@ -25722,7 +25722,6 @@
 	exports.default = _react2.default.createClass({
 	  displayName: 'NavLink',
 	  render: function render() {
-	    console.log(this.props, 'what is props in NavLink');
 	    return _react2.default.createElement(_reactRouter.Link, _extends({}, this.props, { activeClassName: 'active' }));
 	  }
 	});
@@ -44476,6 +44475,10 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
+	var _Gallery = __webpack_require__(476);
+
+	var _Gallery2 = _interopRequireDefault(_Gallery);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44490,22 +44493,49 @@
 	  function Home() {
 	    _classCallCheck(this, Home);
 
-	    return _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Home.__proto__ || Object.getPrototypeOf(Home)).call(this));
+
+	    _this.state = {
+	      activeCard: 2
+	    };
+	    _this.handleClick = _this.handleClick.bind(_this);
+	    return _this;
 	  }
 
 	  _createClass(Home, [{
+	    key: 'isActive',
+	    value: function isActive(cardNum) {
+	      console.log(this.state.activeCard, 'activeCard', cardNum);
+	      if (cardNum === this.state.activeCard) {
+	        return 'card card-active';
+	      }
+	      return 'card';
+	    }
+	  }, {
+	    key: 'handleClick',
+	    value: function handleClick(state) {
+	      console.log('changing state');
+	      this.setState({ activeCard: state });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react2.default.createElement(
 	        'div',
 	        null,
 	        _react2.default.createElement(
 	          'section',
-	          null,
-	          'No Child should live in Poverty',
+	          { className: 'home-sec1' },
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'No Child should live in Poverty '
+	          ),
 	          _react2.default.createElement(
 	            'video',
-	            { autoplay: true, loop: true, id: 'video-background', muted: true },
+	            { autoPlay: true, loop: true, id: 'video-background', muted: true },
 	            _react2.default.createElement('source', { src: 'https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761', type: 'video/mp4' })
 	          )
 	        ),
@@ -44514,7 +44544,9 @@
 	          { className: 'home-sec2' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'card' },
+	            { className: this.isActive(1), onClick: function onClick() {
+	                return _this2.handleClick(1);
+	              } },
 	            _react2.default.createElement('img', { src: 'modules/assets/BrickNBuilder-0.jpg' }),
 	            _react2.default.createElement(
 	              'h3',
@@ -44538,7 +44570,9 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'card' },
+	            { className: this.isActive(2), onClick: function onClick() {
+	                return _this2.handleClick(2);
+	              } },
 	            _react2.default.createElement('img', { src: 'modules/assets/Classroom.jpg' }),
 	            _react2.default.createElement(
 	              'h3',
@@ -44562,7 +44596,9 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'card' },
+	            { className: this.isActive(3), onClick: function onClick() {
+	                return _this2.handleClick(3);
+	              } },
 	            _react2.default.createElement('img', { src: 'modules/assets/Solar.jpg' }),
 	            _react2.default.createElement(
 	              'h3',
@@ -44588,7 +44624,7 @@
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'home-sec3' },
-	          'gallery'
+	          _react2.default.createElement(_Gallery2.default, null)
 	        ),
 	        _react2.default.createElement(
 	          'section',
@@ -44606,6 +44642,102 @@
 
 /***/ },
 /* 476 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Gallery = function (_React$Component) {
+	  _inherits(Gallery, _React$Component);
+
+	  function Gallery(props) {
+	    _classCallCheck(this, Gallery);
+
+	    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+
+	    _this.state = {
+	      images: ['modules/assets/img01.jpg', 'modules/assets/img02.jpg', 'modules/assets/img03.jpg'],
+	      activeIdx: 0
+	    };
+	    _this.handleClick = _this.handleClick.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(Gallery, [{
+	    key: 'handleClick',
+	    value: function handleClick(idx) {
+	      console.log('in handleClick', idx);
+	      this.setState({ activeIdx: idx });
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+
+	      var images = ['modules/assets/img01.jpg', 'modules/assets/img02.jpg', 'modules/assets/img03.jpg'];
+	      var divStyle = {
+	        height: '500px',
+	        backgroundImage: 'url(' + this.state.images[this.state.activeIdx] + ')',
+	        backgroundSize: 'cover'
+	      };
+	      var dots = images.map(function (pic, idx) {
+	        if (idx === _this2.state.activeIdx) {
+	          return _react2.default.createElement(
+	            'span',
+	            { key: pic, idx: idx, onClick: function onClick() {
+	                return _this2.handleClick(idx);
+	              }, className: 'bullet bullet-active' },
+	            '\u2022'
+	          );
+	        }
+	        return _react2.default.createElement(
+	          'span',
+	          { key: pic, idx: idx, onClick: function onClick() {
+	              return _this2.handleClick(idx);
+	            }, className: 'bullet' },
+	          '\u2022'
+	        );
+	      });
+
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement('div', { style: divStyle }),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          dots
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Gallery;
+	}(_react2.default.Component);
+
+	;
+
+	exports.default = Gallery;
+
+/***/ },
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44654,7 +44786,7 @@
 	exports.default = InClass;
 
 /***/ },
-/* 477 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44703,7 +44835,7 @@
 	exports.default = BuildingProjects;
 
 /***/ },
-/* 478 */
+/* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44752,7 +44884,7 @@
 	exports.default = Donate;
 
 /***/ },
-/* 479 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
