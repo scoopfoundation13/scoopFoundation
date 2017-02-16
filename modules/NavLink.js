@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 
 export default React.createClass({
   render() {
-    console.log(this.props, 'what is props in NavLink')
     return <Link {...this.props} activeClassName="active"/>
   }
 });

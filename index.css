@@ -85,7 +85,7 @@ nav ul li:hover > ul {
 
 .header-image {
   height: 600px;
-  background-image: url(modules/assets/SCAO7.jpg);
+  background-image: url(modules/assets/img02.jpg);
   background-size: cover;
   width: 100%;
   font-size: 4em;
@@ -97,31 +97,63 @@ nav ul li:hover > ul {
   z-index: -1;*/
 }
 
+.home-sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+.home-sec1 span {
+  position: absolute;
+  font-size: 4em;
+  color: #fff;
+}
+
+#video-background {
+/*  making the video fullscreen  */
+  /*position: fixed;*/
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 100%; 
+  height: auto;
+  z-index: -100000;
+}
+
 .home-sec2 {
-/*  position: absolute;
-  top: 700px;*/
-  margin-top: 20px;
+  position: relative;
+  margin-top: 80px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 .card {
-  height: 400px;
-  width: 350px;
+  height: auto;
+  width: 33.33%;
   padding: 20px;
   margin: 20px;
   border: 5px solid #dddbd9;
   border-radius: 8px;
   text-align: center;
   font-size: 1.2em;
+  opacity: 0.6;
 }
 
 .card img {
   width: 100%;
+}
+
+.card.card-active {
+  height: auto;
+  width: 420px;
+  opacity: 1;
+  border: 5px solid #ff9933;
 }
 
 .home-learnmore {
@@ -129,7 +161,7 @@ nav ul li:hover > ul {
 }
 
 .home-sec4 {
-  background-image: url(modules/assets/IMG_4138_2.jpg);
+  background-image: url(modules/assets/img03.jpg);
   height: 600px;
   background-size: cover;
   color: #fff;
@@ -139,16 +171,16 @@ nav ul li:hover > ul {
   align-items: center;
 }
 
-#video-background {
-/*  making the video fullscreen  */
-  position: fixed;
-  right: 0; 
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
-  width: auto; 
-  height: auto;
-  z-index: -100;
+
+.bullet {
+  font-size: 40px;
+  padding: 20px;
+  color: #dddbd9;
+  align-items: center;
+}
+
+.bullet.bullet-active {
+  color: #ff9933;
 }
 
 @media (max-width : 1000px) {
