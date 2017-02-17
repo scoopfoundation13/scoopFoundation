@@ -44624,12 +44624,22 @@
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'home-sec3' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Gallery'
+	          ),
 	          _react2.default.createElement(_Gallery2.default, null)
 	        ),
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'home-sec4' },
-	          'SCOOP NEWS'
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'SCOOP NEWS'
+	          ),
+	          _react2.default.createElement('img', { className: 'home-img4', src: 'modules/assets/img03.jpg' })
 	        )
 	      );
 	    }
@@ -44718,11 +44728,11 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement('div', { style: divStyle }),
+	        { className: 'gallery-container' },
+	        _react2.default.createElement('img', { className: 'gallery-img', src: this.state.images[this.state.activeIdx] }),
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'bullets-container' },
 	          dots
 	        )
 	      );
