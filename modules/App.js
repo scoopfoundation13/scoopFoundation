@@ -14,14 +14,14 @@ class App extends React.Component {
     return (
       <div>
         <nav className="navbar" role="navigation">
-   
+            <div className="nav-bk"></div>
             <Grid className="nav-full">
               <Row className="show-grid">
               <Col xs={8} md={8}>
               <NavLink to="/" id="logo-container"><img className="logo" src="modules/assets/scoop-logo-kl3.png"/></NavLink>
               <ul>
                 <li>
-                  <NavLink to="/about" id="about" className="navlink">ABOUT</NavLink>
+                  <NavLink to="/about" id="about" className="navlink drop">ABOUT</NavLink>
                   <ul className="drop">
                     <NavLink to="/team" className="nav-sublink">Team</NavLink>
                     <NavLink to="/schools" className="nav-sublink">Impact</NavLink>

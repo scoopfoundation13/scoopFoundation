@@ -44640,6 +44640,11 @@
 	            'SCOOP NEWS'
 	          ),
 	          _react2.default.createElement('img', { className: 'home-img4', src: 'modules/assets/img03.jpg' })
+	        ),
+	        _react2.default.createElement(
+	          'footer',
+	          null,
+	          'this is the footer'
 	        )
 	      );
 	    }
