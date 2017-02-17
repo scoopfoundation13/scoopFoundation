@@ -124,18 +124,20 @@ nav ul li:hover > ul {
 }
 
 .home-sec2 {
+  height: 500px;
   position: relative;
   margin-top: 80px;
   margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
 
 .card {
-  height: auto;
-  width: 33.33%;
+  height: 90%;
+  width: 30%;
   padding: 20px;
   margin: 20px;
   border: 5px solid #dddbd9;
@@ -150,8 +152,8 @@ nav ul li:hover > ul {
 }
 
 .card.card-active {
-  height: auto;
-  width: 420px;
+  height: 100%;
+  width: 40%;
   opacity: 1;
   border: 5px solid #ff9933;
 }
@@ -230,6 +232,47 @@ nav ul li:hover > ul {
   padding-left: 10px;
   clear: both;
   line-height: 30px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .home-sec2 {
+    height: auto;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+  height: 500px;
+  width: 90%;
+  padding: 20px;
+  margin: 20px;
+  border: 5px solid #dddbd9;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card.card-active {
+    height: 500px;
+    width: 90%;
+    border: 5px solid #ff9933;
+  }
+
+  .gallery-img {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 }
