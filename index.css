@@ -161,16 +161,41 @@ nav ul li:hover > ul {
 }
 
 .home-sec4 {
-  background-image: url(modules/assets/img03.jpg);
   height: 600px;
-  background-size: cover;
-  color: #fff;
   font-size: 5em;
   display: flex;
+  flex-direction: column;
   justify-content: center; 
   align-items: center;
 }
 
+.home-img4 {
+  width: 100%;
+  height: auto;
+  /*background-image: url(modules/assets/img03.jpg);
+  background-size: cover;*/
+}
+
+.home-sec3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+
+.gallery-img {
+  width: 100%;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.bullets-container {
+  height: 150px;
+  text-align: center;
+}
 
 .bullet {
   font-size: 40px;

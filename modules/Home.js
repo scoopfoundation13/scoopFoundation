@@ -55,9 +55,13 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="home-sec3">
+          <h2>Gallery</h2>
           <Gallery />
         </section>
-        <section className="home-sec4">SCOOP NEWS</section>
+        <section className="home-sec4">
+          <h2>SCOOP NEWS</h2>
+          <img className="home-img4" src="modules/assets/img03.jpg"/>
+        </section>
       </div>
       );
   }

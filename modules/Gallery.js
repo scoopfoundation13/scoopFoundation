@@ -32,9 +32,9 @@ class Gallery extends React.Component {
     });
 
     return (
-      <div>
-        <div style={divStyle}></div>
-        <div>{dots}</div>
+      <div className="gallery-container">
+        <img className="gallery-img" src={this.state.images[this.state.activeIdx]}/>
+        <div className="bullets-container">{dots}</div>
       </div>
       );    
   }
