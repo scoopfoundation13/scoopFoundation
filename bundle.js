@@ -25689,7 +25689,36 @@
 	              } })
 	          )
 	        ),
-	        this.props.children
+	        this.props.children,
+	        _react2.default.createElement(
+	          'footer',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.facebook.com/scoopfoundation' },
+	            _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://twitter.com/scoopfoundation' },
+	            _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
+	            _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo' },
+	            _react2.default.createElement('i', { className: 'fa fa-linkedin fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
+	            _react2.default.createElement('i', { className: 'fa fa-youtube fa-2x', 'aria-hidden': 'true' })
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -44449,6 +44478,8 @@
 
 	var About = function About() {
 	  var divStyle = {
+	    width: 'auto',
+	    height: '100%',
 	    backgroundImage: 'url(modules/assets/img01.jpg)',
 	    backgroundSize: 'cover'
 	  };
@@ -44458,7 +44489,8 @@
 	    _react2.default.createElement('section', { style: divStyle }),
 	    _react2.default.createElement(
 	      'section',
-	      null,
+	      { className: 'text-container' },
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'h2',
 	        null,
@@ -44472,7 +44504,13 @@
 	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'Our Founders, Andy & Calvin, also created Syrias Vibes (link to www.syriasvibes.com) - an initiative that supports medical clinics and emergency rescue services in Syria.'
+	        'Our Founders, Andy & Calvin, also created ',
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'www.syriasvibes.com' },
+	          'Syrias Vibes'
+	        ),
+	        ' - an initiative that supports medical clinics and emergency rescue services in Syria.'
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -44512,11 +44550,8 @@
 	        'p',
 	        null,
 	        'The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      null,
+	      ),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'h2',
 	        null,
@@ -44714,35 +44749,6 @@
 	            'SCOOP NEWS'
 	          ),
 	          _react2.default.createElement('img', { className: 'home-img4', src: 'modules/assets/img03.jpg' })
-	        ),
-	        _react2.default.createElement(
-	          'footer',
-	          null,
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.facebook.com/scoopfoundation' },
-	            _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://twitter.com/scoopfoundation' },
-	            _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
-	            _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo' },
-	            _react2.default.createElement('i', { className: 'fa fa-linkedin fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
-	            _react2.default.createElement('i', { className: 'fa fa-youtube fa-2x', 'aria-hidden': 'true' })
-	          )
 	        )
 	      );
 	    }
