@@ -224,6 +224,13 @@ footer i {
   padding: 10px;
 }
 
+/*ABOUT*/
+
+.text-container {
+  width: 70%;
+  margin: auto;
+}
+
 @media (max-width : 1000px) {
 
   .nav-full {

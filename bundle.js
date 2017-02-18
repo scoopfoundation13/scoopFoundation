@@ -25500,6 +25500,7 @@
 	        _react2.default.createElement(
 	          'nav',
 	          { className: 'navbar', role: 'navigation' },
+	          _react2.default.createElement('div', { className: 'nav-bk' }),
 	          _react2.default.createElement(
 	            _reactBootstrap.Grid,
 	            { className: 'nav-full' },
@@ -25522,7 +25523,7 @@
 	                    null,
 	                    _react2.default.createElement(
 	                      _NavLink2.default,
-	                      { to: '/about', id: 'about', className: 'navlink' },
+	                      { to: '/about', id: 'about', className: 'navlink drop' },
 	                      'ABOUT'
 	                    ),
 	                    _react2.default.createElement(
@@ -44440,18 +44441,92 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	exports.default = _react2.default.createClass({
-	  displayName: 'About',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
+	var About = function About() {
+	  var divStyle = {
+	    backgroundImage: 'url(modules/assets/img01.jpg)',
+	    backgroundSize: 'cover'
+	  };
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement('section', { style: divStyle }),
+	    _react2.default.createElement(
+	      'section',
 	      null,
-	      'About'
-	    );
-	  }
-	});
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'Who?'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'We are a non-profit organisation building schools to end child poverty in developing countries.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Our Founders, Andy & Calvin, also created Syrias Vibes (link to www.syriasvibes.com) - an initiative that supports medical clinics and emergency rescue services in Syria.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        _react2.default.createElement(
+	          _NavLink2.default,
+	          { to: '/team', className: 'nav-sublink' },
+	          'Meet the team here'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'How?'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Meet our Partners here'
+	      ),
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'Why?'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'section',
+	      null,
+	      _react2.default.createElement(
+	        'h2',
+	        null,
+	        'Annual Report & Director\'s Report'
+	      )
+	    )
+	  );
+	};
+
+	exports.default = About;
 
 /***/ },
 /* 475 */
@@ -44514,7 +44589,6 @@
 	  }, {
 	    key: 'handleClick',
 	    value: function handleClick(state) {
-	      console.log('changing state');
 	      this.setState({ activeCard: state });
 	    }
 	  }, {
@@ -44644,7 +44718,31 @@
 	        _react2.default.createElement(
 	          'footer',
 	          null,
-	          'this is the footer'
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.facebook.com/scoopfoundation' },
+	            _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://twitter.com/scoopfoundation' },
+	            _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
+	            _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo' },
+	            _react2.default.createElement('i', { className: 'fa fa-linkedin fa-2x', 'aria-hidden': 'true' })
+	          ),
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
+	            _react2.default.createElement('i', { className: 'fa fa-youtube fa-2x', 'aria-hidden': 'true' })
+	          )
 	        )
 	      );
 	    }
