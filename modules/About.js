@@ -25,6 +25,9 @@ const About = () => {
         <p>The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
         <br />
         <h2>Annual Report & Director's Report</h2>
+        <p>report</p>
+        <p>report</p>
+        <p>report</p>
       </section>
     </div>
     );

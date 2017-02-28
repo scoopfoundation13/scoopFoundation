@@ -11,7 +11,6 @@ class Gallery extends React.Component {
   }
 
   handleClick(idx) {
-    console.log('in handleClick', idx)
     this.setState({activeIdx: idx});
   }
 

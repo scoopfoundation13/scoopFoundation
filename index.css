@@ -231,6 +231,30 @@ footer i {
   margin: auto;
 }
 
+/*IN CLASS*/
+
+.inclass-container {
+  margin-top: 150px;
+}
+
+.threerow-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.three-a-row {
+  width: 33.33%;
+  height: 200px;
+  margin: 10px;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width : 1000px) {
 
   .nav-full {
