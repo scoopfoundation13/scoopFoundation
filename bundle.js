@@ -70,15 +70,15 @@
 
 	var _InClass2 = _interopRequireDefault(_InClass);
 
-	var _BuildingProjects = __webpack_require__(478);
+	var _BuildingProjects = __webpack_require__(479);
 
 	var _BuildingProjects2 = _interopRequireDefault(_BuildingProjects);
 
-	var _donate = __webpack_require__(479);
+	var _donate = __webpack_require__(480);
 
 	var _donate2 = _interopRequireDefault(_donate);
 
-	var _fundraise = __webpack_require__(480);
+	var _fundraise = __webpack_require__(481);
 
 	var _fundraise2 = _interopRequireDefault(_fundraise);
 
@@ -44556,6 +44556,21 @@
 	        'h2',
 	        null,
 	        'Annual Report & Director\'s Report'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'report'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'report'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'report'
 	      )
 	    )
 	  );
@@ -44645,7 +44660,7 @@
 	          _react2.default.createElement(
 	            'video',
 	            { autoPlay: true, loop: true, id: 'video-background', muted: true },
-	            _react2.default.createElement('source', { src: 'https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761', type: 'video/mp4' })
+	            _react2.default.createElement('source', { src: 'modules/assets/INTR.mp4', type: 'video/mp4' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -44802,7 +44817,6 @@
 	  _createClass(Gallery, [{
 	    key: 'handleClick',
 	    value: function handleClick(idx) {
-	      console.log('in handleClick', idx);
 	      this.setState({ activeIdx: idx });
 	    }
 	  }, {
@@ -44871,6 +44885,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _ThreeARow = __webpack_require__(478);
+
+	var _ThreeARow2 = _interopRequireDefault(_ThreeARow);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -44891,10 +44909,158 @@
 	  _createClass(InClass, [{
 	    key: 'render',
 	    value: function render() {
+	      var imgArray = [{
+	        img: 'modules/assets/img01.jpg',
+	        link: '#cambodia',
+	        text: 'Cambodia'
+	      }, {
+	        img: 'modules/assets/img02.jpg',
+	        link: '#india',
+	        text: 'India'
+	      }, {
+	        img: 'modules/assets/img03.jpg',
+	        link: '#syria',
+	        text: 'Syria'
+	      }];
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        'InClass'
+	        { className: 'container-topMargin' },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'This is in Class'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          null,
+	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { id: 'cambodia' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Cambodia'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Cambodia is where the SCOOP story begins, when Andy came across an under-resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'The SCAO (link to the SCAO page) is now one of the hardest working local NGOs in and around Phnom Penh and together we plan to build more schools and reach more children.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            '**(Possible slideshow of pics showing the first pic all the way through to the opening of the latest school?)**'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'In 2011, together we built a new school from scratch \u2013 the SCAO II School - and at the tail end of 2016 a third school was constructed and opened - SCAO III - this time alongside other NGOs and altruists from all around the world.'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'The future?'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'To continue building schools farther into Cambodia\u2019s countryside (which is 80% of the country), in order to stop the migration of uneducated young people and children to its cities - who sadly find themselves vulnerable and desperate for work, usually finding it in low paid garment factories or in the vast amount of \u2018girly\u2019 bars and brothels where young women, men and children are exploited daily.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            _react2.default.createElement(
+	              'em',
+	              null,
+	              'Want to volunteer?'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. Get in touch today! (link to contact form)'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { id: 'india' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'The Jeevan School & Home, Varanasi, India'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'In the holy city of Varanasi, it\u2019s not uncommon to see children wandering the streets alone, begging. Over 250,000 people live there in 175 different slums there, many families live and sleep on the side of busy dirty roads.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'The Jeevan School is a shining light, in a city full of scam schools and sham NGOs. It offers an all-round education to over 120 children from begging families, and is also a home to 40 of the worst affected children living in the poorest area of Varanasi.'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Why Varanasi?'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'The Holy City of Varanasi is the heart of the Hindu religion and is a sight to behold, enjoying a huge wave of annual domestic and international visitors.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'The dark side of this boom leaves over 80,000 families making desperate choices to simply survive. Children are forced to beg, steal, work long hard hours, and are exploited in too many other ways. But at The Jeevan School the children\u2019s spirits soar and you will never meet a nicer group of well-rounded, well-mannered and brilliantly intelligent children \u2013 the result of the incredible work done by its dedicated staff and teachers.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Together we want to take their work a step further, and help more children receive an education or a safe home. Check out our plan.(link to Jeevan Village page)'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            _react2.default.createElement(
+	              'em',
+	              null,
+	              'Want to volunteer?'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so get in touch today\u2026 (link to contact form)'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { id: 'syria' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Syria'
+	          ),
+	          _react2.default.createElement('p', null)
+	        )
 	      );
 	    }
 	  }]);
@@ -44914,11 +45080,57 @@
 	  value: true
 	});
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ThreeARow = function ThreeARow(props) {
+	  console.log('propspropsprops', props);
+	  var images = props.img.map(function (obj) {
+	    var divStyle = {
+	      backgroundImage: 'url(' + obj.img + ')',
+	      backgroundSize: 'cover'
+	    };
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'three-a-row', key: obj.img, style: divStyle },
+	      _react2.default.createElement(
+	        'a',
+	        { href: obj.link },
+	        obj.text
+	      )
+	    );
+	  });
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'threerow-container' },
+	    images
+	  );
+	};
+
+	exports.default = ThreeARow;
+
+/***/ },
+/* 479 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _ThreeARow = __webpack_require__(478);
+
+	var _ThreeARow2 = _interopRequireDefault(_ThreeARow);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -44940,10 +45152,89 @@
 	  _createClass(BuildingProjects, [{
 	    key: 'render',
 	    value: function render() {
+	      var imgArray = [{
+	        img: 'modules/assets/img01.jpg',
+	        link: '#project-cambodia',
+	        text: 'Cambodia'
+	      }, {
+	        img: 'modules/assets/img02.jpg',
+	        link: '#project-india',
+	        text: 'India'
+	      }, {
+	        img: 'modules/assets/img03.jpg',
+	        link: '#project-syria',
+	        text: 'Syria'
+	      }];
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        'BuildingProjects'
+	        { className: 'container-topMargin' },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'BuildingProjects'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          null,
+	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'project-cambodia' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'Cambodia -  SCAO III'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'To get involved, get in touch with Andy today, make a donation (link to DONATE page) or set up a fundraising page (link to Just Giving Page) on our behalf.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'project-india' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'India'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'India building projects content here...'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'project-syria' },
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            'syria'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Syria building project content here...'
+	          )
+	        )
 	      );
 	    }
 	  }]);
@@ -44954,7 +45245,7 @@
 	exports.default = BuildingProjects;
 
 /***/ },
-/* 479 */
+/* 480 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45003,7 +45294,7 @@
 	exports.default = Donate;
 
 /***/ },
-/* 480 */
+/* 481 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
