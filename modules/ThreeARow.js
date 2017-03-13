@@ -8,7 +8,7 @@ const ThreeARow = (props) => {
       backgroundSize: 'cover'
     };
     return (
-      <div className="three-a-row" key={obj.img} style={divStyle}><a href={obj.link}>{obj.text}</a></div>
+        <div className="three-a-row" key={obj.img} style={divStyle}><a href={obj.link}>{obj.text}</a></div>
       );
   });
   return (
