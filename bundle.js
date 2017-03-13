@@ -62,11 +62,11 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Home = __webpack_require__(475);
+	var _Home = __webpack_require__(476);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
-	var _InClass = __webpack_require__(477);
+	var _InClass = __webpack_require__(478);
 
 	var _InClass2 = _interopRequireDefault(_InClass);
 
@@ -44474,6 +44474,10 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
+	var _ThreeARow = __webpack_require__(475);
+
+	var _ThreeARow2 = _interopRequireDefault(_ThreeARow);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var About = function About() {
@@ -44483,14 +44487,44 @@
 	    backgroundImage: 'url(modules/assets/img01.jpg)',
 	    backgroundSize: 'cover'
 	  };
+	  var imgArray = [{
+	    img: 'modules/assets/img01.jpg',
+	    link: '#cambodia',
+	    text: 'Cambodia'
+	  }, {
+	    img: 'modules/assets/img02.jpg',
+	    link: '#india',
+	    text: 'India'
+	  }, {
+	    img: 'modules/assets/img03.jpg',
+	    link: '#syria',
+	    text: 'Syria'
+	  }];
 	  return _react2.default.createElement(
 	    'div',
-	    null,
-	    _react2.default.createElement('section', { style: divStyle }),
+	    { className: 'text-container' },
 	    _react2.default.createElement(
 	      'section',
-	      { className: 'text-container' },
-	      _react2.default.createElement('br', null),
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'THIS IS SCOOP'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus at urna nec consectetur. In elementum vitae eros sit amet interdum. Fusce non aliquam tellus. Suspendisse velit sapien, porttitor at aliquam in, consectetur vitae metus. Aenean pulvinar dui id erat ultrices dictum. In varius mi eget augue efficitur elementum. Fusce vitae arcu eu sapien euismod bibendum. Phasellus nulla ante, fringilla eget tempus sed, imperdiet vel mi. Nullam viverra metus a dui aliquet accumsan.'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'section',
+	      null,
+	      _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
+	    ),
+	    _react2.default.createElement(
+	      'section',
+	      null,
 	      _react2.default.createElement(
 	        'h2',
 	        null,
@@ -44551,26 +44585,75 @@
 	        null,
 	        'The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.'
 	      ),
-	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('br', null)
+	    ),
+	    _react2.default.createElement(
+	      'section',
+	      null,
 	      _react2.default.createElement(
-	        'h2',
+	        'h1',
 	        null,
-	        'Annual Report & Director\'s Report'
+	        'Our Progress'
 	      ),
 	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'report'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'report'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'report'
+	        'div',
+	        { className: 'progress' },
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'Students in class'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            '100'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'Students graduated'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            '100'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'Schools'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            '100'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'Local Partners'
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            '100'
+	          )
+	        )
 	      )
 	    )
 	  );
@@ -44580,6 +44663,48 @@
 
 /***/ },
 /* 475 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ThreeARow = function ThreeARow(props) {
+	  console.log('propspropsprops', props);
+	  var images = props.img.map(function (obj) {
+	    var divStyle = {
+	      backgroundImage: 'url(' + obj.img + ')',
+	      backgroundSize: 'cover'
+	    };
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'three-a-row', key: obj.img, style: divStyle },
+	      _react2.default.createElement(
+	        'a',
+	        { href: obj.link },
+	        obj.text
+	      )
+	    );
+	  });
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'threerow-container' },
+	    images
+	  );
+	};
+
+	exports.default = ThreeARow;
+
+/***/ },
+/* 476 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44600,7 +44725,7 @@
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _Gallery = __webpack_require__(476);
+	var _Gallery = __webpack_require__(477);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -44775,7 +44900,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 476 */
+/* 477 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44870,7 +44995,7 @@
 	exports.default = Gallery;
 
 /***/ },
-/* 477 */
+/* 478 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44885,7 +45010,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ThreeARow = __webpack_require__(478);
+	var _ThreeARow = __webpack_require__(475);
 
 	var _ThreeARow2 = _interopRequireDefault(_ThreeARow);
 
@@ -45071,48 +45196,6 @@
 	exports.default = InClass;
 
 /***/ },
-/* 478 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var ThreeARow = function ThreeARow(props) {
-	  console.log('propspropsprops', props);
-	  var images = props.img.map(function (obj) {
-	    var divStyle = {
-	      backgroundImage: 'url(' + obj.img + ')',
-	      backgroundSize: 'cover'
-	    };
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'three-a-row', key: obj.img, style: divStyle },
-	      _react2.default.createElement(
-	        'a',
-	        { href: obj.link },
-	        obj.text
-	      )
-	    );
-	  });
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'threerow-container' },
-	    images
-	  );
-	};
-
-	exports.default = ThreeARow;
-
-/***/ },
 /* 479 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -45128,7 +45211,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _ThreeARow = __webpack_require__(478);
+	var _ThreeARow = __webpack_require__(475);
 
 	var _ThreeARow2 = _interopRequireDefault(_ThreeARow);
 
