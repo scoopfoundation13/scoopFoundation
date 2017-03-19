@@ -29,8 +29,8 @@ class Home extends React.Component {
       <div>
         <section className="home-sec1">
           <div className="flex-col">
-            <span>NO CHILD Should live in Poverty</span>
-            <hr/>
+            <span>NO CHILD SHOULD LIVE IN POVERTY</span>
+            <span><hr className="line-purple"/><hr className="line-blue"/><hr className="line-orange"/></span>
             <span><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION<i className="fa fa-arrow-right" aria-hidden="true"></i></NavLink></span>
           </div>
           <video autoPlay loop id="video-background" muted>
@@ -58,7 +58,7 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="home-sec3">
-          <h2>Gallery</h2>
+          <h2>SCOOP stories so far in pictures ...</h2>
           <Gallery />
         </section>
         <section className="home-sec4">

@@ -44768,9 +44768,15 @@
 	            _react2.default.createElement(
 	              'span',
 	              null,
-	              'NO CHILD Should live in Poverty'
+	              'NO CHILD SHOULD LIVE IN POVERTY'
 	            ),
-	            _react2.default.createElement('hr', null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              _react2.default.createElement('hr', { className: 'line-purple' }),
+	              _react2.default.createElement('hr', { className: 'line-blue' }),
+	              _react2.default.createElement('hr', { className: 'line-orange' })
+	            ),
 	            _react2.default.createElement(
 	              'span',
 	              null,
@@ -44876,7 +44882,7 @@
 	          _react2.default.createElement(
 	            'h2',
 	            null,
-	            'Gallery'
+	            'SCOOP stories so far in pictures ...'
 	          ),
 	          _react2.default.createElement(_Gallery2.default, null)
 	        ),
@@ -44951,7 +44957,6 @@
 
 	      var images = ['modules/assets/img01.jpg', 'modules/assets/img02.jpg', 'modules/assets/img03.jpg'];
 	      var divStyle = {
-	        height: '500px',
 	        backgroundImage: 'url(' + this.state.images[this.state.activeIdx] + ')',
 	        backgroundSize: 'cover'
 	      };

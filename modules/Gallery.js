@@ -17,7 +17,6 @@ class Gallery extends React.Component {
   render() {
     const images = ['modules/assets/img01.jpg', 'modules/assets/img02.jpg', 'modules/assets/img03.jpg'];
     const divStyle = {
-      height: '500px',
       backgroundImage: 'url(' + this.state.images[this.state.activeIdx] + ')',
       backgroundSize: 'cover'
     };
