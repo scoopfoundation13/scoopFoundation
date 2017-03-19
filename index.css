@@ -1,34 +1,33 @@
-.navbar {
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+nav {
   display: block;
   width: 100%;
-  height: 70px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 80px;
+  background-color: #fff;
 }
 
 a { 
   color: inherit; 
+  text-decoration: none;
 } 
 
-.nav-bk {
-  position: absolute;
-   top: 0;
-  left: 0;
-  right: 0; 
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  opacity: 0.5;
-  z-index: -100;
+.logo {
+  float: left;
+  display: inline;
+  /*height: 100%;*/
+  padding: 10px 50px 10px 50px;
 }
 
-.navbar ul li {
-  display: inline-block;
-  padding-left: 30px;
-  clear: both;
-  line-height: 70px;
+nav ul {
+  display: inline;
+}
+
+nav li {
+  list-style: none;
+  line-height: 80px;
 }
 
 #nav-mobile {
@@ -48,17 +47,10 @@ a {
   display: none;
 }
 
-.logo {
-  float: left;
-  height: 90%;
-  padding-top: 15px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
 
-.navlink {
+.nav-left {
+  margin-right: 20px;
   color: #000;
-  clear: left;
   float: left;
 }
 
@@ -71,19 +63,16 @@ a {
 
 .nav-right {
   float: right;
-  clear: right;
 }
 
 .nav-pill {
+  margin: 10px;
   border: 1px solid black;
   border-radius: 8px;
   padding: 7px;
   color: #000;
 }
 
-.active {
-  
-}
 
 nav ul ul {
   display: none;
@@ -103,25 +92,50 @@ nav ul li:hover > ul {
 /* HOME */
 
 .home-sec1 {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
-  height: auto;
+  /*align-content: center;*/
+  height: 500px;
+  overflow: hidden;
 }
 
-.home-sec1 span {
+.home-nav-pill {
+  margin: 20px;
+  border: 1px solid #e27d24;
+  border-radius: 8px;
+  font-size: 0.5em;
+  padding: 7px;
+  color: #e27d24;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.flex-col {
   position: absolute;
-  font-size: 4em;
-  color: #fff;
-  z-index: -10000;
+  top: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 3em;
+  color: #9523ce;
+}
+
+hr {
+  width: 500px;
+  border: 1px solid #33cccc;
+}
+
+.flex-col span {
+  padding: 10px;
 }
 
 #video-background {
   min-width: 100%; 
   min-height: 100%;
   width: 100%; 
-  height: auto;
+  /*height: auto;*/
   z-index: -100000;
 }
 

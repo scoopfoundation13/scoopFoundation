@@ -9,38 +9,32 @@ class App extends React.Component {
       isDropdown: false
     };
   }
+            // <Grid className="nav-full">
+            //   <Row className="show-grid">
+            //   <Col xs={8} md={8}>
+              // </Col>
+              // <Col xs={4} md={4}>
+            //   </Col>
+            // </Row>
+            // </Grid>
+                  // <ul className="drop">
+                  //   <NavLink to="/team" className="nav-sublink">Team</NavLink>
+                  //   <NavLink to="/schools" className="nav-sublink">Impact</NavLink>
+                  //   <NavLink to="/syriasvibes" className="nav-sublink">Syrias Vibes</NavLink>
+                  // </ul>
 
   render() {
     return (
       <div>
         <nav className="navbar" role="navigation">
-            <div className="nav-bk"></div>
-            <Grid className="nav-full">
-              <Row className="show-grid">
-              <Col xs={8} md={8}>
-              <NavLink to="/" id="logo-container"><img className="logo" src="modules/assets/scoop-logo-kl3.png"/></NavLink>
               <ul>
-                <li>
-                  <NavLink to="/about" id="about" className="navlink drop">ABOUT</NavLink>
-                  <ul className="drop">
-                    <NavLink to="/team" className="nav-sublink">Team</NavLink>
-                    <NavLink to="/schools" className="nav-sublink">Impact</NavLink>
-                    <NavLink to="/syriasvibes" className="nav-sublink">Syrias Vibes</NavLink>
-                  </ul>
-                </li>
-                <li><NavLink to="/inclass" className="navlink">IN CLASS</NavLink></li>
-                <li><NavLink to="/buildingprojects" className="navlink">BUILDING PROJECTS</NavLink></li>
+                <li><NavLink to="/" id="logo-container"><img className="logo" src="modules/assets/scoop-logo-kl3.png"/></NavLink></li>
+                <li><NavLink to="/about" id="about" className="nav-left">ABOUT</NavLink></li>
+                <li><NavLink to="/inclass" className="nav-left">IN CLASS</NavLink></li>
+                <li><NavLink to="/buildingprojects" className="nav-left">BUILDING PROJECTS</NavLink></li>
+                <li><span className="nav-right"><NavLink to="/donate" className="nav-pill">DONATE</NavLink></span></li>
+                <li><span className="nav-right"><NavLink to="/fundraise" className="nav-pill">FUNDRAISE</NavLink></span></li>
               </ul>
-              </Col>
-              <Col xs={4} md={4}>
-              <ul className="nav-right">
-                <li><NavLink to="/donate" className="nav-pill">DONATE</NavLink></li>
-                <li><NavLink to="/fundraise" className="nav-pill">FUNDRAISE</NavLink></li>
-              </ul>
-              </Col>
-            </Row>
-            </Grid>
-
             <div>
             { this.state.isDropdown ?
             <ul id="nav-mobile" className="side-nav" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}>

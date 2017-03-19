@@ -28,7 +28,11 @@ class Home extends React.Component {
     return (
       <div>
         <section className="home-sec1">
-            <span>No Child should live in Poverty </span>
+          <div className="flex-col">
+            <span>NO CHILD Should live in Poverty</span>
+            <hr/>
+            <span><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION<i className="fa fa-arrow-right" aria-hidden="true"></i></NavLink></span>
+          </div>
           <video autoPlay loop id="video-background" muted>
             <source src="modules/assets/INTR.mp4" type="video/mp4"/>
           </video>

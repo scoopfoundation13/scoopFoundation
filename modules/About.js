@@ -11,16 +11,16 @@ const About = () => {
   };
   const imgArray = [{
     img: 'modules/assets/img01.jpg',
-    link: '#cambodia',
-    text: 'Cambodia'
+    link: 'meettheteam',
+    text: 'Meet the Team'
   }, {
     img: 'modules/assets/img02.jpg',
-    link: '#india',
-    text: 'India'
+    link: '#impact',
+    text: 'Impact'
   }, {
     img: 'modules/assets/img03.jpg',
     link: '#syria',
-    text: 'Syria'
+    text: 'Syria\'s Vibes'
   }];
   return (
     <div className="text-container">

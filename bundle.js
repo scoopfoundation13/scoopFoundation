@@ -25488,6 +25488,19 @@
 	    };
 	    return _this;
 	  }
+	  // <Grid className="nav-full">
+	  //   <Row className="show-grid">
+	  //   <Col xs={8} md={8}>
+	  // </Col>
+	  // <Col xs={4} md={4}>
+	  //   </Col>
+	  // </Row>
+	  // </Grid>
+	  // <ul className="drop">
+	  //   <NavLink to="/team" className="nav-sublink">Team</NavLink>
+	  //   <NavLink to="/schools" className="nav-sublink">Impact</NavLink>
+	  //   <NavLink to="/syriasvibes" className="nav-sublink">Syrias Vibes</NavLink>
+	  // </ul>
 
 	  _createClass(App, [{
 	    key: 'render',
@@ -25500,96 +25513,68 @@
 	        _react2.default.createElement(
 	          'nav',
 	          { className: 'navbar', role: 'navigation' },
-	          _react2.default.createElement('div', { className: 'nav-bk' }),
 	          _react2.default.createElement(
-	            _reactBootstrap.Grid,
-	            { className: 'nav-full' },
+	            'ul',
+	            null,
 	            _react2.default.createElement(
-	              _reactBootstrap.Row,
-	              { className: 'show-grid' },
+	              'li',
+	              null,
 	              _react2.default.createElement(
-	                _reactBootstrap.Col,
-	                { xs: 8, md: 8 },
+	                _NavLink2.default,
+	                { to: '/', id: 'logo-container' },
+	                _react2.default.createElement('img', { className: 'logo', src: 'modules/assets/scoop-logo-kl3.png' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { to: '/about', id: 'about', className: 'nav-left' },
+	                'ABOUT'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { to: '/inclass', className: 'nav-left' },
+	                'IN CLASS'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { to: '/buildingprojects', className: 'nav-left' },
+	                'BUILDING PROJECTS'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'nav-right' },
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/', id: 'logo-container' },
-	                  _react2.default.createElement('img', { className: 'logo', src: 'modules/assets/scoop-logo-kl3.png' })
-	                ),
-	                _react2.default.createElement(
-	                  'ul',
-	                  null,
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      _NavLink2.default,
-	                      { to: '/about', id: 'about', className: 'navlink drop' },
-	                      'ABOUT'
-	                    ),
-	                    _react2.default.createElement(
-	                      'ul',
-	                      { className: 'drop' },
-	                      _react2.default.createElement(
-	                        _NavLink2.default,
-	                        { to: '/team', className: 'nav-sublink' },
-	                        'Team'
-	                      ),
-	                      _react2.default.createElement(
-	                        _NavLink2.default,
-	                        { to: '/schools', className: 'nav-sublink' },
-	                        'Impact'
-	                      ),
-	                      _react2.default.createElement(
-	                        _NavLink2.default,
-	                        { to: '/syriasvibes', className: 'nav-sublink' },
-	                        'Syrias Vibes'
-	                      )
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      _NavLink2.default,
-	                      { to: '/inclass', className: 'navlink' },
-	                      'IN CLASS'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      _NavLink2.default,
-	                      { to: '/buildingprojects', className: 'navlink' },
-	                      'BUILDING PROJECTS'
-	                    )
-	                  )
+	                  { to: '/donate', className: 'nav-pill' },
+	                  'DONATE'
 	                )
-	              ),
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
 	              _react2.default.createElement(
-	                _reactBootstrap.Col,
-	                { xs: 4, md: 4 },
+	                'span',
+	                { className: 'nav-right' },
 	                _react2.default.createElement(
-	                  'ul',
-	                  { className: 'nav-right' },
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      _NavLink2.default,
-	                      { to: '/donate', className: 'nav-pill' },
-	                      'DONATE'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'li',
-	                    null,
-	                    _react2.default.createElement(
-	                      _NavLink2.default,
-	                      { to: '/fundraise', className: 'nav-pill' },
-	                      'FUNDRAISE'
-	                    )
-	                  )
+	                  _NavLink2.default,
+	                  { to: '/fundraise', className: 'nav-pill' },
+	                  'FUNDRAISE'
 	                )
 	              )
 	            )
@@ -44489,16 +44474,16 @@
 	  };
 	  var imgArray = [{
 	    img: 'modules/assets/img01.jpg',
-	    link: '#cambodia',
-	    text: 'Cambodia'
+	    link: 'meettheteam',
+	    text: 'Meet the Team'
 	  }, {
 	    img: 'modules/assets/img02.jpg',
-	    link: '#india',
-	    text: 'India'
+	    link: '#impact',
+	    text: 'Impact'
 	  }, {
 	    img: 'modules/assets/img03.jpg',
 	    link: '#syria',
-	    text: 'Syria'
+	    text: 'Syria\'s Vibes'
 	  }];
 	  return _react2.default.createElement(
 	    'div',
@@ -44778,9 +44763,24 @@
 	          'section',
 	          { className: 'home-sec1' },
 	          _react2.default.createElement(
-	            'span',
-	            null,
-	            'No Child should live in Poverty '
+	            'div',
+	            { className: 'flex-col' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'NO CHILD Should live in Poverty'
+	            ),
+	            _react2.default.createElement('hr', null),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { to: '/donate', className: 'home-nav-pill' },
+	                'MAKE A DONATION',
+	                _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
+	              )
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'video',
