@@ -40,7 +40,7 @@ nav li {
   line-height: 20px;
   float: left;
   background-color: #fff;
-  z-index: 10;
+  z-index: 100;
 }
 
 .button-collapse {
@@ -54,12 +54,12 @@ nav li {
   float: left;
 }
 
-.nav-sublink {
+/*.nav-sublink {
   float: none;
   display: list-item;
   list-style: none;
   position: relative;
-}
+}*/
 
 .nav-right {
   float: right;
@@ -74,7 +74,7 @@ nav li {
 }
 
 
-nav ul ul {
+/*nav ul ul {
   display: none;
   position: absolute;
   margin-top: 60px;
@@ -87,7 +87,7 @@ nav ul ul {
 
 nav ul li:hover > ul {
   display: inherit;
-}
+}*/
 
 /* HOME */
 
@@ -104,9 +104,14 @@ nav ul li:hover > ul {
   margin: 20px;
   border: 1px solid #fff;
   border-radius: 8px;
-  font-size: 0.7em;
+  font-size: 0.5em;
   padding: 7px;
   color: #fff;
+}
+
+.home-nav-pill:hover {
+  border: 1px solid #FF8200;
+  color: #FF8200;
 }
 
 .flex-col {
@@ -117,7 +122,7 @@ nav ul li:hover > ul {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #fff;
 }
 
@@ -190,9 +195,12 @@ hr {
   color: #47e8e5;
 }
 
+.home-sec3 {
+}
+
 .home-sec4 {
   height: 600px;
-  font-size: 5em;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -215,7 +223,8 @@ hr {
   align-content: center;
   margin-bottom: 150px;
   margin-top: 100px;
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  font-size: 1.5em;
+  background-color: #eff0f2;
 }
 
 .gallery-container {
@@ -227,7 +236,7 @@ hr {
   margin: auto;
   width: 60%;
   height: auto;
-  padding: 50px 0px;
+  padding: 30px 0px;
 }
 
 .bullets-container {
@@ -247,12 +256,12 @@ hr {
   color: #ff9933;
 }
 
-footer {
+.footer-social {
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  /*background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);*/
 }
 
 footer i {
@@ -322,6 +331,49 @@ footer i {
   z-index: -1;
 }
 
+/*DONATE*/
+.donate-container {
+  margin: auto;
+  margin-top: 30px;
+  width: 700px;
+  height: 1000px;
+  background-color: #e0d9d3;
+}
+
+.donate-container img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.donate-box {
+  margin: auto;
+  margin-bottom: 30px;
+  height: 350px;
+  background-color: #fff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 10px;
+  font-size: 2em;
+}
+
+.donate-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.donate-btn {
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #9B26B6;
+  color: #fff;
+
+}
+
 @media (max-width : 1000px) {
 
   .nav-full {
@@ -339,11 +391,15 @@ footer i {
     margin-left: 10px;
   }
 
-  .navbar ul li {
+  nav ul li {
   padding-top: 10px;
   padding-left: 10px;
   clear: both;
   line-height: 30px;
+  }
+
+  .flex-col {
+    display: none;
   }
 
 }

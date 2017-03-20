@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
       <div>
         <nav className="navbar" role="navigation">
-              <ul>
+              <ul className="nav-full">
                 <li><NavLink to="/" id="logo-container"><img className="logo" src="modules/assets/scoop-logo-kl3.png"/></NavLink></li>
                 <li><NavLink to="/about" id="about" className="nav-left">ABOUT</NavLink></li>
                 <li><NavLink to="/inclass" className="nav-left">IN CLASS</NavLink></li>
@@ -54,11 +54,13 @@ class App extends React.Component {
         </nav>
             {this.props.children}
         <footer>
+          <div className="footer-social">
           <a href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
           <a href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.instagram.com/scoopfoundation_ireland/?hl=en"><i className="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop"><i className="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+          </div>
         </footer>
       </div>
     );
