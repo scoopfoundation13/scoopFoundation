@@ -25515,7 +25515,7 @@
 	          { className: 'navbar', role: 'navigation' },
 	          _react2.default.createElement(
 	            'ul',
-	            null,
+	            { className: 'nav-full' },
 	            _react2.default.createElement(
 	              'li',
 	              null,
@@ -25679,29 +25679,33 @@
 	          'footer',
 	          null,
 	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.facebook.com/scoopfoundation' },
-	            _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://twitter.com/scoopfoundation' },
-	            _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
-	            _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo' },
-	            _react2.default.createElement('i', { className: 'fa fa-linkedin fa-2x', 'aria-hidden': 'true' })
-	          ),
-	          _react2.default.createElement(
-	            'a',
-	            { href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
-	            _react2.default.createElement('i', { className: 'fa fa-youtube fa-2x', 'aria-hidden': 'true' })
+	            'div',
+	            { className: 'footer-social' },
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.facebook.com/scoopfoundation' },
+	              _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x', 'aria-hidden': 'true' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://twitter.com/scoopfoundation' },
+	              _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x', 'aria-hidden': 'true' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
+	              _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x', 'aria-hidden': 'true' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo' },
+	              _react2.default.createElement('i', { className: 'fa fa-linkedin fa-2x', 'aria-hidden': 'true' })
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
+	              _react2.default.createElement('i', { className: 'fa fa-youtube fa-2x', 'aria-hidden': 'true' })
+	            )
 	          )
 	        )
 	      );
@@ -44893,8 +44897,7 @@
 	            'h2',
 	            null,
 	            'SCOOP NEWS'
-	          ),
-	          _react2.default.createElement('img', { className: 'home-img4', src: 'modules/assets/img03.jpg' })
+	          )
 	        )
 	      );
 	    }
@@ -45359,10 +45362,13 @@
 	var Donate = function (_React$Component) {
 	  _inherits(Donate, _React$Component);
 
-	  function Donate() {
+	  function Donate(props) {
 	    _classCallCheck(this, Donate);
 
-	    return _possibleConstructorReturn(this, (Donate.__proto__ || Object.getPrototypeOf(Donate)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Donate.__proto__ || Object.getPrototypeOf(Donate)).call(this, props));
+
+	    _this.state = {};
+	    return _this;
 	  }
 
 	  _createClass(Donate, [{
@@ -45370,8 +45376,28 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        'Donate'
+	        { className: 'donate-container' },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Help a Child'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'donate-box' },
+	          _react2.default.createElement(
+	            'span',
+	            null,
+	            'Enter an amount to donate'
+	          ),
+	          _react2.default.createElement('input', { placeholder: '\u20AC50' }),
+	          _react2.default.createElement(
+	            'button',
+	            { className: 'donate-btn' },
+	            'Donate'
+	          )
+	        ),
+	        _react2.default.createElement('img', { src: 'modules/assets/img04.jpg' })
 	      );
 	    }
 	  }]);
