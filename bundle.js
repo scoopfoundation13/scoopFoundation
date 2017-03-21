@@ -45367,30 +45367,62 @@
 
 	    var _this = _possibleConstructorReturn(this, (Donate.__proto__ || Object.getPrototypeOf(Donate)).call(this, props));
 
-	    _this.state = {};
+	    _this.state = {
+	      isMonthly: false
+	    };
 	    return _this;
 	  }
 
 	  _createClass(Donate, [{
+	    key: 'handleClick',
+	    value: function handleClick(isMonthly) {
+	      this.setState({ isMonthly: isMonthly });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'donate-container' },
 	        _react2.default.createElement(
-	          'h3',
+	          'h2',
 	          null,
-	          'Help a Child'
+	          'Make a Donation'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'together we can change more futures'
 	        ),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'donate-box' },
 	          _react2.default.createElement(
-	            'span',
-	            null,
+	            'div',
+	            { className: 'donate-header' },
 	            'Enter an amount to donate'
 	          ),
 	          _react2.default.createElement('input', { placeholder: '\u20AC50' }),
+	          _react2.default.createElement(
+	            'center',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: this.state.isMonthly ? '' : 'donate-selected', value: 'false', onClick: function onClick() {
+	                  return _this2.handleClick(false);
+	                } },
+	              'Give Once'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: this.state.isMonthly ? 'donate-selected' : '', value: 'true', onClick: function onClick() {
+	                  return _this2.handleClick(true);
+	                } },
+	              'Give Monthly'
+	            )
+	          ),
 	          _react2.default.createElement(
 	            'button',
 	            { className: 'donate-btn' },
