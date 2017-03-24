@@ -25559,6 +25559,45 @@
 	                'span',
 	                { className: 'nav-right' },
 	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://www.facebook.com/scoopfoundation' },
+	                  _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x purple icon', 'aria-hidden': 'true' })
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'nav-right' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://twitter.com/scoopfoundation' },
+	                  _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x blue icon', 'aria-hidden': 'true' })
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'nav-right' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
+	                  _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x orange icon', 'aria-hidden': 'true' })
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'nav-right' },
+	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/donate', className: 'nav-pill' },
 	                  'DONATE'

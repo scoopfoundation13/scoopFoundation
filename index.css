@@ -7,7 +7,6 @@ nav {
   width: 100%;
   height: 70px;
   background-color: #fff;
-  
 }
 
 a { 
@@ -47,11 +46,19 @@ nav li {
   display: none;
 }
 
+.nav-full li {
+  margin: 0px 100px;
+}
+
 
 .nav-left {
   margin-right: 20px;
   color: #000;
   float: left;
+}
+
+.nav-left:hover {
+  color: #FF8200;
 }
 
 /*.nav-sublink {
@@ -73,6 +80,26 @@ nav li {
   color: #000;
 }
 
+.nav-pill:hover {
+   border: 1px solid #64CCC9;
+  color: #64CCC9;
+}
+
+.purple {
+  color: #9B26B6;
+}
+
+.blue {
+  color: #64CCC9;
+}
+
+.orange {
+  color: #FF8200;
+}
+
+.icon {
+  padding: 20px 10px;
+}
 
 /*nav ul ul {
   display: none;

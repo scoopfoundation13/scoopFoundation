@@ -32,6 +32,9 @@ class App extends React.Component {
                 <li><NavLink to="/about" id="about" className="nav-left">ABOUT</NavLink></li>
                 <li><NavLink to="/inclass" className="nav-left">IN CLASS</NavLink></li>
                 <li><NavLink to="/buildingprojects" className="nav-left">BUILDING PROJECTS</NavLink></li>
+                <li><span className="nav-right"><a href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x purple icon" aria-hidden="true"></i></a></span></li>
+                <li><span className="nav-right"><a href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x blue icon" aria-hidden="true"></i></a></span></li>
+                <li><span className="nav-right"><a href="https://www.instagram.com/scoopfoundation_ireland/?hl=en"><i className="fa fa-instagram fa-2x orange icon" aria-hidden="true"></i></a></span></li>
                 <li><span className="nav-right"><NavLink to="/donate" className="nav-pill">DONATE</NavLink></span></li>
                 <li><span className="nav-right"><NavLink to="/fundraise" className="nav-pill">FUNDRAISE</NavLink></span></li>
               </ul>
