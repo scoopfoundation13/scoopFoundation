@@ -44783,7 +44783,6 @@
 	  _createClass(Home, [{
 	    key: 'isActive',
 	    value: function isActive(cardNum) {
-	      console.log(this.state.activeCard, 'activeCard', cardNum);
 	      if (cardNum === this.state.activeCard) {
 	        return 'card card-active';
 	      }
@@ -44937,7 +44936,8 @@
 	            null,
 	            'SCOOP NEWS'
 	          )
-	        )
+	        ),
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img03.jpg' })
 	      );
 	    }
 	  }]);
@@ -44998,6 +44998,16 @@
 	      var _this2 = this;
 
 	      var images = ['modules/assets/img01.jpg', 'modules/assets/img02.jpg', 'modules/assets/img03.jpg'];
+	      $.ajax({
+	        url: 'modules/assets/gallery',
+	        success: function success(data) {
+	          console.log(data, 'datadata......');
+	          $(data).find("a:contains('.jpg')").each(function (item) {
+	            console.log(item);
+	          });
+	        }
+	      });
+
 	      var divStyle = {
 	        backgroundImage: 'url(' + this.state.images[this.state.activeIdx] + ')',
 	        backgroundSize: 'cover'
@@ -45283,15 +45293,15 @@
 	    key: 'render',
 	    value: function render() {
 	      var imgArray = [{
-	        img: 'modules/assets/img01.jpg',
+	        img: 'modules/assets/thumbnails/Building%20projects%20-%20Cambodia.jpg',
 	        link: '#project-cambodia',
 	        text: 'Cambodia'
 	      }, {
-	        img: 'modules/assets/img02.jpg',
+	        img: 'modules/assets/thumbnails/Building%20projects%20-%20India.jpg',
 	        link: '#project-india',
 	        text: 'India'
 	      }, {
-	        img: 'modules/assets/img03.jpg',
+	        img: 'modules/assets/thumbnails/Building%20projects%20-%20%20Syria.jpg',
 	        link: '#project-syria',
 	        text: 'Syria'
 	      }];
@@ -45313,58 +45323,8 @@
 	          null,
 	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
 	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { className: 'project-cambodia' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'Cambodia -  SCAO III'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'To get involved, get in touch with Andy today, make a donation (link to DONATE page) or set up a fundraising page (link to Just Giving Page) on our behalf.'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { className: 'project-india' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'India'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'India building projects content here...'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { className: 'project-syria' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'syria'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Syria building project content here...'
-	          )
-	        )
+	        _react2.default.createElement('section', { className: 'empty-section' }),
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img05.jpg' })
 	      );
 	    }
 	  }]);
