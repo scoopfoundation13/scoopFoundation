@@ -13,7 +13,6 @@ class Home extends React.Component {
   }
 
   isActive(cardNum) {
-    console.log(this.state.activeCard, 'activeCard', cardNum);
     if (cardNum === this.state.activeCard) {
       return 'card card-active';
     }
@@ -65,6 +64,7 @@ class Home extends React.Component {
           <h2>SCOOP NEWS</h2>
 
         </section>
+        <img className="home-bk" src='modules/assets/img03.jpg'/>
       </div>
       );
   }

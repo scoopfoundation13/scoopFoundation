@@ -16,6 +16,16 @@ class Gallery extends React.Component {
 
   render() {
     const images = ['modules/assets/img01.jpg', 'modules/assets/img02.jpg', 'modules/assets/img03.jpg'];
+    $.ajax({
+      url: 'modules/assets/gallery',
+      success: function(data) {
+        console.log(data, 'datadata......')
+        $(data).find("a:contains('.jpg')").each(item => {
+          console.log(item)
+        });
+      }
+    });
+    
     const divStyle = {
       backgroundImage: 'url(' + this.state.images[this.state.activeIdx] + ')',
       backgroundSize: 'cover'
