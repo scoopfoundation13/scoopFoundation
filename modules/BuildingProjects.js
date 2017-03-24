@@ -4,15 +4,15 @@ import ThreeARow from './ThreeARow';
 class BuildingProjects extends React.Component {
   render() {
     const imgArray = [{
-      img: 'modules/assets/img01.jpg',
+      img: 'modules/assets/thumbnails/Building%20projects%20-%20Cambodia.jpg',
       link: '#project-cambodia',
       text: 'Cambodia'
     }, {
-      img: 'modules/assets/img02.jpg',
+      img: 'modules/assets/thumbnails/Building%20projects%20-%20India.jpg',
       link: '#project-india',
       text: 'India'
     }, {
-      img: 'modules/assets/img03.jpg',
+      img: 'modules/assets/thumbnails/Building%20projects%20-%20%20Syria.jpg',
       link: '#project-syria',
       text: 'Syria'
     }];
@@ -23,7 +23,8 @@ class BuildingProjects extends React.Component {
       <section>
         <ThreeARow img={imgArray}/>
       </section>
-      <section className="project-cambodia">
+      <section className="empty-section"></section>
+{/*      <section className="project-cambodia">
         <h2>Cambodia -  SCAO III</h2>
         <p>
         As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.
@@ -42,7 +43,8 @@ class BuildingProjects extends React.Component {
       <section className="project-syria">
         <h2>syria</h2>
         <p>Syria building project content here...</p>
-      </section>
+      </section>*/}
+      <img className="home-bk" src='modules/assets/img05.jpg'/>
       </div>
       );
   }
