@@ -44516,28 +44516,28 @@
 	    backgroundSize: 'cover'
 	  };
 	  var imgArray = [{
-	    img: 'modules/assets/img01.jpg',
+	    img: 'modules/assets/thumbnails/About%20-%20Meet%20the%20team.jpg',
 	    link: 'meettheteam',
 	    text: 'Meet the Team'
 	  }, {
-	    img: 'modules/assets/img02.jpg',
+	    img: 'modules/assets/thumbnails/About%20-%20Impact.jpg',
 	    link: '#impact',
 	    text: 'Impact'
 	  }, {
-	    img: 'modules/assets/img03.jpg',
+	    img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
 	    link: '#syria',
 	    text: 'Syria\'s Vibes'
 	  }];
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'text-container' },
+	    { className: 'container-topMargin' },
 	    _react2.default.createElement(
 	      'section',
-	      null,
+	      { className: 'text-container' },
 	      _react2.default.createElement(
 	        'h1',
 	        null,
-	        'THIS IS SCOOP'
+	        'About us'
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -44549,140 +44549,6 @@
 	      'section',
 	      null,
 	      _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      null,
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Who?'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'We are a non-profit organisation building schools to end child poverty in developing countries.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Our Founders, Andy & Calvin, also created ',
-	        _react2.default.createElement(
-	          'a',
-	          { href: 'www.syriasvibes.com' },
-	          'Syrias Vibes'
-	        ),
-	        ' - an initiative that supports medical clinics and emergency rescue services in Syria.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        _react2.default.createElement(
-	          _NavLink2.default,
-	          { to: '/team', className: 'nav-sublink' },
-	          'Meet the team here'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'How?'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Meet our Partners here'
-	      ),
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Why?'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.'
-	      ),
-	      _react2.default.createElement('br', null)
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Our Progress'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'progress' },
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            'Students in class'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            '100'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            'Students graduated'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            '100'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            'Schools'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            '100'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          null,
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            'Local Partners'
-	          ),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            '100'
-	          )
-	        )
-	      )
 	    )
 	  );
 	};
@@ -45092,15 +44958,15 @@
 	    key: 'render',
 	    value: function render() {
 	      var imgArray = [{
-	        img: 'modules/assets/img01.jpg',
+	        img: 'modules/assets/thumbnails/In%20class%20-Cambodia.jpg',
 	        link: '#cambodia',
 	        text: 'Cambodia'
 	      }, {
-	        img: 'modules/assets/img02.jpg',
+	        img: 'modules/assets/thumbnails/In%20class%20-%20India.jpg',
 	        link: '#india',
 	        text: 'India'
 	      }, {
-	        img: 'modules/assets/img03.jpg',
+	        img: 'modules/assets/thumbnails/In%20class%20-%20Syria.jpg',
 	        link: '#syria',
 	        text: 'Syria'
 	      }];
@@ -45108,140 +44974,23 @@
 	        'div',
 	        { className: 'container-topMargin' },
 	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'This is in Class'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	          'section',
+	          { className: 'text-container' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'This is in Class'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'section',
 	          null,
 	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { id: 'cambodia' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'Cambodia'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Cambodia is where the SCOOP story begins, when Andy came across an under-resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'The SCAO (link to the SCAO page) is now one of the hardest working local NGOs in and around Phnom Penh and together we plan to build more schools and reach more children.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            '**(Possible slideshow of pics showing the first pic all the way through to the opening of the latest school?)**'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'In 2011, together we built a new school from scratch \u2013 the SCAO II School - and at the tail end of 2016 a third school was constructed and opened - SCAO III - this time alongside other NGOs and altruists from all around the world.'
-	          ),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'The future?'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'To continue building schools farther into Cambodia\u2019s countryside (which is 80% of the country), in order to stop the migration of uneducated young people and children to its cities - who sadly find themselves vulnerable and desperate for work, usually finding it in low paid garment factories or in the vast amount of \u2018girly\u2019 bars and brothels where young women, men and children are exploited daily.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            _react2.default.createElement(
-	              'em',
-	              null,
-	              'Want to volunteer?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. Get in touch today! (link to contact form)'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { id: 'india' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'The Jeevan School & Home, Varanasi, India'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'In the holy city of Varanasi, it\u2019s not uncommon to see children wandering the streets alone, begging. Over 250,000 people live there in 175 different slums there, many families live and sleep on the side of busy dirty roads.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'The Jeevan School is a shining light, in a city full of scam schools and sham NGOs. It offers an all-round education to over 120 children from begging families, and is also a home to 40 of the worst affected children living in the poorest area of Varanasi.'
-	          ),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Why Varanasi?'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'The Holy City of Varanasi is the heart of the Hindu religion and is a sight to behold, enjoying a huge wave of annual domestic and international visitors.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'The dark side of this boom leaves over 80,000 families making desperate choices to simply survive. Children are forced to beg, steal, work long hard hours, and are exploited in too many other ways. But at The Jeevan School the children\u2019s spirits soar and you will never meet a nicer group of well-rounded, well-mannered and brilliantly intelligent children \u2013 the result of the incredible work done by its dedicated staff and teachers.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Together we want to take their work a step further, and help more children receive an education or a safe home. Check out our plan.(link to Jeevan Village page)'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            _react2.default.createElement(
-	              'em',
-	              null,
-	              'Want to volunteer?'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals.'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so get in touch today\u2026 (link to contact form)'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { id: 'syria' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'Syria'
-	          ),
-	          _react2.default.createElement('p', null)
 	        )
 	      );
 	    }
@@ -45309,14 +45058,18 @@
 	        'div',
 	        { className: 'container-topMargin' },
 	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'BuildingProjects'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	          'section',
+	          { className: 'text-container' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'BuildingProjects'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'section',

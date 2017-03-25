@@ -4,26 +4,28 @@ import ThreeARow from './ThreeARow';
 class InClass extends React.Component {
   render() {
     const imgArray = [{
-      img: 'modules/assets/img01.jpg',
+      img: 'modules/assets/thumbnails/In%20class%20-Cambodia.jpg',
       link: '#cambodia',
       text: 'Cambodia'
     }, {
-      img: 'modules/assets/img02.jpg',
+      img: 'modules/assets/thumbnails/In%20class%20-%20India.jpg',
       link: '#india',
       text: 'India'
     }, {
-      img: 'modules/assets/img03.jpg',
+      img: 'modules/assets/thumbnails/In%20class%20-%20Syria.jpg',
       link: '#syria',
       text: 'Syria'
     }];
     return (
       <div className="container-topMargin">
-        <h2>This is in Class</h2>
+        <section className="text-container">
+        <h1>This is in Class</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </section>
         <section>
           <ThreeARow img={imgArray}/>
         </section>
-        <section id="cambodia">
+        {/*<section id="cambodia">
         <h2>Cambodia</h2>
           <p>
           Cambodia is where the SCOOP story begins, when Andy came across an under-resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself.
@@ -71,7 +73,7 @@ class InClass extends React.Component {
         <section id="syria">
           <h2>Syria</h2>
           <p></p>
-        </section>
+        </section>*/}
       </div>
       );
   }

@@ -10,22 +10,22 @@ const About = () => {
     backgroundSize: 'cover'
   };
   const imgArray = [{
-    img: 'modules/assets/img01.jpg',
+    img: 'modules/assets/thumbnails/About%20-%20Meet%20the%20team.jpg',
     link: 'meettheteam',
     text: 'Meet the Team'
   }, {
-    img: 'modules/assets/img02.jpg',
+    img: 'modules/assets/thumbnails/About%20-%20Impact.jpg',
     link: '#impact',
     text: 'Impact'
   }, {
-    img: 'modules/assets/img03.jpg',
+    img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
     link: '#syria',
     text: 'Syria\'s Vibes'
   }];
   return (
-    <div className="text-container">
-      <section>
-        <h1>THIS IS SCOOP</h1>
+    <div className="container-topMargin">
+      <section className="text-container">
+        <h1>About us</h1>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus at urna nec consectetur. In elementum vitae eros sit amet interdum. Fusce non aliquam tellus. Suspendisse velit sapien, porttitor at aliquam in, consectetur vitae metus. Aenean pulvinar dui id erat ultrices dictum. In varius mi eget augue efficitur elementum. Fusce vitae arcu eu sapien euismod bibendum. Phasellus nulla ante, fringilla eget tempus sed, imperdiet vel mi. Nullam viverra metus a dui aliquet accumsan.
         </p>
@@ -33,7 +33,7 @@ const About = () => {
       <section>
         <ThreeARow img={imgArray}/>
       </section>
-      <section>
+      {/*<section>
       <h2>Who?</h2>
       <p>We are a non-profit organisation building schools to end child poverty in developing countries.</p>
       <p>Our Founders, Andy & Calvin, also created <a href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
@@ -62,7 +62,8 @@ const About = () => {
           <span>Local Partners</span><span>100</span>
         </div>
       </div>
-      </section>
+      </section>*/}
+
     </div>
     );
 };
