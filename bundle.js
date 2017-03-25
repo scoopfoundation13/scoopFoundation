@@ -82,6 +82,22 @@
 
 	var _fundraise2 = _interopRequireDefault(_fundraise);
 
+	var _Cambodia = __webpack_require__(482);
+
+	var _Cambodia2 = _interopRequireDefault(_Cambodia);
+
+	var _India = __webpack_require__(483);
+
+	var _India2 = _interopRequireDefault(_India);
+
+	var _Syria = __webpack_require__(484);
+
+	var _Syria2 = _interopRequireDefault(_Syria);
+
+	var _Team = __webpack_require__(485);
+
+	var _Team2 = _interopRequireDefault(_Team);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	(0, _reactDom.render)(_react2.default.createElement(
@@ -95,7 +111,11 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/inclass', component: _InClass2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/buildingprojects', component: _BuildingProjects2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/donate', component: _donate2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/fundraise', component: _fundraise2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/fundraise', component: _fundraise2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/cambodia', component: _Cambodia2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/india', component: _India2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/syria', component: _Syria2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/team', component: _Team2.default })
 	  )
 	), document.getElementById('app'));
 
@@ -25488,19 +25508,6 @@
 	    };
 	    return _this;
 	  }
-	  // <Grid className="nav-full">
-	  //   <Row className="show-grid">
-	  //   <Col xs={8} md={8}>
-	  // </Col>
-	  // <Col xs={4} md={4}>
-	  //   </Col>
-	  // </Row>
-	  // </Grid>
-	  // <ul className="drop">
-	  //   <NavLink to="/team" className="nav-sublink">Team</NavLink>
-	  //   <NavLink to="/schools" className="nav-sublink">Impact</NavLink>
-	  //   <NavLink to="/syriasvibes" className="nav-sublink">Syrias Vibes</NavLink>
-	  // </ul>
 
 	  _createClass(App, [{
 	    key: 'render',
@@ -44518,13 +44525,16 @@
 	  var imgArray = [{
 	    img: 'modules/assets/thumbnails/About%20-%20Meet%20the%20team.jpg',
 	    link: 'meettheteam',
+	    path: '/team',
 	    text: 'Meet the Team'
 	  }, {
 	    img: 'modules/assets/thumbnails/About%20-%20Impact.jpg',
+	    path: '/impact',
 	    link: '#impact',
 	    text: 'Impact'
 	  }, {
 	    img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
+	    path: '/syria',
 	    link: '#syria',
 	    text: 'Syria\'s Vibes'
 	  }];
@@ -44585,7 +44595,8 @@
 	        'a',
 	        { href: obj.link },
 	        obj.text
-	      )
+	      ),
+	      _react2.default.createElement('div', { className: 'three-overcast' })
 	    );
 	  });
 	  return _react2.default.createElement(
@@ -44960,14 +44971,17 @@
 	      var imgArray = [{
 	        img: 'modules/assets/thumbnails/In%20class%20-Cambodia.jpg',
 	        link: '#cambodia',
+	        path: '/cambodia',
 	        text: 'Cambodia'
 	      }, {
 	        img: 'modules/assets/thumbnails/In%20class%20-%20India.jpg',
 	        link: '#india',
+	        path: '/india',
 	        text: 'India'
 	      }, {
 	        img: 'modules/assets/thumbnails/In%20class%20-%20Syria.jpg',
 	        link: '#syria',
+	        path: '/syria',
 	        text: 'Syria'
 	      }];
 	      return _react2.default.createElement(
@@ -45017,6 +45031,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	var _ThreeARow = __webpack_require__(475);
 
 	var _ThreeARow2 = _interopRequireDefault(_ThreeARow);
@@ -45044,14 +45062,17 @@
 	      var imgArray = [{
 	        img: 'modules/assets/thumbnails/Building%20projects%20-%20Cambodia.jpg',
 	        link: '#project-cambodia',
+	        path: '/cambodia',
 	        text: 'Cambodia'
 	      }, {
 	        img: 'modules/assets/thumbnails/Building%20projects%20-%20India.jpg',
 	        link: '#project-india',
+	        path: 'india',
 	        text: 'India'
 	      }, {
 	        img: 'modules/assets/thumbnails/Building%20projects%20-%20%20Syria.jpg',
 	        link: '#project-syria',
+	        path: '/syria',
 	        text: 'Syria'
 	      }];
 	      return _react2.default.createElement(
@@ -45239,6 +45260,92 @@
 	}(_react2.default.Component);
 
 	exports.default = Fundraise;
+
+/***/ },
+/* 482 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Cambodia = function Cambodia() {
+	  return _react2.default.createElement('div', null);
+	};
+
+	exports.default = Cambodia;
+
+/***/ },
+/* 483 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var India = function India() {};
+
+	exports.default = India;
+
+/***/ },
+/* 484 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Syria = function Syria() {
+	  return _react2.default.createElement('div', null);
+	};
+
+	exports.default = Syria;
+
+/***/ },
+/* 485 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Team = function Team() {
+	  return _react2.default.createElement('div', null);
+	};
+
+	exports.default = Team;
 
 /***/ }
 /******/ ]);

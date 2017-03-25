@@ -12,13 +12,16 @@ const About = () => {
   const imgArray = [{
     img: 'modules/assets/thumbnails/About%20-%20Meet%20the%20team.jpg',
     link: 'meettheteam',
+    path: '/team',
     text: 'Meet the Team'
   }, {
     img: 'modules/assets/thumbnails/About%20-%20Impact.jpg',
+    path: '/impact',
     link: '#impact',
     text: 'Impact'
   }, {
     img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
+    path: '/syria',
     link: '#syria',
     text: 'Syria\'s Vibes'
   }];

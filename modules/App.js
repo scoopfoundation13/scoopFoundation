@@ -9,19 +9,6 @@ class App extends React.Component {
       isDropdown: false
     };
   }
-            // <Grid className="nav-full">
-            //   <Row className="show-grid">
-            //   <Col xs={8} md={8}>
-              // </Col>
-              // <Col xs={4} md={4}>
-            //   </Col>
-            // </Row>
-            // </Grid>
-                  // <ul className="drop">
-                  //   <NavLink to="/team" className="nav-sublink">Team</NavLink>
-                  //   <NavLink to="/schools" className="nav-sublink">Impact</NavLink>
-                  //   <NavLink to="/syriasvibes" className="nav-sublink">Syrias Vibes</NavLink>
-                  // </ul>
 
   render() {
     return (

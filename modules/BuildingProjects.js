@@ -1,4 +1,5 @@
 import React from 'react';
+import NavLink from './NavLink';
 import ThreeARow from './ThreeARow';
 
 class BuildingProjects extends React.Component {
@@ -6,14 +7,17 @@ class BuildingProjects extends React.Component {
     const imgArray = [{
       img: 'modules/assets/thumbnails/Building%20projects%20-%20Cambodia.jpg',
       link: '#project-cambodia',
+      path: '/cambodia',
       text: 'Cambodia'
     }, {
       img: 'modules/assets/thumbnails/Building%20projects%20-%20India.jpg',
       link: '#project-india',
+      path: 'india',
       text: 'India'
     }, {
       img: 'modules/assets/thumbnails/Building%20projects%20-%20%20Syria.jpg',
       link: '#project-syria',
+      path: '/syria',
       text: 'Syria'
     }];
     return (

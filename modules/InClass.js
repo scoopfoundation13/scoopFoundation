@@ -6,14 +6,17 @@ class InClass extends React.Component {
     const imgArray = [{
       img: 'modules/assets/thumbnails/In%20class%20-Cambodia.jpg',
       link: '#cambodia',
+      path: '/cambodia',
       text: 'Cambodia'
     }, {
       img: 'modules/assets/thumbnails/In%20class%20-%20India.jpg',
       link: '#india',
+      path: '/india',
       text: 'India'
     }, {
       img: 'modules/assets/thumbnails/In%20class%20-%20Syria.jpg',
       link: '#syria',
+      path: '/syria',
       text: 'Syria'
     }];
     return (

@@ -8,6 +8,10 @@ import InClass from './modules/InClass';
 import BuildingProjects from './modules/BuildingProjects';
 import Donate from './modules/donate';
 import Fundraise from './modules/fundraise';
+import Cambodia from './modules/Cambodia';
+import India from './modules/India';
+import Syria from './modules/Syria';
+import Team from './modules/Team';
 
 render((
   <Router history={browserHistory}>
@@ -18,6 +22,10 @@ render((
       <Route path="/buildingprojects" component={BuildingProjects}/>
       <Route path="/donate" component={Donate}/>
       <Route path="/fundraise" component={Fundraise}/>
+      <Route path="/cambodia" component={Cambodia}/>
+      <Route path="/india" component={India}/>
+      <Route path="/syria" component={Syria}/>
+      <Route path="/team" component={Team}/>
     </Route>
   </Router>
 ), document.getElementById('app'));
