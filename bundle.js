@@ -25538,7 +25538,7 @@
 	              _react2.default.createElement(
 	                _NavLink2.default,
 	                { to: '/about', id: 'about', className: 'nav-left' },
-	                'ABOUT'
+	                'ABOUT US'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -44536,7 +44536,7 @@
 	    img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
 	    path: '/syria',
 	    link: '#syria',
-	    text: 'Syria\'s Vibes'
+	    text: 'Syrias Vibes'
 	  }];
 	  return _react2.default.createElement(
 	    'div',
@@ -44559,7 +44559,8 @@
 	      'section',
 	      null,
 	      _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
-	    )
+	    ),
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img07.jpg' })
 	  );
 	};
 
@@ -44801,7 +44802,7 @@
 	          _react2.default.createElement(
 	            'h2',
 	            null,
-	            'SCOOP stories so far in pictures ...'
+	            'The SCOOP story so far ...'
 	          ),
 	          _react2.default.createElement(_Gallery2.default, null)
 	        ),
@@ -44974,7 +44975,7 @@
 	        path: '/cambodia',
 	        text: 'Cambodia'
 	      }, {
-	        img: 'modules/assets/thumbnails/In%20class%20-%20India.jpg',
+	        img: 'modules/assets/thumbnails/jeevan%20school%20MUST%20USE.jpg',
 	        link: '#india',
 	        path: '/india',
 	        text: 'India'
@@ -44986,7 +44987,7 @@
 	      }];
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'container-topMargin' },
+	        { className: 'container-topMargin class-bg' },
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'text-container' },
@@ -45005,7 +45006,8 @@
 	          'section',
 	          null,
 	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
-	        )
+	        ),
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/thumbnails/jeevan%20school%202.jpg' })
 	      );
 	    }
 	  }]);
@@ -45077,7 +45079,7 @@
 	      }];
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'container-topMargin' },
+	        { className: 'container-topMargin projects-bg' },
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'text-container' },

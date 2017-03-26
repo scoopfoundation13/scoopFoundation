@@ -23,7 +23,7 @@ const About = () => {
     img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
     path: '/syria',
     link: '#syria',
-    text: 'Syria\'s Vibes'
+    text: 'Syrias Vibes'
   }];
   return (
     <div className="container-topMargin">
@@ -66,7 +66,7 @@ const About = () => {
         </div>
       </div>
       </section>*/}
-
+      <img className="home-bk" src="modules/assets/img07.jpg"/>
     </div>
     );
 };
