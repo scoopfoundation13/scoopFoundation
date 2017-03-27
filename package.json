@@ -9,9 +9,13 @@
   },
   "author": "",
   "license": "ISC",
-  "engines": {"node": "5.9.1"},
+  "engines": {
+    "node": "5.9.1"
+  },
   "dependencies": {
     "express": "4.13.3",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
     "react": "^0.14.7",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^0.14.7",

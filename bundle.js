@@ -44547,12 +44547,12 @@
 	      _react2.default.createElement(
 	        'h1',
 	        null,
-	        'About us'
+	        'About SCOOP'
 	      ),
 	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus at urna nec consectetur. In elementum vitae eros sit amet interdum. Fusce non aliquam tellus. Suspendisse velit sapien, porttitor at aliquam in, consectetur vitae metus. Aenean pulvinar dui id erat ultrices dictum. In varius mi eget augue efficitur elementum. Fusce vitae arcu eu sapien euismod bibendum. Phasellus nulla ante, fringilla eget tempus sed, imperdiet vel mi. Nullam viverra metus a dui aliquet accumsan.'
+	        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -44560,7 +44560,64 @@
 	      null,
 	      _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
 	    ),
-	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img07.jpg' })
+	    _react2.default.createElement(
+	      'section',
+	      { className: 'text-container' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'about-align' },
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'about-title purple' },
+	          'WHO?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'about-text' },
+	          'We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created ',
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'www.syriasvibes.com' },
+	            'Syrias Vibes'
+	          ),
+	          ' - an initiative that supports medical clinics and emergency rescue services in Syria.'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'about-align' },
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'about-title orange' },
+	          'HOW?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'about-text' },
+	          'Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. ',
+	          _react2.default.createElement(
+	            'a',
+	            { href: '#' },
+	            'Meet our Partners here.'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'about-align' },
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'about-title blue' },
+	          'WHY?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'about-text' },
+	          'The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/thumbnails/jeevan%20school%202.jpg' })
 	  );
 	};
 
@@ -44875,16 +44932,10 @@
 	    value: function render() {
 	      var _this2 = this;
 
-	      var images = ['modules/assets/img01.jpg', 'modules/assets/img02.jpg', 'modules/assets/img03.jpg'];
-	      $.ajax({
-	        url: 'modules/assets/gallery',
-	        success: function success(data) {
-	          console.log(data, 'datadata......');
-	          $(data).find("a:contains('.jpg')").each(function (item) {
-	            console.log(item);
-	          });
-	        }
+	      var images = ['modules/assets/gallery/1. Andy visits the original SCAO Centre in 2008.jpg', 'modules/assets/gallery/2. He helps them improve the centre and build more classrooms in 2009.jpg', 'modules/assets/gallery/3. Robotnik performs at our launch gig in 2010.jpg', 'modules/assets/gallery/3a. Local Cambodian Teacher Srey Lat in 2009.jpg', 'modules/assets/gallery/4. SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion.jpg', 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg', 'modules/assets/gallery/6. James Vincent McMorrow performs at an early SCOOP gig.jpg', 'modules/assets/gallery/7. Andy and co-founder Annmarie, with local teacher Srey Lat, visit the site of the 2nd school in Cambodia in 2010.png', 'modules/assets/gallery/8. The 2nd school in Cambodia ready to open in 2011.jpg', 'modules/assets/gallery/9. SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia'].map(function (file) {
+	        return file.replace(' ', '%20');
 	      });
+	      console.log(images);
 
 	      var divStyle = {
 	        backgroundImage: 'url(' + this.state.images[this.state.activeIdx] + ')',
@@ -45007,7 +45058,7 @@
 	          null,
 	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
 	        ),
-	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/thumbnails/jeevan%20school%202.jpg' })
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img06.jpg' })
 	      );
 	    }
 	  }]);

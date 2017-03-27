@@ -28,7 +28,7 @@ class InClass extends React.Component {
         <section>
           <ThreeARow img={imgArray}/>
         </section>
-        <img className="home-bk" src="modules/assets/thumbnails/jeevan%20school%202.jpg"/>
+        <img className="home-bk" src="modules/assets/img06.jpg"/>
         {/*<section id="cambodia">
         <h2>Cambodia</h2>
           <p>

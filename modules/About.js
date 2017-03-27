@@ -28,45 +28,28 @@ const About = () => {
   return (
     <div className="container-topMargin">
       <section className="text-container">
-        <h1>About us</h1>
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam luctus at urna nec consectetur. In elementum vitae eros sit amet interdum. Fusce non aliquam tellus. Suspendisse velit sapien, porttitor at aliquam in, consectetur vitae metus. Aenean pulvinar dui id erat ultrices dictum. In varius mi eget augue efficitur elementum. Fusce vitae arcu eu sapien euismod bibendum. Phasellus nulla ante, fringilla eget tempus sed, imperdiet vel mi. Nullam viverra metus a dui aliquet accumsan.
-        </p>
+      <h1>About SCOOP</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </section>
       <section>
         <ThreeARow img={imgArray}/>
       </section>
-      {/*<section>
-      <h2>Who?</h2>
-      <p>We are a non-profit organisation building schools to end child poverty in developing countries.</p>
-      <p>Our Founders, Andy & Calvin, also created <a href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
-      <p><NavLink to="/team" className="nav-sublink">Meet the team here</NavLink></p>
-      <h2>How?</h2>
-      <p>Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also.</p>
-      <p>We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England.</p>
-      <p>Meet our Partners here</p>
-      <h2>Why?</h2>
-      <p>The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
-      <br />
+      <section className="text-container">
+        <div className="about-align">
+          <p className="about-title purple">WHO?</p>
+          <p className="about-text">We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
+        </div>
+        <div className="about-align">
+          <p className="about-title orange">HOW?</p>
+          <p className="about-text">Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. <a href="#">Meet our Partners here.</a></p>
+        </div>
+        <div className="about-align">
+          <p className="about-title blue">WHY?</p>
+          <p className="about-text">The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
+        </div>
       </section>
-      <section>
-      <h1>Our Progress</h1>
-      <div className="progress">
-        <div>
-          <span>Students in class</span><span>100</span>
-        </div>
-        <div>
-          <span>Students graduated</span><span>100</span>
-        </div>
-        <div>
-          <span>Schools</span><span>100</span>
-        </div>
-        <div>
-          <span>Local Partners</span><span>100</span>
-        </div>
-      </div>
-      </section>*/}
-      <img className="home-bk" src="modules/assets/img07.jpg"/>
+
+      <img className="home-bk" src="modules/assets/thumbnails/jeevan%20school%202.jpg"/>
     </div>
     );
 };
