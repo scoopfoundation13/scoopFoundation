@@ -57,7 +57,7 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="home-sec3">
-          <h2>The SCOOP story so far ...</h2>
+          <h2 className="purple">The SCOOP story so far ...</h2>
           <Gallery />
         </section>
         <section className="home-sec4">
