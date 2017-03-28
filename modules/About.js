@@ -15,7 +15,7 @@ const About = () => {
     path: '/team',
     text: 'Meet the Team'
   }, {
-    img: 'modules/assets/thumbnails/About%20-%20Impact.jpg',
+    img: 'modules/assets/thumbnails/impact.jpg',
     path: '/impact',
     link: '#impact',
     text: 'Impact'
@@ -37,19 +37,18 @@ const About = () => {
       <section className="text-container">
         <div className="about-align">
           <p className="about-title purple">WHO?</p>
-          <p className="about-text">We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
+          <p className="about-text">We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
         </div>
         <div className="about-align">
           <p className="about-title orange">HOW?</p>
-          <p className="about-text">Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. <a href="#">Meet our Partners here.</a></p>
+          <p className="about-text">Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. <a className="orange" href="#">Meet our Partners here.</a></p>
         </div>
         <div className="about-align">
           <p className="about-title blue">WHY?</p>
           <p className="about-text">The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
         </div>
       </section>
-
-      <img className="home-bk" src="modules/assets/thumbnails/jeevan%20school%202.jpg"/>
+      <img className="home-bk" src="modules/assets/founders.jpg"/>
     </div>
     );
 };

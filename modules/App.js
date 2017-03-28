@@ -44,6 +44,39 @@ class App extends React.Component {
         </nav>
             {this.props.children}
         <footer>
+          <center className="newsletter">
+          <form>
+          <input type="email" />
+          <button>Subscribe</button>
+          </form>
+          </center>
+          <div className="footer-links">
+            <div>
+            <span><b>Get to know us</b></span>
+            <span>About Us</span>
+            <span>In Class</span>
+            <span>Building Projects</span>
+            <span>Meet the Team</span>
+            </div>
+            <div>
+            <span><b>Our Schools</b></span>
+            <span>SCAO</span>
+            <span>The Jeevam School</span>
+            <span>Syria</span>
+            </div>
+            <div>
+            <span><b>Projects</b></span>
+            <span>Cambodia</span>
+            <span>India</span>
+            <span>Syrias Vibes</span>
+            </div>
+            <div>
+            <span><b>Get Involved</b></span>
+            <span>Fundraise</span>
+            <span>Fonate</span>
+            <span>Shop</span>
+            </div>
+          </div>
           <div className="footer-social">
           <a href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
           <a href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></a>

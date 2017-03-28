@@ -25725,6 +25725,141 @@
 	          'footer',
 	          null,
 	          _react2.default.createElement(
+	            'center',
+	            { className: 'newsletter' },
+	            _react2.default.createElement(
+	              'form',
+	              null,
+	              _react2.default.createElement('input', { type: 'email' }),
+	              _react2.default.createElement(
+	                'button',
+	                null,
+	                'Subscribe'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'footer-links' },
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  'b',
+	                  null,
+	                  'Get to know us'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'About Us'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'In Class'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Building Projects'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Meet the Team'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  'b',
+	                  null,
+	                  'Our Schools'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'SCAO'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'The Jeevam School'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Syria'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  'b',
+	                  null,
+	                  'Projects'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Cambodia'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'India'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Syrias Vibes'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  'b',
+	                  null,
+	                  'Get Involved'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Fundraise'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Fonate'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                'Shop'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
 	            'div',
 	            { className: 'footer-social' },
 	            _react2.default.createElement(
@@ -44528,7 +44663,7 @@
 	    path: '/team',
 	    text: 'Meet the Team'
 	  }, {
-	    img: 'modules/assets/thumbnails/About%20-%20Impact.jpg',
+	    img: 'modules/assets/thumbnails/impact.jpg',
 	    path: '/impact',
 	    link: '#impact',
 	    text: 'Impact'
@@ -44577,7 +44712,7 @@
 	          'We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created ',
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'www.syriasvibes.com' },
+	            { className: 'purple', href: 'www.syriasvibes.com' },
 	            'Syrias Vibes'
 	          ),
 	          ' - an initiative that supports medical clinics and emergency rescue services in Syria.'
@@ -44597,7 +44732,7 @@
 	          'Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. ',
 	          _react2.default.createElement(
 	            'a',
-	            { href: '#' },
+	            { className: 'orange', href: '#' },
 	            'Meet our Partners here.'
 	          )
 	        )
@@ -44617,7 +44752,7 @@
 	        )
 	      )
 	    ),
-	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/thumbnails/jeevan%20school%202.jpg' })
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/founders.jpg' })
 	  );
 	};
 
