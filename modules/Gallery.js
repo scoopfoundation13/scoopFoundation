@@ -51,11 +51,12 @@ class Gallery extends React.Component {
 
     return (
       <div className="gallery-container">
-        <span onClick={this.handleLeftArrow}><i className="fa fa-arrow-circle-left blue" aria-hidden="true"></i></span>
-        <span onClick={this.handleRightArrow}><i className="fa fa-arrow-circle-right blue" aria-hidden="true"></i></span>
+        <span onClick={this.handleLeftArrow}><i className="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
+        <span onClick={this.handleRightArrow}><i className="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
         <img className="gallery-img" src={this.state.images[this.state.activeIdx]}/>
         <center style={{margin: '10px 200px', textAlign: 'center'}}>{caption}</center>
         <div className="bullets-container">{dots}</div>
+        <img className="home-bk" src="modules/assets/img09.jpg"/>
       </div>
       );    
   }

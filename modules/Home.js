@@ -39,25 +39,28 @@ class Home extends React.Component {
         <section className="home-sec2">
           <div className={this.isActive(1)} onClick={() => this.handleClick(1)}>
             <img src="modules/assets/BrickNBuilder-0.jpg"/>
+            <NavLink className="home-learnmore" to="/buildingprojects">
             <h3>BUILDING PROJECTS</h3>
             <span>Help us create more spaces that transform children’s lives</span>
-            <div><NavLink className="home-learnmore" to="/buildingprojects">LEARN MORE</NavLink></div>
+            </NavLink>
           </div>
           <div className={this.isActive(2)} onClick={() => this.handleClick(2)}>
             <img src="modules/assets/Classroom.jpg"/>
+            <NavLink className="home-learnmore" to="/inclass">
             <h3>THE SCHOOLS</h3>
             <span>Check out the projects that are already flourishing</span>
-            <div><NavLink className="home-learnmore" to="/inclass">LEARN MORE</NavLink></div>
+            </NavLink>
           </div>
           <div className={this.isActive(3)} onClick={() => this.handleClick(3)}>
             <img src="modules/assets/Solar.jpg"/>
+            <NavLink className="home-learnmore" to="/fundraise">
             <h3>FUNDRAISE</h3>
             <span>Your ideas and energy can change lives. Get involved today!</span>
-            <div><NavLink className="home-learnmore" to="/fundraise">LEARN MORE</NavLink></div>
+            </NavLink>
           </div>
         </section>
         <section className="home-sec3">
-          <h2 className="purple">The SCOOP story so far ...</h2>
+          <h2 className="">The SCOOP story so far ...</h2>
           <Gallery />
         </section>
         <section className="home-sec4">

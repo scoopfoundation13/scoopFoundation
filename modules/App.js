@@ -46,35 +46,29 @@ class App extends React.Component {
         <footer>
           <center className="newsletter">
           <form>
+          <h3>Join our mailing list!</h3>
           <input type="email" />
-          <button>Subscribe</button>
+          <button>Join</button>
           </form>
           </center>
           <div className="footer-links">
             <div>
             <span><b>Get to know us</b></span>
-            <span>About Us</span>
-            <span>In Class</span>
-            <span>Building Projects</span>
-            <span>Meet the Team</span>
-            </div>
-            <div>
-            <span><b>Our Schools</b></span>
-            <span>SCAO</span>
-            <span>The Jeevam School</span>
-            <span>Syria</span>
-            </div>
-            <div>
-            <span><b>Projects</b></span>
-            <span>Cambodia</span>
-            <span>India</span>
-            <span>Syrias Vibes</span>
+            <span><NavLink to="/about">About Us</NavLink></span>
+            <span><NavLink to="/inclass">In Class</NavLink></span>
+            <span><NavLink to="/buildingprojects">Building Projects</NavLink></span>
+            <span><NavLink to="/team">Meet the Team</NavLink></span>
             </div>
             <div>
             <span><b>Get Involved</b></span>
-            <span>Fundraise</span>
-            <span>Fonate</span>
+            <span><NavLink to="/fundraise">Fundraise</NavLink></span>
+            <span><NavLink to="/donate">Donate</NavLink></span>
             <span>Shop</span>
+            </div>
+            <div>
+            <span><b>Contact us</b></span>
+            <span>Email: info@scoopfoundation.com</span>
+            <span>Phone: +353 85 778 1058</span>
             </div>
           </div>
           <div className="footer-social">
@@ -84,6 +78,7 @@ class App extends React.Component {
           <a href="https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
           <a href="https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop"><i className="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
           </div>
+          <center style={{paddingBottom: "15px"}}>SCOOP is a registered charity in Ireland (CHY 18767) and Australia (ABN 74156239766)</center>
         </footer>
       </div>
     );
