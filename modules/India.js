@@ -2,8 +2,8 @@ import React from 'react';
 
 const India = () => {
  return (
-  <section id="india">
-    <h2>The Jeevan School & Home, Varanasi, India</h2>
+  <section id="india" className="text-container">
+    <h1>The Jeevan School & Home, Varanasi, India</h1>
     <p>
     In the holy city of Varanasi, it’s not uncommon to see children wandering the streets alone, begging. Over 250,000 people live there in 175 different slums there, many families live and sleep on the side of busy dirty roads.
     </p>

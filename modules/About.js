@@ -41,7 +41,7 @@ const About = () => {
         </div>
         <div className="about-align">
           <p className="about-title orange">HOW?</p>
-          <p className="about-text">Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. <a className="orange" href="#">Meet our Partners here.</a></p>
+          <p className="about-text">Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. <NavLink className="orange" to="/partners">Meet our Partners here.</NavLink></p>
         </div>
         <div className="about-align">
           <p className="about-title blue">WHY?</p>

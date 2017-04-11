@@ -7,17 +7,17 @@ class BuildingProjects extends React.Component {
     const imgArray = [{
       img: 'modules/assets/thumbnails/Building%20projects%20-%20Cambodia.jpg',
       link: '#project-cambodia',
-      path: '/cambodia',
+      path: '/cambodiaproject',
       text: 'Cambodia'
     }, {
       img: 'modules/assets/thumbnails/Building%20projects%20-%20India.jpg',
       link: '#project-india',
-      path: 'india',
+      path: 'indiaproject',
       text: 'India'
     }, {
       img: 'modules/assets/thumbnails/Building%20projects%20-%20%20Syria.jpg',
       link: '#project-syria',
-      path: '/syria',
+      path: '/syriaproject',
       text: 'Syria'
     }];
     return (
@@ -30,26 +30,6 @@ class BuildingProjects extends React.Component {
         <ThreeARow img={imgArray}/>
       </section>
       <section className="empty-section"></section>
-{/*      <section className="project-cambodia">
-        <h2>Cambodia -  SCAO III</h2>
-        <p>
-        As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.
-        </p>
-        <p>
-        We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village.
-        </p>
-        <p>
-        To get involved, get in touch with Andy today, make a donation (link to DONATE page) or set up a fundraising page (link to Just Giving Page) on our behalf.
-        </p>
-      </section>
-      <section className="project-india">
-        <h2>India</h2>
-        <p>India building projects content here...</p>
-      </section>
-      <section className="project-syria">
-        <h2>syria</h2>
-        <p>Syria building project content here...</p>
-      </section>*/}
       <img className="home-bk" src='modules/assets/img05.jpg'/>
       </div>
       );

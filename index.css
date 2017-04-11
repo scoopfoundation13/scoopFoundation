@@ -466,7 +466,7 @@ footer i {
   margin: auto;
   margin-top: 50px;
   width: 100%;
-  height: 1350px;
+  height: 1800px;
   position: relative;
   border-radius: 5px;
   background: #f5f2ef; /* For browsers that do not support gradients */
@@ -474,6 +474,12 @@ footer i {
   background: -o-linear-gradient(rgba(255,0,0,0), rgb(245, 242, 239), rgb(245, 242, 239), rgb(245, 242, 239)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(rgba(255,0,0,0), rgb(245, 242, 239), rgb(245, 242, 239), rgb(245, 242, 239)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(rgba(255,0,0,0), rgb(245, 242, 239), rgb(245, 242, 239), rgb(245, 242, 239)); /* Standard syntax */
+}
+
+iframe {
+  display: block;
+  align-self: center;
+  z-index: 10;
 }
 
 .donate-container h2{
@@ -553,6 +559,19 @@ footer i {
 
 .donate-selected {
   background-color: #efefef;
+}
+
+/* PARTNERS */
+
+.partner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.partner img {
+  width: 100%;
 }
 
 @media (max-width : 1000px) {

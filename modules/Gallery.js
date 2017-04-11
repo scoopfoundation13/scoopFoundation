@@ -26,14 +26,18 @@ class Gallery extends React.Component {
     this.setState({activeIdx: idx, count: false});
   }
 
-  handleLeftArrow() {
+  handleLeftArrow(event) {
+    event.preventDefault();
     const newIdx = this.state.activeIdx === 0 ? 0 : (this.state.activeIdx - 1);
     this.setState({activeIdx: newIdx, count: false});
+    return false;
   }
 
-  handleRightArrow() {
+  handleRightArrow(event) {
+    event.preventDefault();
     const newIdx = this.state.activeIdx === (this.state.images.length - 1) ? (this.state.images.length - 1) : (this.state.activeIdx + 1);
-    this.setState({activeIdx: newIdx, setTimeout: false});
+    this.setState({activeIdx: newIdx});
+    return false;
   }
 
   render() {

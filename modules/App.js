@@ -35,8 +35,8 @@ class App extends React.Component {
               <li><NavLink to="/syriasvibes" className="nav-sublink">&nbsp;&nbsp;Syrias Vibes</NavLink></li>
               <li><NavLink to="/inclass">IN CLASS</NavLink></li>
               <li><NavLink to="/buildingprojects">BUILDING PROJECTS</NavLink></li>
-              <li><NavLink to="/buildingprojects">DONATE</NavLink></li>
-              <li><NavLink to="/buildingprojects">FUNDRAISE</NavLink></li>
+              <li><NavLink to="/donate">DONATE</NavLink></li>
+              <li><NavLink to="/fundraise">FUNDRAISE</NavLink></li>
             </ul>
             : null }
             <i className="fa fa-bars fa-2x button-collapse" aria-hidden="true" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}></i>

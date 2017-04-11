@@ -3,7 +3,7 @@ import React from 'react';
 const Cambodia = () => {
   return (
     <section id="cambodia" className="text-container">
-      <h1>Cambodia</h1>
+      <h1>SCAO I, III & III</h1>
         <p>
         Cambodia is where the SCOOP story begins, when Andy came across an under-resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself.
         </p>
