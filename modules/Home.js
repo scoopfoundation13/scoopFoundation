@@ -89,19 +89,19 @@ class Home extends React.Component {
         </section>
         <section className="home-sec3">
           <h2 className="">The SCOOP story so far ...</h2>
-          <Lightbox
+{ /*         <Lightbox
             images={images}
             isOpen={this.state.lightboxIsOpen}
             
             onClose={() => this.closeLightbox()}
-          />
+          />*/}
           <Gallery />
         </section>
-        <section className="home-sec4">
+        {/*<section className="home-sec4">
           <h2>SCOOP NEWS</h2>
 
         </section>
-        <img className="home-bk" src='modules/assets/img03.jpg'/>
+        <img className="home-bk" src='modules/assets/img03.jpg'/>*/}
       </div>
       );
   }

@@ -466,7 +466,8 @@ footer i {
   margin: auto;
   margin-top: 50px;
   width: 100%;
-  height: 1800px;
+  height: 1300px;
+  z-index: -2;
   position: relative;
   border-radius: 5px;
   background: #f5f2ef; /* For browsers that do not support gradients */
@@ -478,18 +479,15 @@ footer i {
 
 iframe {
   display: block;
-  align-self: center;
   z-index: 10;
 }
 
 .donate-container h2{
   padding-top: 40px;
-  text-align: center; 
 }
 
 .donate-container p {
   padding-bottom: 15px;
- text-align: center;  
 }
 
 .donate-container img {
@@ -498,6 +496,7 @@ iframe {
   width: 100%;
   height: auto;
   margin-bottom: 0;
+  z-index: -1;
 }
 
 .donate-box {

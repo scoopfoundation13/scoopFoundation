@@ -45037,26 +45037,8 @@
 	            { className: '' },
 	            'The SCOOP story so far ...'
 	          ),
-	          _react2.default.createElement(_reactImages2.default, {
-	            images: images,
-	            isOpen: this.state.lightboxIsOpen,
-
-	            onClose: function onClose() {
-	              return _this2.closeLightbox();
-	            }
-	          }),
 	          _react2.default.createElement(_Gallery2.default, null)
-	        ),
-	        _react2.default.createElement(
-	          'section',
-	          { className: 'home-sec4' },
-	          _react2.default.createElement(
-	            'h2',
-	            null,
-	            'SCOOP NEWS'
-	          )
-	        ),
-	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img03.jpg' })
+	        )
 	      );
 	    }
 	  }]);
@@ -49547,6 +49529,19 @@
 	    value: function handleClick(isMonthly) {
 	      this.setState({ isMonthly: isMonthly });
 	    }
+
+	    /*<div className='donate-box'>
+	      <div className="donate-header">
+	      Enter an amount to donate
+	      </div>
+	      <input placeholder="€50"/>
+	      <center>
+	        <span className={this.state.isMonthly ? '' : 'donate-selected'} value={'false'} onClick={() => this.handleClick(false)}>Give Once</span>
+	        <span className={this.state.isMonthly ? 'donate-selected' : ''} value={'true'} onClick={() => this.handleClick(true)}>Give Monthly</span>
+	      </center>
+	      <button className='donate-btn'>Donate</button>
+	    </div>*/
+
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -49559,15 +49554,15 @@
 	          _react2.default.createElement(
 	            'h2',
 	            null,
-	            'Make a Donation'
+	            'Donate Now'
 	          ),
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'together we can change more futures'
-	          ),
-	          _react2.default.createElement('iframe', { src: 'https://donorbox.org/embed/nonprofitcampaign?amount=50', height: '685px', width: '100%', style: { maxWidth: "500px", minWidth: "310px" }, seamless: 'seamless', id: 'dbox-form-embed', name: 'donorbox', frameBorder: '0', scrolling: 'no' })
+	            'and together we can change more lives.'
+	          )
 	        ),
+	        _react2.default.createElement('iframe', { src: 'https://donorbox.org/embed/scoopdonate', height: '685px', width: '100%', style: { maxWidth: "500px", minWidth: "310px", margin: "auto", paddingLeft: "55px" }, seamless: 'seamless', id: 'dbox-form-embed', name: 'donorbox', frameBorder: '0', scrolling: 'no' }),
 	        _react2.default.createElement('img', { src: 'modules/assets/img04.jpg' })
 	      );
 	    }
