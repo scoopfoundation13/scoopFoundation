@@ -25852,6 +25852,15 @@
 	                'span',
 	                null,
 	                'Shop'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  _NavLink2.default,
+	                  { to: '/partners' },
+	                  'Partners'
+	                )
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -49872,7 +49881,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "30%", margin: "0 30px 0 0" } },
-	        _react2.default.createElement("img", { src: "/modules/assets/partners/scao%20School%20logo.png" })
+	        _react2.default.createElement("img", { src: "/modules/assets/partners/scao.png" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -49991,7 +50000,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "30%", margin: "0 30px 0 0" } },
-	        _react2.default.createElement("img", { src: "/modules/assets/partners/Scoop%20Oz%20logo.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/partners/scoopoz.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",

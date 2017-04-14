@@ -6,7 +6,7 @@ const Partners = () => {
     <h1 style={{margin: "80px 0 50px"}}>Project partners</h1>
       <div className="partner">
         <div style={{width: "30%", margin: "0 30px 0 0"}}>
-          <img src="/modules/assets/partners/scao%20School%20logo.png"/>
+          <img src="/modules/assets/partners/scao.png"/>
         </div>
         <div style={{width: "70%"}}>
           <h3>SCAO (Cambodia)</h3>
@@ -54,7 +54,7 @@ const Partners = () => {
 
       <div className="partner">
         <div style={{width: "30%", margin: "0 30px 0 0"}}>
-          <img src="/modules/assets/partners/Scoop%20Oz%20logo.jpg"/>
+          <img src="/modules/assets/partners/scoopoz.jpg"/>
         </div>
         <div style={{width: "70%"}}>
         <h3>SCOOP Austraila</h3>
