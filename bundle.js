@@ -133,6 +133,8 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/donate', component: _donate2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/fundraise', component: _fundraise2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/cambodia', component: _Cambodia2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/india', component: _India2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/syria', component: _Syria2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/cambodiaproject', component: _CambodiaProject2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/indiaproject', component: _IndiaProject2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/syriaproject', component: _SyriaProject2.default }),
@@ -44805,6 +44807,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var ThreeARow = function ThreeARow(props) {
@@ -44818,8 +44824,8 @@
 	      'div',
 	      { className: 'three-a-row', key: obj.img, style: divStyle },
 	      _react2.default.createElement(
-	        'a',
-	        { href: obj.path },
+	        _NavLink2.default,
+	        { to: obj.path },
 	        obj.text
 	      ),
 	      _react2.default.createElement('div', { className: 'three-overcast' })
@@ -49788,7 +49794,7 @@
 /* 538 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -49802,22 +49808,22 @@
 
 	var Syria = function Syria() {
 	  return _react2.default.createElement(
-	    'div',
-	    null,
+	    "div",
+	    { className: "text-container" },
 	    _react2.default.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'When in Syria, Calvin works at a school at the Yazidzi Refugee camp in _____ and we provide them with materials and school supplies.'
+	      "When in Syria, Calvin works at a school at the Yazidzi Refugee camp in _____ and we provide them with materials and school supplies."
 	    ),
 	    _react2.default.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'Want to volunteer?'
+	      "Want to volunteer?"
 	    ),
 	    _react2.default.createElement(
-	      'p',
+	      "p",
 	      null,
-	      'We do NOT accept volunteers for this project. If you want to get involved with our Syrias Vibes campaign, however, contact Calvin on calvin@syriasvibes.com'
+	      "We do NOT accept volunteers for this project. If you want to get involved with our Syrias Vibes campaign, however, contact Calvin on calvin@syriasvibes.com"
 	    )
 	  );
 	};

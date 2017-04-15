@@ -1,4 +1,5 @@
 import React from 'react';
+import NavLink from './NavLink';
 
 const ThreeARow = (props) => {
   console.log('propspropsprops', props);
@@ -9,7 +10,7 @@ const ThreeARow = (props) => {
     };
     return (
         <div className="three-a-row" key={obj.img} style={divStyle}>
-          <a href={obj.path}>{obj.text}</a>
+          <NavLink to={obj.path}>{obj.text}</NavLink>
           <div className="three-overcast"></div>
         </div>
       );

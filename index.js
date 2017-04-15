@@ -28,6 +28,8 @@ render((
       <Route path="/donate" component={Donate}/>
       <Route path="/fundraise" component={Fundraise}/>
       <Route path="/cambodia" component={Cambodia}/>
+      <Route path="/india" component={India}/>
+      <Route path="/syria" component={Syria}/>
       <Route path="/cambodiaproject" component={CambodiaProject}/>
       <Route path="/indiaproject" component={IndiaProject}/>
       <Route path="/syriaproject" component={SyriaProject}/>

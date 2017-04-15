@@ -2,7 +2,7 @@ import React from 'react';
 
 const Syria = () => {
   return (
-    <div>
+    <div className="text-container">
       <p>When in Syria, Calvin works at a school at the Yazidzi Refugee camp in _____ and we provide them with materials and school supplies.</p>
 
       <p>Want to volunteer?</p>
