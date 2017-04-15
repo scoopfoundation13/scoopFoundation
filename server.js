@@ -6,6 +6,10 @@ var app = express();
 console.log(__dirname);
 app.use(express.static(__dirname));
 
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('index.html'));
+});
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
