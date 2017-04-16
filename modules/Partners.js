@@ -7,6 +7,7 @@ const Partners = () => {
       <div className="partner">
         <div style={{width: "30%", margin: "0 30px 0 0"}}>
           <img src="/modules/assets/partners/scao.png"/>
+          <img style={{paddingTop: "35px"}} src="/modules/assets/img10.jpg"/>
         </div>
         <div style={{width: "70%"}}>
           <h3>SCAO (Cambodia)</h3>
@@ -40,14 +41,24 @@ const Partners = () => {
         </div>
       </div>
 
-      <div>
-      <h3>Heyva Sor a Kurd (Syria)</h3>
-      <p>NEED TEXT</p>
+      <div className="partner">
+        <div style={{width: "30%", margin: "0 0 0 30px"}}>
+          <img src="/modules/assets/partners/HeyvaSoraKurd.jpg"/>
+        </div>
+        <div style={{width: "70%"}}>
+          <h3>Heyva Sor a Kurd (Syria)</h3>
+          <p>NEED TEXT</p>
+        </div>
       </div>
 
-      <div>
-      <h3>Joint Help for Kurdistan (Syria)</h3>
-      <p>JLK are a Swedish organisation supporting NGOs and individual funds and voluntaries support in Northern Syria and Kurdistan.</p>
+      <div className="partner">
+        <div style={{width: "70%"}}>
+          <h3>Joint Help for Kurdistan (Syria)</h3>
+          <p>JLK are a Swedish organisation supporting NGOs and individual funds and voluntaries support in Northern Syria and Kurdistan.</p>
+        </div>
+        <div style={{width: "30%", margin: "0 0 0 30px"}}>
+          <img src="/modules/assets/partners/joint%20help.jpg"/>
+        </div>
       </div>
 
       <h1 style={{margin: "80px 0 50px"}}>Global Partners</h1>
@@ -74,7 +85,7 @@ const Partners = () => {
 
       <div className="partner">
         <div style={{width: "30%", margin: "0 30px 0 0"}}>
-          <img src="/modules/assets/partners/Gecko.jpg"/>
+          <img style={{width: "70%"}} src="/modules/assets/partners/Gecko.jpg"/>
         </div>
         <div style={{width: "70%"}}>
         <h3>Gecko (Germany / Cambodia)</h3>

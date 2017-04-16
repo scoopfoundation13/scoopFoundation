@@ -27,14 +27,6 @@ class Donate extends React.Component {
   render() {
     return (
       <div style={{position:"relative", width:"100%"}}>
-      {/*
-        <div style={{position: "absolute", top: 0, left: 0, marginTop: "750px"}} className="ggg">
-          <img src='modules/assets/img04.jpg' width="100%"/>
-        </div>
-        <div>
-          <iframe src="https://donorbox.org/embed/scoopdonate" height="685px" width="100%" style={{maxWidth:"500px", minWidth:"310px", margin:"auto", paddingLeft:"55px"}} seamless="seamless" id="dbox-form-embed" name="donorbox" frameBorder="0" scrolling="no"></iframe>
-        </div>*/}
-
         <div className='donate-container'>
         <center>
         <h2>Donate Now</h2>

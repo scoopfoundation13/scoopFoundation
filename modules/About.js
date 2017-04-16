@@ -28,17 +28,13 @@ const About = () => {
   return (
     <div className="container-topMargin">
       <section className="text-container">
-      <h1>About SCOOP</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <h1 className="purple">WHO WE ARE</h1>
+          <p>We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
       </section>
       <section>
         <ThreeARow img={imgArray}/>
       </section>
       <section className="text-container">
-        <div className="about-align">
-          <p className="about-title purple">WHO?</p>
-          <p className="about-text">We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
-        </div>
         <div className="about-align">
           <p className="about-title orange">HOW?</p>
           <p className="about-text">Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. <NavLink className="orange" to="/partners">Meet our Partners here.</NavLink></p>
