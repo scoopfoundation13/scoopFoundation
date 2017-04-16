@@ -25592,7 +25592,7 @@
 	                { className: 'nav-right' },
 	                _react2.default.createElement(
 	                  'a',
-	                  { href: 'https://www.facebook.com/scoopfoundation' },
+	                  { target: '_blank', href: 'https://www.facebook.com/scoopfoundation' },
 	                  _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x purple icon', 'aria-hidden': 'true' })
 	                )
 	              )
@@ -25605,7 +25605,7 @@
 	                { className: 'nav-right' },
 	                _react2.default.createElement(
 	                  'a',
-	                  { href: 'https://twitter.com/scoopfoundation' },
+	                  { target: '_blank', href: 'https://twitter.com/scoopfoundation' },
 	                  _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x blue icon', 'aria-hidden': 'true' })
 	                )
 	              )
@@ -25618,7 +25618,7 @@
 	                { className: 'nav-right' },
 	                _react2.default.createElement(
 	                  'a',
-	                  { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
+	                  { target: '_blank', href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
 	                  _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x orange icon', 'aria-hidden': 'true' })
 	                )
 	              )
@@ -25894,27 +25894,27 @@
 	            { className: 'footer-social' },
 	            _react2.default.createElement(
 	              'a',
-	              { href: 'https://www.facebook.com/scoopfoundation' },
+	              { target: '_blank', href: 'https://www.facebook.com/scoopfoundation' },
 	              _react2.default.createElement('i', { className: 'fa fa-facebook fa-2x', 'aria-hidden': 'true' })
 	            ),
 	            _react2.default.createElement(
 	              'a',
-	              { href: 'https://twitter.com/scoopfoundation' },
+	              { target: '_blank', href: 'https://twitter.com/scoopfoundation' },
 	              _react2.default.createElement('i', { className: 'fa fa-twitter fa-2x', 'aria-hidden': 'true' })
 	            ),
 	            _react2.default.createElement(
 	              'a',
-	              { href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
+	              { target: '_blank', href: 'https://www.instagram.com/scoopfoundation_ireland/?hl=en' },
 	              _react2.default.createElement('i', { className: 'fa fa-instagram fa-2x', 'aria-hidden': 'true' })
 	            ),
 	            _react2.default.createElement(
 	              'a',
-	              { href: 'https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo' },
+	              { target: '_blank', href: 'https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo' },
 	              _react2.default.createElement('i', { className: 'fa fa-linkedin fa-2x', 'aria-hidden': 'true' })
 	            ),
 	            _react2.default.createElement(
 	              'a',
-	              { href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
+	              { target: '_blank', href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
 	              _react2.default.createElement('i', { className: 'fa fa-youtube fa-2x', 'aria-hidden': 'true' })
 	            )
 	          ),
@@ -44716,13 +44716,19 @@
 	      { className: 'text-container' },
 	      _react2.default.createElement(
 	        'h1',
-	        null,
-	        'About SCOOP'
+	        { className: 'purple' },
+	        'WHO WE ARE'
 	      ),
 	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+	        'We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created ',
+	        _react2.default.createElement(
+	          'a',
+	          { className: 'purple', href: 'www.syriasvibes.com' },
+	          'Syrias Vibes'
+	        ),
+	        ' - an initiative that supports medical clinics and emergency rescue services in Syria.'
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -44733,26 +44739,6 @@
 	    _react2.default.createElement(
 	      'section',
 	      { className: 'text-container' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'about-align' },
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'about-title purple' },
-	          'WHO?'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'about-text' },
-	          'We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created ',
-	          _react2.default.createElement(
-	            'a',
-	            { className: 'purple', href: 'www.syriasvibes.com' },
-	            'Syrias Vibes'
-	          ),
-	          ' - an initiative that supports medical clinics and emergency rescue services in Syria.'
-	        )
-	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'about-align' },
@@ -49600,7 +49586,7 @@
 /* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -49630,12 +49616,66 @@
 	  }
 
 	  _createClass(Fundraise, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        'Fundraise'
+	        "div",
+	        { className: "text-container" },
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Set up a Fundraising Page on our behalf"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "To set up a page, ",
+	          _react2.default.createElement(
+	            "a",
+	            { className: "purple", href: "https://www.justgiving.com/scoop", target: "_blank" },
+	            "click here"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "If you need any assistance, contact ",
+	          _react2.default.createElement(
+	            "a",
+	            { className: "orange", href: "mailto:andy@scoopfoundation.com" },
+	            "andy@scoopfoundation.com"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Run an event for us!"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Check out some of the events we have run down the years (Past events poster pop up gallery)"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Not only do events raise much needed funds, they create a great sense of community \u2013 people meet, ideas are exchanged, people have a good time. What\u2019s not to love\u2026"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Get in touch with Andy (contact link) now and he will help you every step of the way. "
+	        )
 	      );
 	    }
 	  }]);
@@ -49858,7 +49898,124 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "text-container" },
-	    "the Team"
+	    _react2.default.createElement(
+	      "h1",
+	      null,
+	      "The Team"
+	    ),
+	    _react2.default.createElement("hr", { style: { width: "100%" } }),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "partner" },
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "40%", paddingRight: "30px" } },
+	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/andy2.jpg" })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "60%" } },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Andrew Sweeney"
+	        ),
+	        _react2.default.createElement(
+	          "h5",
+	          { className: "orange" },
+	          "FOUNDER / EVENTS / SCOOP TOUR"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "In 2008, Andy embarked on a trip around Asia where he came across a small family run school, an encounter that led him on the path to building SCOOP. Since then, SCOOP has grown to an organisation that has built and supported schools across Cambodia and India. It is Andy\u2019s creativity and love for travelling, music, art and innovation that has seen him create a non-profit that merges altruism and inspiration with fun and adventure."
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "partner" },
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "60%" } },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Calvin James"
+	        ),
+	        _react2.default.createElement(
+	          "h5",
+	          { className: "purple" },
+	          "SYRIAS VIBES & SCOOP CO-FOUNDER"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "It was a visit by Calvin to Cambodia in 2002 that prompted Andrew to go several years later. A DJ, Special Needs Assistant and all round good guy, since leaving school aged 18 Calvin has never stopped travelling and has visited over 80 countries worldwide. He is currently writing down all of his travel stories (to a blog coming to you very soon!) while working as a Medical Assistant outside Rojava in Syria. No one rewrites the rules like Calvin does\u2026"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "40%", paddingLeft: "30px" } },
+	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/calvin.jpg" })
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "partner" },
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "40%", paddingRight: "30px" } },
+	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/jodi.jpg" })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "60%" } },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Jodi Rashbrook"
+	        ),
+	        _react2.default.createElement(
+	          "h5",
+	          { className: "orange" },
+	          "INDIA & SCOOP AUSTRALIA CO-FOUNDER"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Whilst she calls Perth home she lives a semi nomadic lifestyle and enjoys volunteering overseas. Just before Jodi co-founded SCOOP Australia, she had just returned from teaching English for 5 months in Ladakh, India. It wasn\u2019t long before she was back in India, this time spending 6 months at our partner NGO supporting the Jeevan School of Life. Is being with the kids and seeing them learn, create and grow that drives Jodi\u2019s passion."
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "partner" },
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "60%" } },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Lisa Rennie"
+	        ),
+	        _react2.default.createElement(
+	          "h5",
+	          { className: "purple" },
+	          "SCOOP AUSTRALIA (FOUNDER)"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "After university Lisa moved to Cambodia to volunteer for SCAO and then intern for the UNDP. It was these experiences, and her South African childhood, that compelled Lisa to take action for change. But her final inspiration for bringing The SCOOP Foundation to Australia was the birth of her daughter, who Lisa hopes will grow and learn that the world, and its people can be beautiful."
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "40%", paddingLeft: "30px" } },
+	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/lisa.jpg" })
+	      )
+	    )
 	  );
 	};
 
@@ -49895,7 +50052,8 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "30%", margin: "0 30px 0 0" } },
-	        _react2.default.createElement("img", { src: "/modules/assets/partners/scao.png" })
+	        _react2.default.createElement("img", { src: "/modules/assets/partners/scao.png" }),
+	        _react2.default.createElement("img", { style: { paddingTop: "35px" }, src: "/modules/assets/img10.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -49977,30 +50135,48 @@
 	    ),
 	    _react2.default.createElement(
 	      "div",
-	      null,
+	      { className: "partner" },
 	      _react2.default.createElement(
-	        "h3",
-	        null,
-	        "Heyva Sor a Kurd (Syria)"
+	        "div",
+	        { style: { width: "30%", margin: "0 0 0 30px" } },
+	        _react2.default.createElement("img", { src: "/modules/assets/partners/HeyvaSoraKurd.jpg" })
 	      ),
 	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "NEED TEXT"
+	        "div",
+	        { style: { width: "70%" } },
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Heyva Sor a Kurd (Syria)"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "NEED TEXT"
+	        )
 	      )
 	    ),
 	    _react2.default.createElement(
 	      "div",
-	      null,
+	      { className: "partner" },
 	      _react2.default.createElement(
-	        "h3",
-	        null,
-	        "Joint Help for Kurdistan (Syria)"
+	        "div",
+	        { style: { width: "70%" } },
+	        _react2.default.createElement(
+	          "h3",
+	          null,
+	          "Joint Help for Kurdistan (Syria)"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "JLK are a Swedish organisation supporting NGOs and individual funds and voluntaries support in Northern Syria and Kurdistan."
+	        )
 	      ),
 	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "JLK are a Swedish organisation supporting NGOs and individual funds and voluntaries support in Northern Syria and Kurdistan."
+	        "div",
+	        { style: { width: "30%", margin: "0 0 0 30px" } },
+	        _react2.default.createElement("img", { src: "/modules/assets/partners/joint%20help.jpg" })
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -50060,7 +50236,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "30%", margin: "0 30px 0 0" } },
-	        _react2.default.createElement("img", { src: "/modules/assets/partners/Gecko.jpg" })
+	        _react2.default.createElement("img", { style: { width: "70%" }, src: "/modules/assets/partners/Gecko.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
