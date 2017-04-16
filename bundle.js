@@ -49505,7 +49505,7 @@
 /* 534 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -49540,7 +49540,7 @@
 	  }
 
 	  _createClass(Donate, [{
-	    key: 'handleClick',
+	    key: "handleClick",
 	    value: function handleClick(isMonthly) {
 	      this.setState({ isMonthly: isMonthly });
 	    }
@@ -49558,27 +49558,35 @@
 	    </div>*/
 
 	  }, {
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        { className: 'donate-container' },
+	        "div",
+	        { style: { position: "relative", width: "100%" } },
 	        _react2.default.createElement(
-	          'center',
-	          null,
+	          "div",
+	          { className: "donate-container" },
 	          _react2.default.createElement(
-	            'h2',
+	            "center",
 	            null,
-	            'Donate Now'
+	            _react2.default.createElement(
+	              "h2",
+	              null,
+	              "Donate Now"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "and together we can change more lives."
+	            )
 	          ),
-	          _react2.default.createElement(
-	            'p',
-	            null,
-	            'and together we can change more lives.'
-	          )
+	          _react2.default.createElement("img", { src: "modules/assets/img04.jpg" })
 	        ),
-	        _react2.default.createElement('iframe', { src: 'https://donorbox.org/embed/scoopdonate', height: '685px', width: '100%', style: { maxWidth: "500px", minWidth: "310px", margin: "auto", paddingLeft: "55px" }, seamless: 'seamless', id: 'dbox-form-embed', name: 'donorbox', frameBorder: '0', scrolling: 'no' }),
-	        _react2.default.createElement('img', { src: 'modules/assets/img04.jpg' })
+	        _react2.default.createElement(
+	          "div",
+	          { style: { textAlign: "center", display: "flex", width: "100%", justifyContent: "center" } },
+	          _react2.default.createElement("iframe", { src: "https://donorbox.org/embed/scoopdonate", height: "685px", width: "100%", style: { maxWidth: "500px", minWidth: "310px", margin: "0 auto", paddingLeft: "60px", position: "absolute", top: "130px", width: "100%" }, seamless: "seamless", id: "dbox-form-embed", align: "center", name: "donorbox", frameBorder: "0", scrolling: "no" })
+	        )
 	      );
 	    }
 	  }]);

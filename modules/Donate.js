@@ -26,14 +26,26 @@ class Donate extends React.Component {
           </div>*/
   render() {
     return (
+      <div style={{position:"relative", width:"100%"}}>
+      {/*
+        <div style={{position: "absolute", top: 0, left: 0, marginTop: "750px"}} className="ggg">
+          <img src='modules/assets/img04.jpg' width="100%"/>
+        </div>
+        <div>
+          <iframe src="https://donorbox.org/embed/scoopdonate" height="685px" width="100%" style={{maxWidth:"500px", minWidth:"310px", margin:"auto", paddingLeft:"55px"}} seamless="seamless" id="dbox-form-embed" name="donorbox" frameBorder="0" scrolling="no"></iframe>
+        </div>*/}
+
         <div className='donate-container'>
         <center>
         <h2>Donate Now</h2>
         <p>and together we can change more lives.</p>
         </center>
-        <iframe src="https://donorbox.org/embed/scoopdonate" height="685px" width="100%" style={{maxWidth:"500px", minWidth:"310px", margin:"auto", paddingLeft:"55px"}} seamless="seamless" id="dbox-form-embed" name="donorbox" frameBorder="0" scrolling="no"></iframe>
           <img src='modules/assets/img04.jpg'/>
         </div>
+        <div style={{textAlign:"center", display:"flex", width: "100%", justifyContent:"center"}}>
+        <iframe src="https://donorbox.org/embed/scoopdonate" height="685px" width="100%" style={{maxWidth:"500px", minWidth:"310px", margin:"0 auto", paddingLeft:"60px", position:"absolute", top:"130px", width:"100%"}} seamless="seamless" id="dbox-form-embed" align="center" name="donorbox" frameBorder="0" scrolling="no"></iframe>
+        </div>
+      </div>
       );
   }
 }
