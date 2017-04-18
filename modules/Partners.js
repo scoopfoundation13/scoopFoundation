@@ -7,7 +7,7 @@ const Partners = () => {
       <div className="partner">
         <div style={{width: "30%", margin: "0 30px 0 0"}}>
           <img src="/modules/assets/partners/scao.png"/>
-          <img style={{paddingTop: "35px"}} src="/modules/assets/img10.jpg"/>
+          <img style={{paddingTop: "35px"}} src="/modules/assets/partners/scaoclassroom-sm.jpg"/>
         </div>
         <div style={{width: "70%"}}>
           <h3>SCAO (Cambodia)</h3>
@@ -37,7 +37,7 @@ const Partners = () => {
         <p>We are proud to work with them and will work equally hard to make The Jeevan Village a reality. </p>
         </div>
         <div style={{width: "30%", margin: "0 0 0 30px"}}>
-          <img src="/modules/assets/img02.jpg"/>
+          <img src="/modules/assets/partners/india-sm.jpg"/>
         </div>
       </div>
 

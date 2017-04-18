@@ -44866,6 +44866,100 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var galleryImages = [{
+	  src: 'modules/assets/gallery/1. Andy visits the original SCAO Centre in 2008.jpg',
+	  caption: 'Andy visits the original SCAO Centre in 2008'
+	}, {
+	  src: 'modules/assets/gallery/2. He helps them improve the centre and build more classrooms in 2009.jpg',
+	  caption: 'He helps them improve the centre and build more classrooms in 2009'
+	}, {
+	  src: 'modules/assets/gallery/3. Robotnik performs at our launch gig in 2010.jpg',
+	  caption: 'Robotnik performs at our launch gig in 2010'
+	}, {
+	  src: 'modules/assets/gallery/3a. Local Cambodian Teacher Srey Lat in 2009.jpg',
+	  caption: 'Local Cambodian Teacher Srey Lat in 2009'
+	}, {
+	  src: 'modules/assets/gallery/4. SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion.jpg',
+	  caption: 'SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion'
+	}, {
+	  src: 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg',
+	  caption: 'Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event'
+	}, {
+	  src: 'modules/assets/gallery/6. James Vincent McMorrow performs at an early SCOOP gig.jpg',
+	  caption: 'James Vincent McMorrow performs at an early SCOOP gig'
+	}, {
+	  src: 'modules/assets/gallery/7. Andy and co-founder Annmarie, with local teacher Srey Lat, visit the site of the 2nd school in Cambodia in 2010.png',
+	  caption: 'Andy and co-founder Annmarie, with local teacher Srey Lat, visit the site of the 2nd school in Cambodia in 2010'
+	}, {
+	  src: 'modules/assets/gallery/8. The 2nd school in Cambodia ready to open in 2011.jpg',
+	  caption: 'The 2nd school in Cambodia ready to open in 2011'
+	}, {
+	  src: 'modules/assets/gallery/9. SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia.jpg',
+	  caption: 'SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia'
+	}, {
+	  src: 'modules/assets/gallery/10 .Artist ADW creates a special artwork for us in 2010.jpg',
+	  caption: 'Artist ADW creates a special artwork for us in 2010'
+	}, {
+	  src: 'modules/assets/gallery/11. ADW\'s Elton which raised €900.jpg',
+	  caption: 'ADW\'s Elton which raised €900'
+	}, { src: 'modules/assets/gallery/12. The Better Than Socks event 2012.jpg',
+	  caption: 'The Better Than Socks event 2012'
+	}, {
+	  src: 'modules/assets/gallery/13. The SCOOP Ireland Team in 2014.jpg',
+	  caption: 'The SCOOP Ireland Team in 2014'
+	}, {
+	  src: 'modules/assets/gallery/14. The SCOOP Social - at this stage we have run every possible type of event imaginable.jpg',
+	  caption: 'The SCOOP Social - at this stage we have run every possible type of event imaginable'
+	}, {
+	  src: 'modules/assets/gallery/15. The SCOOP Australia Team 2015.jpg',
+	  caption: 'The SCOOP Australia Team 2015'
+	}, {
+	  src: 'modules/assets/gallery/16. SCOOP Australia 1st logo 2015.jpg',
+	  caption: 'SCOOP Australia 1st logo 2015'
+	}, {
+	  src: 'modules/assets/gallery/17. We partner up with The Jeevan School in Varanasi, India in 2010.jpg',
+	  caption: 'We partner up with The Jeevan School in Varanasi, India in 2010'
+	}, {
+	  src: 'modules/assets/gallery/17a. The Jeevan School offers a home and safe haven for homeless children in the city.jpg',
+	  caption: 'The Jeevan School offers a home and safe haven for homeless children in the city'
+	}, {
+	  src: 'modules/assets/gallery/18. The site for The Jeevan Village in Varanasi 2014.jpg',
+	  caption: 'The site for The Jeevan Village in Varanasi 2014'
+	}, {
+	  src: 'modules/assets/gallery/19. Architects plan for The Jeevan Village.jpg',
+	  caption: 'Architects plan for The Jeevan Village'
+	}, {
+	  src: 'modules/assets/gallery/20. We partnered up with the Oktoberfest Festival in 2014.JPG',
+	  caption: 'We partnered up with the Oktoberfest Festival in 2014'
+	}, {
+	  src: 'modules/assets/gallery/21. New SCOOP logo in 2015.jpg',
+	  caption: 'New SCOOP logo in 2015'
+	}, {
+	  src: 'modules/assets/gallery/22. The site for the 3rd school in Cambodia 2016.jpg',
+	  caption: 'The site for the 3rd school in Cambodia 2016'
+	}, {
+	  src: 'modules/assets/gallery/23. Andy at the site for the 3rd school inj Cambodia in 2016.jpg',
+	  caption: 'Andy at the site for the 3rd school inj Cambodia in 2016'
+	}, {
+	  src: 'modules/assets/gallery/24. Laying the foundations for the 3rd school in Cambodia (2016).jpg',
+	  caption: 'Laying the foundations for the 3rd school in Cambodia (2016)'
+	}, {
+	  src: 'modules/assets/gallery/25. The building site for the 3rd school in Cambodia 2016.jpg',
+	  caption: 'The building site for the 3rd school in Cambodia 2016'
+	}, {
+	  src: 'modules/assets/gallery/26. Calvin and colleague with their ambulance in Syria (2016).jpg',
+	  caption: 'Calvin and colleague with their ambulance in Syria (2016)'
+	}, {
+	  src: 'modules/assets/gallery/27. Calvin at the site in Qamishli where 2 trucks full of explosives destroyed a city block (2016).jpg',
+	  caption: 'Calvin at the site in Qamishli where 2 trucks full of explosives destroyed a city block (2016)'
+	}, {
+	  src: 'modules/assets/gallery/28. Calvin at the Syrias Vibes launch in Dublin in October, 2016.jpg',
+	  caption: 'Calvin at the Syrias Vibes launch in Dublin in October, 2016'
+	}, {
+	  src: 'modules/assets/gallery/29. The Artist\'s Cook Book will launch in the summer of 2017.jpg',
+	  caption: 'The Artist\'s Cook Book will launch in the summer of 2017'
+	}];
+
 	var Home = function (_React$Component) {
 	  _inherits(Home, _React$Component);
 
@@ -44876,8 +44970,8 @@
 
 	    _this.state = {
 	      activeCard: 2,
-	      lightboxIsOpen: true,
-	      images: ['modules/assets/gallery/1. Andy visits the original SCAO Centre in 2008.jpg', 'modules/assets/gallery/2. He helps them improve the centre and build more classrooms in 2009.jpg', 'modules/assets/gallery/3. Robotnik performs at our launch gig in 2010.jpg', 'modules/assets/gallery/3a. Local Cambodian Teacher Srey Lat in 2009.jpg', 'modules/assets/gallery/4. SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion.jpg', 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg', 'modules/assets/gallery/6. James Vincent McMorrow performs at an early SCOOP gig.jpg', 'modules/assets/gallery/7. Andy and co-founder Annmarie, with local teacher Srey Lat, visit the site of the 2nd school in Cambodia in 2010.png', 'modules/assets/gallery/8. The 2nd school in Cambodia ready to open in 2011.jpg', 'modules/assets/gallery/9. SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia.jpg', 'modules/assets/gallery/10 .Artist ADW creates a special artwork for us in 2010.jpg', 'modules/assets/gallery/11. ADW\'s Elton which raised €900.jpg', 'modules/assets/gallery/12. The Better Than Socks event 2012.jpg', 'modules/assets/gallery/13. The SCOOP Ireland Team in 2014.jpg', 'modules/assets/gallery/14. The SCOOP Social - at this stage we have run every possible type of event imaginable.jpg', 'modules/assets/gallery/15. The SCOOP Australia Team 2015.jpg', 'modules/assets/gallery/16. SCOOP Australia 1st logo 2015.jpg', 'modules/assets/gallery/17. We partner up with The Jeevan School in Varanasi, India in 2010.jpg', 'modules/assets/gallery/17a. The Jeevan School offers a home and safe haven for homeless children in the city.jpg', 'modules/assets/gallery/18. The site for The Jeevan Village in Varanasi 2014.jpg', 'modules/assets/gallery/19. Architects plan for The Jeevan Village.jpg', 'modules/assets/gallery/20. We partnered up with the Oktoberfest Festival in 2014.JPG', 'modules/assets/gallery/21. New SCOOP logo in 2015.jpg', 'modules/assets/gallery/22. The site for the 3rd school in Cambodia 2016.jpg', 'modules/assets/gallery/23. Andy at the site for the 3rd school inj Cambodia in 2016.jpg', 'modules/assets/gallery/24. Laying the foundations for the 3rd school in Cambodia (2016).jpg', 'modules/assets/gallery/25. The building site for the 3rd school in Cambodia 2016.jpg', 'modules/assets/gallery/26. Calvin and colleague with their ambulance in Syria (2016).jpg', 'modules/assets/gallery/27. Calvin at the site in Qamishli where 2 trucks full of explosives destroyed a city block (2016).jpg', 'modules/assets/gallery/28. Calvin at the Syrias Vibes launch in Dublin in October, 2016.jpg', 'modules/assets/gallery/29. The Artist\'s Cook Book will launch in the summer of 2017.jpg']
+	      lightboxIsOpen: false,
+	      currentImage: 0
 	    };
 	    _this.handleClick = _this.handleClick.bind(_this);
 	    _this.handleImagesString = _this.handleImagesString.bind(_this);
@@ -44913,18 +45007,41 @@
 	      return curObj;
 	    }
 	  }, {
+	    key: 'openLightbox',
+	    value: function openLightbox(event) {
+	      event.preventDefault();
+	      this.setState({
+	        currentImage: 0,
+	        lightboxIsOpen: true
+	      });
+	    }
+	  }, {
 	    key: 'closeLightbox',
 	    value: function closeLightbox() {
-	      this.setState({ lightboxIsOpen: false });
+	      this.setState({
+	        currentImage: 0,
+	        lightboxIsOpen: false
+	      });
+	    }
+	  }, {
+	    key: 'gotoNext',
+	    value: function gotoNext() {
+	      this.setState({
+	        currentImage: this.state.currentImage + 1
+	      });
+	    }
+	  }, {
+	    key: 'gotoPrevious',
+	    value: function gotoPrevious() {
+	      this.setState({
+	        currentImage: this.state.currentImage - 1
+	      });
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var _this2 = this;
 
-	      // const images = this.handleImagesString();
-	      var images = [{ src: 'modules/assets/gallery/1. Andy visits the original SCAO Centre in 2008.jpg' }, { src: 'modules/assets/gallery/2. He helps them improve the centre and build more classrooms in 2009.jpg' }];
-	      // console.log(images);
 	      return _react2.default.createElement(
 	        'div',
 	        null,
@@ -44968,7 +45085,7 @@
 	          { className: 'home-sec2' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: this.isActive(1), onClick: function onClick() {
+	            { className: this.isActive(1), onMouseOver: function onMouseOver() {
 	                return _this2.handleClick(1);
 	              } },
 	            _react2.default.createElement('img', { src: 'modules/assets/BrickNBuilder-0.jpg' }),
@@ -44989,7 +45106,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: this.isActive(2), onClick: function onClick() {
+	            { className: this.isActive(2), onMouseOver: function onMouseOver() {
 	                return _this2.handleClick(2);
 	              } },
 	            _react2.default.createElement('img', { src: 'modules/assets/Classroom.jpg' }),
@@ -45010,7 +45127,7 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: this.isActive(3), onClick: function onClick() {
+	            { className: this.isActive(3), onMouseOver: function onMouseOver() {
 	                return _this2.handleClick(3);
 	              } },
 	            _react2.default.createElement('img', { src: 'modules/assets/Solar.jpg' }),
@@ -45032,13 +45149,48 @@
 	        ),
 	        _react2.default.createElement(
 	          'section',
-	          { className: 'home-sec3' },
+	          { className: 'home-sec3', style: { position: "relative" } },
 	          _react2.default.createElement(
-	            'h2',
-	            { className: '' },
-	            'The SCOOP story so far ...'
+	            'div',
+	            { style: { position: "absolute", top: 0, left: 0, width: "100%" } },
+	            _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/img11.jpg' }),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'gallery-bander' },
+	              _react2.default.createElement(
+	                'span',
+	                { style: { color: "#fff", fontSize: "1.8em", paddingBottom: "10px", textShadow: "2px 4px 3px rgba(0,0,0,0.3)" } },
+	                'The ',
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'orange' },
+	                  'SCOOP'
+	                ),
+	                ' story so far ...'
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'gallery-btn', onClick: function onClick(e) {
+	                    return _this2.openLightbox(e);
+	                  } },
+	                'Visit the Gallery'
+	              )
+	            )
 	          ),
-	          _react2.default.createElement(_Gallery2.default, null)
+	          _react2.default.createElement(_reactImages2.default, {
+	            currentImage: this.state.currentImage,
+	            images: galleryImages,
+	            isOpen: this.state.lightboxIsOpen,
+	            onClose: function onClose() {
+	              return _this2.closeLightbox();
+	            },
+	            onClickNext: function onClickNext() {
+	              return _this2.gotoNext();
+	            },
+	            onClickPrev: function onClickPrev() {
+	              return _this2.gotoPrevious();
+	            }
+	          })
 	        )
 	      );
 	    }
@@ -45098,6 +45250,7 @@
 	      var encoded = this.state.images.map(function (pic) {
 	        return pic.split(' ').join('%20');
 	      });
+	      console.log(encoded);
 	      this.setState({ encodedImages: encoded });
 	    }
 	  }, {
@@ -45125,6 +45278,8 @@
 	    key: 'render',
 	    value: function render() {
 	      var _this2 = this;
+
+	      console.log(this.state.encodedImages);
 
 	      var dots = this.state.images.map(function (pic, idx) {
 	        if (idx === _this2.state.activeIdx) {
@@ -49703,57 +49858,69 @@
 
 	var Cambodia = function Cambodia() {
 	  return _react2.default.createElement(
-	    "section",
-	    { id: "cambodia", className: "text-container" },
+	    "div",
+	    { className: "cambodia-bg" },
 	    _react2.default.createElement(
-	      "h1",
-	      null,
-	      "SCAO I, III & III"
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "Cambodia is where the SCOOP story begins, when Andy came across an under-resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The SCAO (link to the SCAO page) is now one of the hardest working local NGOs in and around Phnom Penh and together we plan to build more schools and reach more children."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "**(Possible slideshow of pics showing the first pic all the way through to the opening of the latest school?)**"
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "In 2011, together we built a new school from scratch \u2013 the SCAO II School - and at the tail end of 2016 a third school was constructed and opened - SCAO III - this time alongside other NGOs and altruists from all around the world."
-	    ),
-	    _react2.default.createElement(
-	      "h3",
-	      null,
-	      "The future?"
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "To continue building schools farther into Cambodia\u2019s countryside (which is 80% of the country), in order to stop the migration of uneducated young people and children to its cities - who sadly find themselves vulnerable and desperate for work, usually finding it in low paid garment factories or in the vast amount of \u2018girly\u2019 bars and brothels where young women, men and children are exploited daily."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
+	      "section",
+	      { id: "cambodia", className: "text-container" },
 	      _react2.default.createElement(
-	        "em",
+	        "h1",
 	        null,
-	        "Want to volunteer?"
+	        " SCAO I, III & III "
+	      ),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "Cambodia is where the SCOOP story begins, when Andy came across an under - resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School.He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself. "
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "The SCAO(link to the SCAO page) is now one of the hardest working local NGOs in and around Phnom Penh and together we plan to build more schools and reach more children. "
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        " ** (Possible slideshow of pics showing the first pic all the way through to the opening of the latest school ? ) ** "
+	      ),
+	      " ",
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "In 2011, together we built a new school from scratch\u2013 the SCAO II School - and at the tail end of 2016 a third school was constructed and opened - SCAO III - this time alongside other NGOs and altruists from all around the world. "
+	      ),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "h3",
+	        null,
+	        " The future ? "
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "To continue building schools farther into Cambodia\u2019 s countryside(which is 80 % of the country), in order to stop the migration of uneducated young people and children to its cities - who sadly find themselves vulnerable and desperate for work, usually finding it in low paid garment factories or in the vast amount of\u2018 girly\u2019 bars and brothels where young women, men and children are exploited daily. "
+	      ),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        " ",
+	        _react2.default.createElement(
+	          "em",
+	          null,
+	          " Want to volunteer ? "
+	        ),
+	        " "
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        " If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia.Get in touch today!(link to contact form) "
 	      )
 	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. Get in touch today! (link to contact form)"
-	    )
+	    _react2.default.createElement("br", null),
+	    _react2.default.createElement("img", { className: "home-bk", src: "modules/assets/img03.jpg" })
 	  );
 	};
 
@@ -49910,7 +50077,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "40%", paddingRight: "30px" } },
-	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/andy2.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/team/andy2.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -49957,7 +50124,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "40%", paddingLeft: "30px" } },
-	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/calvin.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/team/calvin.jpg" })
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -49966,7 +50133,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "40%", paddingRight: "30px" } },
-	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/jodi.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/team/jodi.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -50013,7 +50180,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "40%", paddingLeft: "30px" } },
-	        _react2.default.createElement("img", { src: "http://scoopfoundation.com/wp-content/uploads/lisa.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/team/lisa.jpg" })
 	      )
 	    )
 	  );
@@ -50053,7 +50220,7 @@
 	        "div",
 	        { style: { width: "30%", margin: "0 30px 0 0" } },
 	        _react2.default.createElement("img", { src: "/modules/assets/partners/scao.png" }),
-	        _react2.default.createElement("img", { style: { paddingTop: "35px" }, src: "/modules/assets/img10.jpg" })
+	        _react2.default.createElement("img", { style: { paddingTop: "35px" }, src: "/modules/assets/partners/scaoclassroom-sm.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
@@ -50130,7 +50297,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "30%", margin: "0 0 0 30px" } },
-	        _react2.default.createElement("img", { src: "/modules/assets/img02.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/partners/india-sm.jpg" })
 	      )
 	    ),
 	    _react2.default.createElement(

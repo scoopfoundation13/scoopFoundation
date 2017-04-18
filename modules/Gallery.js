@@ -18,6 +18,7 @@ class Gallery extends React.Component {
     const encoded = this.state.images.map(pic => {
       return pic.split(' ').join('%20');
     });
+    console.log(encoded)
     this.setState({encodedImages: encoded});
 
   }
@@ -41,6 +42,7 @@ class Gallery extends React.Component {
   }
 
   render() {
+    console.log(this.state.encodedImages)
 
     const dots = this.state.images.map((pic, idx) => { 
       if (idx === this.state.activeIdx) {

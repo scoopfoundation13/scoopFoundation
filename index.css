@@ -171,7 +171,7 @@ hr {
 
 .flex-col span {
   padding: 5px;
-  text-shadow: 2px 2px 8px #333333;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 #video-background {
@@ -215,9 +215,6 @@ hr {
   border: 5px solid #ff9933;
 }
 
-.home-sec3 {
-}
-
 .home-sec4 {
   height: 600px;
   font-size: 1.5em;
@@ -231,20 +228,15 @@ hr {
   width: 100%;
   height: auto;
   overflow: hidden;
-  /*background-image: url(modules/assets/img03.jpg);
-  background-size: cover;*/
 }
 
 .home-sec3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   margin-bottom: 50px;
-  margin-top: 100px;
+  margin-top: 80px;
   font-size: 1.5em;
-  /*background-color: #eff0f2;*/
+  display: block;
+  height: 65%;
+  position: relative;
 }
 
 .gallery-container {
@@ -263,6 +255,29 @@ hr {
   width: auto;
   height: 500px;
   padding: 30px 0px;
+}
+
+.gallery-bander {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.gallery-btn {
+  border-radius: 5px;
+  background-color: #64CCC9;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.gallery-btn:hover {
+  color: #64CCC9;
+  border: 2px solid #64CCC9;
+  background-color: rgba(255,255,255,0.5);
 }
 
 .fa-arrow-circle-left, .fa-arrow-circle-right {
@@ -406,6 +421,14 @@ footer i {
   background: -o-linear-gradient(rgba(255,0,0,0), rgb(211, 213, 210), rgb(211, 213, 210), rgb(245, 242, 239)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(rgba(255,0,0,0), rgb(211, 213, 210), rgb(211, 213, 210), rgb(245, 242, 239)); /* For Firefox 3.6 to 15 */
   background: linear-gradient(rgba(255,0,0,0), rgb(211, 213, 210), rgb(211, 213, 210), rgb(245, 242, 239)); /* Standard syntax */  
+}
+
+.cambodia-bg {
+  background: rgb(214, 248, 239); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(214, 248, 239), rgb(214, 248, 239), rgb(214, 248, 239)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,0,0,0), rgb(214, 248, 239), rgb(214, 248, 239), rgb(214, 248, 239)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,0,0,0), rgb(214, 248, 239), rgb(214, 248, 239), rgb(214, 248, 239)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,0,0,0), rgb(214, 248, 239), rgb(214, 248, 239), rgb(214, 248, 239)); /* Standard syntax */  
 }
 
 /*BUILDING PROJECTS*/
