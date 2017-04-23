@@ -37,7 +37,7 @@ const Partners = () => {
         <p>We are proud to work with them and will work equally hard to make The Jeevan Village a reality. </p>
         </div>
         <div style={{width: "30%", margin: "0 0 0 30px"}}>
-          <img src="/modules/assets/partners/india-sm.jpg"/>
+          <img src="/modules/assets/thumbnails/jeevan%20school.jpg"/>
         </div>
       </div>
 

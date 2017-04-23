@@ -344,6 +344,10 @@ footer i {
   font-size: 1.1em;
 }
 
+.footer-links .link:hover{
+  color: #FF8200;
+}
+
 /*ABOUT*/
 
 .text-container {

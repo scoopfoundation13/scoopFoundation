@@ -54,21 +54,20 @@ class App extends React.Component {
           <div className="footer-links">
             <div>
             <span><b>Get to know us</b></span>
-            <span><NavLink to="/about">About Us</NavLink></span>
-            <span><NavLink to="/inclass">In Class</NavLink></span>
-            <span><NavLink to="/buildingprojects">Building Projects</NavLink></span>
-            <span><NavLink to="/team">Meet the Team</NavLink></span>
+            <span className="link"><NavLink to="/about">About Us</NavLink></span>
+            <span className="link"><NavLink to="/impact">Impact</NavLink></span>
+            <span className="link"><NavLink to="/team">Meet the Team</NavLink></span>
             </div>
             <div>
             <span><b>Get Involved</b></span>
-            <span><NavLink to="/fundraise">Fundraise</NavLink></span>
-            <span><NavLink to="/donate">Donate</NavLink></span>
-            <span>Shop</span>
-            <span><NavLink to="/partners">Partners</NavLink></span>
+            <span className="link"><NavLink to="/fundraise">Fundraise</NavLink></span>
+            <span className="link"><NavLink to="/donate">Donate</NavLink></span>
+            <span className="link">Shop</span>
+            <span className="link"><NavLink to="/partners">Partners</NavLink></span>
             </div>
             <div>
             <span><b>Contact us</b></span>
-            <span>Email: info@scoopfoundation.com</span>
+            <span className="link"><a href="mailto:info@scoopfoundation.com">Email: info@scoopfoundation.com</a></span>
             <span>Phone: +353 85 778 1058</span>
             </div>
           </div>

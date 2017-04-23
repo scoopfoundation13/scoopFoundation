@@ -18,7 +18,7 @@ const Impact = () => {
           <center>There are currently 800 children in class or in care worldwide, and counting…</center>
         </div>
         <div style={{width: "25%", padding:"2%"}}>
-          <img style={{width: "100%"}} src="modules/assets/playground.png"/>
+          <img style={{width: "100%"}} src="modules/assets/Playground.png"/>
           <center>Since we started our mission in 2009, over 2460 children and teenagers have attended class at the schools we support.</center>
         </div>
         <div style={{width: "25%", padding:"2%"}}>
