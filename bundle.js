@@ -25785,7 +25785,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
+	                { className: 'link' },
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/about' },
@@ -25794,25 +25794,16 @@
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
+	                { className: 'link' },
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/inclass' },
-	                  'In Class'
+	                  { to: '/impact' },
+	                  'Impact'
 	                )
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
-	                _react2.default.createElement(
-	                  _NavLink2.default,
-	                  { to: '/buildingprojects' },
-	                  'Building Projects'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                null,
+	                { className: 'link' },
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/team' },
@@ -25834,7 +25825,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
+	                { className: 'link' },
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/fundraise' },
@@ -25843,7 +25834,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
+	                { className: 'link' },
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/donate' },
@@ -25852,12 +25843,12 @@
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
+	                { className: 'link' },
 	                'Shop'
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
+	                { className: 'link' },
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/partners' },
@@ -25879,8 +25870,12 @@
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                null,
-	                'Email: info@scoopfoundation.com'
+	                { className: 'link' },
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'mailto:info@scoopfoundation.com' },
+	                  'Email: info@scoopfoundation.com'
+	                )
 	              ),
 	              _react2.default.createElement(
 	                'span',
@@ -50459,7 +50454,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "30%", margin: "0 0 0 30px" } },
-	        _react2.default.createElement("img", { src: "/modules/assets/partners/india-sm.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/thumbnails/jeevan%20school.jpg" })
 	      )
 	    ),
 	    _react2.default.createElement(
@@ -50679,7 +50674,7 @@
 	      _react2.default.createElement(
 	        'div',
 	        { style: { width: "25%", padding: "2%" } },
-	        _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/playground.png' }),
+	        _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/Playground.png' }),
 	        _react2.default.createElement(
 	          'center',
 	          null,
