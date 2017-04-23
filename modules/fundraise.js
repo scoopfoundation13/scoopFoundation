@@ -28,9 +28,9 @@ class Fundraise extends React.Component {
         <br />
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img15.jpg"/>
-          <div className="" style={{position:"absolute", top: "20%", left: "10%", color:"#fff"}}>
+          <div className="fundraise-section" style={{top: "20%"}}>
             <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-1.png"/>
-            <h1 style={{textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>Set up a Fundraising Page on our behalf</h1>
+            <h1 className="shadow">Set up a Fundraising Page on our behalf</h1>
             <a href="https://www.justgiving.com/scoop/raisemoney/?utm_source=website_cid250506&utm_medium=buttons&utm_content=scoop&utm_campaign=makeapage_start_white"><img src="http://www.justgiving.com/charities/content/images/logo-buttons/white/makeapage_start_white.gif" alt="Start fundraising with JustGiving" /></a>
           </div>
         </div>
@@ -48,9 +48,9 @@ class Fundraise extends React.Component {
 
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img17.jpg"/>
-          <div style={{position:"absolute", top: "25%", left: "10%", color:"#fff"}}>
+          <div className="fundraise-section">
             <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-2.png"/>
-            <h1 style={{textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>Sponsor an entire classroom</h1>
+            <h1 className="shadow">Sponsor an entire classroom</h1>
           </div>
         </div>
         <br />
@@ -67,9 +67,9 @@ class Fundraise extends React.Component {
 
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img14.jpg"/>
-          <div style={{position:"absolute", top: "25%", left: "10%", color:"#fff"}}>
+          <div className="fundraise-section">
             <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-3.png"/>
-            <h1 style={{textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>Run an event for us!</h1>
+            <h1 className="shadow">Run an event for us!</h1>
           </div>
         </div>
         <br />

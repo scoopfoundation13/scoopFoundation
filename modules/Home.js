@@ -198,7 +198,7 @@ class Home extends React.Component {
             </NavLink>
           </div>
         </section>
-        <section className="home-sec3" style={{position: "relative"}}>
+        <section className="home-sec3">
         <div style={{position: "absolute", top: 0, left: 0, width:"100%"}}>
             <img style={{width: "100%"}} src='modules/assets/gallery-bander.jpg'/>
             <div className="gallery-bander">
@@ -215,6 +215,7 @@ class Home extends React.Component {
             onClickPrev={() => this.gotoPrevious()}
           />
         </section>
+
         {/*<section className="home-sec4">
           <h2>SCOOP NEWS</h2>
 

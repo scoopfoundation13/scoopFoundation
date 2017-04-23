@@ -106,7 +106,6 @@ nav li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  /*align-content: center;*/
   height: 500px;
   overflow: hidden;
 }
@@ -122,7 +121,9 @@ nav li {
 
 .home-nav-pill:hover {
   border: 1px solid #FF8200;
-  color: #FF8200;
+  color: #FFF;
+  background-color: #FF8200;
+  text-shadow: 0px 0px 0px rgba(255,255,255,0);
 }
 
 .flex-col {
@@ -163,7 +164,6 @@ hr {
   min-width: 100%; 
   min-height: 100%;
   width: 100%; 
-  /*height: auto;*/
   z-index: -100000;
 }
 
@@ -171,7 +171,7 @@ hr {
   height: 400px;
   width: 100%;
   position: relative;
-  margin: 80px 0 50px 0;
+  margin: 80px auto 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -180,7 +180,8 @@ hr {
 
 .card {
   /*height: 90%;*/
-  width: 280px;
+  /*width: 280px;*/
+  width: 20%;
   padding: 0px 20px 30px;
   margin: 20px;
   border: 5px solid #dddbd9;
@@ -195,7 +196,8 @@ hr {
 }
 
 .card.card-active {
-  width: 320px;
+  /*width: 320px;*/
+  width: 25%;
   opacity: 1;
   border: 5px solid #ff9933;
 }
@@ -216,22 +218,11 @@ hr {
 }
 
 .home-sec3 {
-  margin-bottom: 50px;
   margin-top: 80px;
   font-size: 1.5em;
   display: block;
-  height: 65%;
+  height: 100%;
   position: relative;
-}
-
-.gallery-container {
-  width: 100%;
-  position: relative;
-  background: rgb(247, 242, 238, 0.5);
-  background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(247, 242, 238, 0.5),rgb(247, 242, 238), rgb(247, 242, 238)); 
-  background: -o-linear-gradient(rgba(255,0,0,0), rgb(247, 242, 238, 0.5),rgb(247, 242, 238), rgb(247, 242, 238)); 
-  background: -moz-linear-gradient(rgba(255,0,0,0), rgb(247, 242, 238, 0.5),rgb(247, 242, 238), rgb(247, 242, 238)); 
-  background: linear-gradient(rgba(255,0,0,0), rgb(247, 242, 238),rgb(247, 242, 238), rgb(247, 242, 238), rgb(247, 242, 238)); /* Standard syntax   */
 }
 
 .gallery-img {
@@ -302,24 +293,25 @@ hr {
 }
 
 .newsletter {
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-top: 30px;
 }
 
 .newsletter input {
   line-height: 29px;
-  width: 350px;
+  width: 50%;
   border: 1px solid #9B26B6;
 }
 
 .newsletter button {
+  font-size: 1em;
   color: #fff;
   border: 2px solid #9B26B6;
   background-color: #9B26B6;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   border: 0px;
-  padding: 3px 10px;
+  padding: 6px 10px;
 }
 
 .footer-social {
@@ -527,7 +519,6 @@ iframe {
   width: 100%;
   height: auto;
   margin-bottom: 0;
-  /*z-index: -1;*/
 }
 
 .donate-box {
@@ -618,6 +609,33 @@ iframe {
   background-color: rgba(255,255,255,0.5);
 }
 
+.fundraise-section {
+  position:absolute; 
+  top: 25%; 
+  left: 10%; 
+  color:#fff;
+}
+
+.shadow {
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* IMPACT */
+
+.flex-row {
+  display:flex; 
+  flex-direction:row; 
+  align-items:flex-start; 
+  justify-content: center;
+  margin: auto;
+}
+
+.impact-img {
+  width: 30%; 
+  height: 200px; 
+  margin: 1%;
+}
+
 
 @media (max-width : 1140px) {
 
@@ -647,35 +665,56 @@ iframe {
     display: none;
   }
 
-  .fundraise-setup {
+  .fundraise-section {
     position: static;
-    /*color: #000;*/
+    color: #FF8200;
+    padding: 30px;
   }
 
+  .shadow {
+    text-shadow: none !important;
+  }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .impact-img {
+    width: 60%;
+    height: 250px;
+  }
+
+  .impact-img.hide-sm {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links div {
+    text-align: center;
+  }
+
   .home-sec2 {
     height: auto;
     width: 100%;
-    margin-top: 80px;
-    margin-bottom: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .card {
-  height: 500px;
-  width: 90%;
-  padding: 20px;
-  margin: 20px;
-  border: 5px solid #dddbd9;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 1.2em;
+    height: auto;
+    width: 70%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 5px solid #dddbd9;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2em;
   }
 
   .card img {
@@ -683,24 +722,51 @@ iframe {
   }
 
   .card.card-active {
-    height: 500px;
-    width: 90%;
+    height: auto;
+    width: 70%;
     border: 5px solid #ff9933;
   }
 
+  .home-sec1 {
+    height: auto;
+  }
+
   .gallery-img {
-  padding-left: 0px;
-  padding-right: 0px;
-}
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .gallery-bander {
+    position: static;
+    padding-top: 5%;
+  }
+
+  .gallery-bander span {
+    color: #FF8200;
+  }
+
+  .gallery-btn {
+    color: #fff !important;
+  }
+
+  .gallery-btn:hover {
+    color: #64CCC9 !important;
+  }
+
   .three-a-row {
     width: 100%;
   }
 
   .threerow-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .impact-img {
+    width: 90%;
+    height: 200px;
+  }
 
 }

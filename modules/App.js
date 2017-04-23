@@ -47,7 +47,7 @@ class App extends React.Component {
           <center className="newsletter">
           <form>
           <h3>Join our mailing list!</h3>
-          <input type="email" />
+          <input type="email" placeholder="  enter your email"/>
           <button>Join</button>
           </form>
           </center>
