@@ -96,21 +96,6 @@ nav li {
   padding: 28px 10px;
 }
 
-/*nav ul ul {
-  display: none;
-  position: absolute;
-  margin-top: 60px;
-  line-height: 30px;
-  left: 250px;
-  background-color: #fff;
-  border-radius: 20px;
-  padding-right: 30px;
-}
-
-nav ul li:hover > ul {
-  display: inherit;
-}*/
-
 /* HOME */
 
 .home-bk {
@@ -431,6 +416,30 @@ footer i {
   background: linear-gradient(rgba(255,0,0,0), rgb(214, 248, 239), rgb(214, 248, 239), rgb(214, 248, 239)); /* Standard syntax */  
 }
 
+.india-bg {
+  background: rgb(233, 232, 228); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(233, 232, 228), rgb(233, 232, 228), rgb(233, 232, 228)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,0,0,0), rgb(233, 232, 228), rgb(233, 232, 228), rgb(233, 232, 228)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,0,0,0), rgb(233, 232, 228), rgb(233, 232, 228), rgb(233, 232, 228)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,0,0,0), rgb(233, 232, 228), rgb(233, 232, 228), rgb(233, 232, 228)); /* Standard syntax */  
+}
+
+.india-p-bg {
+  background: rgb(172, 194, 215); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(172, 194, 215), rgb(172, 194, 215), rgb(172, 194, 215)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,0,0,0), rgb(172, 194, 215), rgb(172, 194, 215), rgb(172, 194, 215)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,0,0,0), rgb(172, 194, 215), rgb(172, 194, 215), rgb(172, 194, 215)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,0,0,0), rgb(172, 194, 215), rgb(172, 194, 215), rgb(172, 194, 215)); /* Standard syntax */  
+}
+
+.cambodia-p-bg {
+  background: rgb(190, 209, 224); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* Standard syntax */  
+}
+
 /*BUILDING PROJECTS*/
 
 .projects-bg {
@@ -594,7 +603,23 @@ iframe {
   width: 100%;
 }
 
-@media (max-width : 1000px) {
+/* FUNDRAISE */
+.interested-btn {
+  border-radius: 5px;
+  background-color: #FF8200;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.interested-btn:hover {
+  color: #FF8200;
+  border: 2px solid #FF8200;
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+@media (max-width : 1140px) {
 
   .nav-full {
     display: none;
@@ -620,6 +645,11 @@ iframe {
 
   .flex-col {
     display: none;
+  }
+
+  .fundraise-setup {
+    position: static;
+    /*color: #000;*/
   }
 
 }

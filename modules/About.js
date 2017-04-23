@@ -21,7 +21,7 @@ const About = () => {
     text: 'Impact'
   }, {
     img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
-    path: '/syria',
+    path: 'http://syriasvibes.com',
     link: '#syria',
     text: 'Syrias Vibes'
   }];

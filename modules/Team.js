@@ -37,6 +37,14 @@ const Team = () => {
         </div>
         <div style={{width: "40%", paddingLeft:"30px"}}><img src="/modules/assets/team/lisa.jpg"/></div>
       </div>
+      <div className="partner">
+        <div style={{width: "40%", paddingRight:"30px"}}><img src="/modules/assets/team/lauren.jpg"/></div>
+        <div style={{width: "60%"}}>
+          <h2>Lauren McCalla</h2>
+          <h5 className="orange">MARKETING</h5>
+          <p>From a young age, I’ve been passionate about social policies and development. Working and volunteering with nonprofits has given me valuable experience and a better understanding of the struggles people around the world face. I'm excited to not only work on and promote SCOOP’s projects but to also to connect and work alongside people around the world.</p>
+        </div>
+      </div>
     </div>
     );
 };

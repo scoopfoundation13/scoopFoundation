@@ -1,15 +1,19 @@
 import React from 'react';
+import NavLink from './NavLink';
 
 const CambodiaProject = () => {
   return (
-    <div className="text-container">
+    <div className="cambodia-p-bg">
+    <section className="text-container">
     <h1>SCAO III (on-going development)</h1>
+    <br />
     <p>As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.</p>
 
     <p>We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village. </p>
 
-    <p>To get involved, get in touch with Andy today, make a donation (link to DONATE page) or set up a fundraising page (link to Just Giving Page) on our behalf.</p>
-
+    <p>To get involved, get in touch with Andy today, <NavLink to="/donate" className="orange">make a donation</NavLink> or <a href="https://www.justgiving.com/scoop" className="purple">set up a fundraising page</a> on our behalf.</p>
+    </section>
+    <img className="home-bk" src="modules/assets/project-cambodia-bg.jpg"/>
     </div>
     );
 }

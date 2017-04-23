@@ -168,7 +168,7 @@ class Home extends React.Component {
         <section className="home-sec1">
           <div className="flex-col">
             <span>NO CHILD SHOULD LIVE IN POVERTY</span>
-            <span><hr className="line-purple"/><hr className="line-blue"/><hr className="line-orange"/></span>
+            <span><hr className="line-purple"/><hr className="line-purple"/><hr className="line-purple"/></span>
             <span><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION<i className="fa fa-arrow-right" aria-hidden="true"></i></NavLink></span>
           </div>
           <video autoPlay loop id="video-background" muted>
@@ -177,22 +177,22 @@ class Home extends React.Component {
         </section>
         <section className="home-sec2">
           <div className={this.isActive(1)} onMouseOver={() => this.handleClick(1)}>
-            <img src="modules/assets/BrickNBuilder-0.jpg"/>
             <NavLink className="home-learnmore" to="/buildingprojects">
+            <img src="modules/assets/BrickNBuilder-0.jpg"/>
             <h3>BUILDING PROJECTS</h3>
             <span>Help us create more spaces that transform children’s lives</span>
             </NavLink>
           </div>
           <div className={this.isActive(2)} onMouseOver={() => this.handleClick(2)}>
-            <img src="modules/assets/Classroom.jpg"/>
             <NavLink className="home-learnmore" to="/inclass">
+            <img src="modules/assets/Classroom.jpg"/>
             <h3>THE SCHOOLS</h3>
             <span>Check out the projects that are already flourishing</span>
             </NavLink>
           </div>
           <div className={this.isActive(3)} onMouseOver={() => this.handleClick(3)}>
-            <img src="modules/assets/Solar.jpg"/>
             <NavLink className="home-learnmore" to="/fundraise">
+            <img src="modules/assets/Solar.jpg"/>
             <h3>FUNDRAISE</h3>
             <span>Your ideas and energy can change lives. Get involved today!</span>
             </NavLink>
@@ -200,9 +200,9 @@ class Home extends React.Component {
         </section>
         <section className="home-sec3" style={{position: "relative"}}>
         <div style={{position: "absolute", top: 0, left: 0, width:"100%"}}>
-            <img style={{width: "100%"}} src='modules/assets/img11.jpg'/>
+            <img style={{width: "100%"}} src='modules/assets/gallery-bander.jpg'/>
             <div className="gallery-bander">
-              <span style={{color: "#fff", fontSize:"1.8em", paddingBottom: "10px", textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>The <span className="orange">SCOOP</span> story so far ...</span>
+              <span style={{color: "#fff", fontSize:"1.8em", paddingBottom: "10px", textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>The <span className="orange" style={{fontWeight:"800", textShadow:"0px"}}>SCOOP</span> story so far ...</span>
               <span className="gallery-btn" onClick={(e) => this.openLightbox(e)}>Visit the Gallery</span>
             </div>
             </div>

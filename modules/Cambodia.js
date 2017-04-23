@@ -26,7 +26,7 @@ const Cambodia = () => {
       
         <br />
 
-        <p> <em> Want to volunteer ? </em> </p> 
+        <p><b>Want to volunteer?</b></p> 
         <p> If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia.Get in touch today!(link to contact form) </p> 
       </section> 
       <br />
