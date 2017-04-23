@@ -44704,7 +44704,7 @@
 	    text: 'Impact'
 	  }, {
 	    img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
-	    path: '/syria',
+	    path: 'http://syriasvibes.com',
 	    link: '#syria',
 	    text: 'Syrias Vibes'
 	  }];
@@ -44809,9 +44809,13 @@
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'three-a-row', key: obj.img, style: divStyle },
-	      _react2.default.createElement(
+	      obj.path[0] === '/' ? _react2.default.createElement(
 	        _NavLink2.default,
 	        { to: obj.path },
+	        obj.text
+	      ) : _react2.default.createElement(
+	        'a',
+	        { target: '_blank', href: obj.path },
 	        obj.text
 	      ),
 	      _react2.default.createElement('div', { className: 'three-overcast' })
@@ -45060,8 +45064,8 @@
 	              'span',
 	              null,
 	              _react2.default.createElement('hr', { className: 'line-purple' }),
-	              _react2.default.createElement('hr', { className: 'line-blue' }),
-	              _react2.default.createElement('hr', { className: 'line-orange' })
+	              _react2.default.createElement('hr', { className: 'line-purple' }),
+	              _react2.default.createElement('hr', { className: 'line-purple' })
 	            ),
 	            _react2.default.createElement(
 	              'span',
@@ -45088,10 +45092,10 @@
 	            { className: this.isActive(1), onMouseOver: function onMouseOver() {
 	                return _this2.handleClick(1);
 	              } },
-	            _react2.default.createElement('img', { src: 'modules/assets/BrickNBuilder-0.jpg' }),
 	            _react2.default.createElement(
 	              _NavLink2.default,
 	              { className: 'home-learnmore', to: '/buildingprojects' },
+	              _react2.default.createElement('img', { src: 'modules/assets/BrickNBuilder-0.jpg' }),
 	              _react2.default.createElement(
 	                'h3',
 	                null,
@@ -45109,10 +45113,10 @@
 	            { className: this.isActive(2), onMouseOver: function onMouseOver() {
 	                return _this2.handleClick(2);
 	              } },
-	            _react2.default.createElement('img', { src: 'modules/assets/Classroom.jpg' }),
 	            _react2.default.createElement(
 	              _NavLink2.default,
 	              { className: 'home-learnmore', to: '/inclass' },
+	              _react2.default.createElement('img', { src: 'modules/assets/Classroom.jpg' }),
 	              _react2.default.createElement(
 	                'h3',
 	                null,
@@ -45130,10 +45134,10 @@
 	            { className: this.isActive(3), onMouseOver: function onMouseOver() {
 	                return _this2.handleClick(3);
 	              } },
-	            _react2.default.createElement('img', { src: 'modules/assets/Solar.jpg' }),
 	            _react2.default.createElement(
 	              _NavLink2.default,
 	              { className: 'home-learnmore', to: '/fundraise' },
+	              _react2.default.createElement('img', { src: 'modules/assets/Solar.jpg' }),
 	              _react2.default.createElement(
 	                'h3',
 	                null,
@@ -45153,7 +45157,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { style: { position: "absolute", top: 0, left: 0, width: "100%" } },
-	            _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/img11.jpg' }),
+	            _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/gallery-bander.jpg' }),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'gallery-bander' },
@@ -45163,7 +45167,7 @@
 	                'The ',
 	                _react2.default.createElement(
 	                  'span',
-	                  { className: 'orange' },
+	                  { className: 'orange', style: { fontWeight: "800", textShadow: "0px" } },
 	                  'SCOOP'
 	                ),
 	                ' story so far ...'
@@ -49761,6 +49765,23 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var posters = [{
+	  src: "modules/assets/fundraise/5.png",
+	  caption: ""
+	}, {
+	  src: "modules/assets/fundraise/6.jpg",
+	  caption: ""
+	}, {
+	  src: "modules/assets/fundraise/a%20river.jpg",
+	  caption: ""
+	}, {
+	  src: "",
+	  caption: ""
+	}, {
+	  src: "",
+	  caption: ""
+	}];
+
 	var Fundraise = function (_React$Component) {
 	  _inherits(Fundraise, _React$Component);
 
@@ -49775,61 +49796,163 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "text-container" },
+	        null,
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
 	          "h1",
-	          null,
-	          "Set up a Fundraising Page on our behalf"
+	          { style: { textAlign: "center" } },
+	          "Three ways to get involved ..."
 	        ),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria."
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "To set up a page, ",
+	          "div",
+	          { style: { position: "relative" } },
+	          _react2.default.createElement("img", { style: { width: "100%" }, src: "modules/assets/img15.jpg" }),
 	          _react2.default.createElement(
-	            "a",
-	            { className: "purple", href: "https://www.justgiving.com/scoop", target: "_blank" },
-	            "click here"
+	            "div",
+	            { className: "", style: { position: "absolute", top: "20%", left: "10%", color: "#fff" } },
+	            _react2.default.createElement("img", { style: { height: "80px", paddingTop: "10px" }, src: "modules/assets/numbers/SCOOP_icons-1.png" }),
+	            _react2.default.createElement(
+	              "h1",
+	              { style: { textShadow: "2px 4px 3px rgba(0,0,0,0.3)" } },
+	              "Set up a Fundraising Page on our behalf"
+	            ),
+	            _react2.default.createElement(
+	              "a",
+	              { href: "https://www.justgiving.com/scoop/raisemoney/?utm_source=website_cid250506&utm_medium=buttons&utm_content=scoop&utm_campaign=makeapage_start_white" },
+	              _react2.default.createElement("img", { src: "http://www.justgiving.com/charities/content/images/logo-buttons/white/makeapage_start_white.gif", alt: "Start fundraising with JustGiving" })
+	            )
 	          )
 	        ),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "If you need any assistance, contact ",
+	          "div",
+	          { className: "text-container", style: { fontSize: "1.2em" } },
 	          _react2.default.createElement(
-	            "a",
-	            { className: "orange", href: "mailto:andy@scoopfoundation.com" },
-	            "andy@scoopfoundation.com"
+	            "center",
+	            null,
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "To set up a page, ",
+	              _react2.default.createElement(
+	                "a",
+	                { className: "purple", href: "https://www.justgiving.com/scoop", target: "_blank" },
+	                "click here"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "If you need any assistance, contact ",
+	              _react2.default.createElement(
+	                "a",
+	                { className: "orange", href: "mailto:andy@scoopfoundation.com" },
+	                "andy@scoopfoundation.com"
+	              )
+	            )
 	          )
 	        ),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
-	          "h1",
-	          null,
-	          "Run an event for us!"
+	          "div",
+	          { style: { position: "relative" } },
+	          _react2.default.createElement("img", { style: { width: "100%" }, src: "modules/assets/img17.jpg" }),
+	          _react2.default.createElement(
+	            "div",
+	            { style: { position: "absolute", top: "25%", left: "10%", color: "#fff" } },
+	            _react2.default.createElement("img", { style: { height: "80px", paddingTop: "10px" }, src: "modules/assets/numbers/SCOOP_icons-2.png" }),
+	            _react2.default.createElement(
+	              "h1",
+	              { style: { textShadow: "2px 4px 3px rgba(0,0,0,0.3)" } },
+	              "Sponsor an entire classroom"
+	            )
+	          )
 	        ),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have."
+	          "div",
+	          { className: "text-container", style: { fontSize: "1.2em" } },
+	          _react2.default.createElement(
+	            "center",
+	            null,
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "For \u20AC10,000 you or your company can build an entire classroom or help run one for an entire year."
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Email the founder to find out more:",
+	              _react2.default.createElement(
+	                "a",
+	                { href: "emailto:andy@scoopfoundation.com" },
+	                _react2.default.createElement(
+	                  "span",
+	                  { className: "gallery-btn" },
+	                  "I am interested!"
+	                )
+	              )
+	            )
+	          )
 	        ),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Check out some of the events we have run down the years (Past events poster pop up gallery)"
+	          "div",
+	          { style: { position: "relative" } },
+	          _react2.default.createElement("img", { style: { width: "100%" }, src: "modules/assets/img14.jpg" }),
+	          _react2.default.createElement(
+	            "div",
+	            { style: { position: "absolute", top: "25%", left: "10%", color: "#fff" } },
+	            _react2.default.createElement("img", { style: { height: "80px", paddingTop: "10px" }, src: "modules/assets/numbers/SCOOP_icons-3.png" }),
+	            _react2.default.createElement(
+	              "h1",
+	              { style: { textShadow: "2px 4px 3px rgba(0,0,0,0.3)" } },
+	              "Run an event for us!"
+	            )
+	          )
 	        ),
+	        _react2.default.createElement("br", null),
 	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Not only do events raise much needed funds, they create a great sense of community \u2013 people meet, ideas are exchanged, people have a good time. What\u2019s not to love\u2026"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Get in touch with Andy (contact link) now and he will help you every step of the way. "
+	          "div",
+	          { className: "text-container", style: { fontSize: "1.2em" } },
+	          _react2.default.createElement(
+	            "center",
+	            null,
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have."
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Not only do events raise much needed funds, they create a great sense of community \u2013 people meet, ideas are exchanged, people have a good time. What\u2019s not to love\u2026"
+	            ),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Get in touch with Andy (contact link) now and he will help you every step of the way. "
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "p",
+	              null,
+	              "Check out some of the events we have run down the years:",
+	              _react2.default.createElement(
+	                "span",
+	                { className: "interested-btn" },
+	                "View past events"
+	              )
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -49905,13 +50028,11 @@
 	      _react2.default.createElement(
 	        "p",
 	        null,
-	        " ",
 	        _react2.default.createElement(
-	          "em",
+	          "b",
 	          null,
-	          " Want to volunteer ? "
-	        ),
-	        " "
+	          "Want to volunteer?"
+	        )
 	      ),
 	      _react2.default.createElement(
 	        "p",
@@ -49944,62 +50065,75 @@
 
 	var India = function India() {
 	  return _react2.default.createElement(
-	    "section",
-	    { id: "india", className: "text-container" },
+	    "div",
+	    { className: "india-bg" },
 	    _react2.default.createElement(
-	      "h1",
-	      null,
-	      "The Jeevan School & Home, Varanasi, India"
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "In the holy city of Varanasi, it\u2019s not uncommon to see children wandering the streets alone, begging. Over 250,000 people live there in 175 different slums there, many families live and sleep on the side of busy dirty roads."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The Jeevan School is a shining light, in a city full of scam schools and sham NGOs. It offers an all-round education to over 120 children from begging families, and is also a home to 40 of the worst affected children living in the poorest area of Varanasi."
-	    ),
-	    _react2.default.createElement(
-	      "h3",
-	      null,
-	      "Why Varanasi?"
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The Holy City of Varanasi is the heart of the Hindu religion and is a sight to behold, enjoying a huge wave of annual domestic and international visitors."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The dark side of this boom leaves over 80,000 families making desperate choices to simply survive. Children are forced to beg, steal, work long hard hours, and are exploited in too many other ways. But at The Jeevan School the children\u2019s spirits soar and you will never meet a nicer group of well-rounded, well-mannered and brilliantly intelligent children \u2013 the result of the incredible work done by its dedicated staff and teachers."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "Together we want to take their work a step further, and help more children receive an education or a safe home. Check out our plan.(link to Jeevan Village page)"
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
+	      "section",
+	      { id: "india", className: "text-container" },
 	      _react2.default.createElement(
-	        "em",
+	        "h1",
 	        null,
-	        "Want to volunteer?"
+	        "The Jeevan School & Home, Varanasi, India"
+	      ),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "In the holy city of Varanasi, it\u2019s not uncommon to see children wandering the streets alone, begging. Over 250,000 people live there in 175 different slums there, many families live and sleep on the side of busy dirty roads."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "The Jeevan School is a shining light, in a city full of scam schools and sham NGOs. It offers an all-round education to over 120 children from begging families, and is also a home to 40 of the worst affected children living in the poorest area of Varanasi."
+	      ),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "h3",
+	        null,
+	        "Why Varanasi?"
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "The Holy City of Varanasi is the heart of the Hindu religion and is a sight to behold, enjoying a huge wave of annual domestic and international visitors."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "The dark side of this boom leaves over 80,000 families making desperate choices to simply survive. Children are forced to beg, steal, work long hard hours, and are exploited in too many other ways. But at The Jeevan School the children\u2019s spirits soar and you will never meet a nicer group of well-rounded, well-mannered and brilliantly intelligent children \u2013 the result of the incredible work done by its dedicated staff and teachers."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "Together we want to take their work a step further, and help more children receive an education or a safe home. Check out our plan.(link to Jeevan Village page)"
+	      ),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        _react2.default.createElement(
+	          "b",
+	          null,
+	          "Want to volunteer?"
+	        )
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so ",
+	        _react2.default.createElement(
+	          "a",
+	          { href: "emailto:andy@scoopfoundation.com", className: "orange" },
+	          "get in touch today"
+	        )
 	      )
 	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so get in touch today\u2026 (link to contact form)"
-	    )
+	    _react2.default.createElement("img", { className: "home-bk", src: "modules/assets/inclass-india-bg.jpg" })
 	  );
 	};
 
@@ -50181,6 +50315,34 @@
 	        "div",
 	        { style: { width: "40%", paddingLeft: "30px" } },
 	        _react2.default.createElement("img", { src: "/modules/assets/team/lisa.jpg" })
+	      )
+	    ),
+	    _react2.default.createElement(
+	      "div",
+	      { className: "partner" },
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "40%", paddingRight: "30px" } },
+	        _react2.default.createElement("img", { src: "/modules/assets/team/lauren.jpg" })
+	      ),
+	      _react2.default.createElement(
+	        "div",
+	        { style: { width: "60%" } },
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Lauren McCalla"
+	        ),
+	        _react2.default.createElement(
+	          "h5",
+	          { className: "orange" },
+	          "MARKETING"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "From a young age, I\u2019ve been passionate about social policies and development. Working and volunteering with nonprofits has given me valuable experience and a better understanding of the struggles people around the world face. I'm excited to not only work on and promote SCOOP\u2019s projects but to also to connect and work alongside people around the world."
+	        )
 	      )
 	    )
 	  );
@@ -50492,7 +50654,7 @@
 /* 542 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -50502,32 +50664,54 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var CambodiaProject = function CambodiaProject() {
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "text-container" },
+	    'div',
+	    { className: 'cambodia-p-bg' },
 	    _react2.default.createElement(
-	      "h1",
-	      null,
-	      "SCAO III (on-going development)"
+	      'section',
+	      { className: 'text-container' },
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'SCAO III (on-going development)'
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village. '
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'To get involved, get in touch with Andy today, ',
+	        _react2.default.createElement(
+	          _NavLink2.default,
+	          { to: '/donate', className: 'orange' },
+	          'make a donation'
+	        ),
+	        ' or ',
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.justgiving.com/scoop', className: 'purple' },
+	          'set up a fundraising page'
+	        ),
+	        ' on our behalf.'
+	      )
 	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village. "
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "To get involved, get in touch with Andy today, make a donation (link to DONATE page) or set up a fundraising page (link to Just Giving Page) on our behalf."
-	    )
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/project-cambodia-bg.jpg' })
 	  );
 	};
 
@@ -50552,47 +50736,58 @@
 	var IndiaProject = function IndiaProject() {
 	  return _react2.default.createElement(
 	    "div",
-	    { className: "text-container" },
+	    { className: "india-p-bg" },
 	    _react2.default.createElement(
-	      "h1",
-	      null,
-	      "The Jeevan Village"
+	      "section",
+	      { className: "text-container" },
+	      _react2.default.createElement(
+	        "h1",
+	        null,
+	        "The Jeevan Village"
+	      ),
+	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "Moving on from the incredible work done at The Jeevan School, we have already purchased 2 acres of land outside the city (from a campaign run a couple years back) and plan to build a brand new village, designed for the children alone."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "The centre will offer a home to 100 children and a school to over 500 more."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "The plan is to build classrooms, bedrooms, gardens and courtyards \u2013 a series of living and learning spaces that are all built with children\u2019s development at heart."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "It will also be self-sustainable \u2013 with solar energy, an organic farm and innovative waste disposal techniques."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "It will offer pre-nursery to pre-university level schooling, an infirmary and workshops, staff, student and volunteer accommodation, a family support centre, computer room, library, creativity area, multiple gardens, kitchens, canteens, and recreational amenities."
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "There will be classrooms for English, Science and Maths, and yoga will be enjoyed each morning "
+	      ),
+	      _react2.default.createElement(
+	        "p",
+	        null,
+	        "If you would like to help make this project a reality, ",
+	        _react2.default.createElement(
+	          "a",
+	          { href: "mailto:andy@scoopfoundation.com", className: "purple" },
+	          "get in touch today"
+	        )
+	      )
 	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "Moving on from the incredible work done at The Jeevan School, we have already purchased 2 acres of land outside the city (from a campaign run a couple years back) and plan to build a brand new village, designed for the children alone."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The centre will offer a home to 100 children and a school to over 500 more."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "The plan is to build classrooms, bedrooms, gardens and courtyards \u2013 a series of living and learning spaces that are all built with children\u2019s development at heart."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "It will also be self-sustainable \u2013 with solar energy, an organic farm and innovative waste disposal techniques."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "It will offer pre-nursery to pre-university level schooling, an infirmary and workshops, staff, student and volunteer accommodation, a family support centre, computer room, library, creativity area, multiple gardens, kitchens, canteens, and recreational amenities."
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "There will be classrooms for English, Science and Maths, and yoga will be enjoyed each morning "
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "If you would like to help make this project a reality, get in touch today. (link to contact form)."
-	    )
+	    _react2.default.createElement("img", { className: "home-bk", src: "modules/assets/project-india-bg.jpg" })
 	  );
 	};
 
