@@ -12,32 +12,37 @@ const Impact = () => {
         </center>
       </div>
 
+      <div className="impact-cam-bg">
       <section className="flex-row">
-        <div style={{width: "25%", padding:"2%"}}>
-          <img style={{width: "100%"}} src="modules/assets/earth.png"/>
-          <center>There are currently 800 children in class or in care worldwide, and counting…</center>
-        </div>
         <div style={{width: "25%", padding:"2%"}}>
           <img style={{width: "100%"}} src="modules/assets/Playground.png"/>
           <center>Since we started our mission in 2009, over 2460 children and teenagers have attended class at the schools we support.</center>
+        </div>
+        <div style={{width: "25%", padding:"2%"}}>
+          <img style={{width: "100%"}} src="modules/assets/earth.png"/>
+          <center>There are currently 800 children in class or in care worldwide, and counting…</center>
         </div>
         <div style={{width: "25%", padding:"2%"}}>
           <img style={{width: "100%"}} src="modules/assets/Bedroom.png"/>
           <center>Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1870 children received medical treatment or an education by our two partner orgs there.</center>
         </div>
       </section>
-
+      <br />
+      <section style={{textAlign:"center"}}>
+        <h1 className="purple">Help a child, support us!</h1>
+        <div>
+          <NavLink to="/fundraise"><span className="interested-btn">Start a fundraise</span></NavLink>
+          <NavLink to="/donate"><span className="interested-btn">Make a donation</span></NavLink>
+        </div>
+      </section>
+      <br />
       <div className="text-container">
       <h2>Cambodia</h2>
-      
-      <div className="flex-row">
-        <div className="impact-img" style={{backgroundImage:"url(modules/assets/img09.jpg)", backgroundSize:"cover"}}></div>
-        <div className="impact-img hide-sm" style={{backgroundImage:"url(modules/assets/img20.jpg)", backgroundSize:"cover"}}></div>
-        <div className="impact-img hide-sm" style={{backgroundImage:"url(modules/assets/img10.jpg)", backgroundSize:"cover"}}></div>
-      </div>
-      <p>The <NavLink to="/cambodia" className="orange">SCAO</NavLink> offer free classes in English and Computers for over 600 children and young adults, as well as offering other social services such as healthcare, eye tests & spectacles, dental work, mosquito nets, clothes, water filters etc to their families.</p>
+      <p>The <NavLink to="/cambodia" className="blue">SCAO</NavLink> offer free classes in English and Computers for over 600 children and young adults, as well as offering other social services such as healthcare, eye tests & spectacles, dental work, mosquito nets, clothes, water filters etc to their families.</p>
    
       <p>They also train up young local teachers, empowering them to become the change their communities need.</p>
+      </div>
+      <img className="home-bk" src="modules/assets/img25.png"/>
       </div>
       <br />
 

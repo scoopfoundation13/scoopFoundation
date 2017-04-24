@@ -1,24 +1,84 @@
 import React from 'react';
+import Lightbox from 'react-images';
 
 const posters = [{
-  src: "modules/assets/fundraise/5.png",
-  caption: ""
+  src: "modules/assets/fundraise/5.png"
 }, {
-  src: "modules/assets/fundraise/6.jpg",
-  caption: ""
+  src: "modules/assets/fundraise/6.jpg"
 }, {
-  src: "modules/assets/fundraise/a%20river.jpg",
-  caption: ""
+  src: "modules/assets/fundraise/a%20river.jpg"
 }, {
-  src: "",
-  caption: ""
+  src: "modules/assets/fundraise/A3%20poster%20Art%20Auction%20jpeg.jpg"
 }, {
-  src: "",
-  caption: ""
+  src: "modules/assets/fundraise/art%20with%20mealys.jpg"
+}, {
+  src: "modules/assets/fundraise/auction%2014.jpg"
+}, {
+  src: "modules/assets/fundraise/babyraveposter.png"
+}, {
+  src: "modules/assets/fundraise/Better%20Than%20Socks%20Poster%20Final.jpg"
+}, {
+  src: "modules/assets/fundraise/blue%20note.jpg"
+}, {
+  src: "modules/assets/fundraise/Cinco%20de%20Mayo.jpg"
+}, {
+  src: "modules/assets/fundraise/comedy%20poster.jpg"
+}, {
+  src: "modules/assets/fundraise/elton%20john%20sponsor%202.jpeg"
+}, {
+  src: "modules/assets/fundraise/flyer%20details%20landscape%20july.jpg"
+}, {
+  src: "modules/assets/fundraise/lovescoop.jpg"
+}, {
+  src: "modules/assets/fundraise/poker%20trophy.jpg"
+}, {
+  src: "modules/assets/fundraise/quiz%20poster.jpg"
+}, {
+  src: "modules/assets/fundraise/SCOOP%20POSTER.jpg"
+}, {
+  src: "modules/assets/fundraise/SCOOP%20Social%20Aug.jpg"
+}, {
+  src: "modules/assets/fundraise/SCOOP_River-page-001.jpg"
+}, {
+  src: "modules/assets/fundraise/Street%20Art%20Gig.jpg"
 }
 ];
 
 class Fundraise extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      lightboxIsOpen: false,
+      currentImage: 0
+    };
+  }
+
+  openLightbox (event) {
+    event.preventDefault();
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: true,
+    });
+  }
+
+  closeLightbox () {
+    this.setState({
+      currentImage: 0,
+      lightboxIsOpen: false,
+    });
+  }
+
+  gotoNext() {
+    this.setState({
+      currentImage: this.state.currentImage + 1,
+    });
+  }
+
+  gotoPrevious() {
+    this.setState({
+      currentImage: this.state.currentImage - 1,
+    });
+  }
 
   render() {
     return (
@@ -27,7 +87,7 @@ class Fundraise extends React.Component {
         <h1 style={{textAlign: "center"}}>Three ways to get involved ...</h1>
         <br />
         <div style={{position:"relative"}}>
-          <img style={{width:"100%"}} src="modules/assets/img15.jpg"/>
+          <img style={{width:"100%"}} src="modules/assets/img15.png"/>
           <div className="fundraise-section" style={{top: "20%"}}>
             <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-1.png"/>
             <h1 className="shadow">Set up a Fundraising Page on our behalf</h1>
@@ -47,8 +107,8 @@ class Fundraise extends React.Component {
         <br />
 
         <div style={{position:"relative"}}>
-          <img style={{width:"100%"}} src="modules/assets/img17.jpg"/>
-          <div className="fundraise-section">
+          <img style={{width:"100%"}} src="modules/assets/img26.png"/>
+          <div className="fundraise-section" style={{top: "20%"}}>
             <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-2.png"/>
             <h1 className="shadow">Sponsor an entire classroom</h1>
           </div>
@@ -66,7 +126,7 @@ class Fundraise extends React.Component {
         <br />
 
         <div style={{position:"relative"}}>
-          <img style={{width:"100%"}} src="modules/assets/img14.jpg"/>
+          <img style={{width:"100%"}} src="modules/assets/img24.png"/>
           <div className="fundraise-section">
             <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-3.png"/>
             <h1 className="shadow">Run an event for us!</h1>
@@ -80,9 +140,17 @@ class Fundraise extends React.Component {
             <p>Get in touch with Andy (contact link) now and he will help you every step of the way. </p>
             <br />
             <p>Check out some of the events we have run down the years:
-            <span className="interested-btn">View past events</span>
+            <span className="interested-btn" onClick={(e) => this.openLightbox(e)}>View past events</span>
             </p>
           </center>
+          <Lightbox
+            currentImage={this.state.currentImage}
+            images={posters}
+            isOpen={this.state.lightboxIsOpen}
+            onClose={() => this.closeLightbox()}
+            onClickNext={() => this.gotoNext()}
+            onClickPrev={() => this.gotoPrevious()}
+          />
         </div>
       </div>
     );

@@ -20,6 +20,9 @@ const galleryImages = [{
   src: 'modules/assets/gallery/4. SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion.jpg',
   caption: 'SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion'
 }, {
+  src: 'modules/assets/gallery/4a.battle4supremacylr.jpg',
+  caption: ''
+}, {
   src: 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg',
   caption: 'Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event'
 }, {
@@ -108,7 +111,6 @@ class Home extends React.Component {
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleImagesString = this.handleImagesString.bind(this);
-    // this.closeLightbox = this.closeLightbox.bind(this);
   }
 
   isActive(cardNum) {
@@ -199,13 +201,13 @@ class Home extends React.Component {
           </div>
         </section>
         <section className="home-sec3">
-        <div style={{position: "absolute", top: 0, left: 0, width:"100%"}}>
+          <div style={{position: "absolute", top: 0, left: 0, width:"100%"}}>
             <img style={{width: "100%"}} src='modules/assets/gallery-bander.jpg'/>
             <div className="gallery-bander">
               <span style={{color: "#fff", fontSize:"1.8em", paddingBottom: "10px", textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>The <span className="orange" style={{fontWeight:"800", textShadow:"0px"}}>SCOOP</span> story so far ...</span>
               <span className="gallery-btn" onClick={(e) => this.openLightbox(e)}>Visit the Gallery</span>
             </div>
-            </div>
+          </div>
           <Lightbox
             currentImage={this.state.currentImage}
             images={galleryImages}
@@ -216,11 +218,24 @@ class Home extends React.Component {
           />
         </section>
 
-        {/*<section className="home-sec4">
-          <h2>SCOOP NEWS</h2>
-
+          <center><h1>SCOOP NEWS</h1></center>
+          <div className="scoopnews-bg">
+        <section className="home-sec4">
+          <div style={{width: "20%", margin:"2%", border:"2px solid #9B26B6", borderRadius:"5px"}}>
+            <img width="100%" src="modules/assets/img27.jpg"/>
+            <div style={{color:"#fff", backgroundColor:"#9B26B6", lineHeight:"3"}}>news title 1</div>
+          </div>
+          <div style={{width: "20%", margin:"2%", border:"2px solid #64CCC9", borderRadius:"5px"}}>
+            <img width="100%" src="modules/assets/img27.jpg"/>
+            <div style={{color:"#fff", backgroundColor:"#64CCC9", lineHeight:"3"}}>news title 2</div>
+          </div>
+          <div style={{width: "20%", margin:"2%", border:"2px solid #FF8200", borderRadius:"5px"}}>
+            <img width="100%" src="modules/assets/img27.jpg"/>
+            <div style={{color:"#fff", backgroundColor:"#FF8200", lineHeight:"3"}}>news title 3</div>
+          </div>
         </section>
-        <img className="home-bk" src='modules/assets/img03.jpg'/>*/}
+        <img className="home-bk" src='modules/assets/img04.jpg'/>
+          </div>
       </div>
       );
   }

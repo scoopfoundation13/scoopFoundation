@@ -25681,33 +25681,6 @@
 	                null,
 	                _react2.default.createElement(
 	                  _NavLink2.default,
-	                  { to: '/team', className: 'nav-sublink' },
-	                  '\xA0\xA0Team'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _NavLink2.default,
-	                  { to: '/schools', className: 'nav-sublink' },
-	                  '\xA0\xA0Impact'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _NavLink2.default,
-	                  { to: '/syriasvibes', className: 'nav-sublink' },
-	                  '\xA0\xA0Syrias Vibes'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'li',
-	                null,
-	                _react2.default.createElement(
-	                  _NavLink2.default,
 	                  { to: '/inclass' },
 	                  'IN CLASS'
 	                )
@@ -25737,6 +25710,33 @@
 	                  _NavLink2.default,
 	                  { to: '/fundraise' },
 	                  'FUNDRAISE'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _NavLink2.default,
+	                  { to: '/team', className: 'nav-sublink' },
+	                  'Team'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _NavLink2.default,
+	                  { to: '/impact', className: 'nav-sublink' },
+	                  'Impact'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement(
+	                  _NavLink2.default,
+	                  { to: '/partners', className: 'nav-sublink' },
+	                  'Partners'
 	                )
 	              )
 	            ) : null,
@@ -44881,6 +44881,9 @@
 	  src: 'modules/assets/gallery/4. SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion.jpg',
 	  caption: 'SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion'
 	}, {
+	  src: 'modules/assets/gallery/4a.battle4supremacylr.jpg',
+	  caption: ''
+	}, {
 	  src: 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg',
 	  caption: 'Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event'
 	}, {
@@ -44974,7 +44977,6 @@
 	    };
 	    _this.handleClick = _this.handleClick.bind(_this);
 	    _this.handleImagesString = _this.handleImagesString.bind(_this);
-	    // this.closeLightbox = this.closeLightbox.bind(this);
 	    return _this;
 	  }
 
@@ -45190,6 +45192,54 @@
 	              return _this2.gotoPrevious();
 	            }
 	          })
+	        ),
+	        _react2.default.createElement(
+	          'center',
+	          null,
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'SCOOP NEWS'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'scoopnews-bg' },
+	          _react2.default.createElement(
+	            'section',
+	            { className: 'home-sec4' },
+	            _react2.default.createElement(
+	              'div',
+	              { style: { width: "20%", margin: "2%", border: "2px solid #9B26B6", borderRadius: "5px" } },
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { style: { color: "#fff", backgroundColor: "#9B26B6", lineHeight: "3" } },
+	                'news title 1'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { style: { width: "20%", margin: "2%", border: "2px solid #64CCC9", borderRadius: "5px" } },
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { style: { color: "#fff", backgroundColor: "#64CCC9", lineHeight: "3" } },
+	                'news title 2'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { style: { width: "20%", margin: "2%", border: "2px solid #FF8200", borderRadius: "5px" } },
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { style: { color: "#fff", backgroundColor: "#FF8200", lineHeight: "3" } },
+	                'news title 3'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img04.jpg' })
 	        )
 	      );
 	    }
@@ -49684,19 +49734,6 @@
 	    value: function handleClick(isMonthly) {
 	      this.setState({ isMonthly: isMonthly });
 	    }
-
-	    /*<div className='donate-box'>
-	      <div className="donate-header">
-	      Enter an amount to donate
-	      </div>
-	      <input placeholder="€50"/>
-	      <center>
-	        <span className={this.state.isMonthly ? '' : 'donate-selected'} value={'false'} onClick={() => this.handleClick(false)}>Give Once</span>
-	        <span className={this.state.isMonthly ? 'donate-selected' : ''} value={'true'} onClick={() => this.handleClick(true)}>Give Monthly</span>
-	      </center>
-	      <button className='donate-btn'>Donate</button>
-	    </div>*/
-
 	  }, {
 	    key: "render",
 	    value: function render() {
@@ -49720,7 +49757,7 @@
 	              "and together we can change more lives."
 	            )
 	          ),
-	          _react2.default.createElement("img", { src: "modules/assets/img04.jpg" })
+	          _react2.default.createElement("img", { className: "bg", src: "modules/assets/img04.jpg" })
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -49740,7 +49777,7 @@
 /* 535 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -49752,6 +49789,10 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactImages = __webpack_require__(478);
+
+	var _reactImages2 = _interopRequireDefault(_reactImages);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -49761,20 +49802,45 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var posters = [{
-	  src: "modules/assets/fundraise/5.png",
-	  caption: ""
+	  src: "modules/assets/fundraise/5.png"
 	}, {
-	  src: "modules/assets/fundraise/6.jpg",
-	  caption: ""
+	  src: "modules/assets/fundraise/6.jpg"
 	}, {
-	  src: "modules/assets/fundraise/a%20river.jpg",
-	  caption: ""
+	  src: "modules/assets/fundraise/a%20river.jpg"
 	}, {
-	  src: "",
-	  caption: ""
+	  src: "modules/assets/fundraise/A3%20poster%20Art%20Auction%20jpeg.jpg"
 	}, {
-	  src: "",
-	  caption: ""
+	  src: "modules/assets/fundraise/art%20with%20mealys.jpg"
+	}, {
+	  src: "modules/assets/fundraise/auction%2014.jpg"
+	}, {
+	  src: "modules/assets/fundraise/babyraveposter.png"
+	}, {
+	  src: "modules/assets/fundraise/Better%20Than%20Socks%20Poster%20Final.jpg"
+	}, {
+	  src: "modules/assets/fundraise/blue%20note.jpg"
+	}, {
+	  src: "modules/assets/fundraise/Cinco%20de%20Mayo.jpg"
+	}, {
+	  src: "modules/assets/fundraise/comedy%20poster.jpg"
+	}, {
+	  src: "modules/assets/fundraise/elton%20john%20sponsor%202.jpeg"
+	}, {
+	  src: "modules/assets/fundraise/flyer%20details%20landscape%20july.jpg"
+	}, {
+	  src: "modules/assets/fundraise/lovescoop.jpg"
+	}, {
+	  src: "modules/assets/fundraise/poker%20trophy.jpg"
+	}, {
+	  src: "modules/assets/fundraise/quiz%20poster.jpg"
+	}, {
+	  src: "modules/assets/fundraise/SCOOP%20POSTER.jpg"
+	}, {
+	  src: "modules/assets/fundraise/SCOOP%20Social%20Aug.jpg"
+	}, {
+	  src: "modules/assets/fundraise/SCOOP_River-page-001.jpg"
+	}, {
+	  src: "modules/assets/fundraise/Street%20Art%20Gig.jpg"
 	}];
 
 	var Fundraise = function (_React$Component) {
@@ -49783,171 +49849,226 @@
 	  function Fundraise() {
 	    _classCallCheck(this, Fundraise);
 
-	    return _possibleConstructorReturn(this, (Fundraise.__proto__ || Object.getPrototypeOf(Fundraise)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Fundraise.__proto__ || Object.getPrototypeOf(Fundraise)).call(this));
+
+	    _this.state = {
+	      lightboxIsOpen: false,
+	      currentImage: 0
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Fundraise, [{
-	    key: "render",
+	    key: 'openLightbox',
+	    value: function openLightbox(event) {
+	      event.preventDefault();
+	      this.setState({
+	        currentImage: 0,
+	        lightboxIsOpen: true
+	      });
+	    }
+	  }, {
+	    key: 'closeLightbox',
+	    value: function closeLightbox() {
+	      this.setState({
+	        currentImage: 0,
+	        lightboxIsOpen: false
+	      });
+	    }
+	  }, {
+	    key: 'gotoNext',
+	    value: function gotoNext() {
+	      this.setState({
+	        currentImage: this.state.currentImage + 1
+	      });
+	    }
+	  }, {
+	    key: 'gotoPrevious',
+	    value: function gotoPrevious() {
+	      this.setState({
+	        currentImage: this.state.currentImage - 1
+	      });
+	    }
+	  }, {
+	    key: 'render',
 	    value: function render() {
+	      var _this2 = this;
+
 	      return _react2.default.createElement(
-	        "div",
+	        'div',
 	        null,
-	        _react2.default.createElement("br", null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          "h1",
+	          'h1',
 	          { style: { textAlign: "center" } },
-	          "Three ways to get involved ..."
+	          'Three ways to get involved ...'
 	        ),
-	        _react2.default.createElement("br", null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          "div",
+	          'div',
 	          { style: { position: "relative" } },
-	          _react2.default.createElement("img", { style: { width: "100%" }, src: "modules/assets/img15.jpg" }),
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/img15.png' }),
 	          _react2.default.createElement(
-	            "div",
-	            { className: "fundraise-section", style: { top: "20%" } },
-	            _react2.default.createElement("img", { style: { height: "80px", paddingTop: "10px" }, src: "modules/assets/numbers/SCOOP_icons-1.png" }),
+	            'div',
+	            { className: 'fundraise-section', style: { top: "20%" } },
+	            _react2.default.createElement('img', { style: { height: "80px", paddingTop: "10px" }, src: 'modules/assets/numbers/SCOOP_icons-1.png' }),
 	            _react2.default.createElement(
-	              "h1",
-	              { className: "shadow" },
-	              "Set up a Fundraising Page on our behalf"
+	              'h1',
+	              { className: 'shadow' },
+	              'Set up a Fundraising Page on our behalf'
 	            ),
 	            _react2.default.createElement(
-	              "a",
-	              { href: "https://www.justgiving.com/scoop/raisemoney/?utm_source=website_cid250506&utm_medium=buttons&utm_content=scoop&utm_campaign=makeapage_start_white" },
-	              _react2.default.createElement("img", { src: "http://www.justgiving.com/charities/content/images/logo-buttons/white/makeapage_start_white.gif", alt: "Start fundraising with JustGiving" })
+	              'a',
+	              { href: 'https://www.justgiving.com/scoop/raisemoney/?utm_source=website_cid250506&utm_medium=buttons&utm_content=scoop&utm_campaign=makeapage_start_white' },
+	              _react2.default.createElement('img', { src: 'http://www.justgiving.com/charities/content/images/logo-buttons/white/makeapage_start_white.gif', alt: 'Start fundraising with JustGiving' })
 	            )
 	          )
 	        ),
-	        _react2.default.createElement("br", null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "text-container", style: { fontSize: "1.2em" } },
+	          'div',
+	          { className: 'text-container', style: { fontSize: "1.2em" } },
 	          _react2.default.createElement(
-	            "center",
+	            'center',
 	            null,
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria."
+	              'We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria.'
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "To set up a page, ",
+	              'To set up a page, ',
 	              _react2.default.createElement(
-	                "a",
-	                { className: "purple", href: "https://www.justgiving.com/scoop", target: "_blank" },
-	                "click here"
+	                'a',
+	                { className: 'purple', href: 'https://www.justgiving.com/scoop', target: '_blank' },
+	                'click here'
 	              )
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "If you need any assistance, contact ",
+	              'If you need any assistance, contact ',
 	              _react2.default.createElement(
-	                "a",
-	                { className: "orange", href: "mailto:andy@scoopfoundation.com" },
-	                "andy@scoopfoundation.com"
+	                'a',
+	                { className: 'orange', href: 'mailto:andy@scoopfoundation.com' },
+	                'andy@scoopfoundation.com'
 	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement("br", null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          "div",
+	          'div',
 	          { style: { position: "relative" } },
-	          _react2.default.createElement("img", { style: { width: "100%" }, src: "modules/assets/img17.jpg" }),
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/img26.png' }),
 	          _react2.default.createElement(
-	            "div",
-	            { className: "fundraise-section" },
-	            _react2.default.createElement("img", { style: { height: "80px", paddingTop: "10px" }, src: "modules/assets/numbers/SCOOP_icons-2.png" }),
+	            'div',
+	            { className: 'fundraise-section', style: { top: "20%" } },
+	            _react2.default.createElement('img', { style: { height: "80px", paddingTop: "10px" }, src: 'modules/assets/numbers/SCOOP_icons-2.png' }),
 	            _react2.default.createElement(
-	              "h1",
-	              { className: "shadow" },
-	              "Sponsor an entire classroom"
+	              'h1',
+	              { className: 'shadow' },
+	              'Sponsor an entire classroom'
 	            )
 	          )
 	        ),
-	        _react2.default.createElement("br", null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "text-container", style: { fontSize: "1.2em" } },
+	          'div',
+	          { className: 'text-container', style: { fontSize: "1.2em" } },
 	          _react2.default.createElement(
-	            "center",
+	            'center',
 	            null,
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "For \u20AC10,000 you or your company can build an entire classroom or help run one for an entire year."
+	              'For \u20AC10,000 you or your company can build an entire classroom or help run one for an entire year.'
 	            ),
-	            _react2.default.createElement("br", null),
+	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "Email the founder to find out more:",
+	              'Email the founder to find out more:',
 	              _react2.default.createElement(
-	                "a",
-	                { href: "emailto:andy@scoopfoundation.com" },
+	                'a',
+	                { href: 'emailto:andy@scoopfoundation.com' },
 	                _react2.default.createElement(
-	                  "span",
-	                  { className: "gallery-btn" },
-	                  "I am interested!"
+	                  'span',
+	                  { className: 'gallery-btn' },
+	                  'I am interested!'
 	                )
 	              )
 	            )
 	          )
 	        ),
-	        _react2.default.createElement("br", null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          "div",
+	          'div',
 	          { style: { position: "relative" } },
-	          _react2.default.createElement("img", { style: { width: "100%" }, src: "modules/assets/img14.jpg" }),
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/img24.png' }),
 	          _react2.default.createElement(
-	            "div",
-	            { className: "fundraise-section" },
-	            _react2.default.createElement("img", { style: { height: "80px", paddingTop: "10px" }, src: "modules/assets/numbers/SCOOP_icons-3.png" }),
+	            'div',
+	            { className: 'fundraise-section' },
+	            _react2.default.createElement('img', { style: { height: "80px", paddingTop: "10px" }, src: 'modules/assets/numbers/SCOOP_icons-3.png' }),
 	            _react2.default.createElement(
-	              "h1",
-	              { className: "shadow" },
-	              "Run an event for us!"
+	              'h1',
+	              { className: 'shadow' },
+	              'Run an event for us!'
 	            )
 	          )
 	        ),
-	        _react2.default.createElement("br", null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "text-container", style: { fontSize: "1.2em" } },
+	          'div',
+	          { className: 'text-container', style: { fontSize: "1.2em" } },
 	          _react2.default.createElement(
-	            "center",
+	            'center',
 	            null,
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have."
+	              'When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have.'
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "Not only do events raise much needed funds, they create a great sense of community \u2013 people meet, ideas are exchanged, people have a good time. What\u2019s not to love\u2026"
+	              'Not only do events raise much needed funds, they create a great sense of community \u2013 people meet, ideas are exchanged, people have a good time. What\u2019s not to love\u2026'
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "Get in touch with Andy (contact link) now and he will help you every step of the way. "
+	              'Get in touch with Andy (contact link) now and he will help you every step of the way. '
 	            ),
-	            _react2.default.createElement("br", null),
+	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
-	              "p",
+	              'p',
 	              null,
-	              "Check out some of the events we have run down the years:",
+	              'Check out some of the events we have run down the years:',
 	              _react2.default.createElement(
-	                "span",
-	                { className: "interested-btn" },
-	                "View past events"
+	                'span',
+	                { className: 'interested-btn', onClick: function onClick(e) {
+	                    return _this2.openLightbox(e);
+	                  } },
+	                'View past events'
 	              )
 	            )
-	          )
+	          ),
+	          _react2.default.createElement(_reactImages2.default, {
+	            currentImage: this.state.currentImage,
+	            images: posters,
+	            isOpen: this.state.lightboxIsOpen,
+	            onClose: function onClose() {
+	              return _this2.closeLightbox();
+	            },
+	            onClickNext: function onClickNext() {
+	              return _this2.gotoNext();
+	            },
+	            onClickPrev: function onClickPrev() {
+	              return _this2.gotoPrevious();
+	            }
+	          })
 	        )
 	      );
 	    }
@@ -49987,6 +50108,13 @@
 	        " SCAO I, III & III "
 	      ),
 	      _react2.default.createElement("br", null),
+	      _react2.default.createElement(
+	        "div",
+	        { className: "flex-row" },
+	        _react2.default.createElement("div", { className: "impact-img", style: { backgroundImage: "url(modules/assets/img09.jpg)", backgroundSize: "cover" } }),
+	        _react2.default.createElement("div", { className: "impact-img hide-sm", style: { backgroundImage: "url(modules/assets/img20.jpg)", backgroundSize: "cover" } }),
+	        _react2.default.createElement("div", { className: "impact-img hide-sm", style: { backgroundImage: "url(modules/assets/img10.jpg)", backgroundSize: "cover" } })
+	      ),
 	      _react2.default.createElement(
 	        "p",
 	        null,
@@ -50659,70 +50787,101 @@
 	      )
 	    ),
 	    _react2.default.createElement(
-	      'section',
-	      { className: 'flex-row' },
-	      _react2.default.createElement(
-	        'div',
-	        { style: { width: "25%", padding: "2%" } },
-	        _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/earth.png' }),
-	        _react2.default.createElement(
-	          'center',
-	          null,
-	          'There are currently 800 children in class or in care worldwide, and counting\u2026'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { style: { width: "25%", padding: "2%" } },
-	        _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/Playground.png' }),
-	        _react2.default.createElement(
-	          'center',
-	          null,
-	          'Since we started our mission in 2009, over 2460 children and teenagers have attended class at the schools we support.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { style: { width: "25%", padding: "2%" } },
-	        _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/Bedroom.png' }),
-	        _react2.default.createElement(
-	          'center',
-	          null,
-	          'Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1870 children received medical treatment or an education by our two partner orgs there.'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
 	      'div',
-	      { className: 'text-container' },
+	      { className: 'impact-cam-bg' },
 	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Cambodia'
+	        'section',
+	        { className: 'flex-row' },
+	        _react2.default.createElement(
+	          'div',
+	          { style: { width: "25%", padding: "2%" } },
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/Playground.png' }),
+	          _react2.default.createElement(
+	            'center',
+	            null,
+	            'Since we started our mission in 2009, over 2460 children and teenagers have attended class at the schools we support.'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { style: { width: "25%", padding: "2%" } },
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/earth.png' }),
+	          _react2.default.createElement(
+	            'center',
+	            null,
+	            'There are currently 800 children in class or in care worldwide, and counting\u2026'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { style: { width: "25%", padding: "2%" } },
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/Bedroom.png' }),
+	          _react2.default.createElement(
+	            'center',
+	            null,
+	            'Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1870 children received medical treatment or an education by our two partner orgs there.'
+	          )
+	        )
 	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'section',
+	        { style: { textAlign: "center" } },
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'purple' },
+	          'Help a child, support us!'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { to: '/fundraise' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'interested-btn' },
+	              'Start a fundraise'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { to: '/donate' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'interested-btn' },
+	              'Make a donation'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'flex-row' },
-	        _react2.default.createElement('div', { className: 'impact-img', style: { backgroundImage: "url(modules/assets/img09.jpg)", backgroundSize: "cover" } }),
-	        _react2.default.createElement('div', { className: 'impact-img hide-sm', style: { backgroundImage: "url(modules/assets/img20.jpg)", backgroundSize: "cover" } }),
-	        _react2.default.createElement('div', { className: 'impact-img hide-sm', style: { backgroundImage: "url(modules/assets/img10.jpg)", backgroundSize: "cover" } })
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'The ',
+	        { className: 'text-container' },
 	        _react2.default.createElement(
-	          _NavLink2.default,
-	          { to: '/cambodia', className: 'orange' },
-	          'SCAO'
+	          'h2',
+	          null,
+	          'Cambodia'
 	        ),
-	        ' offer free classes in English and Computers for over 600 children and young adults, as well as offering other social services such as healthcare, eye tests & spectacles, dental work, mosquito nets, clothes, water filters etc to their families.'
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'The ',
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { to: '/cambodia', className: 'blue' },
+	            'SCAO'
+	          ),
+	          ' offer free classes in English and Computers for over 600 children and young adults, as well as offering other social services such as healthcare, eye tests & spectacles, dental work, mosquito nets, clothes, water filters etc to their families.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'They also train up young local teachers, empowering them to become the change their communities need.'
+	        )
 	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'They also train up young local teachers, empowering them to become the change their communities need.'
-	      )
+	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img25.png' })
 	    ),
 	    _react2.default.createElement('br', null),
 	    _react2.default.createElement(

@@ -6,6 +6,13 @@ const Cambodia = () => {
       <section id="cambodia" className = "text-container" >
         <h1> SCAO I, III & III </h1> 
         <br />
+
+        <div className="flex-row">
+          <div className="impact-img" style={{backgroundImage:"url(modules/assets/img09.jpg)", backgroundSize:"cover"}}></div>
+          <div className="impact-img hide-sm" style={{backgroundImage:"url(modules/assets/img20.jpg)", backgroundSize:"cover"}}></div>
+          <div className="impact-img hide-sm" style={{backgroundImage:"url(modules/assets/img10.jpg)", backgroundSize:"cover"}}></div>
+        </div>
+        
         <p>
         Cambodia is where the SCOOP story begins, when Andy came across an under - resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms
         for what would become the SCAO I School.He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself. </p> 

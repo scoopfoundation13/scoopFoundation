@@ -30,13 +30,13 @@ class App extends React.Component {
             <ul id="nav-mobile" className="side-nav" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}>
               <li><NavLink to="/">HOME</NavLink></li>
               <li><NavLink to="/about">ABOUT</NavLink></li>
-              <li><NavLink to="/team" className="nav-sublink">&nbsp;&nbsp;Team</NavLink></li>
-              <li><NavLink to="/schools" className="nav-sublink">&nbsp;&nbsp;Impact</NavLink></li>
-              <li><NavLink to="/syriasvibes" className="nav-sublink">&nbsp;&nbsp;Syrias Vibes</NavLink></li>
               <li><NavLink to="/inclass">IN CLASS</NavLink></li>
               <li><NavLink to="/buildingprojects">BUILDING PROJECTS</NavLink></li>
               <li><NavLink to="/donate">DONATE</NavLink></li>
               <li><NavLink to="/fundraise">FUNDRAISE</NavLink></li>
+              <li><NavLink to="/team" className="nav-sublink">Team</NavLink></li>
+              <li><NavLink to="/impact" className="nav-sublink">Impact</NavLink></li>
+              <li><NavLink to="/partners" className="nav-sublink">Partners</NavLink></li>
             </ul>
             : null }
             <i className="fa fa-bars fa-2x button-collapse" aria-hidden="true" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}></i>
