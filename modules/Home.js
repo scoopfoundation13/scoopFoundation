@@ -240,42 +240,42 @@ class Home extends React.Component {
         <section className="home-sec4">
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div className="home-bottomCardTxt">
+            <div className="home-bottomCardTxt orange-theme">
               <span>Read the latest story about SCOOP</span>
               <span className="interested-btn">Blog</span>
             </div>
           </div>
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div className="home-bottomCardTxt">
+            <div className="home-bottomCardTxt blue-theme">
               <span>Download our annual reports</span>
-              <span className="interested-btn">Report</span>
+              <span className="gallery-btn">Report</span>
             </div>
           </div>
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div className="home-bottomCardTxt">
+            <div className="home-bottomCardTxt purple-theme">
               <span>Support us by picking up a T-Shirt</span>
-              <span className="interested-btn">Shop</span>
+              <span className="purple-btn">Shop</span>
             </div>
           </div>
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div className="home-bottomCardTxt">
+            <div className="home-bottomCardTxt blue-theme">
               <span>Meet our partners around the globe</span>
-              <span className="interested-btn">Partners</span>
+              <span className="gallery-btn">Partners</span>
             </div>
           </div>
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div className="home-bottomCardTxt">
+            <div className="home-bottomCardTxt purple-theme">
               <span>Watch SCOOP in action on YouTube</span>
-              <span className="interested-btn">Videos</span>
+              <span className="purple-btn">Videos</span>
             </div>
           </div>
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div className="home-bottomCardTxt">
+            <div className="home-bottomCardTxt orange-theme">
               <span>Want to collaborate? Contact us!</span>
               <span className="interested-btn">Contact</span>
             </div>

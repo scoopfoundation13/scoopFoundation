@@ -45241,7 +45241,7 @@
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'home-bottomCardTxt' },
+	                { className: 'home-bottomCardTxt orange-theme' },
 	                _react2.default.createElement(
 	                  'span',
 	                  null,
@@ -45260,7 +45260,7 @@
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'home-bottomCardTxt' },
+	                { className: 'home-bottomCardTxt blue-theme' },
 	                _react2.default.createElement(
 	                  'span',
 	                  null,
@@ -45268,7 +45268,7 @@
 	                ),
 	                _react2.default.createElement(
 	                  'span',
-	                  { className: 'interested-btn' },
+	                  { className: 'gallery-btn' },
 	                  'Report'
 	                )
 	              )
@@ -45279,7 +45279,7 @@
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'home-bottomCardTxt' },
+	                { className: 'home-bottomCardTxt purple-theme' },
 	                _react2.default.createElement(
 	                  'span',
 	                  null,
@@ -45287,7 +45287,7 @@
 	                ),
 	                _react2.default.createElement(
 	                  'span',
-	                  { className: 'interested-btn' },
+	                  { className: 'purple-btn' },
 	                  'Shop'
 	                )
 	              )
@@ -45298,7 +45298,7 @@
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'home-bottomCardTxt' },
+	                { className: 'home-bottomCardTxt blue-theme' },
 	                _react2.default.createElement(
 	                  'span',
 	                  null,
@@ -45306,7 +45306,7 @@
 	                ),
 	                _react2.default.createElement(
 	                  'span',
-	                  { className: 'interested-btn' },
+	                  { className: 'gallery-btn' },
 	                  'Partners'
 	                )
 	              )
@@ -45317,7 +45317,7 @@
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'home-bottomCardTxt' },
+	                { className: 'home-bottomCardTxt purple-theme' },
 	                _react2.default.createElement(
 	                  'span',
 	                  null,
@@ -45325,7 +45325,7 @@
 	                ),
 	                _react2.default.createElement(
 	                  'span',
-	                  { className: 'interested-btn' },
+	                  { className: 'purple-btn' },
 	                  'Videos'
 	                )
 	              )
@@ -45336,7 +45336,7 @@
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { className: 'home-bottomCardTxt' },
+	                { className: 'home-bottomCardTxt orange-theme' },
 	                _react2.default.createElement(
 	                  'span',
 	                  null,

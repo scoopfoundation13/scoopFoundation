@@ -228,8 +228,6 @@ hr {
 
 .home-bottomCardTxt {
   height: 20%;
-  color: #FF8200; 
-  background-color:#FFD9B1; 
   padding: 10px 5px; 
   text-align:center;
   display: flex;
@@ -238,6 +236,21 @@ hr {
   align-items: center;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.orange-theme {
+  color: #FF8200; 
+  background-color:#FFD9B1; 
+}
+
+.blue-theme {
+  color: #64CCC9; 
+  background-color:#dcf2f1; 
+}
+
+.purple-theme {
+  color: #9B26B6; 
+  background-color:#E9BEF2; 
 }
 
 .home-bottomCardTxt span {
@@ -279,6 +292,20 @@ hr {
 .gallery-btn:hover {
   color: #64CCC9;
   border: 2px solid #64CCC9;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.purple-btn {
+  border-radius: 5px;
+  background-color: #9B26B6;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.purple-btn:hover {
+  color: #9B26B6;
+  border: 2px solid #9B26B6;
   background-color: rgba(255,255,255,0.5);
 }
 
