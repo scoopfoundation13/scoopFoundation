@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div className="container-topMargin">
       <section className="text-container">
-      <h1 className="purple">WHO WE ARE</h1>
+      <h1 className="purple">WHO?</h1>
           <p>We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
       </section>
       <section>

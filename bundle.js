@@ -44712,7 +44712,7 @@
 	      _react2.default.createElement(
 	        'h1',
 	        { className: 'purple' },
-	        'WHO WE ARE'
+	        'WHO?'
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -49556,7 +49556,7 @@
 	        path: '/cambodia',
 	        text: 'Cambodia'
 	      }, {
-	        img: 'modules/assets/thumbnails/jeevan%20school%20MUST%20USE.jpg',
+	        img: 'modules/assets/thumbnails/inclass-india.jpg',
 	        link: '#india',
 	        path: '/india',
 	        text: 'India'
@@ -50799,7 +50799,7 @@
 	          _react2.default.createElement(
 	            'center',
 	            null,
-	            'Since we started our mission in 2009, over 2460 children and teenagers have attended class at the schools we support.'
+	            'Since we started our mission in 2009, over 2462 children and teenagers have attended class at the schools we support.'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -50809,7 +50809,7 @@
 	          _react2.default.createElement(
 	            'center',
 	            null,
-	            'There are currently 800 children in class or in care worldwide, and counting\u2026'
+	            'There are currently 832 children in class or in care worldwide, and counting\u2026'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -50819,10 +50819,12 @@
 	          _react2.default.createElement(
 	            'center',
 	            null,
-	            'Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1870 children received medical treatment or an education by our two partner orgs there.'
+	            'Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1876 children received medical treatment or an education by our two partner orgs there.'
 	          )
 	        )
 	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'section',
@@ -50830,7 +50832,7 @@
 	        _react2.default.createElement(
 	          'h1',
 	          { className: 'purple' },
-	          'Help a child, support us!'
+	          'Get involved today!'
 	        ),
 	        _react2.default.createElement(
 	          'div',
@@ -50841,7 +50843,7 @@
 	            _react2.default.createElement(
 	              'span',
 	              { className: 'interested-btn' },
-	              'Start a fundraise'
+	              'Start a fundraiser'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -50855,6 +50857,8 @@
 	          )
 	        )
 	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'div',
@@ -50900,7 +50904,7 @@
 	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'Our ',
+	        'The ',
 	        _react2.default.createElement(
 	          _NavLink2.default,
 	          { to: '/india', className: 'purple' },

@@ -9,7 +9,7 @@ class InClass extends React.Component {
       path: '/cambodia',
       text: 'Cambodia'
     }, {
-      img: 'modules/assets/thumbnails/jeevan%20school%20MUST%20USE.jpg',
+      img: 'modules/assets/thumbnails/inclass-india.jpg',
       link: '#india',
       path: '/india',
       text: 'India'

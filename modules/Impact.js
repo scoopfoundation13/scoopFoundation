@@ -16,25 +16,29 @@ const Impact = () => {
       <section className="flex-row">
         <div style={{width: "25%", padding:"2%"}}>
           <img style={{width: "100%"}} src="modules/assets/Playground.png"/>
-          <center>Since we started our mission in 2009, over 2460 children and teenagers have attended class at the schools we support.</center>
+          <center>Since we started our mission in 2009, over 2462 children and teenagers have attended class at the schools we support.</center>
         </div>
         <div style={{width: "25%", padding:"2%"}}>
           <img style={{width: "100%"}} src="modules/assets/earth.png"/>
-          <center>There are currently 800 children in class or in care worldwide, and counting…</center>
+          <center>There are currently 832 children in class or in care worldwide, and counting…</center>
         </div>
         <div style={{width: "25%", padding:"2%"}}>
           <img style={{width: "100%"}} src="modules/assets/Bedroom.png"/>
-          <center>Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1870 children received medical treatment or an education by our two partner orgs there.</center>
+          <center>Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1876 children received medical treatment or an education by our two partner orgs there.</center>
         </div>
       </section>
       <br />
+      <br />
+      <br />
       <section style={{textAlign:"center"}}>
-        <h1 className="purple">Help a child, support us!</h1>
+        <h1 className="purple">Get involved today!</h1>
         <div>
-          <NavLink to="/fundraise"><span className="interested-btn">Start a fundraise</span></NavLink>
+          <NavLink to="/fundraise"><span className="interested-btn">Start a fundraiser</span></NavLink>
           <NavLink to="/donate"><span className="interested-btn">Make a donation</span></NavLink>
         </div>
       </section>
+      <br />
+      <br />
       <br />
       <div className="text-container">
       <h2>Cambodia</h2>
@@ -51,7 +55,7 @@ const Impact = () => {
          
         <p>The Jeevan School is a loving home to 40 homeless ‘street' children living in full time accommodation, and another 100+ receive an all-round education and meals.</p>
 
-        <p>Our <NavLink to="/india" className="purple">Jeevan Village</NavLink> will offer a home to 100 homeless children and schooling to over 300 more. Support the project today!</p>
+        <p>The <NavLink to="/india" className="purple">Jeevan Village</NavLink> will offer a home to 100 homeless children and schooling to over 300 more. Support the project today!</p>
 
         <div className="flex-row">
           <div className="impact-img" style={{backgroundImage:"url(modules/assets/img19.jpg)", backgroundSize:"cover"}}></div>
