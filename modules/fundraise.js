@@ -94,7 +94,7 @@ class Fundraise extends React.Component {
             <a href="https://www.justgiving.com/scoop/raisemoney/?utm_source=website_cid250506&utm_medium=buttons&utm_content=scoop&utm_campaign=makeapage_start_white"><img src="http://www.justgiving.com/charities/content/images/logo-buttons/white/makeapage_start_white.gif" alt="Start fundraising with JustGiving" /></a>
           </div>
         </div>
-        <br />
+        <br/>
         <div className="text-container" style={{fontSize: "1.2em"}}>
           <center>
             <p>We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria.</p>
@@ -104,7 +104,7 @@ class Fundraise extends React.Component {
             <p>If you need any assistance, contact <a className="orange" href="mailto:andy@scoopfoundation.com">andy@scoopfoundation.com</a></p>
           </center>
         </div>
-        <br />
+        <br/>
 
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img26.png"/>
@@ -113,7 +113,7 @@ class Fundraise extends React.Component {
             <h1 className="shadow">Sponsor an entire classroom</h1>
           </div>
         </div>
-        <br />
+        <br/>
         <div className="text-container" style={{fontSize: "1.2em"}}>
           <center>
             <p>For €10,000 you or your company can build an entire classroom or help run one for an entire year.</p>
@@ -123,7 +123,7 @@ class Fundraise extends React.Component {
             </p>
           </center>
         </div>
-        <br />
+        <br/>
 
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img24.png"/>
@@ -132,7 +132,7 @@ class Fundraise extends React.Component {
             <h1 className="shadow">Run an event for us!</h1>
           </div>
         </div>
-        <br />
+        <br/>
         <div className="text-container" style={{fontSize: "1.2em"}}>
           <center>
             <p>When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have.</p>

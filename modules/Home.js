@@ -200,12 +200,18 @@ class Home extends React.Component {
             </NavLink>
           </div>
         </section>
-        <section className="home-sec3">
+        
+        <center style={{margin: "auto", width: "50%"}}>
+          <h3>[ICON ON THE LEFT] Say something here ...</h3>
+          <br/><br/>
+        </center>
+
+        <section className="home-sec3" style={{backgroundColor:"#dcf2f1", height:"500px"}}>
           <div style={{position: "absolute", top: 0, left: 0, width:"100%"}}>
             <img style={{width: "100%"}} src='modules/assets/gallery-bander.jpg'/>
             <div className="gallery-bander">
               <span style={{color: "#fff", fontSize:"1.8em", paddingBottom: "10px", textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>The <span className="orange" style={{fontWeight:"800", textShadow:"0px"}}>SCOOP</span> story so far ...</span>
-              <span className="gallery-btn" onClick={(e) => this.openLightbox(e)}>Visit the Gallery</span>
+              <span className="blue-inverse-btn" onClick={(e) => this.openLightbox(e)}>Visit the Gallery</span>
             </div>
           </div>
           <Lightbox
@@ -218,20 +224,61 @@ class Home extends React.Component {
           />
         </section>
 
-          <center><h1>SCOOP NEWS</h1></center>
-          <div className="scoopnews-bg">
+
+        <section style={{backgroundColor:"#dcf2f1"}}>
+          <div style={{display:"flex", flexDirection:"row", justifyContent:"center", alignItems:"center", width:"70%", margin:"auto", padding:"5%"}}>
+            <div style={{width:"50%", height: "300px", backgroundImage:"url('modules/assets/img28.jpg')", backgroundSize:"cover"}}></div>
+            <div style={{width:"50%", fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center",height:"300px", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
+              <span style={{display:"block", margin:" 0 50px;"}}>Our schools help steer children away from child labour and other forms of child abuse.</span>
+              <br/>
+              <span className="orange-inverse-btn" style={{fontSize:"0.9em"}}>See more of our Impact</span>
+            </div>
+          </div>
+        </section>
+        <br/>
+        <div className="scoopnews-bg">
         <section className="home-sec4">
-          <div style={{width: "20%", margin:"2%", border:"2px solid #9B26B6", borderRadius:"5px"}}>
+          <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div style={{color:"#fff", backgroundColor:"#9B26B6", lineHeight:"3"}}>news title 1</div>
+            <div className="home-bottomCardTxt">
+              <span>Read the latest story about SCOOP</span>
+              <span className="interested-btn">Blog</span>
+            </div>
           </div>
-          <div style={{width: "20%", margin:"2%", border:"2px solid #64CCC9", borderRadius:"5px"}}>
+          <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div style={{color:"#fff", backgroundColor:"#64CCC9", lineHeight:"3"}}>news title 2</div>
+            <div className="home-bottomCardTxt">
+              <span>Download our annual reports</span>
+              <span className="interested-btn">Report</span>
+            </div>
           </div>
-          <div style={{width: "20%", margin:"2%", border:"2px solid #FF8200", borderRadius:"5px"}}>
+          <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img27.jpg"/>
-            <div style={{color:"#fff", backgroundColor:"#FF8200", lineHeight:"3"}}>news title 3</div>
+            <div className="home-bottomCardTxt">
+              <span>Support us by picking up a T-Shirt</span>
+              <span className="interested-btn">Shop</span>
+            </div>
+          </div>
+          <div className="home-bottomCard">
+            <img width="100%" src="modules/assets/img27.jpg"/>
+            <div className="home-bottomCardTxt">
+              <span>Meet our partners around the globe</span>
+              <span className="interested-btn">Partners</span>
+            </div>
+          </div>
+          <div className="home-bottomCard">
+            <img width="100%" src="modules/assets/img27.jpg"/>
+            <div className="home-bottomCardTxt">
+              <span>Watch SCOOP in action on YouTube</span>
+              <span className="interested-btn">Videos</span>
+            </div>
+          </div>
+          <div className="home-bottomCard">
+            <img width="100%" src="modules/assets/img27.jpg"/>
+            <div className="home-bottomCardTxt">
+              <span>Want to collaborate? Contact us!</span>
+              <span className="interested-btn">Contact</span>
+            </div>
           </div>
         </section>
         <img className="home-bk" src='modules/assets/img04.jpg'/>

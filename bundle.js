@@ -45149,8 +45149,19 @@
 	          )
 	        ),
 	        _react2.default.createElement(
+	          'center',
+	          { style: { margin: "auto", width: "50%" } },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            '[ICON ON THE LEFT] Say something here ...'
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null)
+	        ),
+	        _react2.default.createElement(
 	          'section',
-	          { className: 'home-sec3' },
+	          { className: 'home-sec3', style: { backgroundColor: "#dcf2f1", height: "500px" } },
 	          _react2.default.createElement(
 	            'div',
 	            { style: { position: "absolute", top: 0, left: 0, width: "100%" } },
@@ -45171,7 +45182,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'span',
-	                { className: 'gallery-btn', onClick: function onClick(e) {
+	                { className: 'blue-inverse-btn', onClick: function onClick(e) {
 	                    return _this2.openLightbox(e);
 	                  } },
 	                'Visit the Gallery'
@@ -45194,14 +45205,30 @@
 	          })
 	        ),
 	        _react2.default.createElement(
-	          'center',
-	          null,
+	          'section',
+	          { style: { backgroundColor: "#dcf2f1" } },
 	          _react2.default.createElement(
-	            'h1',
-	            null,
-	            'SCOOP NEWS'
+	            'div',
+	            { style: { display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "70%", margin: "auto", padding: "5%" } },
+	            _react2.default.createElement('div', { style: { width: "50%", height: "300px", backgroundImage: "url('modules/assets/img28.jpg')", backgroundSize: "cover" } }),
+	            _react2.default.createElement(
+	              'div',
+	              { style: { width: "50%", fontSize: "1.5em", backgroundColor: "#fff", textAlign: "center", height: "300px", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" } },
+	              _react2.default.createElement(
+	                'span',
+	                { style: { display: "block", margin: " 0 50px;" } },
+	                'Our schools help steer children away from child labour and other forms of child abuse.'
+	              ),
+	              _react2.default.createElement('br', null),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'orange-inverse-btn', style: { fontSize: "0.9em" } },
+	                'See more of our Impact'
+	              )
+	            )
 	          )
 	        ),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'scoopnews-bg' },
@@ -45210,32 +45237,116 @@
 	            { className: 'home-sec4' },
 	            _react2.default.createElement(
 	              'div',
-	              { style: { width: "20%", margin: "2%", border: "2px solid #9B26B6", borderRadius: "5px" } },
+	              { className: 'home-bottomCard' },
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { style: { color: "#fff", backgroundColor: "#9B26B6", lineHeight: "3" } },
-	                'news title 1'
+	                { className: 'home-bottomCardTxt' },
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Read the latest story about SCOOP'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'interested-btn' },
+	                  'Blog'
+	                )
 	              )
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { style: { width: "20%", margin: "2%", border: "2px solid #64CCC9", borderRadius: "5px" } },
+	              { className: 'home-bottomCard' },
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { style: { color: "#fff", backgroundColor: "#64CCC9", lineHeight: "3" } },
-	                'news title 2'
+	                { className: 'home-bottomCardTxt' },
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Download our annual reports'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'interested-btn' },
+	                  'Report'
+	                )
 	              )
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { style: { width: "20%", margin: "2%", border: "2px solid #FF8200", borderRadius: "5px" } },
+	              { className: 'home-bottomCard' },
 	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
 	              _react2.default.createElement(
 	                'div',
-	                { style: { color: "#fff", backgroundColor: "#FF8200", lineHeight: "3" } },
-	                'news title 3'
+	                { className: 'home-bottomCardTxt' },
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Support us by picking up a T-Shirt'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'interested-btn' },
+	                  'Shop'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-bottomCard' },
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'home-bottomCardTxt' },
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Meet our partners around the globe'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'interested-btn' },
+	                  'Partners'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-bottomCard' },
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'home-bottomCardTxt' },
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Watch SCOOP in action on YouTube'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'interested-btn' },
+	                  'Videos'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'home-bottomCard' },
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'home-bottomCardTxt' },
+	                _react2.default.createElement(
+	                  'span',
+	                  null,
+	                  'Want to collaborate? Contact us!'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'interested-btn' },
+	                  'Contact'
+	                )
 	              )
 	            )
 	          ),
