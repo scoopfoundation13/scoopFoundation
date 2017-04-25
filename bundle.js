@@ -45221,9 +45221,13 @@
 	              ),
 	              _react2.default.createElement('br', null),
 	              _react2.default.createElement(
-	                'span',
-	                { className: 'orange-inverse-btn', style: { fontSize: "0.9em" } },
-	                'See more of our Impact'
+	                _NavLink2.default,
+	                { to: '/impact' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'orange-inverse-btn', style: { fontSize: "0.9em" } },
+	                  'See more of our Impact'
+	                )
 	              )
 	            )
 	          )
@@ -45238,7 +45242,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img08.jpg' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt orange-theme' },
@@ -45257,7 +45261,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img08.jpg' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt blue-theme' },
@@ -45276,7 +45280,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img08.jpg' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt purple-theme' },
@@ -45295,7 +45299,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img08.jpg' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt blue-theme' },
@@ -45305,16 +45309,20 @@
 	                  'Meet our partners around the globe'
 	                ),
 	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'gallery-btn' },
-	                  'Partners'
+	                  _NavLink2.default,
+	                  { to: '/partners' },
+	                  _react2.default.createElement(
+	                    'span',
+	                    { className: 'gallery-btn' },
+	                    'Partners'
+	                  )
 	                )
 	              )
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img08.jpg' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt purple-theme' },
@@ -45324,16 +45332,20 @@
 	                  'Watch SCOOP in action on YouTube'
 	                ),
 	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'purple-btn' },
-	                  'Videos'
+	                  'a',
+	                  { target: '_blank', href: 'https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop' },
+	                  _react2.default.createElement(
+	                    'span',
+	                    { className: 'purple-btn' },
+	                    'Videos'
+	                  )
 	                )
 	              )
 	            ),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img27.jpg' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img08.jpg' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt orange-theme' },
@@ -45343,9 +45355,13 @@
 	                  'Want to collaborate? Contact us!'
 	                ),
 	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'interested-btn' },
-	                  'Contact'
+	                  'a',
+	                  { href: 'mailto:info@scoopfoundation.com' },
+	                  _react2.default.createElement(
+	                    'span',
+	                    { className: 'interested-btn' },
+	                    'Contact'
+	                  )
 	                )
 	              )
 	            )

@@ -231,7 +231,9 @@ class Home extends React.Component {
             <div style={{width:"50%", fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center",height:"300px", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
               <span style={{display:"block", margin:" 0 50px;"}}>Our schools help steer children away from child labour and other forms of child abuse.</span>
               <br/>
-              <span className="orange-inverse-btn" style={{fontSize:"0.9em"}}>See more of our Impact</span>
+              <NavLink to="/impact">
+                <span className="orange-inverse-btn" style={{fontSize:"0.9em"}}>See more of our Impact</span>
+              </NavLink>
             </div>
           </div>
         </section>
@@ -239,45 +241,47 @@ class Home extends React.Component {
         <div className="scoopnews-bg">
         <section className="home-sec4">
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img27.jpg"/>
+            <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt orange-theme">
               <span>Read the latest story about SCOOP</span>
               <span className="interested-btn">Blog</span>
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img27.jpg"/>
+            <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt blue-theme">
               <span>Download our annual reports</span>
               <span className="gallery-btn">Report</span>
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img27.jpg"/>
+            <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt purple-theme">
               <span>Support us by picking up a T-Shirt</span>
               <span className="purple-btn">Shop</span>
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img27.jpg"/>
+            <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt blue-theme">
               <span>Meet our partners around the globe</span>
-              <span className="gallery-btn">Partners</span>
+              <NavLink to="/partners">
+                <span className="gallery-btn">Partners</span>
+              </NavLink>
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img27.jpg"/>
+            <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt purple-theme">
               <span>Watch SCOOP in action on YouTube</span>
-              <span className="purple-btn">Videos</span>
+              <a target="_blank" href="https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop"><span className="purple-btn">Videos</span></a>
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img27.jpg"/>
+            <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt orange-theme">
               <span>Want to collaborate? Contact us!</span>
-              <span className="interested-btn">Contact</span>
+              <a href="mailto:info@scoopfoundation.com"><span className="interested-btn">Contact</span></a>
             </div>
           </div>
         </section>
