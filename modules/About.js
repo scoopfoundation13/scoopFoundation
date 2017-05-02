@@ -37,7 +37,7 @@ const About = () => {
       <section className="text-container">
         <div className="about-align">
           <p className="about-title orange">HOW?</p>
-          <p className="about-text">Working with local partners and hiring local builders and engineers, we build schools and offer professional on-going to support. We encourage teachers and long term volunteers to travel and work at the schools also. We have built a global community and work with grass root NGOs in Cambodia, India and Syria. We have partners in Australia, Germany, Syria, Spain and England. <NavLink className="orange" to="/partners">Meet our Partners here.</NavLink></p>
+          <p className="about-text">Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development. We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England. Meet <NavLink className="orange" to="/partners">Meet our Partners here.</NavLink></p>
         </div>
         <div className="about-align">
           <p className="about-title blue">WHY?</p>

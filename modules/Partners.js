@@ -47,7 +47,7 @@ const Partners = () => {
         </div>
         <div style={{width: "70%"}}>
           <h3>Heyva Sor a Kurd (Syria)</h3>
-          <p>NEED TEXT</p>
+          <p>Heyva Sor a Kurd run 8 clinics all around Syria (including outside Aleppo) and also run emergency rescue / ambulance services too. Calvin spent 6 months in 2016 living and working with the team at the clinic in Qamishli, in Northern Syria.</p>
         </div>
       </div>
 

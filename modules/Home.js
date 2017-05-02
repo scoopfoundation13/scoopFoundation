@@ -206,7 +206,7 @@ class Home extends React.Component {
           <br/><br/>
         </center>
 
-        <section className="home-sec3" style={{backgroundColor:"#dcf2f1", height:"500px"}}>
+        <section className="home-sec3">
           <div style={{position: "absolute", top: 0, left: 0, width:"100%"}}>
             <img style={{width: "100%"}} src='modules/assets/gallery-bander.jpg'/>
             <div className="gallery-bander">
@@ -224,11 +224,12 @@ class Home extends React.Component {
           />
         </section>
 
+        <div className="empty-section"></div>
 
         <section style={{backgroundColor:"#dcf2f1"}}>
-          <div style={{display:"flex", flexDirection:"row", justifyContent:"center", alignItems:"center", width:"70%", margin:"auto", padding:"5%"}}>
-            <div style={{width:"50%", height: "300px", backgroundImage:"url('modules/assets/img28.jpg')", backgroundSize:"cover"}}></div>
-            <div style={{width:"50%", fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center",height:"300px", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
+          <div className="home-impact">
+            <div className="home-impact-item" style={{height:"300px",backgroundImage:"url('modules/assets/img28.jpg')", backgroundSize:"cover"}}></div>
+            <div className="home-impact-item" style={{height:"300px",fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
               <span style={{display:"block", margin:" 0 50px;"}}>Our schools help steer children away from child labour and other forms of child abuse.</span>
               <br/>
               <NavLink to="/impact">
@@ -237,55 +238,34 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        <br/>
+
+        <div className="empty-section"></div>
+
         <div className="scoopnews-bg">
         <section className="home-sec4">
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img08.jpg"/>
+            <img width="100%" src="modules/assets/img31.jpg"/>
             <div className="home-bottomCardTxt orange-theme">
-              <span>Read the latest story about SCOOP</span>
-              <span className="interested-btn">Blog</span>
+              <span>For all our news, project updates and events</span>
+              <span className="home-orange-btn">Blog</span>
             </div>
           </div>
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt blue-theme">
-              <span>Download our annual reports</span>
-              <span className="gallery-btn">Report</span>
+              <span>Check out our Annual Report for 2016</span>
+              <span className="home-blue-btn">Report</span>
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img08.jpg"/>
+            <img width="100%" src="modules/assets/img32.png"/>
             <div className="home-bottomCardTxt purple-theme">
-              <span>Support us by picking up a T-Shirt</span>
-              <span className="purple-btn">Shop</span>
-            </div>
-          </div>
-          <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img08.jpg"/>
-            <div className="home-bottomCardTxt blue-theme">
-              <span>Meet our partners around the globe</span>
-              <NavLink to="/partners">
-                <span className="gallery-btn">Partners</span>
-              </NavLink>
-            </div>
-          </div>
-          <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img08.jpg"/>
-            <div className="home-bottomCardTxt purple-theme">
-              <span>Watch SCOOP in action on YouTube</span>
-              <a target="_blank" href="https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop"><span className="purple-btn">Videos</span></a>
-            </div>
-          </div>
-          <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img08.jpg"/>
-            <div className="home-bottomCardTxt orange-theme">
-              <span>Want to collaborate? Contact us!</span>
-              <a href="mailto:info@scoopfoundation.com"><span className="interested-btn">Contact</span></a>
+              <span>Support us now by picking up a Tee, our Artists' Cookbook and more!</span>
+              <span className="home-purple-btn">Shop</span>
             </div>
           </div>
         </section>
-        <img className="home-bk" src='modules/assets/img04.jpg'/>
+        <img className="home-bk" src='modules/assets/img23.jpg'/>
           </div>
       </div>
       );

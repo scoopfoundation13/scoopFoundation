@@ -45,10 +45,10 @@ class App extends React.Component {
             {this.props.children}
         <footer>
           <center className="newsletter">
-          <form>
+          <form action="https://formspree.io/info@scoopfoundation.com" method="post">
           <h3>Join our mailing list!</h3>
-          <input type="email" placeholder="  enter your email"/>
-          <button>Join</button>
+          <input type="email" name="email" placeholder="  enter your email"/>
+          <button type="submit">Join</button>
           </form>
           </center>
           <div className="footer-links">
@@ -57,6 +57,7 @@ class App extends React.Component {
             <span className="link"><NavLink to="/about">About Us</NavLink></span>
             <span className="link"><NavLink to="/impact">Impact</NavLink></span>
             <span className="link"><NavLink to="/team">Meet the Team</NavLink></span>
+            <span className="link">Read our Blog</span>
             </div>
             <div>
             <span><b>Get Involved</b></span>

@@ -12,7 +12,7 @@ class BuildingProjects extends React.Component {
     }, {
       img: 'modules/assets/thumbnails/Building%20projects%20-%20India.jpg',
       link: '#project-india',
-      path: 'indiaproject',
+      path: '/indiaproject',
       text: 'India'
     }, {
       img: 'modules/assets/thumbnails/Building%20projects%20-%20%20Syria.jpg',
@@ -23,8 +23,8 @@ class BuildingProjects extends React.Component {
     return (
       <div className="container-topMargin projects-bg">
       <section className="text-container center">
-      <h1>BuildingProjects</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <h1>Building Projects</h1>
+      <p>To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. <NavLink to="/fundraise" className="purple">Get involved today!</NavLink></p>
       </section>
       <section>
         <ThreeARow img={imgArray}/>

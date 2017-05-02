@@ -83,9 +83,6 @@ class Fundraise extends React.Component {
   render() {
     return (
       <div>
-      <br />
-        <h1 style={{textAlign: "center"}}>Three ways to get involved ...</h1>
-        <br />
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img15.png"/>
           <div className="fundraise-section" style={{top: "20%"}}>
@@ -95,7 +92,7 @@ class Fundraise extends React.Component {
           </div>
         </div>
         <br/>
-        <div className="text-container" style={{fontSize: "1.2em"}}>
+        <div className="text-container" style={{fontSize: "1.1em"}}>
           <center>
             <p>We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria.</p>
 
@@ -114,7 +111,7 @@ class Fundraise extends React.Component {
           </div>
         </div>
         <br/>
-        <div className="text-container" style={{fontSize: "1.2em"}}>
+        <div className="text-container" style={{fontSize: "1.1em"}}>
           <center>
             <p>For €10,000 you or your company can build an entire classroom or help run one for an entire year.</p>
             <br />
@@ -133,11 +130,11 @@ class Fundraise extends React.Component {
           </div>
         </div>
         <br/>
-        <div className="text-container" style={{fontSize: "1.2em"}}>
+        <div className="text-container" style={{fontSize: "1.1em"}}>
           <center>
             <p>When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have.</p>
             <p>Not only do events raise much needed funds, they create a great sense of community – people meet, ideas are exchanged, people have a good time. What’s not to love…</p>
-            <p>Get in touch with Andy (contact link) now and he will help you every step of the way. </p>
+            <p><a className="purple" href="mailto:andy@scoopfoundation.com">Get in touch</a> with Andy now and he will help you every step of the way. </p>
             <br />
             <p>Check out some of the events we have run down the years:
             <span className="interested-btn" onClick={(e) => this.openLightbox(e)}>View past events</span>

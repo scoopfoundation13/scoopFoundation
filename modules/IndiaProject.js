@@ -16,9 +16,21 @@ const IndiaProject = () => {
          
         <p>It will offer pre-nursery to pre-university level schooling, an infirmary and workshops, staff, student and volunteer accommodation, a family support centre, computer room, library, creativity area, multiple gardens, kitchens, canteens, and recreational amenities.</p>
          
-        <p>There will be classrooms for English, Science and Maths, and yoga will be enjoyed each morning </p>
+        <p>There will be classrooms for English, Science and Maths, and yoga will be enjoyed each morning.</p>
+        <br />
+        <br />
+        <br />
 
-        <p>If you would like to help make this project a reality, <a href="mailto:andy@scoopfoundation.com" className="purple">get in touch today</a></p>
+        <div className="flex-row" style={{alignItems:"center"}}>
+            <div style={{width:"70%"}}>
+                <iframe className="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/kROb6o4Fmkk" frameBorder="0" allowfullscreen></iframe>
+            </div>
+            <div className="volunteer-box" style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+                <p style={{textAlign:"center"}}>If you would like to help make this project a reality</p>
+                <span className="purple-inverse-btn"><a href="mailto:andy@scoopfoundation.com">get in touch today</a></span>
+            </div>
+
+        </div>
 
     </section>
     <img className = "home-bk" src = 'modules/assets/project-india-bg.jpg' />
