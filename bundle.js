@@ -50575,7 +50575,7 @@
 	      _react2.default.createElement(
 	        "div",
 	        { style: { width: "40%", paddingRight: "30px" } },
-	        _react2.default.createElement("img", { src: "/modules/assets/team/lauren.jpg" })
+	        _react2.default.createElement("img", { src: "/modules/assets/team/lauren1.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
