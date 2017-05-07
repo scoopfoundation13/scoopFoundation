@@ -21,11 +21,12 @@ const IndiaProject = () => {
         <br />
         <br />
 
-        <div className="flex-row" style={{alignItems:"center"}}>
+        <div className="flex-row" style={{alignItems:"center", height:"auto"}}>
             <div style={{width:"70%"}}>
                 <iframe className="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/kROb6o4Fmkk" frameBorder="0" allowfullscreen></iframe>
             </div>
             <div className="volunteer-box" style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+            <h3>Get involved!</h3>
                 <p style={{textAlign:"center"}}>If you would like to help make this project a reality</p>
                 <span className="purple-inverse-btn"><a href="mailto:andy@scoopfoundation.com">get in touch today</a></span>
             </div>

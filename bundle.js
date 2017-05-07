@@ -44978,7 +44978,8 @@
 	    _this.state = {
 	      activeCard: 2,
 	      lightboxIsOpen: false,
-	      currentImage: 0
+	      currentImage: 0,
+	      pdfLightboxIsOpen: false
 	    };
 	    _this.handleClick = _this.handleClick.bind(_this);
 	    _this.handleImagesString = _this.handleImagesString.bind(_this);
@@ -45027,6 +45028,13 @@
 	      this.setState({
 	        currentImage: 0,
 	        lightboxIsOpen: false
+	      });
+	    }
+	  }, {
+	    key: 'handlePDFLightBox',
+	    value: function handlePDFLightBox() {
+	      this.setState(function (state) {
+	        return { pdfLightboxIsOpen: !state.pdfLightboxIsOpen };
 	      });
 	    }
 	  }, {
@@ -45084,6 +45092,15 @@
 	            'video',
 	            { autoPlay: true, loop: true, id: 'video-background', muted: true },
 	            _react2.default.createElement('source', { src: 'modules/assets/INTR.mp4', type: 'video/mp4' })
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'center',
+	          { style: { margin: "30px auto", width: "70%", backgroundColor: "rgba(255,255,255, 0.5)", padding: "25px;", borderRadius: "5px" } },
+	          _react2.default.createElement(
+	            'h2',
+	            { style: { fontSize: "2em" } },
+	            'We build schools and strive to break the poverty cycle for children living in Developing Countries.'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -45156,11 +45173,6 @@
 	        _react2.default.createElement(
 	          'center',
 	          { style: { margin: "auto", width: "50%" } },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            '[ICON ON THE LEFT] Say something here ...'
-	          ),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null)
 	        ),
@@ -45241,7 +45253,7 @@
 	        _react2.default.createElement('div', { className: 'empty-section' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'scoopnews-bg' },
+	          { className: '', style: { position: "relative", height: "800px" } },
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'home-sec4' },
@@ -45278,7 +45290,9 @@
 	                ),
 	                _react2.default.createElement(
 	                  'span',
-	                  { className: 'home-blue-btn' },
+	                  { className: 'home-blue-btn', onClick: function onClick() {
+	                      return _this2.handlePDFLightBox();
+	                    } },
 	                  'Report'
 	                )
 	              )
@@ -45303,7 +45317,15 @@
 	              )
 	            )
 	          ),
-	          _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img23.jpg' })
+	          _react2.default.createElement('img', { className: 'home-bk', style: { position: "absolute", bottom: 0, zIndex: "-1" }, src: 'modules/assets/img38.jpg' })
+	        ),
+	        this.state.pdfLightboxIsOpen && _react2.default.createElement(
+	          'div',
+	          { className: 'pdf-lightbox' },
+	          _react2.default.createElement('i', { onClick: function onClick() {
+	              return _this2.handlePDFLightBox();
+	            }, className: 'fa fa-times', 'aria-hidden': 'true' }),
+	          _react2.default.createElement('embed', { src: 'modules/assets/report.pdf' })
 	        )
 	      );
 	    }
@@ -49816,12 +49838,12 @@
 	            "center",
 	            null,
 	            _react2.default.createElement(
-	              "h2",
+	              "h1",
 	              null,
 	              "Donate Now"
 	            ),
 	            _react2.default.createElement(
-	              "p",
+	              "h3",
 	              null,
 	              "and together we can change more lives."
 	            )
@@ -50301,27 +50323,36 @@
 	      ),
 	      _react2.default.createElement("br", null),
 	      _react2.default.createElement(
-	        "p",
-	        null,
+	        "div",
+	        { className: "flex-row", style: { alignItems: "center" } },
 	        _react2.default.createElement(
-	          "b",
-	          null,
-	          "Want to volunteer?"
-	        )
-	      ),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals."
-	      ),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so ",
+	          "div",
+	          { style: { width: "70%" } },
+	          _react2.default.createElement("iframe", { className: "video-iframe", style: { margin: "auto" }, width: "560", height: "315", src: "https://www.youtube.com/embed/9AAhia2AaQs", frameBorder: "0", allowfullscreen: true })
+	        ),
 	        _react2.default.createElement(
-	          "a",
-	          { href: "emailto:andy@scoopfoundation.com", className: "orange" },
-	          "get in touch today"
+	          "div",
+	          { className: "volunteer-box india" },
+	          _react2.default.createElement(
+	            "h3",
+	            null,
+	            "Want to volunteer?"
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals."
+	          ),
+	          _react2.default.createElement(
+	            "p",
+	            null,
+	            "Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so ",
+	            _react2.default.createElement(
+	              "a",
+	              { href: "emailto:andy@scoopfoundation.com", className: "orange" },
+	              "get in touch today"
+	            )
+	          )
 	        )
 	      )
 	    ),
@@ -50569,17 +50600,18 @@
 	        _react2.default.createElement("img", { src: "/modules/assets/team/lisa.jpg" })
 	      )
 	    ),
+	    _react2.default.createElement("hr", { style: { width: "100%" } }),
 	    _react2.default.createElement(
 	      "div",
 	      { className: "partner" },
 	      _react2.default.createElement(
 	        "div",
-	        { style: { width: "40%", paddingRight: "30px" } },
+	        { style: { width: "30%", paddingRight: "30px" } },
 	        _react2.default.createElement("img", { src: "/modules/assets/team/lauren1.jpg" })
 	      ),
 	      _react2.default.createElement(
 	        "div",
-	        { style: { width: "60%" } },
+	        { style: { width: "70%" } },
 	        _react2.default.createElement(
 	          "h2",
 	          null,
@@ -50602,7 +50634,7 @@
 	      { className: "partner" },
 	      _react2.default.createElement(
 	        "div",
-	        { style: { width: "60%" } },
+	        { style: { width: "70%" } },
 	        _react2.default.createElement(
 	          "h2",
 	          null,
@@ -50621,7 +50653,7 @@
 	      ),
 	      _react2.default.createElement(
 	        "div",
-	        { style: { width: "40%", paddingLeft: "30px" } },
+	        { style: { width: "30%", paddingLeft: "30px" } },
 	        _react2.default.createElement("img", { src: "/modules/assets/team/claire.jpg" })
 	      )
 	    )
@@ -51053,7 +51085,7 @@
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'impact-india-bg' },
+	      { className: '' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'text-container' },
@@ -51085,31 +51117,39 @@
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
-	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img33.jpg' })
+	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img37.jpg' })
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'text-container' },
+	      { className: 'impact-sy-bg' },
 	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Syria'
+	        'div',
+	        { className: 'text-container' },
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Syria'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'The 8 medical clinics we support in Northern Syria tend to over 500,000 civilians caught in the middle of the war, children included. We also support ambulances, trained medical staff and help provide medical equipment.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'The school in the Bajed Kandala Refugee camp has nearly 400 children crying out for an education. We wish to support them through materials and school supplies.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We also wish to get involved with 100s of children who have been abducted by ISIS in Iraq and Syria, and then returned to their families, and who are in need of counselling, on-going care and support, and an education.'
+	        )
 	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'The 8 medical clinics we support in Northern Syria tend to over 500,000 civilians caught in the middle of the war, children included. We also support ambulances, trained medical staff and help provide medical equipment.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'The school in the Bajed Kandala Refugee camp has nearly 400 children crying out for an education. We wish to support them through materials and school supplies.'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'We also wish to get involved with 100s of children who have been abducted by ISIS in Iraq and Syria, and then returned to their families, and who are in need of counselling, on-going care and support, and an education.'
-	      )
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img36.jpg' })
 	    )
 	  );
 	};
@@ -51247,7 +51287,7 @@
 	            _react2.default.createElement("br", null),
 	            _react2.default.createElement(
 	                "div",
-	                { className: "flex-row", style: { alignItems: "center" } },
+	                { className: "flex-row", style: { alignItems: "center", height: "auto" } },
 	                _react2.default.createElement(
 	                    "div",
 	                    { style: { width: "70%" } },
@@ -51256,6 +51296,11 @@
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "volunteer-box", style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
+	                    _react2.default.createElement(
+	                        "h3",
+	                        null,
+	                        "Get involved!"
+	                    ),
 	                    _react2.default.createElement(
 	                        "p",
 	                        { style: { textAlign: "center" } },

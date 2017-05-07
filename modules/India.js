@@ -23,13 +23,20 @@ const India = () => {
         <p>Together we want to take their work a step further, and help more children receive an education or a safe home. Check out our plan.(link to Jeevan Village page)
         </p>
         <br />
-        <p><b>Want to volunteer?</b></p>
-        <p>
-        Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals. 
+        <div className="flex-row" style={{alignItems:"center"}}>
+        <div style={{width: "70%"}}>
+          <iframe className="video-iframe" style={{margin:"auto"}} width="560" height="315" src="https://www.youtube.com/embed/9AAhia2AaQs" frameBorder="0" allowfullscreen></iframe>
+          </div>
+          <div className="volunteer-box india">
+          <h3>Want to volunteer?</h3> 
+          <p>Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals. 
         </p>
         <p>
         Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so <a href="emailto:andy@scoopfoundation.com" className="orange">get in touch today</a>
         </p>
+          </div>
+        </div>
+
       </section>
       <img className = "home-bk" src = 'modules/assets/inclass-india-bg.jpg' />
   </div>

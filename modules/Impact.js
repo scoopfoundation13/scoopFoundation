@@ -53,7 +53,7 @@ const Impact = () => {
         <img className="home-bk" src="modules/assets/img25.png"/>
         </div>
       </div>
-      <div className="impact-india-bg">
+      <div className="">
       <div className="text-container">
         <br />
         <br />
@@ -67,9 +67,10 @@ const Impact = () => {
         <br />
         <br />
         <br />
-        <img className="home-bk" src="modules/assets/img33.jpg"/>
+        <img className="home-bk" src="modules/assets/img37.jpg"/>
       </div>
 
+      <div className="impact-sy-bg">
       <div className="text-container">
         <h2>Syria</h2>
          
@@ -78,6 +79,11 @@ const Impact = () => {
         <p>The school in the Bajed Kandala Refugee camp has nearly 400 children crying out for an education. We wish to support them through materials and school supplies.</p>
 
         <p>We also wish to get involved with 100s of children who have been abducted by ISIS in Iraq and Syria, and then returned to their families, and who are in need of counselling, on-going care and support, and an education.</p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <img className="home-bk" src="modules/assets/img36.jpg"/>
       </div>
     </div>
   );

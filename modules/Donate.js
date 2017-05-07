@@ -18,8 +18,8 @@ class Donate extends React.Component {
       <div style={{position:"relative", width:"100%"}}>
         <div className='donate-container'>
         <center>
-        <h2>Donate Now</h2>
-        <p>and together we can change more lives.</p>
+        <h1>Donate Now</h1>
+        <h3>and together we can change more lives.</h3>
         </center>
           <img className="bg" src='modules/assets/img04.jpg'/>
         </div>

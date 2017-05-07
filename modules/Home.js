@@ -107,7 +107,8 @@ class Home extends React.Component {
     this.state = {
       activeCard: 2,
       lightboxIsOpen: false,
-      currentImage: 0
+      currentImage: 0,
+      pdfLightboxIsOpen: false
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleImagesString = this.handleImagesString.bind(this);
@@ -152,6 +153,12 @@ class Home extends React.Component {
     });
   }
 
+  handlePDFLightBox() {
+    this.setState(state => {
+      return {pdfLightboxIsOpen: !state.pdfLightboxIsOpen}
+    })
+  }
+
   gotoNext() {
     this.setState({
       currentImage: this.state.currentImage + 1,
@@ -177,6 +184,9 @@ class Home extends React.Component {
             <source src="modules/assets/INTR.mp4" type="video/mp4"/>
           </video>
         </section>
+        <center style={{margin:"30px auto", width:"70%", backgroundColor:"rgba(255,255,255, 0.5)", padding:"25px;", borderRadius:"5px"}}>
+        <h2 style={{fontSize:"2em"}}>We build schools and strive to break the poverty cycle for children living in Developing Countries.</h2>
+        </center>
         <section className="home-sec2">
           <div className={this.isActive(1)} onMouseOver={() => this.handleClick(1)}>
             <NavLink className="home-learnmore" to="/buildingprojects">
@@ -202,7 +212,7 @@ class Home extends React.Component {
         </section>
         
         <center style={{margin: "auto", width: "50%"}}>
-          <h3>[ICON ON THE LEFT] Say something here ...</h3>
+          
           <br/><br/>
         </center>
 
@@ -241,7 +251,7 @@ class Home extends React.Component {
 
         <div className="empty-section"></div>
 
-        <div className="scoopnews-bg">
+        <div className="" style={{position:"relative", height:"800px"}}>
         <section className="home-sec4">
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img31.jpg"/>
@@ -254,7 +264,7 @@ class Home extends React.Component {
             <img width="100%" src="modules/assets/img08.jpg"/>
             <div className="home-bottomCardTxt blue-theme">
               <span>Check out our Annual Report for 2016</span>
-              <span className="home-blue-btn">Report</span>
+              <span className="home-blue-btn" onClick={() => this.handlePDFLightBox()}>Report</span>
             </div>
           </div>
           <div className="home-bottomCard">
@@ -265,8 +275,15 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        <img className="home-bk" src='modules/assets/img23.jpg'/>
+
+        <img className="home-bk" style={{position:"absolute", bottom:0, zIndex:"-1"}} src='modules/assets/img38.jpg'/>
           </div>
+        {this.state.pdfLightboxIsOpen &&
+          (<div className="pdf-lightbox">
+            <i onClick={() => this.handlePDFLightBox()} className="fa fa-times" aria-hidden="true"></i>
+            <embed src="modules/assets/report.pdf" />
+          </div>)
+        }
       </div>
       );
   }

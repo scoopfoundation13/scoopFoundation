@@ -39,21 +39,24 @@ const Team = () => {
         </div>
         <div style={{width: "40%", paddingLeft:"30px"}}><img src="/modules/assets/team/lisa.jpg"/></div>
       </div>
+
+      <hr style={{width:"100%"}}/>
       <div className="partner">
-        <div style={{width: "40%", paddingRight:"30px"}}><img src="/modules/assets/team/lauren1.jpg"/></div>
-        <div style={{width: "60%"}}>
+        <div style={{width: "30%", paddingRight:"30px"}}><img src="/modules/assets/team/lauren1.jpg"/></div>
+        <div style={{width: "70%"}}>
           <h2>Lauren McCalla</h2>
           <h5 className="orange">MARKETING & SOCIAL MEDIA</h5>
           <p>From a young age, I’ve been passionate about social policies and development. Working and volunteering with nonprofits has given me valuable experience and a better understanding of the struggles people around the world face. I'm excited to not only work on and promote SCOOP’s projects but to also to connect and work alongside people around the world.</p>
         </div>
       </div>
+
       <div className="partner">
-        <div style={{width: "60%"}}>
+        <div style={{width: "70%"}}>
           <h2>Claire Seringhaus</h2>
           <h5 className="purple">BLOG MANAGER</h5>
           <p>Claire is a professional freelance writer, editor and project manager, having worked with the Canadian Encyclopedia, ICOMOS, Bauhaus University, Youth Science Foundation Canada, MyWorldAbroad.com, and many others. She also works as an interdisciplinary artist, and has performed and exhibited in Canada, the US, Germany and Bosnia. Claire is currently based in Bogotá, Colombia, and is thrilled to be volunteering with Syrias Vibes.</p>
         </div>
-        <div style={{width: "40%", paddingLeft:"30px"}}><img src="/modules/assets/team/claire.jpg"/></div>
+        <div style={{width: "30%", paddingLeft:"30px"}}><img src="/modules/assets/team/claire.jpg"/></div>
       </div>
     </div>
     );
