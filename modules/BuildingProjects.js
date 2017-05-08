@@ -21,10 +21,12 @@ class BuildingProjects extends React.Component {
       text: 'Syria'
     }];
     return (
-      <div className="container-topMargin projects-bg">
+      <div className="projects-bg">
       <section className="text-container center">
       <h1>Building Projects</h1>
-      <p>To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. <NavLink to="/fundraise" className="purple">Get involved today!</NavLink></p>
+      <br />
+      <p>To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. </p>
+      <p><NavLink to="/fundraise" className="purple">Get involved today!</NavLink></p>
       </section>
       <section>
         <ThreeARow img={imgArray}/>

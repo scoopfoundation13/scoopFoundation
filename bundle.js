@@ -44710,7 +44710,7 @@
 	  }];
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'container-topMargin' },
+	    null,
 	    _react2.default.createElement(
 	      'section',
 	      { className: 'text-container' },
@@ -44719,6 +44719,7 @@
 	        { className: 'purple' },
 	        'WHO?'
 	      ),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'p',
 	        null,
@@ -44738,14 +44739,19 @@
 	    ),
 	    _react2.default.createElement(
 	      'section',
-	      { className: 'text-container' },
+	      { className: 'text-container about-align' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'about-align' },
+	        { style: { width: "47%", margin: "3%", marginRight: "5%" } },
 	        _react2.default.createElement(
-	          'p',
-	          { className: 'about-title orange' },
-	          'HOW?'
+	          'div',
+	          { className: 'about-title', style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
+	          _react2.default.createElement('i', { style: { fontSize: "1.6em" }, className: 'fa fa-users orange', 'aria-hidden': 'true' }),
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'orange' },
+	            'HOW?'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'p',
@@ -44760,11 +44766,16 @@
 	      ),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'about-align' },
+	        { style: { width: "47%", margin: "3%", marginLeft: "5%" } },
 	        _react2.default.createElement(
-	          'p',
-	          { className: 'about-title blue' },
-	          'WHY?'
+	          'div',
+	          { className: 'about-title', style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
+	          _react2.default.createElement('i', { style: { fontSize: "1.6em" }, className: 'fa fa-globe blue', 'aria-hidden': 'true' }),
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'blue' },
+	            'WHY?'
+	          )
 	        ),
 	        _react2.default.createElement(
 	          'p',
@@ -45067,19 +45078,17 @@
 	            { className: 'flex-col' },
 	            _react2.default.createElement(
 	              'span',
-	              null,
+	              { style: { textShadow: "2px 4px 3px rgba(0,0,0,0.3)" } },
 	              'NO CHILD SHOULD LIVE IN POVERTY'
 	            ),
 	            _react2.default.createElement(
 	              'span',
 	              null,
-	              _react2.default.createElement('hr', { className: 'line-purple' }),
-	              _react2.default.createElement('hr', { className: 'line-purple' }),
-	              _react2.default.createElement('hr', { className: 'line-purple' })
+	              _react2.default.createElement('hr', { style: { border: "1px solid #efefef", width: "600px" } })
 	            ),
 	            _react2.default.createElement(
 	              'span',
-	              null,
+	              { style: { textShadow: "0px 0px 0px rgba(255,255,255,0)" } },
 	              _react2.default.createElement(
 	                _NavLink2.default,
 	                { to: '/donate', className: 'home-nav-pill' },
@@ -45253,7 +45262,7 @@
 	        _react2.default.createElement('div', { className: 'empty-section' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: '', style: { position: "relative", height: "800px" } },
+	          { className: '', style: { position: "relative", height: "1000px" } },
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'home-sec4' },
@@ -45317,7 +45326,7 @@
 	              )
 	            )
 	          ),
-	          _react2.default.createElement('img', { className: 'home-bk', style: { position: "absolute", bottom: 0, zIndex: "-1" }, src: 'modules/assets/img38.jpg' })
+	          _react2.default.createElement('img', { className: 'home-bk', style: { position: "absolute", bottom: 0, zIndex: "-1" }, src: 'modules/assets/img39.jpg' })
 	        ),
 	        this.state.pdfLightboxIsOpen && _react2.default.createElement(
 	          'div',
@@ -49654,7 +49663,7 @@
 	      }];
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'container-topMargin class-bg' },
+	        { className: 'class-bg' },
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'text-container center' },
@@ -49663,6 +49672,7 @@
 	            null,
 	            'In Class'
 	          ),
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'p',
 	            null,
@@ -49746,7 +49756,7 @@
 	      }];
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'container-topMargin projects-bg' },
+	        { className: 'projects-bg' },
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'text-container center' },
@@ -49755,10 +49765,15 @@
 	            null,
 	            'Building Projects'
 	          ),
+	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. ',
+	            'To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. '
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
 	            _react2.default.createElement(
 	              _NavLink2.default,
 	              { to: '/fundraise', className: 'purple' },
@@ -50385,58 +50400,63 @@
 	var Syria = function Syria() {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: 'text-container' },
-	    _react2.default.createElement(
-	      'h1',
-	      null,
-	      'Syrias Vibes'
-	    ),
-	    _react2.default.createElement('br', null),
-	    _react2.default.createElement(
-	      'p',
-	      null,
-	      'The school in the Bajed Kandala Refugee camp has nearly 400 Yazidi children crying out for an education. We wish to support them through materials and school supplies.'
-	    ),
-	    _react2.default.createElement('br', null),
-	    _react2.default.createElement('br', null),
-	    _react2.default.createElement('br', null),
+	    { className: 'syria-bg' },
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'flex-row' },
+	      { className: 'text-container' },
 	      _react2.default.createElement(
-	        'div',
-	        { style: { width: "70%" } },
-	        _react2.default.createElement('iframe', { className: 'video-iframe', width: '560', height: '315', src: 'https://www.youtube.com/embed/8dNGUqMigGU', frameBorder: '0', allowfullscreen: true })
+	        'h1',
+	        null,
+	        'Syrias Vibes'
 	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'The school in the Bajed Kandala Refugee camp has nearly 400 Yazidi children crying out for an education. We wish to support them through materials and school supplies.'
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'volunteer-box', style: { textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
+	        { className: 'flex-row' },
 	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Want to support our Syrias Vibes campaign?'
+	          'div',
+	          { style: { width: "70%" } },
+	          _react2.default.createElement('iframe', { className: 'video-iframe', width: '560', height: '315', src: 'https://www.youtube.com/embed/8dNGUqMigGU', frameBorder: '0', allowfullscreen: true })
 	        ),
 	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'We are currently not taking volunteers, if you want to get involved with our Syrias Vibes campaign, ',
+	          'div',
+	          { className: 'volunteer-box', style: { textAlign: "center", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'orange', href: 'mailto:calvin@syriasvibes.com' },
-	            'contact us today!'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'span',
-	          { className: 'purple-inverse-btn' },
+	            'p',
+	            null,
+	            'Want to support our Syrias Vibes campaign?'
+	          ),
 	          _react2.default.createElement(
-	            _NavLink2.default,
-	            { to: '/donate' },
-	            'Make a Donation'
+	            'p',
+	            null,
+	            'We are currently not taking volunteers, if you want to get involved with our Syrias Vibes campaign, ',
+	            _react2.default.createElement(
+	              'a',
+	              { className: 'orange', href: 'mailto:calvin@syriasvibes.com' },
+	              'contact us today!'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'purple-inverse-btn' },
+	            _react2.default.createElement(
+	              _NavLink2.default,
+	              { to: '/donate' },
+	              'Make a Donation'
+	            )
 	          )
 	        )
 	      )
-	    )
+	    ),
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img40.jpg' })
 	  );
 	};
 

@@ -176,9 +176,9 @@ class Home extends React.Component {
       <div>
         <section className="home-sec1">
           <div className="flex-col">
-            <span>NO CHILD SHOULD LIVE IN POVERTY</span>
-            <span><hr className="line-purple"/><hr className="line-purple"/><hr className="line-purple"/></span>
-            <span><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION<i className="fa fa-arrow-right" aria-hidden="true"></i></NavLink></span>
+            <span style={{textShadow:"2px 4px 3px rgba(0,0,0,0.3)"}}>NO CHILD SHOULD LIVE IN POVERTY</span>
+            <span><hr style={{border: "1px solid #efefef", width:"600px"}}/></span>
+            <span style={{textShadow:"0px 0px 0px rgba(255,255,255,0)"}}><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION<i className="fa fa-arrow-right" aria-hidden="true"></i></NavLink></span>
           </div>
           <video autoPlay loop id="video-background" muted>
             <source src="modules/assets/INTR.mp4" type="video/mp4"/>
@@ -251,7 +251,7 @@ class Home extends React.Component {
 
         <div className="empty-section"></div>
 
-        <div className="" style={{position:"relative", height:"800px"}}>
+        <div className="" style={{position:"relative", height:"1000px"}}>
         <section className="home-sec4">
           <div className="home-bottomCard">
             <img width="100%" src="modules/assets/img31.jpg"/>
@@ -276,7 +276,7 @@ class Home extends React.Component {
           </div>
         </section>
 
-        <img className="home-bk" style={{position:"absolute", bottom:0, zIndex:"-1"}} src='modules/assets/img38.jpg'/>
+        <img className="home-bk" style={{position:"absolute", bottom:0, zIndex:"-1"}} src='modules/assets/img39.jpg'/>
           </div>
         {this.state.pdfLightboxIsOpen &&
           (<div className="pdf-lightbox">

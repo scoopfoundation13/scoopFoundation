@@ -20,9 +20,10 @@ class InClass extends React.Component {
       text: 'Syria'
     }];
     return (
-      <div className="container-topMargin class-bg">
+      <div className="class-bg">
         <section className="text-container center">
         <h1>In Class</h1>
+        <br />
         <p>We currently work in Cambodia, India and Syria. Click on the boxes below to find about the projects already in full flow…</p>
         </section>
         <section>

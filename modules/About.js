@@ -26,21 +26,28 @@ const About = () => {
     text: 'Syrias Vibes'
   }];
   return (
-    <div className="container-topMargin">
+    <div>
       <section className="text-container">
       <h1 className="purple">WHO?</h1>
+      <br />
           <p>We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics and emergency rescue services in Syria.</p>
       </section>
       <section>
         <ThreeARow img={imgArray}/>
       </section>
-      <section className="text-container">
-        <div className="about-align">
-          <p className="about-title orange">HOW?</p>
+      <section className="text-container about-align">
+        <div style={{width:"47%", margin:"3%", marginRight:"5%"}}>
+          <div className="about-title" style={{display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+            <i style={{fontSize:"1.6em"}} className="fa fa-users orange" aria-hidden="true"></i>
+            <span className="orange">HOW?</span>
+          </div>
           <p className="about-text">Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development. We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England. Meet <NavLink className="orange" to="/partners">Meet our Partners here.</NavLink></p>
         </div>
-        <div className="about-align">
-          <p className="about-title blue">WHY?</p>
+        <div style={{width:"47%", margin:"3%", marginLeft:"5%"}}>
+          <div className="about-title" style={{display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+            <i style={{fontSize:"1.6em"}} className="fa fa-globe blue" aria-hidden="true"></i>
+            <span className="blue">WHY?</span>
+          </div>
           <p className="about-text">The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
         </div>
       </section>
