@@ -50023,6 +50023,11 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
+	              'Or are you planning to run a marathon, take on a challenge or simply wish to make a difference in children\u2019s lives? Set up a Fundraising Page or get in touch with Andy now!'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              null,
 	              'To set up a page, ',
 	              _react2.default.createElement(
 	                'a',
@@ -50113,12 +50118,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'When Andy & Calvin founded SCOOP, and for the first 5 years, 100% of our funds raised came from our events, so we are passionate about running them and know the impact they can have.'
-	            ),
-	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'Not only do events raise much needed funds, they create a great sense of community \u2013 people meet, ideas are exchanged, people have a good time. What\u2019s not to love\u2026'
+	              'For the first 5 years of SCOOP\u2019s life, 100% of our funds raised came from the events Andy & Calvin ran, so we are passionate about running them and know the impact they can have. Not only do events raise much needed funds, they create a great sense of community \u2013 people meet, ideas are exchanged, people have a good time\u2026 what\u2019s not to love!'
 	            ),
 	            _react2.default.createElement(
 	              'p',
@@ -50126,9 +50126,9 @@
 	              _react2.default.createElement(
 	                'a',
 	                { className: 'purple', href: 'mailto:andy@scoopfoundation.com' },
-	                'Get in touch'
+	                'Get in touch with Andy'
 	              ),
-	              ' with Andy now and he will help you every step of the way. '
+	              ' now and he will help you every step of the way.'
 	            ),
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
@@ -50467,12 +50467,13 @@
 	      null,
 	      "The Team"
 	    ),
+	    _react2.default.createElement("br", null),
 	    _react2.default.createElement(
 	      "p",
 	      null,
 	      "SCOOP has no paid employees but we reward our fundraisers with 7.5% back out of what they have raised. We feel this helps them live their life, takes a bit of pressure off, helps them pay their rent and bills etc. But more importantly it helps get the ideas flowing again for future endeavours\u2026"
 	    ),
-	    _react2.default.createElement("hr", { style: { width: "100%" } }),
+	    _react2.default.createElement("br", null),
 	    _react2.default.createElement(
 	      "div",
 	      { className: "partner" },
@@ -50916,7 +50917,7 @@
 	          "If you are a company and would like to become an official partner, check out their ",
 	          _react2.default.createElement(
 	            "a",
-	            { className: "orange", href: "http://www.careers.ox.ac.uk/" },
+	            { className: "orange", href: "http://www.careers.ox.ac.uk/micro-internships-employer-info/" },
 	            "website"
 	          )
 	        )
@@ -51227,7 +51228,7 @@
 /* 543 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -51237,88 +51238,104 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var IndiaProject = function IndiaProject() {
 	    return _react2.default.createElement(
-	        "div",
-	        { className: "india-p-bg" },
+	        'div',
+	        { className: 'india-p-bg' },
 	        _react2.default.createElement(
-	            "section",
-	            { className: "text-container" },
+	            'section',
+	            { className: 'text-container' },
 	            _react2.default.createElement(
-	                "h1",
+	                'h1',
 	                null,
-	                "The Jeevan Village"
+	                'The Jeevan Village'
 	            ),
-	            _react2.default.createElement("br", null),
+	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "Moving on from the incredible work done at The Jeevan School, we have already purchased 2 acres of land outside the city (from a campaign run a couple years back) and plan to build a brand new village, designed for the children alone."
-	            ),
-	            _react2.default.createElement(
-	                "p",
-	                null,
-	                "The centre will offer a home to 100 children and a school to over 500 more."
+	                'Moving on from the incredible work done at The Jeevan School, we have already purchased 2 acres of land outside the city of Varanasi (from a campaign run a couple years back) and plan to build a brand new village, designed for the children alone.'
 	            ),
 	            _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "The plan is to build classrooms, bedrooms, gardens and courtyards \u2013 a series of living and learning spaces that are all built with children\u2019s development at heart."
+	                'The centre will offer a home to 100 children and a school to over 500 more.'
 	            ),
 	            _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "It will also be self-sustainable \u2013 with solar energy, an organic farm and innovative waste disposal techniques."
+	                'The plan is to build classrooms, bedrooms, gardens and courtyards \u2013 a series of living and learning spaces that are all built with children\u2019s development at heart.'
 	            ),
 	            _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "It will offer pre-nursery to pre-university level schooling, an infirmary and workshops, staff, student and volunteer accommodation, a family support centre, computer room, library, creativity area, multiple gardens, kitchens, canteens, and recreational amenities."
+	                'It will also be self-sustainable \u2013 with solar energy, an organic farm and innovative waste disposal techniques.'
 	            ),
 	            _react2.default.createElement(
-	                "p",
+	                'p',
 	                null,
-	                "There will be classrooms for English, Science and Maths, and yoga will be enjoyed each morning."
+	                'It will offer pre-nursery to pre-university level schooling, an infirmary and workshops, staff, student and volunteer accommodation, a family support centre, computer room, library, creativity area, multiple gardens, kitchens, canteens, and recreational amenities.'
 	            ),
-	            _react2.default.createElement("br", null),
-	            _react2.default.createElement("br", null),
-	            _react2.default.createElement("br", null),
 	            _react2.default.createElement(
-	                "div",
-	                { className: "flex-row", style: { alignItems: "center", height: "auto" } },
+	                'p',
+	                null,
+	                'There will be classrooms for English, Science and Maths, and yoga will be enjoyed each morning.'
+	            ),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement('br', null),
+	            _react2.default.createElement(
+	                'div',
+	                { className: 'flex-row', style: { alignItems: 'center', height: 'auto' } },
 	                _react2.default.createElement(
-	                    "div",
-	                    { style: { width: "70%" } },
-	                    _react2.default.createElement("iframe", { className: "video-iframe", width: "560", height: "315", src: "https://www.youtube.com/embed/kROb6o4Fmkk", frameBorder: "0", allowfullscreen: true })
+	                    'div',
+	                    { style: { width: '70%' } },
+	                    _react2.default.createElement('iframe', { className: 'video-iframe', width: '560', height: '315', src: 'https://www.youtube.com/embed/kROb6o4Fmkk', frameBorder: '0', allowfullscreen: true })
 	                ),
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "volunteer-box", style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
+	                    'div',
+	                    { className: 'volunteer-box', style: { display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' } },
 	                    _react2.default.createElement(
-	                        "h3",
+	                        'h3',
 	                        null,
-	                        "Get involved!"
+	                        'Get involved!'
 	                    ),
 	                    _react2.default.createElement(
-	                        "p",
-	                        { style: { textAlign: "center" } },
-	                        "If you would like to help make this project a reality"
-	                    ),
-	                    _react2.default.createElement(
-	                        "span",
-	                        { className: "purple-inverse-btn" },
+	                        'p',
+	                        { style: { textAlign: 'center' } },
+	                        'If you would like to help make this project a reality ',
 	                        _react2.default.createElement(
-	                            "a",
-	                            { href: "mailto:andy@scoopfoundation.com" },
-	                            "get in touch today"
+	                            _NavLink2.default,
+	                            { to: '/donate', className: 'orange' },
+	                            'make a donation'
+	                        ),
+	                        ',  set up a',
+	                        _react2.default.createElement(
+	                            _NavLink2.default,
+	                            { className: 'purple', to: '/fundraise' },
+	                            ' fundraising page'
+	                        ),
+	                        '\xA0on our behalf, or'
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        _react2.default.createElement(
+	                            'a',
+	                            { href: 'mailto:andy@scoopfoundation.com', className: 'purple-inverse-btn', style: { margin: 0 } },
+	                            'get in touch with Andy today'
 	                        )
 	                    )
 	                )
 	            )
 	        ),
-	        _react2.default.createElement("img", { className: "home-bk", src: "modules/assets/project-india-bg.jpg" })
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/project-india-bg.jpg' })
 	    );
 	};
 
@@ -51328,7 +51345,7 @@
 /* 544 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -51338,17 +51355,109 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var SyriaProject = function SyriaProject() {
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "text-container" },
+	    'div',
+	    { className: 'Syria-p-bg' },
 	    _react2.default.createElement(
-	      "h1",
-	      null,
-	      "SyriaProject"
-	    )
+	      'div',
+	      { className: 'text-container' },
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'Syria Project'
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Together with our partner organisation on the ground in Syria & Iraq - JHK -  we wish to build a new school in an area sacred to the Yazidi people, who live in extreme poverty and who receive very little support in the region.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'The plan is to build a school in an area where there hasn\'t been one for decades (since Saddam\'s own time of brutality) and to provide and ensure access to educational services for all Yazidi children and illiterate adolescents affected by the ISIS brutality and the situation in the Sharfedin area.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'We believe the journey for displaced children to regain a normal life begins at school, and by investing in their education today we secure their future.  The school will also serve as community centre for those in need of medical attention, clothes, drinking water and, of course, an education.'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'flex-row', style: { alignItems: 'center', height: 'auto' } },
+	        _react2.default.createElement(
+	          'div',
+	          { style: { width: '60%' } },
+	          _react2.default.createElement('img', { width: '100%', src: 'modules/assets/project-syria-sm2.jpg' })
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'volunteer-box', style: { width: '40%', margin: "2%", paddingBottom: "5%", display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' } },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'The numbers'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'It will cost 60k to build a 2 story / 4 classroom school, and a further 20k to fit it out with whiteboards, desks, copybooks and all other materials teaching and learning materials.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'There are 500+ children in the area, plus another 300+ teenagers and young adults in the area.'
+	          ),
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { className: 'blue-inverse-btn', to: '/donate' },
+	            'Donate now!'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'div',
+	        { style: { backgroundColor: "rgba(255,255,255,0.5)", padding: "3%", borderRadius: "5px" } },
+	        _react2.default.createElement(
+	          'h3',
+	          null,
+	          'Why the Sharfedin area?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Sharfedin is a holy place for Yazidi people. JHK visited Sharfedin area in 2014 when ISIS were trying to seize the area. The brave people defended their area and fortunately ISIS plan never succeed to destroy the 800 year old shrine that is one of the holiest places on earth for Yazidis.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'The team have learned that among those thousands of \'zidis\' who have been captured by ISIS, those who were illiterate or brainwashed (especially young girls) have not been able to to contact their families as they could not even dial a phone number.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'This centre will help keep children safe and help kickstart a community on its knees after the conflict in Syria and Iraq.'
+	        ),
+	        _react2.default.createElement(
+	          'center',
+	          null,
+	          _react2.default.createElement(
+	            _NavLink2.default,
+	            { className: 'orange-inverse-btn', to: '/fundraise' },
+	            'Start a fundraiser on our behalf'
+	          )
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img35.jpg' })
 	  );
 	};
 

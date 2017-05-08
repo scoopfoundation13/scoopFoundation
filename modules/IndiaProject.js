@@ -1,12 +1,13 @@
 import React from 'react';
+import NavLink from './NavLink';
 
 const IndiaProject = () => {
   return (
-    <div className="india-p-bg">
-    <section className="text-container">
+    <div className='india-p-bg'>
+    <section className='text-container'>
         <h1>The Jeevan Village</h1>
         <br />
-        <p>Moving on from the incredible work done at The Jeevan School, we have already purchased 2 acres of land outside the city (from a campaign run a couple years back) and plan to build a brand new village, designed for the children alone.</p>
+        <p>Moving on from the incredible work done at The Jeevan School, we have already purchased 2 acres of land outside the city of Varanasi (from a campaign run a couple years back) and plan to build a brand new village, designed for the children alone.</p>
 
         <p>The centre will offer a home to 100 children and a school to over 500 more.</p>
 
@@ -21,20 +22,20 @@ const IndiaProject = () => {
         <br />
         <br />
 
-        <div className="flex-row" style={{alignItems:"center", height:"auto"}}>
-            <div style={{width:"70%"}}>
-                <iframe className="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/kROb6o4Fmkk" frameBorder="0" allowfullscreen></iframe>
+        <div className='flex-row' style={{alignItems:'center', height:'auto'}}>
+            <div style={{width:'70%'}}>
+                <iframe className='video-iframe' width='560' height='315' src='https://www.youtube.com/embed/kROb6o4Fmkk' frameBorder='0' allowfullscreen></iframe>
             </div>
-            <div className="volunteer-box" style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+            <div className='volunteer-box' style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
             <h3>Get involved!</h3>
-                <p style={{textAlign:"center"}}>If you would like to help make this project a reality</p>
-                <span className="purple-inverse-btn"><a href="mailto:andy@scoopfoundation.com">get in touch today</a></span>
+                <p style={{textAlign:'center'}}>If you would like to help make this project a reality <NavLink to="/donate" className="orange">make a donation</NavLink>,  set up a 
+                <NavLink className='purple' to='/fundraise'> fundraising page</NavLink> on our behalf, or</p>
+                <p><a href="mailto:andy@scoopfoundation.com" className='purple-inverse-btn' style={{margin:0}}>get in touch with Andy today</a></p>
             </div>
-
         </div>
 
     </section>
-    <img className = "home-bk" src = 'modules/assets/project-india-bg.jpg' />
+    <img className = 'home-bk' src = 'modules/assets/project-india-bg.jpg' />
 
     </div>
     );

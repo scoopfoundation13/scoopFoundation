@@ -4,8 +4,9 @@ const Team = () => {
   return (
     <div className="text-container">
       <h1>The Team</h1>
+      <br />
       <p>SCOOP has no paid employees but we reward our fundraisers with 7.5% back out of what they have raised. We feel this helps them live their life, takes a bit of pressure off, helps them pay their rent and bills etc. But more importantly it helps get the ideas flowing again for future endeavours…</p>
-      <hr style={{width:"100%"}}/>
+      <br/>
       <div className="partner">
         <div style={{width: "40%", paddingRight:"30px"}}><img src="/modules/assets/team/andy2.jpg"/></div>
         <div style={{width: "60%"}}>

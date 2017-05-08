@@ -96,7 +96,7 @@ const Partners = () => {
         <div style={{width: "70%"}}>
         <h3>Oxford University (Interns)</h3>
         <p>We are honoured to partner with Oxford University and their Micro-Internship Programme, which allows us to work some of the finest minds in the world for intensive 5 day stints, three times a year.</p>
-        <p>If you are a company and would like to become an official partner, check out their <a className="orange" href='http://www.careers.ox.ac.uk/'>website</a></p>
+        <p>If you are a company and would like to become an official partner, check out their <a className="orange" href='http://www.careers.ox.ac.uk/micro-internships-employer-info/'>website</a></p>
         </div>
         <div style={{width: "30%", margin: "0 0 0 30px"}}>
           <img src="/modules/assets/partners/Oxford%20Uni%20Internships.jpg"/>
