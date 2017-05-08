@@ -6,6 +6,9 @@ orange #FF8200 rgb(255,130,0);
 
 body {
   font-family: 'Varela Round', sans-serif;
+  --blue: #64CCC9;
+  --orange: #FF8200;
+  --purple: #9B26B6;
 }
 
 nav {
@@ -87,15 +90,15 @@ nav li {
 }
 
 .purple {
-  color: #9B26B6;
+  color: var(--purple);
 }
 
 .blue {
-  color: #64CCC9;
+  color: var(--blue);
 }
 
 .orange {
-  color: #FF8200;
+  color: var(--orange);
 }
 
 .icon {
@@ -148,7 +151,6 @@ nav li {
 
 .flex-col span {
   padding: 5px;
-  /*text-shadow: 2px 4px 3px rgba(0,0,0,0.3);*/
 }
 
 #video-background {
@@ -305,6 +307,7 @@ nav li {
 
 .purple-btn {
   border-radius: 5px;
+  border: 2px solid #9B26B6;
   background-color: #9B26B6;
   color: #fff;
   padding: 5px 10px;
@@ -314,6 +317,21 @@ nav li {
 .purple-btn:hover {
   color: #9B26B6;
   border: 2px solid #9B26B6;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.orange-btn {
+  border-radius: 5px;
+  border: 2px solid var(--orange);
+  background-color: var(--orange);
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+.orange-btn:hover {
+  color: var(--orange);
+  border: 2px solid var(--orange);
   background-color: rgba(255,255,255,0.5);
 }
 
@@ -380,6 +398,10 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer-social a:hover {
+  color: var(--blue);
 }
 
 footer i {
@@ -457,7 +479,7 @@ footer i {
 .volunteer-box {
   width: 30%; 
   padding:20px; 
-  height:250px; 
+  min-height:250px; 
   background-color:rgba(255,255,255,0.3); 
 }
 
@@ -1022,7 +1044,7 @@ iframe {
     padding-top: 5%;
   }
 
-  .gallery-bander span {
+  .gallery-bander span:first-child * {
     color: #FF8200;
   }
 

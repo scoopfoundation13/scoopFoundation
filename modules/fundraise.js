@@ -94,11 +94,11 @@ class Fundraise extends React.Component {
         <br/>
         <div className="text-container" style={{fontSize: "1.1em"}}>
           <center>
-            <p>We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria.</p>
-            <p>Or are you planning to run a marathon, take on a challenge or simply wish to make a difference in children’s lives? Set up a Fundraising Page or get in touch with Andy now!</p>
-            <p>To set up a page, <a className="purple" href="https://www.justgiving.com/scoop" target="_blank">click here</a></p>
+            <p>We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria. </p>
+            <p>Are you planning to run a marathon, take on a challenge or simply wish to make a difference in children’s lives? Set up a Fundraising Page or get in touch with Andy now!</p>
+            <a className="purple-btn" href="https://www.justgiving.com/scoop" target="_blank">Set up a Fundraising page</a>
 
-            <p>If you need any assistance, contact <a className="orange" href="mailto:andy@scoopfoundation.com">andy@scoopfoundation.com</a></p>
+            <a className="orange-btn" href="mailto:andy@scoopfoundation.com">Get in touch with Andy</a>
           </center>
         </div>
         <br/>
@@ -115,9 +115,9 @@ class Fundraise extends React.Component {
           <center>
             <p>For €10,000 you or your company can build an entire classroom or help run one for an entire year.</p>
             <br />
-            <p>Email the founder to find out more:
+            <p>Email the founder to find out more:</p>
             <a href="emailto:andy@scoopfoundation.com"><span className="gallery-btn">I am interested!</span></a>
-            </p>
+            
           </center>
         </div>
         <br/>
@@ -135,9 +135,9 @@ class Fundraise extends React.Component {
             <p>For the first 5 years of SCOOP’s life, 100% of our funds raised came from the events Andy &amp; Calvin ran, so we are passionate about running them and know the impact they can have. Not only do events raise much needed funds, they create a great sense of community – people meet, ideas are exchanged, people have a good time… what’s not to love!</p>
             <p><a className="purple" href="mailto:andy@scoopfoundation.com">Get in touch with Andy</a> now and he will help you every step of the way.</p>
             <br />
-            <p>Check out some of the events we have run down the years:
+            <p>Check out some of the events we have run down the years:</p>
             <span className="interested-btn" onClick={(e) => this.openLightbox(e)}>View past events</span>
-            </p>
+            
           </center>
           <Lightbox
             currentImage={this.state.currentImage}

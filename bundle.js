@@ -50033,32 +50033,22 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria.'
+	              'We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria. '
 	            ),
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Or are you planning to run a marathon, take on a challenge or simply wish to make a difference in children\u2019s lives? Set up a Fundraising Page or get in touch with Andy now!'
+	              'Are you planning to run a marathon, take on a challenge or simply wish to make a difference in children\u2019s lives? Set up a Fundraising Page or get in touch with Andy now!'
 	            ),
 	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'To set up a page, ',
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'purple', href: 'https://www.justgiving.com/scoop', target: '_blank' },
-	                'click here'
-	              )
+	              'a',
+	              { className: 'purple-btn', href: 'https://www.justgiving.com/scoop', target: '_blank' },
+	              'Set up a Fundraising page'
 	            ),
 	            _react2.default.createElement(
-	              'p',
-	              null,
-	              'If you need any assistance, contact ',
-	              _react2.default.createElement(
-	                'a',
-	                { className: 'orange', href: 'mailto:andy@scoopfoundation.com' },
-	                'andy@scoopfoundation.com'
-	              )
+	              'a',
+	              { className: 'orange-btn', href: 'mailto:andy@scoopfoundation.com' },
+	              'Get in touch with Andy'
 	            )
 	          )
 	        ),
@@ -50094,15 +50084,15 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Email the founder to find out more:',
+	              'Email the founder to find out more:'
+	            ),
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'emailto:andy@scoopfoundation.com' },
 	              _react2.default.createElement(
-	                'a',
-	                { href: 'emailto:andy@scoopfoundation.com' },
-	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'gallery-btn' },
-	                  'I am interested!'
-	                )
+	                'span',
+	                { className: 'gallery-btn' },
+	                'I am interested!'
 	              )
 	            )
 	          )
@@ -50149,14 +50139,14 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'Check out some of the events we have run down the years:',
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'interested-btn', onClick: function onClick(e) {
-	                    return _this2.openLightbox(e);
-	                  } },
-	                'View past events'
-	              )
+	              'Check out some of the events we have run down the years:'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'interested-btn', onClick: function onClick(e) {
+	                  return _this2.openLightbox(e);
+	                } },
+	              'View past events'
 	            )
 	          ),
 	          _react2.default.createElement(_reactImages2.default, {
@@ -50187,7 +50177,7 @@
 /* 536 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -50197,80 +50187,92 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _NavLink = __webpack_require__(223);
+
+	var _NavLink2 = _interopRequireDefault(_NavLink);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Cambodia = function Cambodia() {
 	  return _react2.default.createElement(
-	    "div",
-	    { className: "cambodia-bg" },
+	    'div',
+	    { className: 'cambodia-bg' },
 	    _react2.default.createElement(
-	      "section",
-	      { id: "cambodia", className: "text-container" },
+	      'section',
+	      { id: 'cambodia', className: 'text-container' },
 	      _react2.default.createElement(
-	        "h1",
+	        'h1',
 	        null,
-	        " SCAO I, III & III "
+	        ' SCAO I, III & III '
 	      ),
-	      _react2.default.createElement("br", null),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
-	        "p",
+	        'p',
 	        null,
-	        "Cambodia is where the SCOOP story begins, when Andy came across an under - resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself. "
-	      ),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "The SCAO is now one of the hardest working local NGOs in and around Phnom Penh and together we plan to build more schools and reach more children."
+	        'Cambodia is where the SCOOP story begins, when Andy came across an under - resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified Teachers and Development Studies graduates to live there, helping them build up the school and the organisation itself. '
 	      ),
 	      _react2.default.createElement(
-	        "p",
+	        'p',
 	        null,
-	        "In 2011, together we built a new school from scratch\u2013 the SCAO II School - and at the tail end of 2016 a third school was constructed and opened - SCAO III - this time alongside other NGOs and altruists from all around the world. "
-	      ),
-	      _react2.default.createElement("br", null),
-	      _react2.default.createElement("h3", null),
-	      _react2.default.createElement(
-	        "h3",
-	        null,
-	        " The future? "
+	        'The SCAO is now one of the hardest working local NGOs in and around Phnom Penh and together we plan to build more schools and reach more children.'
 	      ),
 	      _react2.default.createElement(
-	        "p",
+	        'p',
 	        null,
-	        "To continue building schools farther into Cambodia\u2019 s countryside (which is 80% of the country), in order to stop the migration of uneducated young people and children to its cities - who sadly find themselves vulnerable and desperate for work, usually finding it in low paid garment factories or in the vast amount of \u2018girly\u2019 bars and brothels where young women, men and children are exploited daily. "
+	        'In 2011, together we built a new school from scratch\u2013 the SCAO II School - and at the tail end of 2016 a third school was constructed and opened - SCAO III - this time alongside other NGOs and altruists from all around the world. '
 	      ),
-	      _react2.default.createElement("br", null),
+	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
-	        "div",
-	        { className: "flex-row", style: { alignItems: "center" } },
+	        'h3',
+	        null,
+	        ' The future? '
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'To continue building schools farther into Cambodia\u2019 s countryside (which is 80% of the country), in order to stop the migration of uneducated young people and children to its cities - who sadly find themselves vulnerable and desperate for work, usually finding it in low paid garment factories or in the vast amount of \u2018girly\u2019 bars and brothels where young women, men and children are exploited daily. '
+	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'flex-row', style: { alignItems: "center" } },
 	        _react2.default.createElement(
-	          "div",
+	          'div',
 	          { style: { width: "70%" } },
-	          _react2.default.createElement("iframe", { className: "video-iframe", style: { margin: "auto" }, width: "560", height: "315", src: "https://www.youtube.com/embed/bqz5mJ_8eXI", frameBorder: "0", allowfullscreen: true })
+	          _react2.default.createElement('iframe', { className: 'video-iframe', style: { margin: "auto" }, width: '560', height: '315', src: 'https://www.youtube.com/embed/bqz5mJ_8eXI', frameBorder: '0', allowfullscreen: true })
 	        ),
 	        _react2.default.createElement(
-	          "div",
-	          { className: "volunteer-box" },
+	          'div',
+	          { className: 'volunteer-box', style: { textAlign: "center" } },
 	          _react2.default.createElement(
-	            "h3",
-	            null,
-	            "Want to volunteer?"
+	            'center',
+	            { style: { margin: "20px auto 30px" } },
+	            _react2.default.createElement(
+	              _NavLink2.default,
+	              { className: 'blue-inverse-btn', to: '/donate' },
+	              'Sponsor a Teacher Today!'
+	            )
 	          ),
 	          _react2.default.createElement(
-	            "p",
+	            'h3',
 	            null,
-	            " If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. ",
+	            'Want to volunteer?'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            ' If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. ',
 	            _react2.default.createElement(
-	              "a",
-	              { className: "orange", href: "mailto:info@scoopfoundation.com" },
-	              "Get in touch today!"
+	              'a',
+	              { className: 'orange', href: 'mailto:info@scoopfoundation.com' },
+	              'Get in touch.'
 	            )
 	          )
 	        )
 	      )
 	    ),
-	    _react2.default.createElement("br", null),
-	    _react2.default.createElement("img", { className: "home-bk", src: "modules/assets/img03.jpg" })
+	    _react2.default.createElement('br', null),
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img03.jpg' })
 	  );
 	};
 
@@ -51329,11 +51331,11 @@
 	                    _react2.default.createElement(
 	                        'p',
 	                        { style: { textAlign: 'center' } },
-	                        'If you would like to help make this project a reality ',
+	                        'If you would like to help make this project a reality, make a ',
 	                        _react2.default.createElement(
 	                            _NavLink2.default,
 	                            { to: '/donate', className: 'orange' },
-	                            'make a donation'
+	                            'donation'
 	                        ),
 	                        ',  set up a',
 	                        _react2.default.createElement(

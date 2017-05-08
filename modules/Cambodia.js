@@ -1,4 +1,5 @@
 import React from 'react';
+import NavLink from './NavLink';
 
 const Cambodia = () => {
   return ( 
@@ -18,16 +19,6 @@ const Cambodia = () => {
         
         <br />
 
-        <h3></h3>
-
-      {/*
-        <div className="flex-row">
-          <div className="impact-img" style={{backgroundImage:"url(modules/assets/img09.jpg)", backgroundSize:"cover"}}></div>
-          <div className="impact-img hide-sm" style={{backgroundImage:"url(modules/assets/img20.jpg)", backgroundSize:"cover"}}></div>
-          <div className="impact-img hide-sm" style={{backgroundImage:"url(modules/assets/img10.jpg)", backgroundSize:"cover"}}></div>
-        </div>
-      */}
-
         <h3> The future? </h3>
 
         <p>
@@ -39,9 +30,11 @@ const Cambodia = () => {
         <div style={{width: "70%"}}>
           <iframe className="video-iframe" style={{margin:"auto"}} width="560" height="315" src="https://www.youtube.com/embed/bqz5mJ_8eXI" frameBorder="0" allowfullscreen></iframe>
           </div>
-          <div className="volunteer-box">
+          <div className="volunteer-box" style={{textAlign:"center"}}>
+          <center style={{margin:"20px auto 30px"}}><NavLink className="blue-inverse-btn" to="/donate">Sponsor a Teacher Today!</NavLink></center>
+          
           <h3>Want to volunteer?</h3> 
-          <p> If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. <a className="orange" href="mailto:info@scoopfoundation.com">Get in touch today!</a></p> 
+          <p> If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. <a className="orange" href="mailto:info@scoopfoundation.com">Get in touch.</a></p> 
           </div>
         </div>
       </section> 
