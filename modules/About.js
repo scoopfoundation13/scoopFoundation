@@ -52,7 +52,7 @@ const About = () => {
           <p className="about-text">The countries we work in have a huge amount of children living in poverty or engaging in child labour. They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
         </div>
       </section>
-      <section>
+      <section style={{margin:"100px auto"}}>
         <img style={{width:"100%"}} src="modules/assets/report-banner.png"/>
       </section>
       <img className="home-bk" src="modules/assets/founders.jpg"/>
