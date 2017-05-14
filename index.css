@@ -215,7 +215,7 @@ nav li {
 }
 
 .home-bottomCardTxt {
-  height: 20%;
+  height: 150px;
   padding: 10px 5px; 
   text-align:center;
   display: flex;
@@ -251,6 +251,15 @@ nav li {
 
 .home-bottomCardTxt span {
   margin: 10px 3px;
+}
+
+.home-bottom-cards {
+  position: relative;
+  height: auto;
+  background: url(modules/assets/img39.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 1000px;
 }
 
 .home-sec3 {
@@ -974,6 +983,10 @@ iframe {
 
   .video-iframe {
     display: none;
+  }
+
+  .home-bottom-cards {
+    background: none;
   }
 
 }

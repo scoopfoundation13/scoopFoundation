@@ -41,15 +41,19 @@ const About = () => {
             <i style={{fontSize:"1.6em"}} className="fa fa-users orange" aria-hidden="true"></i>
             <span className="orange">HOW?</span>
           </div>
-          <p className="about-text">Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development. We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England. Meet <NavLink className="orange" to="/partners">Meet our Partners here.</NavLink></p>
+          <p className="about-text">Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development.</p>
+          <p className="about-text">We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England. <NavLink className="orange" to="/partners">Meet our Partners here.</NavLink></p>
         </div>
         <div style={{width:"47%", margin:"3%", marginLeft:"5%"}}>
           <div className="about-title" style={{display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
             <i style={{fontSize:"1.6em"}} className="fa fa-globe blue" aria-hidden="true"></i>
             <span className="blue">WHY?</span>
           </div>
-          <p className="about-text">The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
+          <p className="about-text">The countries we work in have a huge amount of children living in poverty or engaging in child labour. They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
         </div>
+      </section>
+      <section>
+        <img style={{width:"100%"}} src="modules/assets/report-banner.png"/>
       </section>
       <img className="home-bk" src="modules/assets/founders.jpg"/>
     </div>

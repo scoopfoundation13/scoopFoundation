@@ -96,6 +96,7 @@ class Fundraise extends React.Component {
           <center>
             <p>We are big fans of the Just Giving platform as it is super easy and safe to use and just about anyone can use it. We have used it previously to raise funds to build classrooms and run schools, as well as to support medical clinics & buy ambulances in Syria. </p>
             <p>Are you planning to run a marathon, take on a challenge or simply wish to make a difference in children’s lives? Set up a Fundraising Page or get in touch with Andy now!</p>
+            <br/>
             <a className="purple-btn" href="https://www.justgiving.com/scoop" target="_blank">Set up a Fundraising page</a>
 
             <a className="orange-btn" href="mailto:andy@scoopfoundation.com">Get in touch with Andy</a>

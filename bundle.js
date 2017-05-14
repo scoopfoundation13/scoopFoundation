@@ -44756,7 +44756,12 @@
 	        _react2.default.createElement(
 	          'p',
 	          { className: 'about-text' },
-	          'Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development. We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England.\xA0Meet ',
+	          'Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'about-text' },
+	          'We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England.\xA0',
 	          _react2.default.createElement(
 	            _NavLink2.default,
 	            { className: 'orange', to: '/partners' },
@@ -44780,9 +44785,14 @@
 	        _react2.default.createElement(
 	          'p',
 	          { className: 'about-text' },
-	          'The countries we work in have a huge amount of children living in poverty or engaging in child labour.  They also rank as the most corrupt countries in the world, and children are the ones suffering.'
+	          'The countries we work in have a huge amount of children living in poverty or engaging in child labour. They also rank as the most corrupt countries in the world, and children are the ones suffering.'
 	        )
 	      )
+	    ),
+	    _react2.default.createElement(
+	      'section',
+	      null,
+	      _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/report-banner.png' })
 	    ),
 	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/founders.jpg' })
 	  );
@@ -44898,7 +44908,7 @@
 	  caption: 'SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion'
 	}, {
 	  src: 'modules/assets/gallery/4a.battle4supremacylr.jpg',
-	  caption: ''
+	  caption: 'One of Conor Harrington\'s celebrated artworks was sold at one of our auction in 2011.'
 	}, {
 	  src: 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg',
 	  caption: 'Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event'
@@ -44913,14 +44923,15 @@
 	  caption: 'The 2nd school in Cambodia ready to open in 2011'
 	}, {
 	  src: 'modules/assets/gallery/9. SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia.jpg',
-	  caption: 'SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia'
+	  caption: 'SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visiting in the 2nd school in Cambodia'
 	}, {
 	  src: 'modules/assets/gallery/10 .Artist ADW creates a special artwork for us in 2010.jpg',
 	  caption: 'Artist ADW creates a special artwork for us in 2010'
 	}, {
 	  src: 'modules/assets/gallery/11. ADW\'s Elton which raised €900.jpg',
 	  caption: 'ADW\'s Elton which raised €900'
-	}, { src: 'modules/assets/gallery/12. The Better Than Socks event 2012.jpg',
+	}, {
+	  src: 'modules/assets/gallery/12. The Better Than Socks event 2012.jpg',
 	  caption: 'The Better Than Socks event 2012'
 	}, {
 	  src: 'modules/assets/gallery/13. The SCOOP Ireland Team in 2014.jpg',
@@ -44936,7 +44947,7 @@
 	  caption: 'SCOOP Australia 1st logo 2015'
 	}, {
 	  src: 'modules/assets/gallery/17. We partner up with The Jeevan School in Varanasi, India in 2010.jpg',
-	  caption: 'We partner up with The Jeevan School in Varanasi, India in 2010'
+	  caption: 'We partnered up with The Jeevan School in Varanasi, India in 2010'
 	}, {
 	  src: 'modules/assets/gallery/17a. The Jeevan School offers a home and safe haven for homeless children in the city.jpg',
 	  caption: 'The Jeevan School offers a home and safe haven for homeless children in the city'
@@ -45262,7 +45273,7 @@
 	        _react2.default.createElement('div', { className: 'empty-section' }),
 	        _react2.default.createElement(
 	          'div',
-	          { className: '', style: { position: "relative", height: "1000px" } },
+	          { className: 'home-bottom-cards', style: { position: "relative" } },
 	          _react2.default.createElement(
 	            'section',
 	            { className: 'home-sec4' },
@@ -45279,8 +45290,8 @@
 	                  'For all our news, project updates and events'
 	                ),
 	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'home-orange-btn' },
+	                  'a',
+	                  { style: { marginTop: "15px" }, className: 'home-orange-btn', href: 'http://scoopfoundationblog.wordpress.com', target: '_blank' },
 	                  'Blog'
 	                )
 	              )
@@ -45288,13 +45299,13 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img08.jpg' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/report.png' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt blue-theme' },
 	                _react2.default.createElement(
 	                  'span',
-	                  null,
+	                  { style: { padding: "0 5px" } },
 	                  'Check out our Annual Report for 2016'
 	                ),
 	                _react2.default.createElement(
@@ -45315,7 +45326,7 @@
 	                { className: 'home-bottomCardTxt purple-theme' },
 	                _react2.default.createElement(
 	                  'span',
-	                  null,
+	                  { style: { padding: "0 5px" } },
 	                  'Support us now by picking up a Tee, our Artists\' Cookbook and more!'
 	                ),
 	                _react2.default.createElement(
@@ -45325,8 +45336,7 @@
 	                )
 	              )
 	            )
-	          ),
-	          _react2.default.createElement('img', { className: 'home-bk', style: { position: "absolute", bottom: 0, zIndex: "-1" }, src: 'modules/assets/img39.jpg' })
+	          )
 	        ),
 	        this.state.pdfLightboxIsOpen && _react2.default.createElement(
 	          'div',
@@ -45334,7 +45344,7 @@
 	          _react2.default.createElement('i', { onClick: function onClick() {
 	              return _this2.handlePDFLightBox();
 	            }, className: 'fa fa-times', 'aria-hidden': 'true' }),
-	          _react2.default.createElement('embed', { src: 'modules/assets/report.pdf' })
+	          _react2.default.createElement('embed', { src: 'modules/assets/report2.pdf' })
 	        )
 	      );
 	    }
@@ -50040,6 +50050,7 @@
 	              null,
 	              'Are you planning to run a marathon, take on a challenge or simply wish to make a difference in children\u2019s lives? Set up a Fundraising Page or get in touch with Andy now!'
 	            ),
+	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'a',
 	              { className: 'purple-btn', href: 'https://www.justgiving.com/scoop', target: '_blank' },
