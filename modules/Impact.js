@@ -30,7 +30,7 @@ const Impact = () => {
       <br />
       <br />
       <br />
-      <div className="impact-cam-bg">
+      <div className="">
         <section style={{textAlign:"center"}}>
           <h1 className="purple">Get involved today!</h1>
           <div>
@@ -67,11 +67,14 @@ const Impact = () => {
         <br />
         <br />
         <br />
-        <img className="home-bk" src="modules/assets/img37.jpg"/>
+        <img className="home-bk" src="modules/assets/img41.jpg"/>
       </div>
 
-      <div className="impact-sy-bg">
+      <div className="">
       <div className="text-container">
+        <br />
+        <br />
+        <br />
         <h2>Syria</h2>
          
         <p>The 8 medical clinics we support in Northern Syria tend to over 500,000 civilians caught in the middle of the war, children included. We also support ambulances, trained medical staff and help provide medical equipment.</p>
@@ -83,7 +86,7 @@ const Impact = () => {
       <br />
       <br />
       <br />
-      <img className="home-bk" src="modules/assets/img36.jpg"/>
+      <img className="home-bk" src="modules/assets/img42.jpg"/>
       </div>
     </div>
   );

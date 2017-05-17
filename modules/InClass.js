@@ -24,7 +24,7 @@ class InClass extends React.Component {
         <section className="text-container center">
         <h1>In Class</h1>
         <br />
-        <p>We currently work in Cambodia, India and Syria. Click on the boxes below to find about the projects already in full flow…</p>
+        <p>We currently work in Cambodia​ and in Varanasi​, India​, and with your help we want to build schools in​ Syria​ & Iraq too​. Click on the boxes below to find about the projects already in full flow…​</p>
         </section>
         <section>
           <ThreeARow img={imgArray}/>

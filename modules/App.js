@@ -57,7 +57,7 @@ class App extends React.Component {
             <span className="link"><NavLink to="/about">About Us</NavLink></span>
             <span className="link"><NavLink to="/impact">Impact</NavLink></span>
             <span className="link"><NavLink to="/team">Meet the Team</NavLink></span>
-            <span className="link">Read our Blog</span>
+            <span className="link"><a href="http://scoopfoundationblog.wordpress.com">Read our Blog</a></span>
             </div>
             <div>
             <span><b>Get Involved</b></span>

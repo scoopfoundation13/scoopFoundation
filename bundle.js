@@ -25813,7 +25813,11 @@
 	              _react2.default.createElement(
 	                'span',
 	                { className: 'link' },
-	                'Read our Blog'
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'http://scoopfoundationblog.wordpress.com' },
+	                  'Read our Blog'
+	                )
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -44671,6 +44675,8 @@
 	  value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -44685,118 +44691,180 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var About = function About() {
-	  var divStyle = {
-	    width: 'auto',
-	    height: '100%',
-	    backgroundImage: 'url(modules/assets/img01.jpg)',
-	    backgroundSize: 'cover'
-	  };
-	  var imgArray = [{
-	    img: 'modules/assets/thumbnails/About%20-%20Meet%20the%20team.jpg',
-	    link: 'meettheteam',
-	    path: '/team',
-	    text: 'Meet the Team'
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var About = function (_React$Component) {
+	  _inherits(About, _React$Component);
+
+	  function About() {
+	    _classCallCheck(this, About);
+
+	    var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this));
+
+	    _this.state = {
+	      pdfLightboxIsOpen: false
+	    };
+	    _this.handlePDFLightBox = _this.handlePDFLightBox.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(About, [{
+	    key: 'handlePDFLightBox',
+	    value: function handlePDFLightBox() {
+	      this.setState(function (state) {
+	        return { pdfLightboxIsOpen: !state.pdfLightboxIsOpen };
+	      });
+	    }
 	  }, {
-	    img: 'modules/assets/thumbnails/impact.jpg',
-	    path: '/impact',
-	    link: '#impact',
-	    text: 'Impact'
-	  }, {
-	    img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
-	    path: 'http://syriasvibes.com',
-	    link: '#syria',
-	    text: 'Syrias Vibes'
-	  }];
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'section',
-	      { className: 'text-container' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'purple' },
-	        'WHO?'
-	      ),
-	      _react2.default.createElement('br', null),
-	      _react2.default.createElement(
-	        'p',
+	    key: 'render',
+	    value: function render() {
+	      var _this2 = this;
+
+	      var divStyle = {
+	        width: 'auto',
+	        height: '100%',
+	        backgroundImage: 'url(modules/assets/img01.jpg)',
+	        backgroundSize: 'cover'
+	      };
+	      var imgArray = [{
+	        img: 'modules/assets/thumbnails/About%20-%20Meet%20the%20team.jpg',
+	        link: 'meettheteam',
+	        path: '/team',
+	        text: 'Meet the Team'
+	      }, {
+	        img: 'modules/assets/thumbnails/impact.jpg',
+	        path: '/impact',
+	        link: '#impact',
+	        text: 'Impact'
+	      }, {
+	        img: 'modules/assets/thumbnails/About%20-%20Syrias%20Vibes.jpg',
+	        path: 'http://syriasvibes.com',
+	        link: '#syria',
+	        text: 'Syrias Vibes'
+	      }];
+	      return _react2.default.createElement(
+	        'div',
 	        null,
-	        'We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created ',
 	        _react2.default.createElement(
-	          'a',
-	          { className: 'purple', href: 'www.syriasvibes.com' },
-	          'Syrias Vibes'
+	          'section',
+	          { className: 'text-container' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'purple' },
+	            'WHO?'
+	          ),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created ',
+	            _react2.default.createElement(
+	              'a',
+	              { className: 'purple', href: 'www.syriasvibes.com' },
+	              'Syrias Vibes'
+	            ),
+	            ' - an initiative that supports medical clinics, emergency rescue services and internally displaced people in Syria & Iraq.'
+	          )
 	        ),
-	        ' - an initiative that supports medical clinics and emergency rescue services in Syria.'
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      null,
-	      _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      { className: 'text-container about-align' },
-	      _react2.default.createElement(
-	        'div',
-	        { style: { width: "47%", margin: "3%", marginRight: "5%" } },
+	        _react2.default.createElement(
+	          'section',
+	          null,
+	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'text-container about-align' },
+	          _react2.default.createElement(
+	            'div',
+	            { style: { width: "47%", margin: "3%", marginRight: "5%" } },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'about-title', style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
+	              _react2.default.createElement('i', { style: { fontSize: "1.6em" }, className: 'fa fa-users orange', 'aria-hidden': 'true' }),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'orange' },
+	                'HOW?'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'about-text' },
+	              'Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development.'
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'about-text' },
+	              'We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England.\xA0',
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { className: 'orange', to: '/partners' },
+	                'Meet our Partners here.'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { style: { width: "47%", margin: "3%", marginLeft: "5%" } },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'about-title', style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
+	              _react2.default.createElement('i', { style: { fontSize: "1.6em" }, className: 'fa fa-globe blue', 'aria-hidden': 'true' }),
+	              _react2.default.createElement(
+	                'span',
+	                { className: 'blue' },
+	                'WHY?'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'p',
+	              { className: 'about-text' },
+	              'The countries we work in have a huge amount of children living in poverty or engaging in child labour. They also rank as the most corrupt countries in the world, and children are the ones suffering.'
+	            )
+	          )
+	        ),
 	        _react2.default.createElement(
 	          'div',
-	          { className: 'about-title', style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
-	          _react2.default.createElement('i', { style: { fontSize: "1.6em" }, className: 'fa fa-users orange', 'aria-hidden': 'true' }),
+	          { className: 'report-container' },
+	          _react2.default.createElement('div', { className: 'home-impact-item', style: { width: "100%", height: "350px", backgroundImage: "url('modules/assets/report-banner.png')", backgroundSize: "cover" } }),
 	          _react2.default.createElement(
-	            'span',
-	            { className: 'orange' },
-	            'HOW?'
+	            'div',
+	            { style: { height: "250px", fontSize: "1.5em", backgroundColor: "#fff", textAlign: "center", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", borderLeft: "2px solid var(--purple)", borderRight: "2px solid var(--purple)", borderBottom: "2px solid var(--purple)", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px" } },
+	            _react2.default.createElement(
+	              'p',
+	              null,
+	              ' The aim of our school is to provide an education and social support to children and families living in poverty. This year, we have also extended our operations to Syria and the provision of medical care for displaced persons or those caught up in the war.'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'orange-inverse-btn', onClick: function onClick() {
+	                  return _this2.handlePDFLightBox();
+	                } },
+	              'View the 2016 Annuel Report'
+	            )
 	          )
 	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'about-text' },
-	          'Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'about-text' },
-	          'We have built a global community and work with grass root NGOs living and working on the ground in Cambodia, India and Syria. We also work with similar NGOs in Australia, Germany, Syria, Spain and England.\xA0',
-	          _react2.default.createElement(
-	            _NavLink2.default,
-	            { className: 'orange', to: '/partners' },
-	            'Meet our Partners here.'
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { style: { width: "47%", margin: "3%", marginLeft: "5%" } },
-	        _react2.default.createElement(
+	        this.state.pdfLightboxIsOpen && _react2.default.createElement(
 	          'div',
-	          { className: 'about-title', style: { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" } },
-	          _react2.default.createElement('i', { style: { fontSize: "1.6em" }, className: 'fa fa-globe blue', 'aria-hidden': 'true' }),
-	          _react2.default.createElement(
-	            'span',
-	            { className: 'blue' },
-	            'WHY?'
-	          )
+	          { className: 'pdf-lightbox' },
+	          _react2.default.createElement('i', { onClick: function onClick() {
+	              return _this2.handlePDFLightBox();
+	            }, className: 'fa fa-times', 'aria-hidden': 'true' }),
+	          _react2.default.createElement('embed', { src: 'modules/assets/report2.pdf' })
 	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'about-text' },
-	          'The countries we work in have a huge amount of children living in poverty or engaging in child labour. They also rank as the most corrupt countries in the world, and children are the ones suffering.'
-	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'section',
-	      null,
-	      _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/report-banner.png' })
-	    ),
-	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/founders.jpg' })
-	  );
-	};
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/founders.jpg' })
+	      );
+	    }
+	  }]);
+
+	  return About;
+	}(_react2.default.Component);
+
+	;
 
 	exports.default = About;
 
@@ -45103,8 +45171,7 @@
 	              _react2.default.createElement(
 	                _NavLink2.default,
 	                { to: '/donate', className: 'home-nav-pill' },
-	                'MAKE A DONATION',
-	                _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
+	                'MAKE A DONATION'
 	              )
 	            )
 	          ),
@@ -45244,14 +45311,14 @@
 	        _react2.default.createElement('div', { className: 'empty-section' }),
 	        _react2.default.createElement(
 	          'section',
-	          { style: { backgroundColor: "#dcf2f1" } },
+	          null,
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'home-impact' },
-	            _react2.default.createElement('div', { className: 'home-impact-item', style: { height: "300px", backgroundImage: "url('modules/assets/img28.jpg')", backgroundSize: "cover" } }),
+	            _react2.default.createElement('div', { className: 'home-impact-item', style: { height: "350px", backgroundImage: "url('modules/assets/img28.jpg')", backgroundSize: "cover" } }),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'home-impact-item', style: { height: "300px", fontSize: "1.5em", backgroundColor: "#fff", textAlign: "center", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" } },
+	              { className: 'home-impact-item', style: { height: "350px", fontSize: "1.5em", backgroundColor: "#fff", textAlign: "center", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", borderTop: "2px solid var(--blue)", borderRight: "2px solid var(--blue)", borderBottom: "2px solid var(--blue)", boxSizing: "border-box", borderTopRightRadius: "5px", borderBottomRightRadius: "5px" } },
 	              _react2.default.createElement(
 	                'span',
 	                { style: { display: "block", margin: " 0 50px;" } },
@@ -45264,7 +45331,7 @@
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'orange-inverse-btn', style: { fontSize: "0.9em" } },
-	                  'See more of our Impact'
+	                  'See more of our impact'
 	                )
 	              )
 	            )
@@ -45320,7 +45387,7 @@
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-bottomCard' },
-	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img32.png' }),
+	              _react2.default.createElement('img', { width: '100%', src: 'modules/assets/img32.jpg' }),
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'home-bottomCardTxt purple-theme' },
@@ -49686,7 +49753,7 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'We currently work in Cambodia, India and Syria. Click on the boxes below to find about the projects already in full flow\u2026'
+	            'We currently work in Cambodia\u200B and in Varanasi\u200B, India\u200B, and with your help we want to build schools in\u200B Syria\u200B & Iraq too\u200B. Click on the boxes below to find about the projects already in full flow\u2026\u200B'
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -49779,7 +49846,12 @@
 	          _react2.default.createElement(
 	            'p',
 	            null,
-	            'To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. '
+	            'To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. To date we have helped build 3 schools from scratch, renovate or improve 4 more, and bought 2 acres of land in India\u200B in order to build a new set of homes and classrooms for children of begging families\u200B. '
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from\u200B\u200B events or online crowdfunding campaigns run by volunteers\u200B.'
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -50566,7 +50638,7 @@
 	          "It was a visit by Andy\u2019s brother Calvin to Cambodia in 2002 that prompted him to go several years later. A DJ, Special Needs Assistant and all round good guy, since leaving school aged 18 Calvin has never stopped travelling and has visited over 80 countries worldwide. He is currently writing down all of his travel stories (",
 	          _react2.default.createElement(
 	            "a",
-	            { className: "hover-purple", href: "" },
+	            { className: "hover-purple", href: "http://scoopfoundationblog.wordpress.com" },
 	            "check out our blog"
 	          ),
 	          ") and spends time each year working as a Medical Assistant in Syria."
@@ -50682,7 +50754,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "Claire is a professional freelance writer, editor and project manager, having worked with the Canadian Encyclopedia, ICOMOS, Bauhaus University, Youth Science Foundation Canada, MyWorldAbroad.com, and many others. She also works as an interdisciplinary artist, and has performed and exhibited in Canada, the US, Germany and Bosnia. Claire is currently based in Bogot\xE1, Colombia, and is thrilled to be volunteering with Syrias Vibes."
+	          "Claire is a professional freelance writer, editor and project manager, having worked with the Canadian Encyclopedia, ICOMOS, Bauhaus University, Youth Science Foundation Canada, MyWorldAbroad.com, and many others. She also works as an interdisciplinary artist, and has performed and exhibited in Canada, the US, Germany and Bosnia. Claire is currently based in Bogot\xE1, Colombia."
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -50741,7 +50813,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "SCAO stands for Support Children In Asia and it is one of the hardest working and fastest growing local NGOs in Phnom Penh, Cambodia. It was set up by Mr Samith and his wife, and their goal is to educate as many of Cambodia\u2019s poor."
+	          "SCAO stands for Support Children In Asia Organisation and it is one of the hardest working and fastest growing local NGOs in Phnom Penh, Cambodia. It was set up by Mr Samith and his wife, and their goal is to educate as many of Cambodia\u2019s poor."
 	        ),
 	        _react2.default.createElement(
 	          "p",
@@ -50756,7 +50828,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "SCAO is going from strength to strength, and each school becomes more ambitious, reaching more children and offering more service to their families. "
+	          "SCAO is going from strength to strength, and each school becomes more ambitious, reaching more children and offering more services to their families. "
 	        ),
 	        _react2.default.createElement(
 	          "p",
@@ -50845,7 +50917,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "JLK are a Swedish organisation supporting NGOs and individual funds and voluntaries support in Northern Syria and Kurdistan."
+	          "JLK are a Swedish organisation supporting IDPs (Internally Displaced People) in Northern Syria and Kurdistan. They are involved with medical clinics, surgeries, psychological therapies, reuniting families, working with women and children who have been abducted etc and work with Yazidi and Kurdish minorities."
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -50896,7 +50968,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "KiK are small but dedicated German organisation who provide the vast bulk of the running costs for the SCAO in Cambodia through a small number of regular donors connected to the SCAO Board."
+	          "KiK are a small but dedicated German organisation who provide the vast bulk of the running costs for the SCAO in Cambodia through a small number of regular donors connected to the SCAO Board."
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -50924,7 +50996,7 @@
 	        _react2.default.createElement(
 	          "p",
 	          null,
-	          "Another German organisation with strong ties in Cambodia, Gecko offer development assistance and support to children and young adults in need in Cambodia. They focus on healthcare and pay for badly needs operations for those generally shunned by society, like the blind, deaf, those with cleft lips etc."
+	          "Another German organisation with strong ties with Cambodia, Gecko offer development assistance and support to children and young adults in need. They focus on healthcare and pay for badly needed operations for those generally shunned by society, like the blind, deaf, those with cleft lips etc."
 	        )
 	      )
 	    ),
@@ -51051,7 +51123,7 @@
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'impact-cam-bg' },
+	        { className: '' },
 	        _react2.default.createElement(
 	          'section',
 	          { style: { textAlign: "center" } },
@@ -51151,14 +51223,17 @@
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
-	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img37.jpg' })
+	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img41.jpg' })
 	    ),
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'impact-sy-bg' },
+	      { className: '' },
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'text-container' },
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'h2',
 	          null,
@@ -51183,7 +51258,7 @@
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement('br', null),
-	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img36.jpg' })
+	      _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img42.jpg' })
 	    )
 	  );
 	};
@@ -51226,7 +51301,7 @@
 	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.'
+	        'As you can see, the\u200B 3rd\u200B school\u200B in Cambodia\u200B is already half finished, but now we\u200B just\u200B need to build the 2nd floor\u200B,\u200B which will have more classrooms\u200B for more children\u200B.'
 	      ),
 	      _react2.default.createElement(
 	        'p',

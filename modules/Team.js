@@ -20,7 +20,7 @@ const Team = () => {
         <div style={{width: "60%"}}>
           <h2>Calvin James</h2>
           <h5 className="purple">SYRIAS VIBES & SCOOP CO-FOUNDER</h5>
-          <p>It was a visit by Andy’s brother Calvin to Cambodia in 2002 that prompted him to go several years later. A DJ, Special Needs Assistant and all round good guy, since leaving school aged 18 Calvin has never stopped travelling and has visited over 80 countries worldwide. He is currently writing down all of his travel stories (<a className="hover-purple" href="">check out our blog</a>) and spends time each year working as a Medical Assistant in Syria.</p>
+          <p>It was a visit by Andy’s brother Calvin to Cambodia in 2002 that prompted him to go several years later. A DJ, Special Needs Assistant and all round good guy, since leaving school aged 18 Calvin has never stopped travelling and has visited over 80 countries worldwide. He is currently writing down all of his travel stories (<a className="hover-purple" href="http://scoopfoundationblog.wordpress.com">check out our blog</a>) and spends time each year working as a Medical Assistant in Syria.</p>
         </div>
         <div style={{width: "40%", paddingLeft:"30px"}}><img src="/modules/assets/team/calvin.jpg"/></div>
       </div>
@@ -55,7 +55,7 @@ const Team = () => {
         <div style={{width: "70%"}}>
           <h2>Claire Seringhaus</h2>
           <h5 className="purple">BLOG MANAGER</h5>
-          <p>Claire is a professional freelance writer, editor and project manager, having worked with the Canadian Encyclopedia, ICOMOS, Bauhaus University, Youth Science Foundation Canada, MyWorldAbroad.com, and many others. She also works as an interdisciplinary artist, and has performed and exhibited in Canada, the US, Germany and Bosnia. Claire is currently based in Bogotá, Colombia, and is thrilled to be volunteering with Syrias Vibes.</p>
+          <p>Claire is a professional freelance writer, editor and project manager, having worked with the Canadian Encyclopedia, ICOMOS, Bauhaus University, Youth Science Foundation Canada, MyWorldAbroad.com, and many others. She also works as an interdisciplinary artist, and has performed and exhibited in Canada, the US, Germany and Bosnia. Claire is currently based in Bogotá, Colombia.</p>
         </div>
         <div style={{width: "30%", paddingLeft:"30px"}}><img src="/modules/assets/team/claire.jpg"/></div>
       </div>

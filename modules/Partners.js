@@ -11,13 +11,13 @@ const Partners = () => {
         </div>
         <div style={{width: "70%"}}>
           <h3>SCAO (Cambodia)</h3>
-          <p>SCAO stands for Support Children In Asia and it is one of the hardest working and fastest growing local NGOs in Phnom Penh, Cambodia. It was set up by Mr Samith and his wife, and their goal is to educate as many of Cambodia’s poor.</p>
+          <p>SCAO stands for Support Children In Asia Organisation and it is one of the hardest working and fastest growing local NGOs in Phnom Penh, Cambodia. It was set up by Mr Samith and his wife, and their goal is to educate as many of Cambodia’s poor.</p>
 
           <p>Although its volunteers hail from Ireland, Germany and Australia, the organisation is Cambodia run, and always will be.</p>
 
           <p>Our Founder came across their first school by chance in 2008, and a quick friendship and bond was formed. Andy helped them build more classrooms, and eventually schools, and persuaded Irish teachers and Development Studies graduates to live in Cambodia and work with them. </p>
 
-          <p>SCAO is going from strength to strength, and each school becomes more ambitious, reaching more children and offering more service to their families. </p>
+          <p>SCAO is going from strength to strength, and each school becomes more ambitious, reaching more children and offering more services to their families. </p>
 
           <p>We are proud to work with them and together have big plans to build more schools in future.</p>
 
@@ -54,7 +54,7 @@ const Partners = () => {
       <div className="partner">
         <div style={{width: "70%"}}>
           <h3>Joint Help for Kurdistan (Syria)</h3>
-          <p>JLK are a Swedish organisation supporting NGOs and individual funds and voluntaries support in Northern Syria and Kurdistan.</p>
+          <p>JLK are a Swedish organisation supporting IDPs (Internally Displaced People) in Northern Syria and Kurdistan. They are involved with medical clinics, surgeries, psychological therapies, reuniting families, working with women and children who have been abducted etc and work with Yazidi and Kurdish minorities.</p>
         </div>
         <div style={{width: "30%", margin: "0 0 0 30px"}}>
           <img src="/modules/assets/partners/joint%20help.jpg"/>
@@ -76,7 +76,7 @@ const Partners = () => {
       <div className="partner">
         <div style={{width: "70%"}}>
           <h3>KiK (Germany / Cambodia)</h3>
-          <p>KiK are small but dedicated German organisation who provide the vast bulk of the running costs for the SCAO in Cambodia through a small number of regular donors connected to the SCAO Board.</p>
+          <p>KiK are a small but dedicated German organisation who provide the vast bulk of the running costs for the SCAO in Cambodia through a small number of regular donors connected to the SCAO Board.</p>
         </div>
         <div style={{width: "30%", margin: "0 0 0 30px"}}>
           <img src="/modules/assets/partners/Kik%20logo.png"/>
@@ -89,7 +89,7 @@ const Partners = () => {
         </div>
         <div style={{width: "70%"}}>
         <h3>Gecko (Germany / Cambodia)</h3>
-        <p>Another German organisation with strong ties in Cambodia, Gecko offer development assistance and support to children and young adults in need in Cambodia. They focus on healthcare and pay for badly needs operations for those generally shunned by society, like the blind, deaf, those with cleft lips etc.</p>
+        <p>Another German organisation with strong ties with Cambodia, Gecko offer development assistance and support to children and young adults in need. They focus on healthcare and pay for badly needed operations for those generally shunned by society, like the blind, deaf, those with cleft lips etc.</p>
         </div>
       </div>
       <div className="partner">

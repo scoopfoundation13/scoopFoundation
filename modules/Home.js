@@ -157,7 +157,7 @@ class Home extends React.Component {
   handlePDFLightBox() {
     this.setState(state => {
       return {pdfLightboxIsOpen: !state.pdfLightboxIsOpen}
-    })
+    });
   }
 
   gotoNext() {
@@ -179,7 +179,7 @@ class Home extends React.Component {
           <div className="flex-col">
             <span style={{textShadow:"2px 4px 3px rgba(0,0,0,0.3)"}}>NO CHILD SHOULD LIVE IN POVERTY</span>
             <span><hr style={{border: "1px solid #efefef", width:"600px"}}/></span>
-            <span style={{textShadow:"0px 0px 0px rgba(255,255,255,0)"}}><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION<i className="fa fa-arrow-right" aria-hidden="true"></i></NavLink></span>
+            <span style={{textShadow:"0px 0px 0px rgba(255,255,255,0)"}}><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION</NavLink></span>
           </div>
           <video autoPlay loop id="video-background" muted>
             <source src="modules/assets/INTR.mp4" type="video/mp4"/>
@@ -237,14 +237,14 @@ class Home extends React.Component {
 
         <div className="empty-section"></div>
 
-        <section style={{backgroundColor:"#dcf2f1"}}>
+        <section>
           <div className="home-impact">
-            <div className="home-impact-item" style={{height:"300px",backgroundImage:"url('modules/assets/img28.jpg')", backgroundSize:"cover"}}></div>
-            <div className="home-impact-item" style={{height:"300px",fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
+            <div className="home-impact-item" style={{height:"350px",backgroundImage:"url('modules/assets/img28.jpg')", backgroundSize:"cover"}}></div>
+            <div className="home-impact-item" style={{height:"350px",fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center", borderTop:"2px solid var(--blue)", borderRight:"2px solid var(--blue)", borderBottom:"2px solid var(--blue)", boxSizing: "border-box", borderTopRightRadius:"5px", borderBottomRightRadius:"5px"}}>
               <span style={{display:"block", margin:" 0 50px;"}}>Our schools help steer children away from child labour and other forms of child abuse.</span>
               <br/>
               <NavLink to="/impact">
-                <span className="orange-inverse-btn" style={{fontSize:"0.9em"}}>See more of our Impact</span>
+                <span className="orange-inverse-btn" style={{fontSize:"0.9em"}}>See more of our impact</span>
               </NavLink>
             </div>
           </div>
@@ -269,7 +269,7 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/img32.png"/>
+            <img width="100%" src="modules/assets/img32.jpg"/>
             <div className="home-bottomCardTxt purple-theme">
               <span style={{padding: "0 5px"}}>Support us now by picking up a Tee, our Artists' Cookbook and more!</span>
               <span className="home-purple-btn">Shop</span>

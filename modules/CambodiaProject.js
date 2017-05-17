@@ -7,7 +7,7 @@ const CambodiaProject = () => {
     <section className="text-container">
     <h1>SCAO III (on-going development)</h1>
     <br />
-    <p>As you can see, the school is already half finished, but now we need to build the 2nd floor which will have more classrooms.</p>
+    <p>As you can see, the​ 3rd​ school​ in Cambodia​ is already half finished, but now we​ just​ need to build the 2nd floor​,​ which will have more classrooms​ for more children​.</p>
 
     <p>We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village. </p>
 
