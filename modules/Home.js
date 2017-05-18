@@ -252,6 +252,10 @@ class Home extends React.Component {
 
         <div className="empty-section"></div>
 
+        <div style={{height:"150px", fontSize:"2em", display:"flex", justifyContent: "center", alignItems:"center"}}><img style={{height:"100%"}} src="modules/assets/heart.png"/><span>SCOOP is run by non-paid volunteers</span></div>
+
+        <div className="empty-section"></div>
+
         <div className="home-bottom-cards" style={{position:"relative"}}>
         <section className="home-sec4">
           <div className="home-bottomCard">
