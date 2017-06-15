@@ -25,7 +25,7 @@ class BuildingProjects extends React.Component {
       <section className="text-container center">
       <h1>Building Projects</h1>
       <br />
-      <p>To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India. This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from events or online crowdfunding campaigns run by volunteers. To date we have helped build 3 schools from scratch, renovate or improve 4 more, and bought 2 acres of land in India​ in order to build a new set of homes and classrooms for children of begging families​. </p>
+      <p>To date we have helped build 3 schools from scratch, and renovate or improve 4 more, and bought 2 acres of land in India in order to build a new set of homes and classrooms for children of begging families​.</p>
 
       <p>This may not seem like much, it works at about 1 a year, but we do not receive any government funding and the majority of our funds raised have come from​​ events or online crowdfunding campaigns run by volunteers​.</p>
       <p><NavLink to="/fundraise" className="purple">Get involved today!</NavLink></p>

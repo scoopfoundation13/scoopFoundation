@@ -7,7 +7,7 @@ const India = () => {
         <h1>The Jeevan School & Home, Varanasi, India</h1>
         <br />
         <p>
-        In the holy city of Varanasi, it’s not uncommon to see children wandering the streets alone, begging. Over 250,000 people live there in 175 different slums there, many families live and sleep on the side of busy dirty roads.
+        In the holy city of Varanasi, it’s not uncommon to see children wandering the streets alone, begging. Over 250,000 people live there in 175 different slums there, while many families live and sleep on the side of busy dirty roads.
         </p>
         <p>
         The Jeevan School is a shining light, in a city full of scam schools and sham NGOs. It offers an all-round education to over 120 children from begging families, and is also a home to 40 of the worst affected children living in the poorest area of Varanasi.
@@ -15,7 +15,7 @@ const India = () => {
         <br />
         <h3>Why Varanasi?</h3>
         <p>
-        The Holy City of Varanasi is the heart of the Hindu religion and is a sight to behold, enjoying a huge wave of annual domestic and international visitors. 
+        The Holy City of Varanasi is at the heart of the Hindu religion and is a sight to behold, enjoying a huge wave of domestic and international visitors each year. 
         </p>
         <p>
         The dark side of this boom leaves over 80,000 families making desperate choices to simply survive. Children are forced to beg, steal, work long hard hours, and are exploited in too many other ways. But at The Jeevan School the children’s spirits soar and you will never meet a nicer group of well-rounded, well-mannered and brilliantly intelligent children – the result of the incredible work done by its dedicated staff and teachers. 

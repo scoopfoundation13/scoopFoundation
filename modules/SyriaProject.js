@@ -21,7 +21,7 @@ const SyriaProject = () => {
         <h3>The numbers</h3>
           <p>It will cost 60k to build a 2 story / 4 classroom school, and a further 20k to fit it out with whiteboards, desks, copybooks and all other materials teaching and learning materials.</p>
           <p>There are 500+ children in the area, plus another 300+ teenagers and young adults in the area.</p>
-          <NavLink className="blue-inverse-btn" to="/donate">Donate now!</NavLink>
+          <a target="_blank" className="blue-inverse-btn" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Donate now!</a>
         </div>
       </div>
       <br/>
@@ -33,7 +33,7 @@ const SyriaProject = () => {
         <p>The team have learned that among those thousands of 'zidis' who have been captured by ISIS, those who were illiterate or brainwashed (especially young girls) have not been able to to contact their families as they could not even dial a phone number.</p>
 
         <p>This centre will help keep children safe and help kickstart a community on its knees after the conflict in Syria and Iraq.</p>
-        <center><NavLink className="orange-inverse-btn" to="/fundraise">Start a fundraiser on our behalf</NavLink></center>
+        <center><a className="orange-inverse-btn" target="_blank" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Start a fundraiser on our behalf</a></center>
       </div>
       </div>
       <img className = 'home-bk' src = 'modules/assets/img35.jpg' />

@@ -12,7 +12,7 @@ const Team = () => {
         <div style={{width: "60%"}}>
           <h2>Andrew Sweeney</h2>
           <h5 className="orange">FOUNDER / EVENTS / SCOOP TOUR</h5>
-          <p>In 2008, right after college, Andy embarked on a trip around the world, ending up in South-East Asia where he came across a small, family run school - an encounter that led him on the path to creating SCOOP. Andy has a love for running all types events, creating innovative ways of fundraising, and generally loves building an organisation that is open to all to get involved, and that tries out new ideas all the time.</p>
+          <p>In 2008, right after college, Andy embarked on a trip around the world, ending up in South-East Asia where he came across a small, family run school &mdash; an encounter that led him on the path to creating SCOOP. Andy has a love for running all types events, creating innovative ways of fundraising, and generally loves building an organisation that is open to all to get involved, and that tries out new ideas all the time.</p>
           <p><a className="hover-orange" href="mailto:andy@scoopfoundation.com">andy@scoopfoundation.com</a></p>
         </div>
       </div>
@@ -29,14 +29,14 @@ const Team = () => {
         <div style={{width: "60%"}}>
           <h2>Jodi Rashbrook</h2>
           <h5 className="orange">INDIA & SCOOP AUSTRALIA CO-FOUNDER</h5>
-          <p>Whilst she calls Perth home, she lives a semi nomadic lifestyle and enjoys volunteering overseas. Just before Jodi co-founded SCOOP Australia, she had just returned from teaching English for 5 months in Ladakh, India. It wasn’t long before she was back in India, this time spending 6 months at our partner NGO supporting the Jeevan School. It’s being with the kids and seeing them learn, create and grow that drives Jodi’s passion.</p>
+          <p>Whilst she calls Perth home, she lives a semi nomadic lifestyle and enjoys volunteering overseas. Just before Jodi co-founded SCOOP Australia, she had returned from teaching English for 5 months in Ladakh, India. It wasn’t long before she was back in India, this time spending 6 months at our partner NGO supporting the Jeevan School. It’s being with the kids and seeing them learn, create and grow that drives Jodi’s passion.</p>
         </div>
       </div>
       <div className="partner">
         <div style={{width: "60%"}}>
           <h2>Lisa Rennie</h2>
           <h5 className="purple">SCOOP AUSTRALIA (FOUNDER)</h5>
-          <p>After university Lisa moved to Cambodia to volunteer for SCAO and then intern for the UNDP. It was these experiences, and her South African childhood, that compelled Lisa to take action for change. But her final inspiration for bringing The SCOOP Foundation to Australia was the birth of her daughter, who Lisa hopes will grow and learn that the world, and its people can be beautiful.</p>
+          <p>After university Lisa moved to Cambodia to volunteer for SCAO and then intern for the UNDP. It was these experiences, and her South African childhood, that compelled Lisa to take action for change. But her final inspiration for bringing The SCOOP Foundation to Australia was the birth of her daughter, who Lisa hopes will grow and learn that the world, and its people, can be beautiful.</p>
         </div>
         <div style={{width: "40%", paddingLeft:"30px"}}><img src="/modules/assets/team/lisa.jpg"/></div>
       </div>

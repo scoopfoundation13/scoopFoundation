@@ -43,9 +43,10 @@ class About extends React.Component {
     return (
       <div>
         <section className="text-container">
+        <i style={{fontSize:"5em", display:"block", margin:"0 auto", textAlign:"center"}} className="fa fa-users purple" aria-hidden="true"></i>
         <h1 className="purple">WHO?</h1>
         <br />
-            <p>We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> - an initiative that supports medical clinics, emergency rescue services and internally displaced people in Syria & Iraq.</p>
+            <p>We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> &mdash; an initiative that supports medical clinics, emergency rescue services and internally displaced people in Syria & Iraq.</p>
         </section>
         <section>
           <ThreeARow img={imgArray}/>
@@ -53,7 +54,6 @@ class About extends React.Component {
         <section className="text-container about-align">
           <div style={{width:"47%", margin:"3%", marginRight:"5%"}}>
             <div className="about-title" style={{display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-              <i style={{fontSize:"1.6em"}} className="fa fa-users orange" aria-hidden="true"></i>
               <span className="orange">HOW?</span>
             </div>
             <p className="about-text">Working with local partner organisations and hiring local builders, we build schools that focus on free education and community development.</p>
@@ -61,26 +61,30 @@ class About extends React.Component {
           </div>
           <div style={{width:"47%", margin:"3%", marginLeft:"5%"}}>
             <div className="about-title" style={{display: "flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
-              <i style={{fontSize:"1.6em"}} className="fa fa-globe blue" aria-hidden="true"></i>
               <span className="blue">WHY?</span>
             </div>
             <p className="about-text">The countries we work in have a huge amount of children living in poverty or engaging in child labour. They also rank as the most corrupt countries in the world, and children are the ones suffering.</p>
           </div>
         </section>
         <div className="report-container">
-          <div className="home-impact-item" style={{width:"100%", height:"350px",backgroundImage:"url('modules/assets/report-banner.png')", backgroundSize:"cover"}}></div>
-          <div style={{height:"250px",fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center", borderLeft: "2px solid var(--purple)", borderRight: "2px solid var(--purple)", borderBottom: "2px solid var(--purple)", borderBottomLeftRadius:"5px", borderBottomRightRadius:"5px"}}>
-            <p> The aim of our school is to provide an education and social support to children and families living in poverty. This year, we have also extended our operations to Syria and the provision of medical care for displaced persons or those caught up in the war.</p>
-            <span className="orange-inverse-btn" onClick={() => this.handlePDFLightBox()}>View the 2016 Annuel Report</span>
+          <div className="home-impact-item" style={{width:"100%", height:"350px",backgroundImage:"url('modules/assets/report-banner.png')", backgroundSize:"cover", borderTopLeftRadius:"5px", borderTopRightRadius:"5px"}}></div>
+          <div style={{height:"250px",fontSize:"1.2em", padding:"0 10px", backgroundColor:"#fff", textAlign:"center", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center", borderLeft: "2px solid var(--purple)", borderRight: "2px solid var(--purple)", borderBottom: "2px solid var(--purple)", borderBottomLeftRadius:"5px", borderBottomRightRadius:"5px"}}>
+            <p> The aim of our schools is to provide an education and social support to children and families living in poverty. This year, we have also extended our operations to Syria and the provision of medical care for displaced persons or those caught up in the war.</p>
+            <span className="orange-inverse-btn" style={{fontSize:"1.2em"}} onClick={() => this.handlePDFLightBox()}>View the 2016 Annual Report</span>
           </div>
         </div>
+        <section style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", marginBottom:"8%", fontSize:"1.5em"}}>
+        <img src="modules/assets/donationchart.png" style={{width:"50%"}}/>
+        <NavLink to="/donate"><span className="gallery-btn">Make a Donation</span></NavLink>
+        </section>
+        
         {this.state.pdfLightboxIsOpen &&
             (<div className="pdf-lightbox">
               <i onClick={() => this.handlePDFLightBox()} className="fa fa-times" aria-hidden="true"></i>
               <embed src="modules/assets/report2.pdf" />
             </div>)
           }
-          
+
         <img className="home-bk" src="modules/assets/founders.jpg"/>
       </div>
       );

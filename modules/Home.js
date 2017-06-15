@@ -182,11 +182,11 @@ class Home extends React.Component {
             <span style={{textShadow:"0px 0px 0px rgba(255,255,255,0)"}}><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION</NavLink></span>
           </div>
           <video autoPlay loop id="video-background" muted>
-            <source src="modules/assets/INTR.mp4" type="video/mp4"/>
+            <source src="modules/assets/scoop.mp4" type="video/mp4"/>
           </video>
         </section>
         <center style={{margin:"30px auto", width:"70%", backgroundColor:"rgba(255,255,255, 0.5)", padding:"25px;", borderRadius:"5px"}}>
-        <h2 style={{fontSize:"2em"}}>We build schools and strive to break the poverty cycle for children living in Developing Countries.</h2>
+        <h2 style={{fontSize:"2em"}}>We build schools and strive to break the poverty cycle for children living in developing countries.</h2>
         </center>
         <section className="home-sec2">
           <div className={this.isActive(1)} onMouseOver={() => this.handleClick(1)}>
@@ -252,7 +252,8 @@ class Home extends React.Component {
 
         <div className="empty-section"></div>
 
-        <div style={{height:"150px", fontSize:"2em", display:"flex", justifyContent: "center", alignItems:"center"}}><img style={{height:"100%"}} src="modules/assets/heart.png"/><span>SCOOP is run by non-paid volunteers</span></div>
+        <div style={{height:"150px", fontSize:"2em", display:"flex", justifyContent: "center", alignItems:"center"}}><img style={{height:"100%"}} src="modules/assets/heart.png"/><span>
+        We are passionate about bringing people together through positive and creative fundraising, whilst making a difference those who need it most.</span></div>
 
         <div className="empty-section"></div>
 

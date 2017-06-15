@@ -20,7 +20,7 @@ const Impact = () => {
         </div>
         <div style={{width: "25%", padding:"2%"}}>
           <img style={{width: "100%"}} src="modules/assets/earth.png"/>
-          <center>There are currently 832 children in class or in care worldwide, and counting…</center>
+          <center>Today, we have 832 children in class or care because of SCOOP projects.. and counting.</center>
         </div>
         <div style={{width: "25%", padding:"2%"}}>
           <img style={{width: "100%"}} src="modules/assets/Bedroom.png"/>
@@ -43,9 +43,9 @@ const Impact = () => {
         <br />
         <br />
         <h2>Cambodia</h2>
-        <p>The <NavLink to="/cambodia" className="blue">SCAO</NavLink> offer free classes in English and Computers for over 600 children and young adults, as well as offering other social services such as healthcare, eye tests & spectacles, dental work, mosquito nets, clothes, water filters etc to their families.</p>
+        <p>SCOOP is proud to partner with Cambodian charity: The <NavLink to="/cambodia" className="blue">SCAO</NavLink>. SCAO offer free classes in English and Computing for over 600 children and young adults, as well as offering other much needed social services for families such as healthcare, eye tests &amp; spectacles, dental work, mosquito nets, clothes, water filters etc.</p>
      
-        <p>They also train up young local teachers, empowering them to become the change their communities need.</p>
+        <p>They also train up young local teachers; empowering them to become the change their communities need.</p>
         </div>
         <br />
         <br />
@@ -60,7 +60,7 @@ const Impact = () => {
         <br />
         <h2>Varanasi, India</h2>
          
-        <p>The Jeevan School is a loving home to 40 homeless ‘street' children living in full time accommodation, and another 100+ receive an all-round education and meals.</p>
+        <p>The Jeevan School is a loving home to 40 homeless 'street' children who are now living in full time accommodation, with another 100+ receiving an all-round education and daily meals.</p>
 
         <p>The <NavLink to="/india" className="purple">Jeevan Village</NavLink> will offer a home to 100 homeless children and schooling to over 300 more. Support the project today!</p>
       </div>
