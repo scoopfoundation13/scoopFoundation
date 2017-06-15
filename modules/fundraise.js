@@ -84,6 +84,22 @@ class Fundraise extends React.Component {
     return (
       <div>
         <div style={{position:"relative"}}>
+          <img style={{width:"100%"}} src="modules/assets/shop.png"/>
+          <div className="fundraise-section" style={{top: "20%"}}>
+            <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/heart.png"/>
+            <a href="https://scoopfoundation.squarespace.com" target="_blank"><h1 className="shadow">Check out our shop!</h1></a>
+          </div>
+        </div>
+        <br/>
+        <div className="text-container" style={{fontSize: "1.1em"}}>
+          <center>
+            <p>You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists Cookbook, limited edition art prints and more! Every items includes a life changing donation.</p>
+            <br/>
+            <a className="orange-btn" href="https://scoopfoundation.squarespace.com" target="_blank">Check it out now!</a>
+          </center>
+        </div>
+
+        <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img15.png"/>
           <div className="fundraise-section" style={{top: "20%"}}>
             <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-1.png"/>
