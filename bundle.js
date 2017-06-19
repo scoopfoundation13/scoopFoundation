@@ -25653,11 +25653,10 @@
 	          _react2.default.createElement(
 	            'div',
 	            null,
-	            this.state.isDropdown ? _react2.default.createElement(
+	            this.state.isDropdown && _react2.default.createElement('img', { className: 'logo', src: 'modules/assets/scoop-logo-kl3.png', style: { height: "50px" } }),
+	            this.state.isDropdown && _react2.default.createElement(
 	              'ul',
-	              { id: 'nav-mobile', className: 'side-nav', onClick: function onClick() {
-	                  return _this2.setState({ isDropdown: !_this2.state.isDropdown });
-	                } },
+	              { className: 'nav-mobile' },
 	              _react2.default.createElement(
 	                'li',
 	                null,
@@ -25718,7 +25717,7 @@
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/team', className: 'nav-sublink' },
-	                  'Team'
+	                  'TEAM'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -25727,7 +25726,7 @@
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/impact', className: 'nav-sublink' },
-	                  'Impact'
+	                  'IMPACT'
 	                )
 	              ),
 	              _react2.default.createElement(
@@ -25736,10 +25735,10 @@
 	                _react2.default.createElement(
 	                  _NavLink2.default,
 	                  { to: '/partners', className: 'nav-sublink' },
-	                  'Partners'
+	                  'PARTNERS'
 	                )
 	              )
-	            ) : null,
+	            ),
 	            _react2.default.createElement('i', { className: 'fa fa-bars fa-2x button-collapse', 'aria-hidden': 'true', onClick: function onClick() {
 	                return _this2.setState({ isDropdown: !_this2.state.isDropdown });
 	              } })
@@ -25853,7 +25852,7 @@
 	              _react2.default.createElement(
 	                'span',
 	                { className: 'link' },
-	                'Shop'
+	                'Store'
 	              ),
 	              _react2.default.createElement(
 	                'span',
@@ -44869,7 +44868,7 @@
 	            }, className: 'fa fa-times', 'aria-hidden': 'true' }),
 	          _react2.default.createElement('embed', { src: 'modules/assets/report2.pdf' })
 	        ),
-	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/founders.jpg' })
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/founders.png' })
 	      );
 	    }
 	  }]);
@@ -44989,7 +44988,7 @@
 	  caption: 'SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion'
 	}, {
 	  src: 'modules/assets/gallery/4a.battle4supremacylr.jpg',
-	  caption: 'One of Conor Harrington\'s celebrated artworks was sold at one of our auction in 2011.'
+	  caption: 'One of Conor Harrington\'s celebrated artworks was sold at one of our auctions in 2011.'
 	}, {
 	  src: 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg',
 	  caption: 'Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event'
@@ -45004,7 +45003,7 @@
 	  caption: 'The 2nd school in Cambodia ready to open in 2011'
 	}, {
 	  src: 'modules/assets/gallery/9. SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia.jpg',
-	  caption: 'SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visiting in the 2nd school in Cambodia'
+	  caption: 'SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visiting the 2nd school in Cambodia'
 	}, {
 	  src: 'modules/assets/gallery/10 .Artist ADW creates a special artwork for us in 2010.jpg',
 	  caption: 'Artist ADW creates a special artwork for us in 2010'
@@ -45066,8 +45065,8 @@
 	  src: 'modules/assets/gallery/28. Calvin at the Syrias Vibes launch in Dublin in October, 2016.jpg',
 	  caption: 'Calvin at the Syrias Vibes launch in Dublin in October, 2016'
 	}, {
-	  src: 'modules/assets/gallery/29. The Artist\'s Cook Book will launch in the summer of 2017.jpg',
-	  caption: 'The Artist\'s Cook Book will launch in the summer of 2017'
+	  src: 'modules/assets/gallery/29. The Artist\'s Cook Book will launch in the summer of 2017.png',
+	  caption: 'The Artists\' Cook Book will launch in the summer of 2017'
 	}];
 
 	var Home = function (_React$Component) {
@@ -45282,7 +45281,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { style: { position: "absolute", top: 0, left: 0, width: "100%" } },
-	            _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/gallery-bander.jpg' }),
+	            _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/resize_gallerybanner.png' }),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'gallery-bander' },
@@ -45328,7 +45327,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'home-impact' },
-	            _react2.default.createElement('div', { className: 'home-impact-item', style: { height: "350px", backgroundImage: "url('modules/assets/img28.jpg')", backgroundSize: "cover" } }),
+	            _react2.default.createElement('div', { className: 'home-impact-item', style: { height: "350px", backgroundImage: "url('modules/assets/img28.png')", backgroundSize: "cover" } }),
 	            _react2.default.createElement(
 	              'div',
 	              { className: 'home-impact-item', style: { height: "350px", fontSize: "1.5em", backgroundColor: "#fff", textAlign: "center", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center", borderTop: "2px solid var(--blue)", borderRight: "2px solid var(--blue)", borderBottom: "2px solid var(--blue)", boxSizing: "border-box", borderTopRightRadius: "5px", borderBottomRightRadius: "5px" } },
@@ -45348,17 +45347,6 @@
 	                )
 	              )
 	            )
-	          )
-	        ),
-	        _react2.default.createElement('div', { className: 'empty-section' }),
-	        _react2.default.createElement(
-	          'div',
-	          { style: { height: "150px", fontSize: "2em", display: "flex", justifyContent: "center", alignItems: "center" } },
-	          _react2.default.createElement('img', { style: { height: "100%" }, src: 'modules/assets/heart.png' }),
-	          _react2.default.createElement(
-	            'span',
-	            null,
-	            'We are passionate about bringing people together through positive and creative fundraising, whilst making a difference those who need it most.'
 	          )
 	        ),
 	        _react2.default.createElement('div', { className: 'empty-section' }),
@@ -45423,7 +45411,7 @@
 	                _react2.default.createElement(
 	                  'span',
 	                  { className: 'home-purple-btn' },
-	                  'Shop'
+	                  'Store'
 	                )
 	              )
 	            )
@@ -49969,7 +49957,7 @@
 	              "and together we can change more lives."
 	            )
 	          ),
-	          _react2.default.createElement("img", { className: "bg", src: "modules/assets/img04.jpg" })
+	          _react2.default.createElement("img", { className: "bg", src: "modules/assets/img04.png" })
 	        ),
 	        _react2.default.createElement(
 	          "div",
@@ -50116,14 +50104,13 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'fundraise-section', style: { top: "20%" } },
-	            _react2.default.createElement('img', { style: { height: "80px", paddingTop: "10px" }, src: 'modules/assets/heart.png' }),
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://scoopfoundation.squarespace.com', target: '_blank' },
 	              _react2.default.createElement(
 	                'h1',
 	                { className: 'shadow' },
-	                'Check out our shop!'
+	                'Check out our store!'
 	              )
 	            )
 	          )
@@ -50138,7 +50125,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists Cookbook, limited edition art prints and more! Every items includes a life changing donation.'
+	              'You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists\' Cookbook, limited edition art prints and more! Every items includes a life changing donation.'
 	            ),
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
@@ -50155,7 +50142,6 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'fundraise-section', style: { top: "20%" } },
-	            _react2.default.createElement('img', { style: { height: "80px", paddingTop: "10px" }, src: 'modules/assets/numbers/SCOOP_icons-1.png' }),
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'shadow' },
@@ -50206,7 +50192,6 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'fundraise-section', style: { top: "20%" } },
-	            _react2.default.createElement('img', { style: { height: "80px", paddingTop: "10px" }, src: 'modules/assets/numbers/SCOOP_icons-2.png' }),
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'shadow' },
@@ -50251,7 +50236,6 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'fundraise-section' },
-	            _react2.default.createElement('img', { style: { height: "80px", paddingTop: "10px" }, src: 'modules/assets/numbers/SCOOP_icons-3.png' }),
 	            _react2.default.createElement(
 	              'h1',
 	              { className: 'shadow' },
@@ -50418,7 +50402,7 @@
 	      )
 	    ),
 	    _react2.default.createElement('br', null),
-	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img03.jpg' })
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img03.png' })
 	  );
 	};
 
@@ -51183,7 +51167,7 @@
 	        _react2.default.createElement(
 	          'div',
 	          { style: { width: "25%", padding: "2%" } },
-	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/Bedroom.png' }),
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/resize_bedroom.png' }),
 	          _react2.default.createElement(
 	            'center',
 	            null,

@@ -21,7 +21,7 @@ const galleryImages = [{
   caption: 'SCOOP co-founder George Gerard Mealy as auctioneer at the 1st SCOOP Art Auction in Pygmalion'
 }, {
   src: 'modules/assets/gallery/4a.battle4supremacylr.jpg',
-  caption: 'One of Conor Harrington\'s celebrated artworks was sold at one of our auction in 2011.'
+  caption: 'One of Conor Harrington\'s celebrated artworks was sold at one of our auctions in 2011.'
 }, {
   src: 'modules/assets/gallery/5. Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event.jpg',
   caption: 'Cast.ie\'s incredible trophy for the SCOOP Poker tournie - the very 1st SCOOP Event'
@@ -36,7 +36,7 @@ const galleryImages = [{
   caption: 'The 2nd school in Cambodia ready to open in 2011'
 }, {
   src: 'modules/assets/gallery/9. SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visitinin ghe 2nd school in Cambodia.jpg',
-  caption: 'SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visiting in the 2nd school in Cambodia'
+  caption: 'SCOOP supporters David Uda (artist) and Tanya Sweeney (journalist) with Andy visiting the 2nd school in Cambodia'
 }, {
   src: 'modules/assets/gallery/10 .Artist ADW creates a special artwork for us in 2010.jpg',
   caption: 'Artist ADW creates a special artwork for us in 2010'
@@ -98,8 +98,8 @@ const galleryImages = [{
   src: 'modules/assets/gallery/28. Calvin at the Syrias Vibes launch in Dublin in October, 2016.jpg',
   caption: 'Calvin at the Syrias Vibes launch in Dublin in October, 2016'
 }, {
-  src: 'modules/assets/gallery/29. The Artist\'s Cook Book will launch in the summer of 2017.jpg',
-  caption: 'The Artist\'s Cook Book will launch in the summer of 2017'
+  src: 'modules/assets/gallery/29. The Artist\'s Cook Book will launch in the summer of 2017.png',
+  caption: 'The Artists\' Cook Book will launch in the summer of 2017'
 }];
 
 class Home extends React.Component {
@@ -219,7 +219,7 @@ class Home extends React.Component {
 
         <section className="home-sec3">
           <div style={{position: "absolute", top: 0, left: 0, width:"100%"}}>
-            <img style={{width: "100%"}} src='modules/assets/gallery-bander.jpg'/>
+            <img style={{width: "100%"}} src='modules/assets/resize_gallerybanner.png'/>
             <div className="gallery-bander">
               <span style={{color: "#fff", fontSize:"1.8em", paddingBottom: "10px", textShadow: "2px 4px 3px rgba(0,0,0,0.3)"}}>The <span className="orange" style={{fontWeight:"800", textShadow:"0px"}}>SCOOP</span> story so far ...</span>
               <span className="blue-inverse-btn" onClick={(e) => this.openLightbox(e)}>Visit the Gallery</span>
@@ -239,7 +239,7 @@ class Home extends React.Component {
 
         <section>
           <div className="home-impact">
-            <div className="home-impact-item" style={{height:"350px",backgroundImage:"url('modules/assets/img28.jpg')", backgroundSize:"cover"}}></div>
+            <div className="home-impact-item" style={{height:"350px",backgroundImage:"url('modules/assets/img28.png')", backgroundSize:"cover"}}></div>
             <div className="home-impact-item" style={{height:"350px",fontSize:"1.5em", backgroundColor:"#fff", textAlign:"center", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center", borderTop:"2px solid var(--blue)", borderRight:"2px solid var(--blue)", borderBottom:"2px solid var(--blue)", boxSizing: "border-box", borderTopRightRadius:"5px", borderBottomRightRadius:"5px"}}>
               <span style={{display:"block", margin:" 0 50px;"}}>Our schools help steer children away from child labour and other forms of child abuse.</span>
               <br/>
@@ -249,11 +249,6 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-
-        <div className="empty-section"></div>
-
-        <div style={{height:"150px", fontSize:"2em", display:"flex", justifyContent: "center", alignItems:"center"}}><img style={{height:"100%"}} src="modules/assets/heart.png"/><span>
-        We are passionate about bringing people together through positive and creative fundraising, whilst making a difference those who need it most.</span></div>
 
         <div className="empty-section"></div>
 
@@ -277,7 +272,7 @@ class Home extends React.Component {
             <img width="100%" src="modules/assets/img32.jpg"/>
             <div className="home-bottomCardTxt purple-theme">
               <span style={{padding: "0 5px"}}>Support us now by picking up a Tee, our Artists' Cookbook and more!</span>
-              <span className="home-purple-btn">Shop</span>
+              <span className="home-purple-btn">Store</span>
             </div>
           </div>
         </section>

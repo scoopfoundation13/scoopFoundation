@@ -86,14 +86,14 @@ class Fundraise extends React.Component {
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/shop.png"/>
           <div className="fundraise-section" style={{top: "20%"}}>
-            <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/heart.png"/>
-            <a href="https://scoopfoundation.squarespace.com" target="_blank"><h1 className="shadow">Check out our shop!</h1></a>
+            
+            <a href="https://scoopfoundation.squarespace.com" target="_blank"><h1 className="shadow">Check out our store!</h1></a>
           </div>
         </div>
         <br/>
         <div className="text-container" style={{fontSize: "1.1em"}}>
           <center>
-            <p>You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists Cookbook, limited edition art prints and more! Every items includes a life changing donation.</p>
+            <p>You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists' Cookbook, limited edition art prints and more! Every items includes a life changing donation.</p>
             <br/>
             <a className="orange-btn" href="https://scoopfoundation.squarespace.com" target="_blank">Check it out now!</a>
           </center>
@@ -102,7 +102,7 @@ class Fundraise extends React.Component {
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img15.png"/>
           <div className="fundraise-section" style={{top: "20%"}}>
-            <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-1.png"/>
+            
             <h1 className="shadow">Set up a Fundraising Page on our behalf</h1>
             <a href="https://www.justgiving.com/scoop/raisemoney/?utm_source=website_cid250506&utm_medium=buttons&utm_content=scoop&utm_campaign=makeapage_start_white"><img src="http://www.justgiving.com/charities/content/images/logo-buttons/white/makeapage_start_white.gif" alt="Start fundraising with JustGiving" /></a>
           </div>
@@ -123,7 +123,7 @@ class Fundraise extends React.Component {
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img26.png"/>
           <div className="fundraise-section" style={{top: "20%"}}>
-            <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-2.png"/>
+            
             <h1 className="shadow">Sponsor an entire classroom</h1>
           </div>
         </div>
@@ -142,7 +142,7 @@ class Fundraise extends React.Component {
         <div style={{position:"relative"}}>
           <img style={{width:"100%"}} src="modules/assets/img24.png"/>
           <div className="fundraise-section">
-            <img style={{height: "80px", paddingTop:"10px"}} src="modules/assets/numbers/SCOOP_icons-3.png"/>
+            
             <h1 className="shadow">Run an event for us!</h1>
           </div>
         </div>

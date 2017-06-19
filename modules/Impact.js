@@ -23,7 +23,7 @@ const Impact = () => {
           <center>Today, we have 832 children in class or care because of SCOOP projects.. and counting.</center>
         </div>
         <div style={{width: "25%", padding:"2%"}}>
-          <img style={{width: "100%"}} src="modules/assets/Bedroom.png"/>
+          <img style={{width: "100%"}} src="modules/assets/resize_bedroom.png"/>
           <center>Our partner organisation in Syria work with children who have been injured, lost or kidnapped. In 2016 over 1876 children received medical treatment or an education by our two partner orgs there.</center>
         </div>
       </section>

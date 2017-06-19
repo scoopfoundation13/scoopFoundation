@@ -26,19 +26,20 @@ class App extends React.Component {
                 <li><span className="nav-right"><NavLink to="/fundraise" className="nav-pill">FUNDRAISE</NavLink></span></li>
               </ul>
             <div>
-            { this.state.isDropdown ?
-            <ul id="nav-mobile" className="side-nav" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}>
+            { this.state.isDropdown && <img className="logo" src="modules/assets/scoop-logo-kl3.png" style={{height:"50px"}}/> }
+            { this.state.isDropdown &&
+            <ul className="nav-mobile">
               <li><NavLink to="/">HOME</NavLink></li>
               <li><NavLink to="/about">ABOUT</NavLink></li>
               <li><NavLink to="/inclass">IN CLASS</NavLink></li>
               <li><NavLink to="/buildingprojects">BUILDING PROJECTS</NavLink></li>
               <li><NavLink to="/donate">DONATE</NavLink></li>
               <li><NavLink to="/fundraise">FUNDRAISE</NavLink></li>
-              <li><NavLink to="/team" className="nav-sublink">Team</NavLink></li>
-              <li><NavLink to="/impact" className="nav-sublink">Impact</NavLink></li>
-              <li><NavLink to="/partners" className="nav-sublink">Partners</NavLink></li>
+              <li><NavLink to="/team" className="nav-sublink">TEAM</NavLink></li>
+              <li><NavLink to="/impact" className="nav-sublink">IMPACT</NavLink></li>
+              <li><NavLink to="/partners" className="nav-sublink">PARTNERS</NavLink></li>
             </ul>
-            : null }
+            }
             <i className="fa fa-bars fa-2x button-collapse" aria-hidden="true" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}></i>
             </div>   
         </nav>
@@ -63,7 +64,7 @@ class App extends React.Component {
             <span><b>Get Involved</b></span>
             <span className="link"><NavLink to="/fundraise">Fundraise</NavLink></span>
             <span className="link"><NavLink to="/donate">Donate</NavLink></span>
-            <span className="link">Shop</span>
+            <span className="link">Store</span>
             <span className="link"><NavLink to="/partners">Partners</NavLink></span>
             </div>
             <div>

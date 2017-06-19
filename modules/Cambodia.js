@@ -38,7 +38,7 @@ const Cambodia = () => {
         </div>
       </section> 
       <br />
-      <img className = "home-bk" src = 'modules/assets/img03.jpg' />
+      <img className = "home-bk" src = 'modules/assets/img03.png' />
     </div>
   );
 }

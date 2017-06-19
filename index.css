@@ -40,7 +40,7 @@ nav li {
   line-height: 80px;
 }
 
-#nav-mobile {
+.nav-mobile {
   display: flex;
   flex: 1;
   width: 100%;
@@ -50,7 +50,7 @@ nav li {
   line-height: 20px;
   float: left;
   background-color: #fff;
-  z-index: 100;
+  /*z-index: 100;*/
 }
 
 .button-collapse {
@@ -256,7 +256,7 @@ nav li {
 .home-bottom-cards {
   position: relative;
   height: auto;
-  background: url(modules/assets/img39.jpg) no-repeat;
+  background: url(modules/assets/resize_img39.png) no-repeat;
   background-size: cover;
   background-position: top;
   min-height: 1000px;

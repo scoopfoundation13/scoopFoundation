@@ -85,7 +85,7 @@ class About extends React.Component {
             </div>)
           }
 
-        <img className="home-bk" src="modules/assets/founders.jpg"/>
+        <img className="home-bk" src="modules/assets/founders.png"/>
       </div>
       );
   }
