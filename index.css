@@ -41,16 +41,18 @@ nav li {
 }
 
 .nav-mobile {
+  position: absolute;
   display: flex;
   flex: 1;
-  width: 100%;
+  width: 95%;
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
   line-height: 20px;
   float: left;
   background-color: #fff;
-  /*z-index: 100;*/
+  margin-top: 70px;
+  z-index: 100;
 }
 
 .button-collapse {
@@ -682,6 +684,7 @@ footer i {
   width: 100%;
   height: 1300px;
   position: relative;
+  z-index: -1;
   border-radius: 5px;
   background: #f5f2ef; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(245, 242, 239), rgb(245, 242, 239), rgb(245, 242, 239)); /* For Safari 5.1 to 6.0 */
@@ -914,6 +917,10 @@ iframe {
   max-width: 900px;
 }
 
+.logo-mobile {
+    display: none;
+  }
+
 
 @media (max-width : 1140px) {
 
@@ -996,6 +1003,13 @@ iframe {
 
   .home-bottom-cards {
     background: none;
+  }
+
+  .logo-mobile {
+    display: inline;
+    position: absolute;
+    top: 2%;
+    left: 100;
   }
 
 }

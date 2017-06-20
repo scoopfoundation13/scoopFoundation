@@ -25653,7 +25653,7 @@
 	          _react2.default.createElement(
 	            'div',
 	            null,
-	            this.state.isDropdown && _react2.default.createElement('img', { className: 'logo', src: 'modules/assets/scoop-logo-kl3.png', style: { height: "50px" } }),
+	            _react2.default.createElement('img', { className: 'logo-mobile', src: 'modules/assets/scoop-logo-kl3.png', style: { height: "50px" } }),
 	            this.state.isDropdown && _react2.default.createElement(
 	              'ul',
 	              { className: 'nav-mobile' },
@@ -49938,30 +49938,34 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { style: { position: "relative", width: "100%" } },
+	        { style: { display: "block" } },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "donate-container" },
+	          { style: { position: "relative", width: "100%" } },
 	          _react2.default.createElement(
-	            "center",
-	            null,
+	            "div",
+	            { className: "donate-container" },
 	            _react2.default.createElement(
-	              "h1",
+	              "center",
 	              null,
-	              "Donate Now"
+	              _react2.default.createElement(
+	                "h1",
+	                null,
+	                "Donate Now"
+	              ),
+	              _react2.default.createElement(
+	                "h3",
+	                null,
+	                "and together we can change more lives."
+	              )
 	            ),
-	            _react2.default.createElement(
-	              "h3",
-	              null,
-	              "and together we can change more lives."
-	            )
+	            _react2.default.createElement("img", { className: "bg", src: "modules/assets/img04.png" })
 	          ),
-	          _react2.default.createElement("img", { className: "bg", src: "modules/assets/img04.png" })
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { style: { textAlign: "center", display: "flex", width: "100%", justifyContent: "center" } },
-	          _react2.default.createElement("iframe", { src: "https://donorbox.org/embed/scoopdonate", height: "685px", width: "100%", style: { maxWidth: "500px", minWidth: "310px", margin: "0 auto", paddingLeft: "60px", position: "absolute", top: "130px", width: "100%" }, seamless: "seamless", id: "dbox-form-embed", align: "center", name: "donorbox", frameBorder: "0", scrolling: "no" })
+	          _react2.default.createElement(
+	            "div",
+	            { style: { textAlign: "center", display: "flex", width: "100%", justifyContent: "center" } },
+	            _react2.default.createElement("iframe", { src: "https://donorbox.org/embed/scoopdonate", height: "685px", width: "100%", style: { maxWidth: "500px", minWidth: "310px", margin: "0 auto", paddingLeft: "60px", position: "absolute", top: "130px", width: "100%" }, seamless: "seamless", id: "dbox-form-embed", align: "center", name: "donorbox", frameBorder: "0", scrolling: "no" })
+	          )
 	        )
 	      );
 	    }

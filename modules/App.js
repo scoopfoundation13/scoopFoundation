@@ -26,7 +26,7 @@ class App extends React.Component {
                 <li><span className="nav-right"><NavLink to="/fundraise" className="nav-pill">FUNDRAISE</NavLink></span></li>
               </ul>
             <div>
-            { this.state.isDropdown && <img className="logo" src="modules/assets/scoop-logo-kl3.png" style={{height:"50px"}}/> }
+            <img className="logo-mobile" src="modules/assets/scoop-logo-kl3.png" style={{height:"50px"}}/>
             { this.state.isDropdown &&
             <ul className="nav-mobile">
               <li><NavLink to="/">HOME</NavLink></li>
