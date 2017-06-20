@@ -44751,7 +44751,6 @@
 	        _react2.default.createElement(
 	          'section',
 	          { className: 'text-container' },
-	          _react2.default.createElement('i', { style: { fontSize: "5em", display: "block", margin: "0 auto", textAlign: "center" }, className: 'fa fa-users purple', 'aria-hidden': 'true' }),
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'purple' },
@@ -50100,10 +50099,10 @@
 	        _react2.default.createElement(
 	          'div',
 	          { style: { position: "relative" } },
-	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/shop.png' }),
+	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/store.png' }),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'fundraise-section', style: { top: "20%" } },
+	            { className: 'fundraise-section', style: { top: "35%" } },
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://scoopfoundation.squarespace.com', target: '_blank' },
@@ -51383,7 +51382,7 @@
 	        ' on our behalf.'
 	      )
 	    ),
-	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/project-cambodia-bg.jpg' })
+	    _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/cambodiaproject.png' })
 	  );
 	};
 

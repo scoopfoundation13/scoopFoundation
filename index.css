@@ -539,11 +539,11 @@ footer i {
 }
 
 .cambodia-p-bg {
-  background: rgb(190, 209, 224); /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(255,0,0,0), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224), rgb(190, 209, 224)); /* Standard syntax */  
+  background: rgb(255, 0, 0, 0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(242, 245, 247), rgb(242, 245, 247), rgb(242, 245, 247)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(255,0,0,0), rgb(242, 245, 247), rgb(242, 245, 247), rgb(242, 245, 247)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(255,0,0,0), rgb(242, 245, 247), rgb(242, 245, 247), rgb(242, 245, 247)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(255,0,0,0), rgb(242, 245, 247), rgb(242, 245, 247), rgb(242, 245, 247), rgb(242, 245, 247)); /* Standard syntax */  
 }
 
 .syria-p-bg {
@@ -551,7 +551,7 @@ footer i {
   background: -webkit-linear-gradient(rgba(255,0,0,0), rgb(240, 243, 248), rgb(240, 243, 248), rgb(240, 243, 248)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgba(255,0,0,0), rgb(240, 243, 248), rgb(240, 243, 248), rgb(240, 243, 248)); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(rgba(255,0,0,0), rgb(240, 243, 248), rgb(240, 243, 248), rgb(240, 243, 248)); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(rgba(255,0,0,0), rgb(240, 243, 248), rgb(240, 243, 248), rgb(240, 243, 248)); /* Standard syntax */  
+  background: linear-gradient(rgba(255,0,0,0), rgb(240, 243, 248), rgb(240, 243, 248), rgb(240, 243, 248), rgb(240, 243, 248)); /* Standard syntax */  
 }
 
 .impact-cam-bg {

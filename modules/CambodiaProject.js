@@ -13,7 +13,7 @@ const CambodiaProject = () => {
 
     <p>To get involved, get in touch with Andy today, <NavLink to="/donate" className="orange">make a donation</NavLink> or <a href="https://www.justgiving.com/scoop" className="purple">set up a fundraising page</a> on our behalf.</p>
     </section>
-    <img className="home-bk" src="modules/assets/project-cambodia-bg.jpg"/>
+    <img className="home-bk" src="modules/assets/cambodiaproject.png"/>
     </div>
     );
 }

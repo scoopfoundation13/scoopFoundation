@@ -84,8 +84,8 @@ class Fundraise extends React.Component {
     return (
       <div>
         <div style={{position:"relative"}}>
-          <img style={{width:"100%"}} src="modules/assets/shop.png"/>
-          <div className="fundraise-section" style={{top: "20%"}}>
+          <img style={{width:"100%"}} src="modules/assets/store.png"/>
+          <div className="fundraise-section" style={{top: "35%"}}>
             
             <a href="https://scoopfoundation.squarespace.com" target="_blank"><h1 className="shadow">Check out our store!</h1></a>
           </div>

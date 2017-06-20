@@ -43,7 +43,6 @@ class About extends React.Component {
     return (
       <div>
         <section className="text-container">
-        <i style={{fontSize:"5em", display:"block", margin:"0 auto", textAlign:"center"}} className="fa fa-users purple" aria-hidden="true"></i>
         <h1 className="purple">WHO?</h1>
         <br />
             <p>We are a non-profit organisation building schools to end child poverty in developing countries. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> &mdash; an initiative that supports medical clinics, emergency rescue services and internally displaced people in Syria & Iraq.</p>
