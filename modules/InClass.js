@@ -29,7 +29,7 @@ class InClass extends React.Component {
         <section>
           <ThreeARow img={imgArray}/>
         </section>
-        <img className="home-bk" src="modules/assets/img06.jpg"/>
+        <img className="home-bk" src="modules/assets/img06.png"/>
       </div>
       );
   }

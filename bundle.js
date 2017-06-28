@@ -49772,7 +49772,7 @@
 	          null,
 	          _react2.default.createElement(_ThreeARow2.default, { img: imgArray })
 	        ),
-	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img06.jpg' })
+	        _react2.default.createElement('img', { className: 'home-bk', src: 'modules/assets/img06.png' })
 	      );
 	    }
 	  }]);
