@@ -879,7 +879,7 @@ iframe {
 
 .fundraise-section {
   position:absolute; 
-  top: 25%; 
+  top: 35%; 
   left: 10%; 
   color:#fff;
 }
@@ -1010,6 +1010,15 @@ iframe {
     position: absolute;
     top: 2%;
     left: 100;
+  }
+
+  .fund-btn {
+    display: block;
+    margin: 5px;
+  }
+
+  .fundraise-section {
+    top: 25%;
   }
 
 }

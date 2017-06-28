@@ -45178,7 +45178,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'span',
-	              { style: { textShadow: "0px 0px 0px rgba(255,255,255,0)" } },
+	              null,
 	              _react2.default.createElement(
 	                _NavLink2.default,
 	                { to: '/donate', className: 'home-nav-pill' },
@@ -45189,7 +45189,7 @@
 	          _react2.default.createElement(
 	            'video',
 	            { autoPlay: true, loop: true, id: 'video-background', muted: true },
-	            _react2.default.createElement('source', { src: 'modules/assets/scoop.mp4', type: 'video/mp4' })
+	            _react2.default.createElement('source', { src: 'modules/assets/scoopvid.mp4', type: 'video/mp4' })
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -45408,8 +45408,8 @@
 	                  'Support us now by picking up a Tee, our Artists\' Cookbook and more!'
 	                ),
 	                _react2.default.createElement(
-	                  'span',
-	                  { className: 'home-purple-btn' },
+	                  'a',
+	                  { href: 'https://scoopfoundation.squarespace.com/', target: '_blank', className: 'home-purple-btn' },
 	                  'Store'
 	                )
 	              )
@@ -50106,7 +50106,7 @@
 	          _react2.default.createElement('img', { style: { width: "100%" }, src: 'modules/assets/store.png' }),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'fundraise-section', style: { top: "35%" } },
+	            { className: 'fundraise-section' },
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://scoopfoundation.squarespace.com', target: '_blank' },
@@ -50177,12 +50177,12 @@
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'a',
-	              { className: 'purple-btn', href: 'https://www.justgiving.com/scoop', target: '_blank' },
+	              { className: 'purple-btn fund-btn', href: 'https://www.justgiving.com/scoop', target: '_blank' },
 	              'Set up a Fundraising page'
 	            ),
 	            _react2.default.createElement(
 	              'a',
-	              { className: 'orange-btn', href: 'mailto:andy@scoopfoundation.com' },
+	              { className: 'orange-btn fund-btn', href: 'mailto:andy@scoopfoundation.com' },
 	              'Get in touch with Andy'
 	            )
 	          )
@@ -50631,12 +50631,6 @@
 	      "h1",
 	      null,
 	      "The Team"
-	    ),
-	    _react2.default.createElement("br", null),
-	    _react2.default.createElement(
-	      "p",
-	      null,
-	      "SCOOP has no paid employees but we reward our fundraisers with 7.5% back out of what they have raised. We feel this helps them live their life, takes a bit of pressure off, helps them pay their rent and bills etc. But more importantly it helps get the ideas flowing again for future endeavours\u2026"
 	    ),
 	    _react2.default.createElement("br", null),
 	    _react2.default.createElement(
