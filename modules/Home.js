@@ -179,10 +179,10 @@ class Home extends React.Component {
           <div className="flex-col">
             <span style={{textShadow:"2px 4px 3px rgba(0,0,0,0.3)"}}>NO CHILD SHOULD LIVE IN POVERTY</span>
             <span><hr style={{border: "1px solid #efefef", width:"600px"}}/></span>
-            <span style={{textShadow:"0px 0px 0px rgba(255,255,255,0)"}}><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION</NavLink></span>
+            <span ><NavLink to="/donate" className="home-nav-pill">MAKE A DONATION</NavLink></span>
           </div>
           <video autoPlay loop id="video-background" muted>
-            <source src="modules/assets/scoop.mp4" type="video/mp4"/>
+            <source src="modules/assets/scoopvid.mp4" type="video/mp4"/>
           </video>
         </section>
         <center style={{margin:"30px auto", width:"70%", backgroundColor:"rgba(255,255,255, 0.5)", padding:"25px;", borderRadius:"5px"}}>
@@ -272,7 +272,7 @@ class Home extends React.Component {
             <img width="100%" src="modules/assets/img32.jpg"/>
             <div className="home-bottomCardTxt purple-theme">
               <span style={{padding: "0 5px"}}>Support us now by picking up a Tee, our Artists' Cookbook and more!</span>
-              <span className="home-purple-btn">Store</span>
+              <a href="https://scoopfoundation.squarespace.com/" target="_blank" className="home-purple-btn">Store</a>
             </div>
           </div>
         </section>
