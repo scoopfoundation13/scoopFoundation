@@ -64,7 +64,7 @@ class App extends React.Component {
             <span><b>Get Involved</b></span>
             <span className="link"><NavLink to="/fundraise">Fundraise</NavLink></span>
             <span className="link"><NavLink to="/donate">Donate</NavLink></span>
-            <span className="link">Store</span>
+            <span className="link"><a href="https://scoopfoundation.squarespace.com/">Store</a></span>
             <span className="link"><NavLink to="/partners">Partners</NavLink></span>
             </div>
             <div>

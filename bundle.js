@@ -25852,7 +25852,11 @@
 	              _react2.default.createElement(
 	                'span',
 	                { className: 'link' },
-	                'Store'
+	                _react2.default.createElement(
+	                  'a',
+	                  { href: 'https://scoopfoundation.squarespace.com/' },
+	                  'Store'
+	                )
 	              ),
 	              _react2.default.createElement(
 	                'span',
@@ -50128,7 +50132,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists\' Cookbook, limited edition art prints and more! Every items includes a life changing donation.'
+	              'You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists\' Cookbook, limited edition art prints and more! Every item includes a life changing donation.'
 	            ),
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
