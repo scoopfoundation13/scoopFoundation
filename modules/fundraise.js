@@ -93,7 +93,7 @@ class Fundraise extends React.Component {
         <br/>
         <div className="text-container" style={{fontSize: "1.1em"}}>
           <center>
-            <p>You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists' Cookbook, limited edition art prints and more! Every item includes a life changing donation.</p>
+            <p>You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists' Cookbook, limited edition art prints and more! Each item includes a life changing donation.</p>
             <br/>
             <a className="orange-btn" href="https://scoopfoundation.squarespace.com" target="_blank">Check it out now!</a>
           </center>
