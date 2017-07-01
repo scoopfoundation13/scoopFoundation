@@ -50132,7 +50132,7 @@
 	            _react2.default.createElement(
 	              'p',
 	              null,
-	              'You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists\' Cookbook, limited edition art prints and more! Every item includes a life changing donation.'
+	              'You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists\' Cookbook, limited edition art prints and more! Each item includes a life changing donation.'
 	            ),
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
