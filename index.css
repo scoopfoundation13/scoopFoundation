@@ -328,7 +328,8 @@ nav li {
 .purple-btn:hover {
   color: #9B26B6;
   border: 2px solid #9B26B6;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.9);
+  font-weight: bold;
 }
 
 .orange-btn {
