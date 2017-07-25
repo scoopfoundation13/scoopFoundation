@@ -14,8 +14,7 @@ body {
 nav {
   display: block;
   width: 100%;
-  height: 70px;
-  background-color: #fff;
+  height: 90px;
   font-size: 0.8em;
 }
 
@@ -114,12 +113,12 @@ nav li {
 }
 
 .home-sec1 {
-  display: inline-flex;
+  /*display: inline-flex;
   justify-content: center;
-  align-items: center;
-  height: 500px;
+  align-items: center;*/
   overflow: hidden;
   width: 100%;
+  height: 700px;
 }
 
 .home-nav-pill {
@@ -290,7 +289,7 @@ nav li {
 }
 
 .gallery-btn {
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: #64CCC9;
   color: #fff;
   padding: 5px 10px;
@@ -318,7 +317,7 @@ nav li {
 }
 
 .purple-btn {
-  border-radius: 5px;
+  border-radius: 13px;
   border: 2px solid #9B26B6;
   background-color: #9B26B6;
   color: #fff;
@@ -333,7 +332,7 @@ nav li {
 }
 
 .orange-btn {
-  border-radius: 5px;
+  border-radius: 13px;
   border: 2px solid var(--orange);
   background-color: var(--orange);
   color: #fff;
@@ -790,7 +789,7 @@ iframe {
 
 /* FUNDRAISE */
 .interested-btn {
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: #FF8200;
   color: #fff;
   padding: 5px 10px;
@@ -804,7 +803,7 @@ iframe {
 }
 
 .home-orange-btn {
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: #E47600;
   border: 2px solid #E47600;
   color: #fff;
@@ -813,7 +812,7 @@ iframe {
 }
 
 .home-purple-btn {
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: #7F1F93;
   border: 2px solid #7F1F93;
   color: #fff;
@@ -822,7 +821,7 @@ iframe {
 }
 
 .home-blue-btn {
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: #38ACA8;
   border: 2px solid #38ACA8;
   color: #fff;
@@ -833,7 +832,7 @@ iframe {
 
 .orange-inverse-btn {
   border: 2px solid #FF8200;
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: rgba(255,255,255,0.7);
   color: #FF8200;
   padding: 5px 10px;
@@ -849,7 +848,7 @@ iframe {
 
 .purple-inverse-btn {
   border: 2px solid #9B26B6;
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: rgba(255,255,255,0.7);
   color: #9B26B6;
   padding: 5px 10px;
@@ -865,7 +864,7 @@ iframe {
 
 .blue-inverse-btn {
   border: 2px solid #64CCC9;
-  border-radius: 5px;
+  border-radius: 13px;
   background-color: rgba(255,255,255,0.4);
   color: #64CCC9;
   padding: 5px 10px;
@@ -922,6 +921,13 @@ iframe {
     display: none;
   }
 
+.home-text-sm {
+    font-size: 2em;
+  }
+
+.h-top-btn {
+  font-size: 1.4em
+}
 
 @media (max-width : 1140px) {
 
@@ -1022,6 +1028,17 @@ iframe {
     top: 25%;
   }
 
+  .home-text {
+    display: none;
+  }
+
+  .home-text-sm {
+    font-size: 1.5em;
+  }
+
+  .h-top-btn {
+  font-size: 1em
+}
 }
 
 @media (max-width: 650px) {
