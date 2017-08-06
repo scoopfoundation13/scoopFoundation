@@ -172,21 +172,10 @@ class Home extends React.Component {
     });
   }
 
-          // <video autoPlay loop id="video-background" muted>
-          //   <source src="modules/assets/scoopvid.mp4" type="video/mp4"/>
-          // </video>
   render() {
     return (
       <div>
         <section className="home-sec1">
-          <div style={{margin: "10%", padding: "1%"}}>
-          <div style={{backgroundColor: "rgba(255,255,255,0.8)", borderRadius: "20px", width:"68%", padding:"1%"}}>
-            <span className="home-text-sm" style={{ padding:"1%",fontWeight:"bolder"}}>School is the platform where dreams begin.</span>
-            <p className="home-text" style={{fontSize:"1.3em", width:"75%", padding:"1%"}}>Having an education creates a world of new opportunities for children and families caught in the poverty trap</p>
-            </div>
-            <br />
-            <NavLink to="/donate" className="purple-btn h-top-btn">MAKE A DONATION</NavLink>
-          </div>
           <img style={{width: "100%", height: "auto", position: "absolute", top: 0, zIndex: "-10"}} src="modules/assets/home.png"/>
         </section>
         <center style={{margin:"30px auto", width:"70%", backgroundColor:"rgba(255,255,255, 0.5)", padding:"25px;", borderRadius:"5px"}}>
