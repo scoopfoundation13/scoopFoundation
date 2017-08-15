@@ -11,11 +11,14 @@ class App extends React.Component {
   }
 
   render() {
+    const isHome = this.props.location.pathname === "/";
+    const logo = isHome ? 'logo-white.png' : 'scoop-logo-kl3.png';
+
     return (
-      <div>
+      <div className={isHome && "home"}>
         <nav className="navbar" role="navigation">
               <ul className="nav-full">
-                <li><NavLink to="/" id="logo-container"><img className="logo" src="modules/assets/scoop-logo-kl3.png"/></NavLink></li>
+                <li><NavLink to="/" id="logo-container"><img className="logo" src={`modules/assets/${logo}`}/></NavLink></li>
                 <li><NavLink to="/about" id="about" className="nav-left">ABOUT US</NavLink></li>
                 <li><NavLink to="/inclass" className="nav-left">IN CLASS</NavLink></li>
                 <li><NavLink to="/buildingprojects" className="nav-left">BUILDING PROJECTS</NavLink></li>

@@ -176,9 +176,18 @@ class Home extends React.Component {
     return (
       <div>
         <section className="home-sec1">
-          <img style={{width: "100%", height: "auto", position: "absolute", top: 0, zIndex: "-10"}} src="modules/assets/home.png"/>
+          <div style={{margin: "7%", padding: "1%"}}>
+           <div style={{width:"48%", padding:"1%", color: "#fff"}}>
+             <span className="home-text-sm" style={{ padding:"1%",fontWeight:"bolder"}}>School is the platform where dreams begin.</span>
+           <p className="home-text" style={{fontSize:"1.3em", width:"65%", padding:"1%"}}>Having an education creates a world of new opportunities for children and families caught in the poverty trap</p>
+             </div>
+             <br />
+             <NavLink to="/donate" className="purple-btn h-top-btn">MAKE A DONATION</NavLink>
+           </div>
+          <img style={{width: "100%", height: "auto", position: "absolute", top: 0, zIndex: "-10"}} src="modules/assets/homepage.jpg"/>
+
         </section>
-        <center style={{margin:"30px auto", width:"70%", backgroundColor:"rgba(255,255,255, 0.5)", padding:"25px;", borderRadius:"5px"}}>
+        <center style={{margin:"30px auto", width:"70%", padding:"25px"}}>
         <h2 style={{fontSize:"2em"}} className="home-text">We build schools and strive to break the poverty cycle for children living in developing countries.</h2>
         </center>
         <section className="home-sec2">
