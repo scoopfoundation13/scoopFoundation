@@ -184,7 +184,7 @@ class Home extends React.Component {
              <br />
              <NavLink to="/donate" className="purple-btn h-top-btn">MAKE A DONATION</NavLink>
            </div>
-          <img style={{width: "100%", height: "auto", position: "absolute", top: 0, zIndex: "-10"}} src="modules/assets/homepage.jpg"/>
+          <img style={{width: "100%", height: "auto", position: "absolute", top: 0, zIndex: "-10"}} src="modules/assets/homepage.png"/>
 
         </section>
         <center style={{margin:"30px auto", width:"70%", padding:"25px"}}>
