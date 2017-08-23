@@ -32,7 +32,7 @@ const India = () => {
           <p>Due to the sensitive nature of the experiences suffered by many of the children, The Jeevan School only work with long term, dedicated volunteers, teachers and other professionals. 
         </p>
         <p>
-        Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so <a href="emailto:andy@scoopfoundation.com" className="orange">get in touch today</a>
+        Varanasi is also a very tough place to work and live, due to the extreme poverty, fluctuating temperatures (stuffy summers and freezing winters), the annual flooding of the Ganges, local illnesses etc. But working at The Jeevan School can also be a life changing experience, so <a href="mailto:andy@scoopfoundation.com" className="orange">get in touch today</a>
         </p>
           </div>
         </div>
