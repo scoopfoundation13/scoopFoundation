@@ -7,7 +7,7 @@ console.log(__dirname);
 app.use(express.static(__dirname));
 
 app.get('/syrias-vibes', (req, res) => {
-  res.redirect(302, 'https://www.syriasvibes.com/')
+  res.redirect(301, 'https://www.syriasvibes.com/')
 });
 
 app.get('*', (req, res) => {
