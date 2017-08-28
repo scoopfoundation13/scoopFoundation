@@ -64,7 +64,7 @@ const Team = () => {
         <div style={{width: "70%"}}>
           <h2>Wendy Cheung</h2>
           <h5 className="orange">SOFTWARE ENGINEER</h5>
-          <p>Wendy is a Software Engineer and the creator of scoopfoundation.com website, she is also part of The United Nations Volunteers program (UNV). Currently based in San Francisco, she is a lover of life and believes by supporting one another we can make the world a better place. Check out more of her work <u><a className="hover-purple" href="www.wendycheung.me">here</a></u>.</p>
+          <p>Wendy is a Software Engineer and the creator of scoopfoundation.com website, she is also part of The United Nations Volunteers program (UNV). Currently based in San Francisco, she is a lover of life and believes by supporting one another we can make the world a better place. Check out more of her work <u><a className="hover-purple" href="//wendycheung.me">here</a></u>.</p>
         </div>
       </div>
     </div>
