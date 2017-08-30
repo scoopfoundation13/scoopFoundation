@@ -45,7 +45,7 @@ class About extends React.Component {
         <section className="text-container center">
         <h1 className="purple">WHO?</h1>
         <br />
-          <p>Created by two Irish brothers, SCOOP is a fundraising machine that aims to build schools and change the lives of impoverished children in Cambodia & India. Our Founders, Andy & Calvin, also created <a className="purple" href="www.syriasvibes.com">Syrias Vibes</a> &mdash; an initiative that supports doctors, emergency rescue services and internally displaced people in Syria & Iraq.</p>
+          <p>Created by two Irish brothers, SCOOP is a fundraising machine that aims to build schools and change the lives of impoverished children in Cambodia & India. Our Founders, Andy & Calvin, also created <a className="purple" href="//syriasvibes.com">Syrias Vibes</a> &mdash; an initiative that supports doctors, emergency rescue services and internally displaced people in Syria & Iraq.</p>
         </section>
         <section>
           <ThreeARow img={imgArray}/>
