@@ -179,7 +179,7 @@ class Home extends React.Component {
   <div style={{margin: "7%", padding: "1%"}}>
     <div style={{width:"48%", padding:"1%", color: "#fff"}}>
       <span className="home-text-sm" style={{}}>No child should live in poverty or danger.</span>
-      <p className="home-text" style={{}}>We raise funds in different ways so we can help as many loves as possible.</p>
+      <p className="home-text" style={{}}>We raise funds in different ways so we can help as many lives as possible.</p>
     </div>
     <NavLink to="/donate" className="home-donate-btn">Donate</NavLink>
   </div>
