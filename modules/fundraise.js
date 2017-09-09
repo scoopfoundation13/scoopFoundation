@@ -133,7 +133,7 @@ class Fundraise extends React.Component {
             <p>For €10,000 you or your company can build an entire classroom or help run one for an entire year.</p>
             <br />
             <p>Email the founder to find out more:</p>
-            <a href="emailto:andy@scoopfoundation.com"><span className="gallery-btn">I am interested!</span></a>
+            <a href="mailto:andy@scoopfoundation.com"><span className="gallery-btn">I am interested!</span></a>
             
           </center>
         </div>
