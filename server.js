@@ -6,6 +6,10 @@ var app = express();
 console.log(__dirname);
 app.use(express.static(__dirname));
 
+app.get('/syrias-vibes', (req, res) => {
+  res.redirect(301, 'https://www.syriasvibes.com/')
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.resolve('index.html'));
 });
