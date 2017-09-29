@@ -5,6 +5,9 @@ import Gallery from './Gallery';
 import Lightbox from 'react-images';
 
 const galleryImages = [{
+  src: "modules/assets/gallery/Calvin launching The Artists' Cookbook at Airbnb's Dublin Headquarters, August 2017.jpg",
+  caption: "Calvin launching The Artists' Cookbook at Airbnb's Dublin Headquarters, August 2017"
+}, {
   src: 'modules/assets/gallery/1. Andy visits the original SCAO Centre in 2008.jpg',
   caption: 'Andy visits the original SCAO Centre in 2008'
 }, {
