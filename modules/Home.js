@@ -186,7 +186,7 @@ class Home extends React.Component {
   <img className="home-img" style={{}} src="modules/assets/homepage.png"/>
 </section>
         <center style={{margin:"30px auto", width:"70%", padding:"25px"}}>
-        <h2 style={{fontSize:"2em"}} className="home-text">We build schools and strive to break the poverty cycle for children living in developing countries.</h2>
+        <h2 style={{fontSize:"2em"}} className="home-text">We build schools, medical clinics, support local teachers and fund doctors in order to help children living in developing or war-torn countries.</h2>
         </center>
         <section className="home-sec2">
           <div className={this.isActive(1)} onMouseOver={() => this.handleClick(1)}>
