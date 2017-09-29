@@ -183,7 +183,16 @@ class Home extends React.Component {
     </div>
     <NavLink to="/donate" className="home-donate-btn">Donate</NavLink>
   </div>
-  <img className="home-img" style={{}} src="modules/assets/homepage.png"/>
+  <img className="home-img" 
+    srcSet="modules/assets/marquee-250.jpg 250w,
+      modules/assets/marquee-500.jpg 500w,
+      modules/assets/marquee-1000.jpg 1000w,
+      modules/assets/marquee-2000.jpg 2000w"
+      sizes="(max-width 250px) 100vw,
+      (max-width: 500px) 100vw,
+      (max-width: 1000px) 100vw,
+      (max-width: 2000px) 100vw"
+     src="modules/assets/marquee-1000.jpg" alt="" />
 </section>
         <center style={{margin:"30px auto", width:"70%", padding:"25px"}}>
         <h2 style={{fontSize:"2em"}} className="home-text">We build schools, medical clinics, support local teachers and fund doctors in order to help children living in developing or war-torn countries.</h2>
