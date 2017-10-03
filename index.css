@@ -29,7 +29,10 @@ a {
   display: inline;
   padding: 5px 50px 10px 50px;
 }
-
+.navbar {
+    position: relative;
+    z-index: 2;
+}
 nav ul {
   display: inline;
 }
@@ -120,24 +123,30 @@ nav li {
 .home-bk {
   width: 100%;
 }
+
 .home-img {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  z-index: -10;
+
+    /* pull nav on top of this image */
+    margin-top: -115px;
+
+    position: relative;
+    z-index: 0;
+    width: 100%;
 }
 .home-sec1 {
-  /*display: inline-flex;
-  justify-content: center;
-  align-items: center;*/
-  overflow: hidden;
-  width: 100%;
-  height: 700px;
+    position: relative;
+}
+.home-sec1-text {
+ position: absolute;
+ top: 10%;
+ left: 10%;
+ width: 35%;
+ z-index: 1;
 }
 
-.home-sec1 .home-text-head,
-.home-sec1 .home-text-sub-head {
+.home-text-head,
+.home-text-sub-head {
+    color: #fff;
     text-shadow: 0 0 5px rgba(0, 0,0, 0.8); 
 }
 .home-nav-pill {
@@ -959,9 +968,11 @@ iframe {
 
 .home-text-head {
     font-size: 1.875em;
+    margin: 0 0 18px;
   }
 .home-text-sub-head {
     font-size: 1.2em;
+    margin: 0 0 12px;
   }
 
 @media (max-width : 1140px) {
@@ -1071,12 +1082,6 @@ iframe {
     font-size: 1.5em;
   }
 
-}
-@media (max-width: 500px) {
- .home-img {
- 	width: 145%;
- 	left: -20%;
- }
 }
 @media (max-width: 650px) {
   .home-impact .orange-inverse-btn {

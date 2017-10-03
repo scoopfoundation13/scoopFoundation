@@ -179,14 +179,12 @@ class Home extends React.Component {
     return (
       <div>
 <section className="home-sec1">
-  <div style={{margin: "7%", padding: "1%"}}>
-    <div style={{width:"48%", padding:"1%", color: "#fff"}}>
-      <span className="home-text-head" style={{}}>No child should live in poverty or danger.</span>
-      <p className="home-text-sub-head" style={{}}>We are on a mission to build a kinder world for children.</p>
-    </div>
+  <div className='home-sec1-text'>
+      <p className="home-text-head" style={{}}>No child should live in poverty or&nbsp;danger.</p>
+      <p className="home-text-sub-head" style={{}}>We are on a mission to build a kinder world for&nbsp;children.</p>
     <NavLink to="/donate" className="home-donate-btn">Donate</NavLink>
   </div>
-  <img className="home-img" 
+  <img className="home-img"
     srcSet="modules/assets/marquee-250.jpg 250w,
       modules/assets/marquee-500.jpg 500w,
       modules/assets/marquee-1000.jpg 1000w,
