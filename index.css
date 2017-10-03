@@ -136,8 +136,8 @@ nav li {
   height: 700px;
 }
 
-.home-sec1 .home-text-sm,
-.home-sec1 .home-text {
+.home-sec1 .home-text-head,
+.home-sec1 .home-text-sub-head {
     text-shadow: 0 0 5px rgba(0, 0,0, 0.8); 
 }
 .home-nav-pill {
@@ -957,8 +957,11 @@ iframe {
     display: none;
   }
 
-.home-text-sm {
+.home-text-head {
     font-size: 1.875em;
+  }
+.home-text-sub-head {
+    font-size: 1.2em;
   }
 
 @media (max-width : 1140px) {
@@ -1060,11 +1063,11 @@ iframe {
     top: 25%;
   }
 
-  .home-text {
+  .home-text-sub-head {
     display: none;
   }
 
-  .home-text-sm {
+  .home-text-head {
     font-size: 1.5em;
   }
 
