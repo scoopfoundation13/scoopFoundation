@@ -13,7 +13,7 @@ app.get('*', (req, res) => {
 var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
-  console.log('listening on', port);
+  console.log('Site available: http://localhost:' + port);
 });
 
 setInterval(function() {
