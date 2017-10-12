@@ -23,19 +23,19 @@ render((
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="/about" component={About}/>
-      <Route path="/inclass" component={InClass}/>
       <Route path="/buildingprojects" component={BuildingProjects}/>
+      <Route path="/cambodia" component={Cambodia}/>
+      <Route path="/cambodiaproject" component={CambodiaProject}/>
       <Route path="/donate" component={Donate}/>
       <Route path="/fundraise" component={Fundraise}/>
-      <Route path="/cambodia" component={Cambodia}/>
+      <Route path="/impact" component={Impact}/>
+      <Route path="/inclass" component={InClass}/>
       <Route path="/india" component={India}/>
-      <Route path="/syria" component={Syria}/>
-      <Route path="/cambodiaproject" component={CambodiaProject}/>
       <Route path="/indiaproject" component={IndiaProject}/>
+      <Route path="/partners" component={Partners}/>
+      <Route path="/syria" component={Syria}/>
       <Route path="/syriaproject" component={SyriaProject}/>
       <Route path="/team" component={Team}/>
-      <Route path="/partners" component={Partners}/>
-      <Route path="/impact" component={Impact}/>
     </Route>
   </Router>
 ), document.getElementById('app'));
