@@ -1,6 +1,14 @@
 import React from 'react';
 import NavLink from './NavLink';
+//import {logTime} from './common.js';
 
+/*
+history.listen((location) => {  
+  if (window.ga) {
+    window.ga('send', 'pageview', location.pathname);
+  }
+});
+*/
 
 class App extends React.Component {
   constructor(props) {
@@ -8,6 +16,10 @@ class App extends React.Component {
     this.state = {
       isDropdown: false
     };
+  }
+
+  componentDidMount() {
+    //logTime('App.js mounted');
   }
 
   render() {
