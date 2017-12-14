@@ -66,10 +66,14 @@ class About extends React.Component {
           </div>
         </section>
         <div className="report-container">
-          <div className="home-impact-item" style={{width:"100%", height:"350px",backgroundImage:"url('modules/assets/report-banner.png')", backgroundSize:"cover", borderTopLeftRadius:"5px", borderTopRightRadius:"5px"}}></div>
+          <div className="home-impact-item" style={{width:"100%", height:"350px",backgroundImage:"url('modules/assets/SCOOP_Annual_Report_2017_banner.png')", backgroundSize:"cover", borderTopLeftRadius:"5px", borderTopRightRadius:"5px"}}></div>
           <div style={{height:"250px",fontSize:"1.2em", padding:"0 10px", backgroundColor:"#fff", textAlign:"center", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center", borderLeft: "2px solid var(--purple)", borderRight: "2px solid var(--purple)", borderBottom: "2px solid var(--purple)", borderBottomLeftRadius:"5px", borderBottomRightRadius:"5px"}}>
-            <p> The aim of our schools is to provide an education and social support to children and families living in poverty. This year, we have also extended our operations to Syria and the provision of medical care for displaced persons or those caught up in the war.</p>
-            <span className="orange-inverse-btn" style={{fontSize:"1.2em"}} onClick={() => this.handlePDFLightBox()}>View the 2016 Annual Report</span>
+            <p>
+                The aim of our schools is to provide an education and social support to children and families living in poverty.
+                2017 was arguably our best year to date, in terms of funds raised, progress made, ideas developed, partnerships made, and,
+of course, those in need – helped!
+            </p>
+            <span className="orange-inverse-btn" style={{fontSize:"1.2em"}} onClick={() => this.handlePDFLightBox()}>View the 2017 Annual Report</span>
           </div>
         </div>
         <section style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", marginBottom:"8%", fontSize:"1.5em"}}>
@@ -80,7 +84,7 @@ class About extends React.Component {
         {this.state.pdfLightboxIsOpen &&
             (<div className="pdf-lightbox">
               <i onClick={() => this.handlePDFLightBox()} className="fa fa-times" aria-hidden="true"></i>
-              <embed src="modules/assets/report2.pdf" />
+              <embed src="modules/assets/SCOOP_Annual_Report_2017.pdf" />
             </div>)
           }
 

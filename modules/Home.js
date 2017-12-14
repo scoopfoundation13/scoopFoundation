@@ -274,9 +274,9 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="home-bottomCard">
-            <img width="100%" src="modules/assets/report.png"/>
+            <img width="100%" src="modules/assets/SCOOP_Annual_Report_2017.png"/>
             <div className="home-bottomCardTxt blue-theme">
-              <span style={{padding: "0 5px"}}>Check out our Annual Report for 2016</span>
+              <span style={{padding: "0 5px"}}>Check out our Annual Report for 2017</span>
               <span className="home-blue-btn" onClick={() => this.handlePDFLightBox()}>Report</span>
             </div>
           </div>
@@ -294,7 +294,7 @@ class Home extends React.Component {
         {this.state.pdfLightboxIsOpen &&
           (<div className="pdf-lightbox">
             <i onClick={() => this.handlePDFLightBox()} className="fa fa-times" aria-hidden="true"></i>
-            <embed src="modules/assets/report2.pdf" />
+            <embed src="modules/assets/SCOOP_Annual_Report_2017.pdf" />
           </div>)
         }
       </div>
