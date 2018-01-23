@@ -1,4 +1,51 @@
-import config from './config'
+import config from './config';
+
+const GaIds = {
+    "dev": {
+        "a":"UA-90734086-4",
+        "b":"UA-90734086-5"
+    },
+    "qa": {
+        "a":"UA-90734086-6",
+        "b":"UA-90734086-7"
+    },
+    "prod": {
+        "a":"UA-90734086-2",
+        "b":"UA-90734086-3"
+    }
+}
+function initialize() {
+    var tagId, gaConfig = {'send_page_view': false};
+    
+    if (window.location.host.match(/^localhost/) !== null) {
+        //local!
+        tagId = GaIds.prod.a;// <!--- ! Note using PROD !!!!!!!!
+        gaConfig.utm_source = 'dev';
+        gaConfig.utm_medium = 'site';
+        gaConfig.utm_campaign = 'dev-a';
+    } else {
+        tagId = GaIds.prod.a;
+    }
+    
+    // Attempt to dynamically load script and change the GA Id
+    /*
+    gaJs = document.createElement("script");
+    gaJs.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=" + tagId);
+    b = document.getElementsByTagName('body')[0];
+    b.appendChild(gaJs);*/
+    
+    // Cont. Attempt from above. This is the inline script
+    /*
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = window.gtag || gtag;
+    gtag('js', new Date());    
+    */
+    
+    
+    gtag('config', tagId, gaConfig);
+    
+}
 function page(path) {
     console.log('page', path);
     if (window.gtag === undefined) {
@@ -31,6 +78,7 @@ function mark(message) {
 
 
 module.exports = {
+    "initialize": initialize,
     "mark": mark,
     "page": page
 };

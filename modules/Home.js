@@ -120,7 +120,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    Analytics.page('/home');
+    Analytics.page('/Home');
   }
 
   isActive(cardNum) {

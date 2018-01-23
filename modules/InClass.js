@@ -1,7 +1,14 @@
+import Analytics from './Analytics';
 import React from 'react';
 import ThreeARow from './ThreeARow';
 
 class InClass extends React.Component {
+  constructor(){
+    super();
+  }
+  componentDidMount() {
+    Analytics.page('/InClass');
+  }
   render() {
     const imgArray = [{
       img: 'modules/assets/thumbnails/In%20class%20-Cambodia.jpg',

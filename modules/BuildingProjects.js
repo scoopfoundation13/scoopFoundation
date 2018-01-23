@@ -4,9 +4,11 @@ import NavLink from './NavLink';
 import ThreeARow from './ThreeARow';
 
 class BuildingProjects extends React.Component {
-
+  constructor(){
+    super();
+  }
   componentDidMount() {
-    Analytics.page('/buildingprojects');
+    Analytics.page('/BuildingProjects');
   }
 
   render() {

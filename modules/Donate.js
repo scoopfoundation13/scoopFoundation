@@ -1,3 +1,4 @@
+import Analytics from './Analytics';
 import React from 'react';
 
 class Donate extends React.Component {
@@ -7,10 +8,11 @@ class Donate extends React.Component {
       isMonthly: false
     };
   }
-
+  componentDidMount() {
+    Analytics.page('/Donate');
+  }
   handleClick(isMonthly) {
     this.setState({isMonthly});
-
   }
 
   render() {
