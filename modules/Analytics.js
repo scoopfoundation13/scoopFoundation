@@ -20,9 +20,9 @@ function initialize() {
     if (window.location.host.match(/^localhost/) !== null) {
         //local!
         tagId = GaIds.prod.a;// <!--- ! Note using PROD !!!!!!!!
-        gaConfig.utm_source = 'dev';
-        gaConfig.utm_medium = 'site';
-        gaConfig.utm_campaign = 'dev-a';
+        // gaConfig.utm_source = 'dev';
+        // gaConfig.utm_medium = 'site';
+        // gaConfig.utm_campaign = 'dev-a';
     } else {
         tagId = GaIds.prod.a;
     }
