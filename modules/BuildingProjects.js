@@ -1,8 +1,14 @@
+import Analytics from './Analytics';
 import React from 'react';
 import NavLink from './NavLink';
 import ThreeARow from './ThreeARow';
 
 class BuildingProjects extends React.Component {
+
+  componentDidMount() {
+    Analytics.page('/buildingprojects');
+  }
+
   render() {
     const imgArray = [{
       img: 'modules/assets/thumbnails/Building%20projects%20-%20Cambodia.jpg',
