@@ -1,3 +1,4 @@
+import Analytics from './Analytics';
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import NavLink from './NavLink';
@@ -116,6 +117,10 @@ class Home extends React.Component {
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleImagesString = this.handleImagesString.bind(this);
+  }
+
+  componentDidMount() {
+    Analytics.page('/Home');
   }
 
   isActive(cardNum) {

@@ -1,3 +1,4 @@
+import Analytics from './Analytics';
 import React from 'react';
 import Lightbox from 'react-images';
 
@@ -51,6 +52,9 @@ class Fundraise extends React.Component {
       lightboxIsOpen: false,
       currentImage: 0
     };
+  }
+  componentDidMount() {
+    Analytics.page('/Fundraise');
   }
 
   openLightbox (event) {

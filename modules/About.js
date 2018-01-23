@@ -1,3 +1,4 @@
+import Analytics from './Analytics';
 import React from 'react';
 import NavLink from './NavLink';
 import ThreeARow from './ThreeARow';
@@ -9,6 +10,10 @@ class About extends React.Component {
       pdfLightboxIsOpen: false
     };
     this.handlePDFLightBox = this.handlePDFLightBox.bind(this);
+  }  
+  
+  componentDidMount() {
+    Analytics.page('/About');
   }
 
   handlePDFLightBox() {

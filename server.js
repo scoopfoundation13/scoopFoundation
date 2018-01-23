@@ -1,12 +1,18 @@
 var express = require('express');
 var path = require('path');
 
+//var ua = require('universal-analytics');
+//var visitor = ua('UA-90734086-2');
+  // set(key, value)
+  // visitor.set("uid", "123456789")
+  
 var app = express();
 
 console.log(__dirname);
 app.use(express.static(__dirname));
 
 app.get('*', (req, res) => {
+  //visitor.pageview("/_temp/test1").send();
   res.sendFile(path.resolve('index.html'));
 });
 

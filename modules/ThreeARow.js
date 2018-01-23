@@ -2,7 +2,7 @@ import React from 'react';
 import NavLink from './NavLink';
 
 const ThreeARow = (props) => {
-  console.log('propspropsprops', props);
+  //console.log('propspropsprops', props);
   var images = props.img.map((obj) => {
     const divStyle = {
       backgroundImage: 'url(' + obj.img + ')',

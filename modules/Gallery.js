@@ -1,3 +1,4 @@
+import Analytics from './Analytics';
 import React from 'react';
 
 
