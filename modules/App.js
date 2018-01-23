@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink';
-//import {logTime} from './common.js';
+
+import Analytics from './Analytics';
 
 /*
 history.listen((location) => {  
@@ -19,13 +20,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    //logTime('App.js mounted');
+    Analytics.mark('App.js mounted.');
   }
 
   render() {
     const isHome = this.props.location.pathname === "/";
     const logo = isHome ? 'logo-white.png' : 'scoop-logo-kl3.png';
-
+    
     return (
       <div className={isHome && "home"}>
         <nav className="navbar" role="navigation">
