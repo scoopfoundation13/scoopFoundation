@@ -17,10 +17,12 @@ class DonationForm extends React.Component {
     handleHashChange () {
         if (window.location.hash === "#donate"){
             this.setState({open: true});
+        } else {
+            this.setState({open: false});
         }
     }
     handleClickDonate (ev) {
-        this.setState({open: true});
+
     }
     handleClickClose (ev) {
         this.setState({open: false});
@@ -33,11 +35,9 @@ class DonationForm extends React.Component {
             console.log("Received Stripe token:", token);
         })*/
     }
-    listenHash() {
-        window.addEventListener('hashchange', handleHashChange, false);
-    }
     componentDidMount() {
-        listenHash()
+        this.handleHashChange();
+        window.addEventListener('hashchange', this.handleHashChange, false);
     }
 
     render () {
