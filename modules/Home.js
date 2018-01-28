@@ -4,8 +4,6 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import NavLink from './NavLink';
 import Gallery from './Gallery';
 import Lightbox from 'react-images';
-import ScoopDonation from './ScoopDonation';
-
 const galleryImages = [{
   src: "modules/assets/gallery/Calvin launching The Artists' Cookbook at Airbnb's Dublin Headquarters, August 2017.jpg",
   caption: "Calvin launching The Artists' Cookbook at Airbnb's Dublin Headquarters, August 2017"
@@ -191,7 +189,6 @@ class Home extends React.Component {
       <p className="home-text-sub-head" style={{}}>We are on a mission to build a kinder world for the next&nbsp;generation.</p>
     </div>
     <NavLink to="/donate" className="home-donate-btn">Donate</NavLink>
-    <ScoopDonation />
   </div>
   <img className="home-img" 
     srcSet="modules/assets/marquee-250.jpg 250w,

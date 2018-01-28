@@ -5,6 +5,26 @@ import AddressSection from './AddressSection';
 // import CardSection from './CardSection';
 
 class DonationForm extends React.Component {
+    constructor(){
+        super();
+        this.state = {
+            open: false
+        }
+        this.handleClickDonate = this.handleClickDonate.bind(this);
+        this.handleClickClose = this.handleClickClose.bind(this);
+        this.handleHashChange = this.handleHashChange.bind(this);
+    }
+    handleHashChange () {
+        if (window.location.hash === "#donate"){
+            this.setState({open: true});
+        }
+    }
+    handleClickDonate (ev) {
+        this.setState({open: true});
+    }
+    handleClickClose (ev) {
+        this.setState({open: false});
+    }
     handleSubmit (ev){
         // stop refresh
         ev.preventDefault();
@@ -13,12 +33,20 @@ class DonationForm extends React.Component {
             console.log("Received Stripe token:", token);
         })*/
     }
+    listenHash() {
+        window.addEventListener('hashchange', handleHashChange, false);
+    }
+    componentDidMount() {
+        listenHash()
+    }
 
     render () {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className={this.state.open ? 'donation donation--open' : 'donation donation--closed'}>
+                <input type="text" value={this.state.open} />
                 <AddressSection />
-                <button>Confirm order</button>
+                <button type="button" onClick={this.handleClickDonate}>Confirm order</button>
+                <button type="button" onClick={this.handleClickClose}>Close</button>
             </form>
         )
     }

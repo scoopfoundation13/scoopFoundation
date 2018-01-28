@@ -1252,3 +1252,21 @@ button:hover {
 .StripeElement.PaymentRequestButton {
   padding: 0;
 }
+
+.donation {
+  position: absolute;
+}
+.donation--open {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+.donation--closed {
+  top: -100vh;
+  left: -100vw;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
