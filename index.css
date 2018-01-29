@@ -1245,11 +1245,13 @@ iframe {
   max-width: 500px;
   padding: 20px;
   background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
 }
 .donation__btn {
   background-color: #813e9d;
   border-radius: 13px;
   border: 2px solid #813e9d;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
   color: #fff;
   display: inline-block;
   font-size: 1.4375em;
@@ -1264,7 +1266,8 @@ iframe {
 }
 .donation__graphic {
   width: 100%;
-  padding: 20px;
+  padding: 30px 20px 0;
+  box-sizing: border-box;
   clear: both;
 }
 .donation__graphic img{
