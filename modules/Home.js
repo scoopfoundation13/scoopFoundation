@@ -188,7 +188,8 @@ class Home extends React.Component {
       <span className="home-text-head" style={{}}>No child should live in poverty or danger.</span>
       <p className="home-text-sub-head" style={{}}>We are on a mission to build a kinder world for the next&nbsp;generation.</p>
     </div>
-    <NavLink to="/donate" className="home-donate-btn">Donate</NavLink>
+    
+    <a href="#donate" className="home-donate-btn">Donate</a>
   </div>
   <img className="home-img" 
     srcSet="modules/assets/marquee-250.jpg 250w,

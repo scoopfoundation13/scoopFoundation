@@ -15,17 +15,21 @@ class DonationForm extends React.Component {
         this.handleHashChange = this.handleHashChange.bind(this);
     }
     handleHashChange () {
+        var body = document.getElementsByTagName('body')[0];
         if (window.location.hash === "#donate"){
             this.setState({open: true});
+            body.setAttribute('data-state', 'is-modal');
         } else {
             this.setState({open: false});
+            body.removeAttribute('data-state');
         }
     }
     handleClickDonate (ev) {
 
     }
     handleClickClose (ev) {
-        this.setState({open: false});
+        //this.setState({open: false});
+        window.location.hash = '';
     }
     handleSubmit (ev){
         // stop refresh
@@ -43,10 +47,14 @@ class DonationForm extends React.Component {
     render () {
         return (
             <form onSubmit={this.handleSubmit} className={this.state.open ? 'donation donation--open' : 'donation donation--closed'}>
-                <input type="text" value={this.state.open} />
-                <AddressSection />
-                <button type="button" onClick={this.handleClickDonate}>Confirm order</button>
-                <button type="button" onClick={this.handleClickClose}>Close</button>
+                <div className="donation__inner">
+                    <h1 className="donation__title">Donate now and together we can change more lives.</h1>
+                    <AddressSection />
+                    <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Maybe later</button>
+                    <button className="donation__btn" type="button" onClick={this.handleClickDonate}>Donate now!</button>
+                    <div className="donation__graphic"><img className="" src="modules/assets/donationchart.png" alt=""/></div>
+                
+                </div>
             </form>
         )
     }
