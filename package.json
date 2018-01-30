@@ -36,6 +36,7 @@
     "react-images": "^0.5.2",
     "react-router": "^2.0.0",
     "react-stripe-elements": "^1.4.1",
+    "stripe": "^5.4.0",
     "universal-analytics": "^0.4.16"
   },
   "devDependencies": {
