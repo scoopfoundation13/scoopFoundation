@@ -1,18 +1,26 @@
 import React from 'react';
 import {injectStripe} from 'react-stripe-elements';
 
-import AddressSection from './AddressSection';
-// import CardSection from './CardSection';
+import {CardElement} from 'react-stripe-elements';
 
 class DonationForm extends React.Component {
     constructor(){
         super();
         this.state = {
-            open: false
+            "error": "",
+            "open": false,
+            "donationFormName": "",
+            "donationFormCompany": "",
+            "donationFormEmail": "",
+            "donationFormMessage": ""
         }
         this.handleClickDonate = this.handleClickDonate.bind(this);
         this.handleClickClose = this.handleClickClose.bind(this);
         this.handleHashChange = this.handleHashChange.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleError = this.handleError.bind(this);
+        
     }
     handleHashChange () {
         var body = document.getElementsByTagName('body')[0];
@@ -24,6 +32,11 @@ class DonationForm extends React.Component {
             body.removeAttribute('data-state');
         }
     }
+    handleInputChange (ev) {
+        var newState = {};
+        newState[ev.target.name] = ev.target.value;
+        this.setState(newState);
+    }
     handleClickDonate (ev) {
 
     }
@@ -31,13 +44,20 @@ class DonationForm extends React.Component {
         //this.setState({open: false});
         window.location.hash = '';
     }
+    handleError (error){
+        
+    }
     handleSubmit (ev){
         // stop refresh
         ev.preventDefault();
-/*
-        this.props.stripe.createToken({name: "Jenny Rosen"}).then(({token}) => {
-            console.log("Received Stripe token:", token);
-        })*/
+
+        this.props.stripe.createToken({name: this.state.donationFormName}).then(function(result) {
+            // Handle result.error or result.token
+            console.log(result);
+            if (result.error) {
+                this.setState({"error": result.error.message});
+            }
+          }.bind(this));
     }
     componentDidMount() {
         this.handleHashChange();
@@ -48,10 +68,21 @@ class DonationForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit} className={this.state.open ? 'donation donation--open' : 'donation donation--closed'}>
                 <div className="donation__inner">
-                    <h1 className="donation__title">Donate now and together we can change more lives.</h1>
-                    <AddressSection />
+                    <div>
+                        <label>Name</label>
+                        <input type='text' id="donationFormName" name="donationFormName" value={this.state.donationFormName} onChange={this.handleInputChange} />
+                        <label>Company</label>
+                        <input type='text' id="donationFormCompany" name="donationFormCompany" value={this.state.donationFormCompany} onChange={this.handleInputChange} />
+                        <label>Email</label>
+                        <input type='text' id="donationFormEmail" name="donationFormEmail" value={this.state.donationFormEmail} onChange={this.handleInputChange} />
+                        <label>Message</label>
+                        <input type='text' id="donationFormMessage" name="donationFormMessage" value={this.state.donationFormMessage} onChange={this.handleInputChange} />
+                    </div>
+
+                    <CardElement />
+                    <button className="donation__btn" type="submit" onClick={this.handleClickDonate}>Donate</button>
                     <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Maybe later</button>
-                    <button className="donation__btn" type="button" onClick={this.handleClickDonate}>Donate now!</button>
+                    <div>{this.state.error}</div>
                     <div className="donation__graphic"><img className="" src="modules/assets/donationchart.png" alt=""/></div>
                 
                 </div>

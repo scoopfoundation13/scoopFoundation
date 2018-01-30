@@ -160,21 +160,21 @@ nav li {
   color: #FFF;
   background-color: #FF8200;
 }
-.home-donate-btn {
+
+.donate-btn {
   background-color: #813e9d;
   border-radius: 13px;
-  border: 2px solid #813e9d;
   color: #fff;
   display: inline-block;
   font-size: 1.4375em;
   line-height: 44px;
   padding: 0 33px;
+  transition: background-color 100ms ease-out;
 }
 
-.home-donate-btn:hover {
-  background-color: rgba(255,255,255,0.9);
-  border: 2px solid #6bcacc;
-  color: #6bcacc;
+.donate-btn:hover,
+.donate-btn:active{
+  background-color: #fe8200;
 }
 
 .flex-col {
@@ -1238,9 +1238,6 @@ iframe {
   align-items: center;
   overflow: auto;
 }
-.donation__title {
-  margin: 0 0 10px;
-}
 .donation__inner {
   max-width: 500px;
   padding: 20px;
@@ -1250,18 +1247,26 @@ iframe {
 .donation__btn {
   background-color: #813e9d;
   border-radius: 13px;
-  border: 2px solid #813e9d;
   box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
   color: #fff;
-  display: inline-block;
+  display: block;
   font-size: 1.4375em;
   line-height: 44px;
   padding: 0 33px;
   float: right;
+  transition: background-color 100ms ease-out;
+  cursor: pointer;
 }
+/*.StripeElement--complete + button[type=submit] {
+  background-color: #813e9d;
+}*/
+.donation__btn:hover,
+.donation__btn:active {
+  background-color: #fe8200;
+}
+
 .donation__btn--close {
   background-color: #70cacc;
-  border-color: #70cacc;
   float: left;
 }
 .donation__graphic {

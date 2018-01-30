@@ -189,7 +189,7 @@ class Home extends React.Component {
       <p className="home-text-sub-head" style={{}}>We are on a mission to build a kinder world for the next&nbsp;generation.</p>
     </div>
     
-    <a href="#donate" className="home-donate-btn">Donate</a>
+    <a href="#donate" className="donate-btn">Donate</a>
   </div>
   <img className="home-img" 
     srcSet="modules/assets/marquee-250.jpg 250w,
