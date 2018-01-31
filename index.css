@@ -1255,6 +1255,7 @@ iframe {
   background-color: rgb(242, 245, 247);
   box-shadow:rgba(50, 50, 93, 0.3) 0px 1px 3px, rgba(0, 0, 0, 0.1) 0px 1px 0px;
 }
+
 .donation__btn {
   background-color: #813e9d;
   border-radius: 13px;
@@ -1310,4 +1311,39 @@ iframe {
   padding: 0;
   font-size: 1em;
   outline: none;
+}
+.donation__field--amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  padding: 0;
+}
+.donation__amount-label {
+  padding-left: 14px;
+}
+
+.donation__amount-preset {
+  cursor: pointer;
+}
+.donation__amount {
+  padding: 10px;
+  background-color: rgba(129, 62, 157, 0);
+  transition: background-color 100ms ease-out;
+  display: inline-block;
+}
+.donation__amount-radio:checked + .donation__amount {
+  background-color: rgba(129, 62, 157, 1);
+  color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+}
+.donation__amount:hover,
+.donation__amount:active {
+  color: #fff;
+  background-color: #fe8200;
+}
+.donation__amount-radio {
+  position: absolute;
+  top: -100vh;
+  left: -100vw;
 }
