@@ -7,7 +7,7 @@ class DonationForm extends React.Component {
     constructor(){
         super();
         this.state = {
-            "error": "",
+            "error": false,
             "open": false,
             "donationFormName": "",
             "donationFormCompany": "",
@@ -19,8 +19,6 @@ class DonationForm extends React.Component {
         this.handleHashChange = this.handleHashChange.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleError = this.handleError.bind(this);
-        
     }
     handleHashChange () {
         var body = document.getElementsByTagName('body')[0];
@@ -44,18 +42,24 @@ class DonationForm extends React.Component {
         //this.setState({open: false});
         window.location.hash = '';
     }
-    handleError (error){
-        
-    }
     handleSubmit (ev){
         // stop refresh
         ev.preventDefault();
+
+        if (this.state.donationFormName === "") {
+            this.setState({"error": "Please fill in your name."});
+            return;
+        }
 
         this.props.stripe.createToken({name: this.state.donationFormName}).then(function(result) {
             // Handle result.error or result.token
             console.log(result);
             if (result.error) {
                 this.setState({"error": result.error.message});
+            }
+
+            if (result.token) {
+                this.setState({"error": false});
             }
           }.bind(this));
     }
@@ -65,26 +69,52 @@ class DonationForm extends React.Component {
     }
 
     render () {
+        let fieldsetError = null
+        if (this.state.error) {
+            fieldsetError = (
+                <fieldset className="donation__set donation__set--error">
+                    {this.state.error}
+                </fieldset>
+            )
+        }
         return (
             <form onSubmit={this.handleSubmit} className={this.state.open ? 'donation donation--open' : 'donation donation--closed'}>
+                <img className="donation__logo" src="modules/assets/logo-white.png" />
                 <div className="donation__inner">
-                    <div>
-                        <label>Name</label>
-                        <input type='text' id="donationFormName" name="donationFormName" value={this.state.donationFormName} onChange={this.handleInputChange} />
-                        <label>Company</label>
-                        <input type='text' id="donationFormCompany" name="donationFormCompany" value={this.state.donationFormCompany} onChange={this.handleInputChange} />
-                        <label>Email</label>
-                        <input type='text' id="donationFormEmail" name="donationFormEmail" value={this.state.donationFormEmail} onChange={this.handleInputChange} />
-                        <label>Message</label>
-                        <input type='text' id="donationFormMessage" name="donationFormMessage" value={this.state.donationFormMessage} onChange={this.handleInputChange} />
-                    </div>
+                    <fieldset className="donation__set">
+                        <label className="donation__field">
+                            <input placeholder="Name" type='text' id="donationFormName" name="donationFormName" value={this.state.donationFormName} onChange={this.handleInputChange} />
+                        </label>
+                    </fieldset>
+                    
+                    <fieldset className="donation__set">
+                        <label className="donation__field">
+                            <input placeholder="Company" type='text' id="donationFormCompany" name="donationFormCompany" value={this.state.donationFormCompany} onChange={this.handleInputChange} />
+                        </label>
+                    </fieldset>
+                    
+                    <fieldset className="donation__set">
+                        <label className="donation__field">
+                            <input placeholder="Email" type='text' id="donationFormEmail" name="donationFormEmail" value={this.state.donationFormEmail} onChange={this.handleInputChange} />
+                        </label>
+                    </fieldset>
 
-                    <CardElement />
-                    <button className="donation__btn" type="submit" onClick={this.handleClickDonate}>Donate</button>
-                    <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Maybe later</button>
-                    <div>{this.state.error}</div>
-                    <div className="donation__graphic"><img className="" src="modules/assets/donationchart.png" alt=""/></div>
-                
+                    <fieldset className="donation__set">
+                        <label className="donation__field">
+                            <input placeholder="Message" type='text' id="donationFormMessage" name="donationFormMessage" value={this.state.donationFormMessage} onChange={this.handleInputChange} />
+                        </label>
+                    </fieldset>
+
+                    <fieldset className="donation__set">
+                        <CardElement />
+                    </fieldset>
+
+                    { fieldsetError }
+
+                    <fieldset className="donation__set donation__set--last">
+                        <button className="donation__btn" type="submit" onClick={this.handleClickDonate}>Donate</button>
+                        <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Maybe later</button>
+                    </fieldset>
                 </div>
             </form>
         )
