@@ -20,8 +20,10 @@ import IndiaProject from './modules/IndiaProject';
 import SyriaProject from './modules/SyriaProject';
 import _Experiment from './modules/_Experiment';
 
+import stripeTestKeys from './stripeTestKeys';
+
 render((
-  <StripeProvider apiKey="pk_test_gEsCjsC0yW16GWsuLkaTSfyX">
+  <StripeProvider apiKey={stripeTestKeys.stripeTestPublic}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home}/>

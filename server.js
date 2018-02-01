@@ -1,11 +1,11 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
-var config = require('./secrets');
+var stripeTestKeys = require('./stripeTestKeys');
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here: https://dashboard.stripe.com/account/apikeys
-var stripe = require("stripe")(config.stripeTestSecret);
+var stripe = require("stripe")(process.env.stripeSecret || stripeTestKeys.stripeTestSecret);
   
 var app = express();
 var jsonParser = bodyParser.json();
