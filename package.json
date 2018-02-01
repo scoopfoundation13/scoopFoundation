@@ -27,6 +27,8 @@
     "node": "5.10.0"
   },
   "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
     "express": "4.13.3",
     "file-system": "^2.2.2",
     "fs": "0.0.1-security",
