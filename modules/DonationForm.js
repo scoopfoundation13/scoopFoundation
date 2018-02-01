@@ -134,6 +134,13 @@ class DonationForm extends React.Component {
             }
             markup = (
                 <div>
+
+                    <fieldset className="donation__set">
+                        <label className={`donation__field ${this.state.nameClassName}`}>
+                            <input placeholder="Name" type='text' id="donationFormName" name="donationFormName" value={this.state.donationFormName} onChange={this.handleInputChange} />
+                        </label>
+                    </fieldset>
+                    
                     <fieldset className="donation__set">
                         <div className="donation__field donation__field--amount">
                             <span className="donation__amount-label">Amount</span>
@@ -155,18 +162,6 @@ class DonationForm extends React.Component {
                     <fieldset className="donation__set">
                         <CardElement />
                     </fieldset>
-
-                    <fieldset className="donation__set">
-                        <label className={`donation__field ${this.state.nameClassName}`}>
-                            <input placeholder="Name" type='text' id="donationFormName" name="donationFormName" value={this.state.donationFormName} onChange={this.handleInputChange} />
-                        </label>
-                    </fieldset>
-                    
-                    <fieldset className="donation__set">
-                        <label className="donation__field">
-                            <input placeholder="Company" type='text' id="donationFormCompany" name="donationFormCompany" value={this.state.donationFormCompany} onChange={this.handleInputChange} />
-                        </label>
-                    </fieldset>
                     
                     <fieldset className="donation__set">
                         <label className="donation__field">
@@ -177,6 +172,12 @@ class DonationForm extends React.Component {
                     <fieldset className="donation__set">
                         <label className="donation__field">
                             <input placeholder="Message" type='text' id="donationFormMessage" name="donationFormMessage" value={this.state.donationFormMessage} onChange={this.handleInputChange} />
+                        </label>
+                    </fieldset>
+                    
+                    <fieldset className="donation__set">
+                        <label className="donation__field">
+                            <input placeholder="Company" type='text' id="donationFormCompany" name="donationFormCompany" value={this.state.donationFormCompany} onChange={this.handleInputChange} />
                         </label>
                     </fieldset>
 
