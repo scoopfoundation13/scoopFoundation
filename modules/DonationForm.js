@@ -4,24 +4,27 @@ import {injectStripe} from 'react-stripe-elements';
 
 import {CardElement} from 'react-stripe-elements';
 
+let defaultState = {
+    "error": false,
+    "nameClassName": "",
+    "open": false,
+    "donationFormAmount": "1000",
+    "donationFormName": "",
+    "donationFormCompany": "",
+    "donationFormEmail": "",
+    "donationFormMessage": "",
+    "thanks": false
+};
 class DonationForm extends React.Component {
     constructor(){
         super();
-        this.state = {
-            "error": false,
-            "nameClassName": "",
-            "open": false,
-            "donationFormAmount": "1000",
-            "donationFormName": "",
-            "donationFormCompany": "",
-            "donationFormEmail": "",
-            "donationFormMessage": ""
-        }
+        this.state = defaultState;
         this.handleClickDonate = this.handleClickDonate.bind(this);
         this.handleClickClose = this.handleClickClose.bind(this);
         this.handleHashChange = this.handleHashChange.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.submitDonation = this.submitDonation.bind(this);
     }
     handleHashChange () {
         var body = document.getElementsByTagName('body')[0];
@@ -46,11 +49,12 @@ class DonationForm extends React.Component {
 
     }
     handleClickClose (ev) {
+        this.setState(defaultState);
         window.location.hash = '';
     }
     handleSubmit (ev){
+        let dF = document.getElementById('donationForm');
         ev.preventDefault();
-
         if (this.state.donationFormName === "") {
             this.setState({
                 "error": "Please fill in your name.",
@@ -59,17 +63,18 @@ class DonationForm extends React.Component {
             return;
         }
 
-        document.getElementById('donationForm').setAttribute("disabled","");
+        dF.setAttribute("disabled","");
 
         // get token from Stripe
         this.props.stripe.createToken({name: this.state.donationFormName}).then(function(result) {
+
             // failure
             if (result.error) {
-                document.getElementById('donationForm').removeAttribute("disabled");
                 this.setState({
                     "error": result.error.message,
                     "nameClassName": ""
                 });
+                dF.removeAttribute("disabled");
             }
             // success
             if (result.token) {
@@ -78,24 +83,29 @@ class DonationForm extends React.Component {
                     "nameClassName": ""
                 });
 
-                axios.post('/donation', {
-                    "stripeToken": result.token.id,
-                    "amount": this.state.donationFormAmount,
-                    "name": this.state.donationFormName,
-                    "company": this.state.donationFormCompany,
-                    "email": this.state.donationFormEmail,
-                    "message": this.state.donationFormMessage
-                }).then(function(response){
-                    console.log('axios', response);
-                    document.getElementById('donationForm').removeAttribute("disabled");
-                }).catch(function(error){
-                    console.log('axios HORRIBLE', error);
-                    document.getElementById('donationForm').removeAttribute("disabled");
-                })
-
+                this.submitDonation(result.token.id);
+                dF.removeAttribute("disabled");
             }
           }.bind(this));
     }
+    submitDonation(tokenId) {
+        axios.post('/donation', {
+            "stripeToken": tokenId,
+            "amount": this.state.donationFormAmount,
+            "name": this.state.donationFormName,
+            "company": this.state.donationFormCompany,
+            "email": this.state.donationFormEmail,
+            "message": this.state.donationFormMessage
+        }).then(function(response){
+            if (response.error !== undefined) {
+                return;
+            }
+            this.setState({"thanks": true});
+        }.bind(this)).catch(function(error){
+            console.log('axios HORRIBLE', error);
+        })
+    }
+
     componentDidMount() {
         this.handleHashChange();
         window.addEventListener('hashchange', this.handleHashChange, false);
@@ -104,20 +114,26 @@ class DonationForm extends React.Component {
 
     render () {
         let fieldsetError = null
-        if (this.state.error) {
-            fieldsetError = (
-                <fieldset className="donation__set donation__set--error">
-                    {this.state.error}
-                </fieldset>
-            )
-        }
-        
-        return (
-            <form id="donationForm" method="post" action="/donation" onSubmit={this.handleSubmit} className={this.state.open ? 'donation donation--open' : 'donation donation--closed'}>
+        let markup = null
 
-                <img className="donation__logo" src="modules/assets/logo-white.png" />
-                <div className="donation__inner">
-                    
+        if (this.state.thanks) {
+            markup = (
+                <div className="donation__thanks">
+                    <h1 className="donation__hdr">Thanks,</h1>
+                    <p>Your donation will help to change a child's life.</p>
+                    <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Close</button>
+                </div>
+            )
+        } else {
+            if (this.state.error) {
+                fieldsetError = (
+                    <fieldset className="donation__set donation__set--error">
+                        {this.state.error}
+                    </fieldset>
+                )
+            }
+            markup = (
+                <div>
                     <fieldset className="donation__set">
                         <div className="donation__field donation__field--amount">
                             <span className="donation__amount-label">Amount</span>
@@ -170,6 +186,18 @@ class DonationForm extends React.Component {
                         <button className="donation__btn" type="submit">Donate</button>
                         <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Maybe later</button>
                     </fieldset>
+                </div>
+            )
+        }
+        
+        return (
+            <form id="donationForm" method="post" action="/donation" onSubmit={this.handleSubmit} className={this.state.open ? 'donation donation--open' : 'donation donation--closed'}>
+
+                <img className="donation__logo" src="modules/assets/scoop-logo-kl3.png" />
+                <div className="donation__inner">
+                    
+                    { markup }
+                    
                 </div>
             </form>
         )

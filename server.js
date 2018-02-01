@@ -32,14 +32,11 @@ app.post("/donation", jsonParser, (req, res) => {
     }
   }, function(err, charge) {
     if (err){
-      console.log('STRIPE HORRIBLE');
-      console.log(err)
       res.json({
         'error': err
       })
     }
     if (charge) {
-      console.log('STRIPE GREAT');
       res.json({
         'charge': charge
       })

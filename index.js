@@ -18,6 +18,7 @@ import Impact from './modules/Impact';
 import CambodiaProject from './modules/CambodiaProject';
 import IndiaProject from './modules/IndiaProject';
 import SyriaProject from './modules/SyriaProject';
+import _Experiment from './modules/_Experiment';
 
 render((
   <StripeProvider apiKey="pk_test_gEsCjsC0yW16GWsuLkaTSfyX">
@@ -38,6 +39,7 @@ render((
         <Route path="/syria" component={Syria}/>
         <Route path="/syriaproject" component={SyriaProject}/>
         <Route path="/team" component={Team}/>
+        <Route path="/_experiment" component={_Experiment}/>
       </Route>
     </Router>
   </StripeProvider>

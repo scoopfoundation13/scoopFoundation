@@ -1217,6 +1217,7 @@ iframe {
 .donation {
   position: fixed;
   font-size: 14px;
+  transition: opacity 300ms ease-out;
 }
 .donation__field,
 .donation .StripeElement {
@@ -1228,6 +1229,7 @@ iframe {
   width: 0;
   height: 0;
   z-index: -1;
+  opacity: 0;
 }
 
 .donation--open {
@@ -1247,6 +1249,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 .donation__inner {
   display: flex;
