@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { StripeProvider } from 'react-stripe-elements';
 import App from './modules/App';
 import About from './modules/About';
 import Home from './modules/Home';
@@ -17,25 +18,31 @@ import Impact from './modules/Impact';
 import CambodiaProject from './modules/CambodiaProject';
 import IndiaProject from './modules/IndiaProject';
 import SyriaProject from './modules/SyriaProject';
+import _Experiment from './modules/_Experiment';
+
+import stripeTestKeys from './stripeTestKeys';
 
 render((
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/buildingprojects" component={BuildingProjects}/>
-      <Route path="/cambodia" component={Cambodia}/>
-      <Route path="/cambodiaproject" component={CambodiaProject}/>
-      <Route path="/donate" component={Donate}/>
-      <Route path="/fundraise" component={Fundraise}/>
-      <Route path="/impact" component={Impact}/>
-      <Route path="/inclass" component={InClass}/>
-      <Route path="/india" component={India}/>
-      <Route path="/indiaproject" component={IndiaProject}/>
-      <Route path="/partners" component={Partners}/>
-      <Route path="/syria" component={Syria}/>
-      <Route path="/syriaproject" component={SyriaProject}/>
-      <Route path="/team" component={Team}/>
-    </Route>
-  </Router>
+  <StripeProvider apiKey={stripeTestKeys.stripeTestPublic}>
+    <Router history={browserHistory}>
+      <Route path="/" component={App}>
+        <IndexRoute component={Home}/>
+        <Route path="/about" component={About}/>
+        <Route path="/buildingprojects" component={BuildingProjects}/>
+        <Route path="/cambodia" component={Cambodia}/>
+        <Route path="/cambodiaproject" component={CambodiaProject}/>
+        <Route path="/donate" component={Donate}/>
+        <Route path="/fundraise" component={Fundraise}/>
+        <Route path="/impact" component={Impact}/>
+        <Route path="/inclass" component={InClass}/>
+        <Route path="/india" component={India}/>
+        <Route path="/indiaproject" component={IndiaProject}/>
+        <Route path="/partners" component={Partners}/>
+        <Route path="/syria" component={Syria}/>
+        <Route path="/syriaproject" component={SyriaProject}/>
+        <Route path="/team" component={Team}/>
+        <Route path="/_experiment" component={_Experiment}/>
+      </Route>
+    </Router>
+  </StripeProvider>
 ), document.getElementById('app'));

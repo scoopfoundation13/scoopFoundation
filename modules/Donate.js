@@ -10,6 +10,12 @@ class Donate extends React.Component {
   }
   componentDidMount() {
     Analytics.page('/Donate');
+
+    const s = document.createElement('script');
+    s.setAttribute("type", "text/javascript");
+    s.setAttribute("src", "https://donorbox.org/widget.js");
+
+    document.getElementById('js-script').appendChild(s);
   }
   handleClick(isMonthly) {
     this.setState({isMonthly});
@@ -30,6 +36,7 @@ class Donate extends React.Component {
         <iframe src="https://donorbox.org/embed/scoopdonate" height="685px" width="100%" style={{maxWidth:"500px", minWidth:"310px", margin:"0 auto", paddingLeft:"60px", position:"absolute", top:"130px", width:"100%"}} seamless="seamless" id="dbox-form-embed" align="center" name="donorbox" frameBorder="0" scrolling="no"></iframe>
         </div>
       </div>
+      <div id="js-script"></div>
       </div>
       );
   }

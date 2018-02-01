@@ -2,6 +2,7 @@ import React from 'react';
 import NavLink from './NavLink';
 
 import Analytics from './Analytics';
+import ScoopDonation from './ScoopDonation';
 
 /*
 history.listen((location) => {  
@@ -99,6 +100,7 @@ class App extends React.Component {
           </div>
           <center style={{paddingBottom: "15px"}}>SCOOP is a registered charity in Ireland (CHY 18767) and Australia (ABN 74156239766)</center>
         </footer>
+        <ScoopDonation />
       </div>
     );
   }

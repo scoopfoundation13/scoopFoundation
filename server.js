@@ -1,18 +1,50 @@
 var express = require('express');
 var path = require('path');
+var bodyParser = require('body-parser');
+var stripeTestKeys = require('./stripeTestKeys');
 
-//var ua = require('universal-analytics');
-//var visitor = ua('UA-90734086-2');
-  // set(key, value)
-  // visitor.set("uid", "123456789")
+// Set your secret key: remember to change this to your live secret key in production
+// See your keys here: https://dashboard.stripe.com/account/apikeys
+var stripe = require("stripe")(process.env.stripeSecret || stripeTestKeys.stripeTestSecret);
   
 var app = express();
+var jsonParser = bodyParser.json();
 
-console.log(__dirname);
 app.use(express.static(__dirname));
 
+app.post("/donation", jsonParser, (req, res) => {
+  
+  if (!req.body) {return res.sendStatus(400);}
+
+  var rb = req.body;
+  
+  // Charge the user's card:
+  stripe.charges.create({
+    amount: rb.amount,
+    currency: "eur",
+    description: "Example charge",
+    source: rb.stripeToken,
+    metadata: {
+      "name": rb.name,
+      "company": rb.company,
+      "email": rb.email,
+      "message": rb.message
+    }
+  }, function(err, charge) {
+    if (err){
+      res.json({
+        'error': err
+      })
+    }
+    if (charge) {
+      res.json({
+        'charge': charge
+      })
+    }
+  });
+});
+
 app.get('*', (req, res) => {
-  //visitor.pageview("/_temp/test1").send();
   res.sendFile(path.resolve('index.html'));
 });
 

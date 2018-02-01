@@ -27,6 +27,8 @@
     "node": "5.10.0"
   },
   "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
     "express": "4.13.3",
     "file-system": "^2.2.2",
     "fs": "0.0.1-security",
@@ -35,6 +37,8 @@
     "react-dom": "^0.14.9",
     "react-images": "^0.5.2",
     "react-router": "^2.0.0",
+    "react-stripe-elements": "^1.4.1",
+    "stripe": "^5.4.0",
     "universal-analytics": "^0.4.16"
   },
   "devDependencies": {
