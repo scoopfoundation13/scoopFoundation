@@ -116,7 +116,14 @@ class DonationForm extends React.Component {
         let fieldsetError = null
         let markup = null
 
-        if (this.state.thanks) {
+        if (this.props.activated === false) {
+            markup = (
+                <div className="donation__error">
+                    <h1 className="donation__hdr">Our donation page is down for maintenance.</h1>
+                    <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Close</button>
+                </div>
+            )
+        } else if (this.state.thanks) {
             markup = (
                 <div className="donation__thanks">
                     <h1 className="donation__hdr">Thank you so much for your support!</h1>

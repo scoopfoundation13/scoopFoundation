@@ -46,7 +46,7 @@ app.post("/donation", jsonParser, (req, res) => {
 
 app.get('*', (req, res) => {
   var secure = false;
-  if (req.secure/* || req.headers.host === 'localhost:3000'*/) {
+  if (req.secure || req.headers.host === 'localhost:3000') {
     secure = true;
   }
   res.render('pages/index', {'https': secure})
