@@ -23,7 +23,7 @@ import _Experiment from './modules/_Experiment';
 import stripeTestKeys from './stripeTestKeys';
 
 render((
-  <StripeProvider apiKey={stripeTestKeys.stripeTestPublic}>
+  <StripeProvider apiKey={stripeTestKeys.STRIPE_PUBLIC_LIVE}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home}/>
