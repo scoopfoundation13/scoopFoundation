@@ -19,7 +19,7 @@ class CambodiaProject extends React.Component {
 
       <p>We also want to build quality accommodation to attract qualified teachers and Development Study graduates to come and live in village. </p>
 
-      <p>To get involved, get in touch with Andy today, <NavLink to="/donate" className="orange">make a donation</NavLink> or <a href="https://www.justgiving.com/scoop" className="purple">set up a fundraising page</a> on our behalf.</p>
+      <p>To get involved, get in touch with Andy today, <a href="#donate" className="orange">make a donation</a> or <a href="https://www.justgiving.com/scoop" className="purple">set up a fundraising page</a> on our behalf.</p>
       </section>
       <img className="home-bk" src="modules/assets/cambodiaproject.png"/>
       </div>

@@ -178,30 +178,28 @@ class Home extends React.Component {
       currentImage: this.state.currentImage - 1,
     });
   }
-/* <a href="#donate" className="donate-btn">Donate</a>*/
   render() {
     return (
       <div>
-<section className="home-sec1">
-  <div style={{margin: "7%", padding: "1%"}}>
-    <div style={{width:"48%", padding:"1%", color: "#fff"}}>
-      <span className="home-text-head" style={{}}>No child should live in poverty or danger.</span>
-      <p className="home-text-sub-head" style={{}}>We are on a mission to build a kinder world for the next&nbsp;generation.</p>
-    </div>
-    <NavLink to="/donate" className="donate-btn">Donate</NavLink>
-    
-  </div>
-  <img className="home-img" 
-    srcSet="modules/assets/marquee-250.jpg 250w,
-      modules/assets/marquee-500.jpg 500w,
-      modules/assets/marquee-1000.jpg 1000w,
-      modules/assets/marquee-2000.jpg 2000w"
-      sizes="(max-width 250px) 100vw,
-      (max-width: 500px) 100vw,
-      (max-width: 1000px) 100vw,
-      (max-width: 2000px) 100vw"
-     src="modules/assets/marquee-1000.jpg" alt="" />
-</section>
+        <section className="home-sec1">
+          <div style={{margin: "7%", padding: "1%"}}>
+            <div style={{width:"48%", padding:"1%", color: "#fff"}}>
+              <span className="home-text-head" style={{}}>No child should live in poverty or danger.</span>
+              <p className="home-text-sub-head" style={{}}>We are on a mission to build a kinder world for the next&nbsp;generation.</p>
+            </div>
+            <a href="#donate" className="donate-btn">Donate</a>
+          </div>
+          <img className="home-img" 
+            srcSet="modules/assets/marquee-250.jpg 250w,
+              modules/assets/marquee-500.jpg 500w,
+              modules/assets/marquee-1000.jpg 1000w,
+              modules/assets/marquee-2000.jpg 2000w"
+              sizes="(max-width 250px) 100vw,
+              (max-width: 500px) 100vw,
+              (max-width: 1000px) 100vw,
+              (max-width: 2000px) 100vw"
+            src="modules/assets/marquee-1000.jpg" alt="" />
+        </section>
         <center style={{margin:"30px auto", width:"70%", padding:"25px"}}>
         <h2 style={{fontSize:"2em"}} className="home-text">We build schools, medical clinics, support local teachers and fund doctors in order to help children living in developing or war-torn countries.</h2>
         </center>

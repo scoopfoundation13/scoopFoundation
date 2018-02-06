@@ -40,7 +40,7 @@ class App extends React.Component {
                 <li><span className="nav-right"><a target="_blank" href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x purple icon" aria-hidden="true"></i></a></span></li>
                 <li><span className="nav-right"><a target="_blank" href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x blue icon" aria-hidden="true"></i></a></span></li>
                 <li><span className="nav-right"><a target="_blank" href="https://www.instagram.com/scoopfoundation_ireland/?hl=en"><i className="fa fa-instagram fa-2x orange icon" aria-hidden="true"></i></a></span></li>
-                <li><span className="nav-right"><NavLink to="/donate" className="nav-pill">DONATE</NavLink></span></li>
+                <li><span className="nav-right"><a href="#donate" className="nav-pill nav-pill--donate">DONATE</a></span></li>
                 <li><span className="nav-right"><NavLink to="/fundraise" className="nav-pill">FUNDRAISE</NavLink></span></li>
               </ul>
             <div>
@@ -51,7 +51,7 @@ class App extends React.Component {
               <li><NavLink to="/about">ABOUT</NavLink></li>
               <li><NavLink to="/inclass">IN CLASS</NavLink></li>
               <li><NavLink to="/buildingprojects">BUILDING PROJECTS</NavLink></li>
-              <li><NavLink to="/donate">DONATE</NavLink></li>
+              <li><a href="#donate">Donate</a></li>
               <li><NavLink to="/fundraise">FUNDRAISE</NavLink></li>
               <li><NavLink to="/team" className="nav-sublink">TEAM</NavLink></li>
               <li><NavLink to="/impact" className="nav-sublink">IMPACT</NavLink></li>
@@ -81,7 +81,7 @@ class App extends React.Component {
             <div>
             <span><b>Get Involved</b></span>
             <span className="link"><NavLink to="/fundraise">Fundraise</NavLink></span>
-            <span className="link"><NavLink to="/donate">Donate</NavLink></span>
+            <span className="link"><a href="#donate">Donate</a></span>
             <span className="link"><a href="https://scoopfoundation.squarespace.com/" target="_blank">Store</a></span>
             <span className="link"><NavLink to="/partners">Partners</NavLink></span>
             </div>

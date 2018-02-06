@@ -38,7 +38,7 @@ class Cambodia extends React.Component {
             <iframe className="video-iframe" style={{margin:"auto"}} width="560" height="315" src="https://www.youtube.com/embed/bqz5mJ_8eXI" frameBorder="0" allowFullScreen></iframe>
             </div>
             <div className="volunteer-box" style={{textAlign:"center"}}>
-            <center style={{margin:"20px auto 30px"}}><NavLink className="blue-inverse-btn" to="/donate">Sponsor a Teacher Today!</NavLink></center>
+            <center style={{margin:"20px auto 30px"}}><a href="#donate" className="donate-btn">Sponsor a Teacher Today!</a></center>
             
             <h3>Want to volunteer?</h3> 
             <p> If you would like to teach at the schools, work with SCAO or help develop the communities around the schools, we can put you directly in touch with the gang in Cambodia. <a className="orange" href="mailto:info@scoopfoundation.com">Get in touch.</a></p> 

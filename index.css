@@ -91,6 +91,19 @@ nav li {
   border: 1px solid #000;
   color: #000;
 }
+.nav-pill.nav-pill--donate {
+  border-color: #813e9d;
+  background-color: #813e9d;
+  color: #fff;
+  font-weight: 900;
+  transition: background-color 80ms ease-out, border-color 80ms ease-out;
+}
+.nav-pill.nav-pill--donate:hover,
+.nav-pill.nav-pill--donate:active{
+  background-color: #fe8200;
+  border-color: #fe8200;
+  color: #fff;
+}
 
 .home .nav-pill {
   color: #fff;
@@ -98,8 +111,9 @@ nav li {
 }
 
 .nav-pill:hover {
-  border: 1px solid #64CCC9;
-  color: #64CCC9;
+  background-color: #fe8200;
+  border: 1px solid #fe8200;
+  color: #fff;
 }
 
 .purple {
@@ -161,21 +175,29 @@ nav li {
   background-color: #FF8200;
 }
 
-.donate-btn {
+.donate-btn,
+.fundraise-btn {
   background-color: #813e9d;
   border-radius: 13px;
   color: #fff;
   display: inline-block;
   font-size: 1.4375em;
-  line-height: 44px;
-  padding: 0 33px;
+  line-height: 1.2;
+  padding: 10px 33px;
   transition: background-color 100ms ease-out;
 }
-
 .donate-btn:hover,
 .donate-btn:active{
   background-color: #fe8200;
 }
+.fundraise-btn {
+  background-color: #70cacc;
+}
+.fundraise-btn:hover,
+.fundraise-btn:active{
+  background-color: #fe8200;
+}
+
 
 .flex-col {
   position: absolute;

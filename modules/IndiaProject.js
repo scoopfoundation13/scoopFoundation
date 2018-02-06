@@ -36,8 +36,8 @@ class IndiaProject extends React.Component {
                     </div>
                     <div className='volunteer-box' style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                     <h3>Get involved!</h3>
-                        <p style={{textAlign:'center'}}>If you would like to help make this project a reality, make a <NavLink to="/donate" className="orange">donation</NavLink>,  set up a 
-                        <NavLink className='purple' to='/fundraise'> fundraising page</NavLink> on our behalf, or</p>
+                        <p style={{textAlign:'center'}}>If you would like to help make this project a reality, <a href="#donate" className="purple">make a donation</a>,  set up a 
+                        <NavLink className='orange' to='/fundraise'> fundraising page</NavLink> on our behalf, or</p>
                         <p><a href="mailto:andy@scoopfoundation.com" className='purple-inverse-btn' style={{margin:0}}>get in touch with Andy today</a></p>
                     </div>
                 </div>
