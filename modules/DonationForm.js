@@ -119,8 +119,7 @@ class DonationForm extends React.Component {
         if (this.state.thanks) {
             markup = (
                 <div className="donation__thanks">
-                    <h1 className="donation__hdr">Thanks,</h1>
-                    <p>Your donation will help to change a child's life.</p>
+                    <h1 className="donation__hdr">Thank you so much for your support!</h1>
                     <button className="donation__btn donation__btn--close" type="button" onClick={this.handleClickClose}>Close</button>
                 </div>
             )

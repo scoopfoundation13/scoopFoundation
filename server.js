@@ -9,7 +9,7 @@ var stripe = require("stripe")(process.env.STRIPE_SECRET_LIVE || stripeTestKeys.
   
 var app = express();
 var jsonParser = bodyParser.json();
-
+app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
 
 app.post("/donation", jsonParser, (req, res) => {
@@ -45,7 +45,11 @@ app.post("/donation", jsonParser, (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve('index.html'));
+  var secure = false;
+  if (req.secure || req.headers.host === 'localhost:3000') {
+    secure = true;
+  }
+  res.render('pages/index', {'https': secure})
 });
 
 var port = process.env.PORT || 3000;

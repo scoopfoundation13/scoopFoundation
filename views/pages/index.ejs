@@ -25,7 +25,11 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     </script>
-    <script src="https://js.stripe.com/v3/"></script>
+    
+    <% if (https === true) { %>
+      <script src="https://js.stripe.com/v3/"></script>
+    <% } %>
+
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/bundle.js"></script>
   </body>

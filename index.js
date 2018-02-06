@@ -1,7 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
-import { StripeProvider } from 'react-stripe-elements';
 import App from './modules/App';
 import About from './modules/About';
 import Home from './modules/Home';
@@ -18,12 +17,12 @@ import Impact from './modules/Impact';
 import CambodiaProject from './modules/CambodiaProject';
 import IndiaProject from './modules/IndiaProject';
 import SyriaProject from './modules/SyriaProject';
-import _Experiment from './modules/_Experiment';
 
 import stripeTestKeys from './stripeTestKeys';
+import { StripeProvider } from 'react-stripe-elements';
 
 render((
-  <StripeProvider apiKey={stripeTestKeys.STRIPE_PUBLIC_LIVE}>
+  <StripeProvider apiKey={process.env.STRIPE_PUBLIC_LIVE}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home}/>
@@ -41,7 +40,6 @@ render((
         <Route path="/syria" component={Syria}/>
         <Route path="/syriaproject" component={SyriaProject}/>
         <Route path="/team" component={Team}/>
-        <Route path="/_experiment" component={_Experiment}/>
       </Route>
     </Router>
   </StripeProvider>
