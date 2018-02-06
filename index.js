@@ -18,11 +18,7 @@ import CambodiaProject from './modules/CambodiaProject';
 import IndiaProject from './modules/IndiaProject';
 import SyriaProject from './modules/SyriaProject';
 
-import stripeTestKeys from './stripeTestKeys';
-import { StripeProvider } from 'react-stripe-elements';
-
 render((
-  <StripeProvider apiKey={process.env.STRIPE_PUBLIC_LIVE}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home}/>
@@ -42,5 +38,4 @@ render((
         <Route path="/team" component={Team}/>
       </Route>
     </Router>
-  </StripeProvider>
 ), document.getElementById('app'));
