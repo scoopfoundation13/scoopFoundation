@@ -116,7 +116,7 @@ class DonationForm extends React.Component {
         let fieldsetError = null
         let markup = null
 
-        if (this.props.activated === false) {
+        if (window.Stripe === undefined && this.props.activated === false) {
             markup = (
                 <div className="donation__error">
                     <h1 className="donation__hdr">Our donation page is down for maintenance.</h1>

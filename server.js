@@ -49,7 +49,7 @@ app.get('*', (req, res) => {
   if (req.secure || req.headers.host === 'localhost:3000') {
     secure = true;
   }
-  res.render('pages/index', {'https': secure})
+  res.render('pages/index', {'secure': secure})
 });
 
 var port = process.env.PORT || 3000;

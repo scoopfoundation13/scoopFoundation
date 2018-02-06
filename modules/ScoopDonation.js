@@ -17,17 +17,17 @@ class ScoopDonation extends React.Component {
     }
     componentDidMount() {
         if (window.Stripe) {
-            console.log('1 process.env.STRIPE_PUBLIC_LIVE', process.env.STRIPE_PUBLIC_LIVE);
+            console.log('#stripe-js present on load');
             this.setState({stripe: window.Stripe(process.env.STRIPE_PUBLIC_LIVE), activated: true});
         } else {
             if (document.querySelector('#stripe-js') !== null) {
                 document.querySelector('#stripe-js').addEventListener('load', () => {
                     // Create Stripe instance once Stripe.js loads
-                    console.log('2 process.env.STRIPE_PUBLIC_LIVE', process.env.STRIPE_PUBLIC_LIVE);
+                    console.log('#stripe-js present, load event callback');
                     this.setState({stripe: window.Stripe(process.env.STRIPE_PUBLIC_LIVE), activated: true});
                 });
             } else {
-                console.log('3 process.env.STRIPE_PUBLIC_LIVE', process.env.STRIPE_PUBLIC_LIVE);
+                console.log('No #stripe-js');
                 this.setState({activated: false});
             }
         }
