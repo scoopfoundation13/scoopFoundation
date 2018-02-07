@@ -5,6 +5,9 @@ import NavLink from './NavLink';
 import Gallery from './Gallery';
 import Lightbox from 'react-images';
 const galleryImages = [{
+  src: 'modules/assets/gallery/Cambodia-school.jpg',
+  caption: "In early 2018 the 3rd school in Cambodia was completed!"
+}, {
   src: "modules/assets/gallery/Calvin launching The Artists' Cookbook at Airbnb's Dublin Headquarters, August 2017.jpg",
   caption: "Calvin launching The Artists' Cookbook at Airbnb's Dublin Headquarters, August 2017"
 }, {

@@ -97,9 +97,8 @@ class Fundraise extends React.Component {
         <br/>
         <div className="text-container" style={{fontSize: "1.1em"}}>
           <center>
-            <p>You can support us and our work in Syria, Iraq, India and Cambodia by purchasing a tee-shirt, our Artists' Cookbook, limited edition art prints and more! Each item includes a life changing donation.</p>
-            <br/>
-            <a className="orange-btn" href="https://scoopfoundation.squarespace.com" target="_blank">Check it out now!</a>
+            <p>You can support us and our work in Syria, Iraq, India, Yemen, Kenya and Cambodia by purchasing a tee-shirt, our Artists' Cookbook, limited edition art prints and more! </p>
+            <p>Each item includes a life changing donation.</p>
           </center>
         </div>
 
@@ -137,7 +136,7 @@ class Fundraise extends React.Component {
             <p>For €10,000 you or your company can build an entire classroom or help run one for an entire year.</p>
             <br />
             <p>Email the founder to find out more:</p>
-            <a href="emailto:andy@scoopfoundation.com"><span className="gallery-btn">I am interested!</span></a>
+            <a href="mailto:andy@scoopfoundation.com"><span className="gallery-btn">I am interested!</span></a>
             
           </center>
         </div>

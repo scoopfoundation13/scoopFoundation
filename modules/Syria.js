@@ -15,8 +15,8 @@ class Syria extends React.Component {
         <div className="text-container">
           <h1>Syrias Vibes</h1>
           <br />
-          <p>The school in the Bajed Kandala Refugee camp has nearly 400 Yazidi children crying out for an education. We wish to support them through materials and school supplies.</p>
-          <p>To find out more <a className="orange" target="_blank" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">click here</a></p>
+          <p>The school in the Bajed Kandala Refugee camp offers daily classes to over 400 children who now call the camp home. They are in need of teachers, supplies and classroom materials. </p>
+          <p>If you would like to help us support this school, please do get in touch!</p>
           <br />
           <br />
           <br />

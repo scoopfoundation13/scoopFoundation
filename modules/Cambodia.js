@@ -16,16 +16,18 @@ class Cambodia extends React.Component {
           <h1> SCAO I, III & III </h1> 
           <br />
 
-
-          <p>
-          Cambodia is where the SCOOP story begins, when Andy came across an under-resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School. He also encouraged qualified teachers and Development Studies graduates to travel to spend time at the school; helping them develop their curriculum, and supporting capacity-building for the teachers, school and organisation itself.</p> 
+          <p>Cambodia is a beautiful country, visited by millions each year. It is also a country of great inequality, with widespread poverty and sexual abuse taking place each day. Poor, uneducated young Cambodians travel to the main city- Phnom Penh – in the hope of finding work to support their families. Without an education, their options are very limited, and most find themselves in abusive jobs. </p>
           
-          <p>The SCAO is now one of the hardest working local NGOs in and around Phnom Penh and together we plan to build more schools and reach more children.</p> 
+          <p>Child labor and sexual exploitation are the norm here, and we plan to help as many children receive a free education. Being able to speak and write English, as well as being computer literate, are key tools to finding good jobs, away from abusive work, in Cambodia.</p>
           
-          <p>
-          In 2011, SCOOP and SCAO built a new school from scratch: the SCAO II School &mdash; and at the tail end of 2016 a third school was constructed and opened: SCAO III. This time the school was built with support from a growing network of other NGOs and altruists from all around the world.</p>
+          <p>Cambodia, too, is where the SCOOP story begins, when Andy came across an under-resourced, single classroom school just outside Phnom Penh back in 2008. Upon returning home to Ireland, Andy began running events on their behalf, raising funds to build more classrooms for what would become the SCAO I School, a school which has educated over 1000 children at this stage. </p>
           
-          <br />
+          <p>Andy also encouraged qualified teachers and university graduates to travel to spend time at the school - helping them develop their curriculum, and supporting capacity building for the teachers, school and organisation itself.</p>
+          
+          <p>The SCAO is now one of the hardest working local grass root NGOs in, and around, Phnom Penh and together we plan to build more schools in order to reach more children and communities.</p>
+          
+          <p>In 2011, SCOOP and SCAO built a new school from scratch: the SCAO II School — and at the tail end of 2017 a 3rd school was constructed and opened: SCAO III. This time the school was built with support from a growing network of other NGOs and altruists from all around the world.</p>
+          
 
           <h3> The future? </h3>
 
