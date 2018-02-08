@@ -55,6 +55,7 @@ app.get('*', (req, res) => {
 var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
+  console.log('App environment:' + process.env.NODE_ENV);
   console.log('Site available: http://localhost:' + port);
 });
 
