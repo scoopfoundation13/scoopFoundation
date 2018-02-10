@@ -9,7 +9,6 @@ var stripe = require("stripe")(process.env.STRIPE_SECRET_LIVE || stripeTestKeys.
   
 var app = express();
 var jsonParser = bodyParser.json();
-app.set('view engine', 'ejs');
 app.use(express.static(__dirname));
 
 app.post("/donation", jsonParser, (req, res) => {
