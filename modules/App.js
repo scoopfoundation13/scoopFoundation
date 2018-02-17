@@ -1,3 +1,4 @@
+import styles from './App.css';
 import React from 'react';
 import {
   BrowserRouter as Router,
@@ -43,7 +44,7 @@ class App extends React.Component {
   // const logo = isHome ? 'logo-white.png' : 'scoop-logo-kl3.png';
   render() {    
     return (
-      <div>
+      <div className="App">
         <nav className="navbar" role="navigation">
               <ul className="nav-full">
                 <li><NavLink to="/" id="logo-container"><img className="logo" src="modules/assets/logo-white.png"/></NavLink></li>
