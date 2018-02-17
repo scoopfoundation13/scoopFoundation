@@ -1,3 +1,4 @@
+import styles from './About.css';
 import Analytics from './Analytics';
 import React from 'react';
 import NavLink from './NavLink';
@@ -40,7 +41,7 @@ class About extends React.Component {
       text: 'Syrias Vibes'
     }];
     return (
-      <div>
+      <div className="About">
 
 <div>
   <h1>Who?</h1>
