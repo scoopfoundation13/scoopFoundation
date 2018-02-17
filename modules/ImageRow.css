@@ -1,33 +1,38 @@
 .ImageRow {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-    width: 1200px;
+    justify-content: space-between;
+    width: 100%;
 }
 .ImageRow__item {
     position: relative;
-    height: 250px;
-    margin: 30px;
-    width: 33.33%;
-    font-size: 1.8em;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-height: 250px;
 }
-.ImageRow__link {
-    z-index: 2;
+.ImageRow__text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 1.8em;
+    margin-top: -0.9em;
+    line-height: 1.2;
+    z-index: 1;
+    text-align: center;
 }
-.ImageRow__underlay {
+.ImageRow__pic {
+    height: 100%;
+}
+.ImageRow__pic-overlay {
+
+    background-color: rgba(0,0,0,0.4); 
+    transition: background-color ease-out 200ms;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4); 
-    z-index: 1;
 }
-.ImageRow__underlay:hover {
-    opacity: 0;
+.ImageRow__item:hover .ImageRow__pic-overlay {
+    background-color: rgba(0,0,0,0.2); 
   }

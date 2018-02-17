@@ -10,11 +10,12 @@ const ImageRow = (props) => {
       backgroundSize: 'cover'
     };
     return (
-        <div className="ImageRow__item" key={obj.img} style={divStyle}>
-          {obj.path[0] === '/' ? <NavLink className="ImageRow__link" to={obj.path}>{obj.text}</NavLink> : <a className="ImageRow__link" target="_blank" href={obj.path}>{obj.text}</a>}
-          <div className="ImageRow__underlay"></div>
-        </div>
-      );
+      <NavLink className="ImageRow__item" key={obj.img} to={obj.path}>
+        <span className="ImageRow__text">{obj.text}</span>
+        <div className="ImageRow__pic-overlay"></div>
+        <img className="ImageRow__pic" src={obj.img} alt="" />
+      </NavLink>
+    );
   });
   return (
     <div className="ImageRow">{images}</div>
