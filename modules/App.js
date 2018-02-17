@@ -1,16 +1,31 @@
 import React from 'react';
-import NavLink from './NavLink';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
 
 import Analytics from './Analytics';
-import ScoopDonation from './ScoopDonation';
 
-/*
-history.listen((location) => {  
-  if (window.ga) {
-    window.ga('send', 'pageview', location.pathname);
-  }
-});
-*/
+import NavLink from './NavLink';
+
+import About from './About';
+import Home from './Home';
+import InClass from './InClass';
+import BuildingProjects from './BuildingProjects';
+import Donate from './Donate';
+import Fundraise from './Fundraise';
+import Cambodia from './Cambodia';
+import India from './India';
+import Syria from './Syria';
+import Team from './Team';
+import Partners from './Partners';
+import Impact from './Impact';
+import CambodiaProject from './CambodiaProject';
+import IndiaProject from './IndiaProject';
+import SyriaProject from './SyriaProject';
+
+import ScoopDonation from './ScoopDonation';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,15 +40,13 @@ class App extends React.Component {
     Analytics.mark('App.js mounted.');
   }
 
-  render() {
-    const isHome = this.props.location.pathname === "/";
-    const logo = isHome ? 'logo-white.png' : 'scoop-logo-kl3.png';
-    
+  // const logo = isHome ? 'logo-white.png' : 'scoop-logo-kl3.png';
+  render() {    
     return (
-      <div className={isHome && "home"}>
+      <div>
         <nav className="navbar" role="navigation">
               <ul className="nav-full">
-                <li><NavLink to="/" id="logo-container"><img className="logo" src={`modules/assets/${logo}`}/></NavLink></li>
+                <li><NavLink to="/" id="logo-container"><img className="logo" src="modules/assets/logo-white.png"/></NavLink></li>
                 <li><NavLink to="/about" id="about" className="nav-left">ABOUT US</NavLink></li>
                 <li><NavLink to="/inclass" className="nav-left">IN CLASS</NavLink></li>
                 <li><NavLink to="/buildingprojects" className="nav-left">BUILDING PROJECTS</NavLink></li>
@@ -61,7 +74,23 @@ class App extends React.Component {
             <i className="fa fa-bars fa-2x button-collapse" aria-hidden="true" onClick={() => this.setState({isDropdown: !this.state.isDropdown})}></i>
             </div>   
         </nav>
-            {this.props.children}
+        
+        <Route exact path="/" component={Home}/>
+        <Route path="/about" component={About}/>
+        <Route path="/buildingprojects" component={BuildingProjects}/>
+        <Route path="/cambodia" component={Cambodia}/>
+        <Route path="/cambodiaproject" component={CambodiaProject}/>
+        <Route path="/donate" component={Donate}/>
+        <Route path="/fundraise" component={Fundraise}/>
+        <Route path="/impact" component={Impact}/>
+        <Route path="/inclass" component={InClass}/>
+        <Route path="/india" component={India}/>
+        <Route path="/indiaproject" component={IndiaProject}/>
+        <Route path="/partners" component={Partners}/>
+        <Route path="/syria" component={Syria}/>
+        <Route path="/syriaproject" component={SyriaProject}/>
+        <Route path="/team" component={Team}/>
+
         <footer>
           <center className="newsletter">
           <form action="https://formspree.io/info@scoopfoundation.com" method="post">

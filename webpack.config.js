@@ -6,11 +6,18 @@ var baseConfig = {
     publicPath: ''
   },
   module: {
-    loaders: [
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
       { 
         test: /\.js$/, 
         exclude: /node_modules/, 
-        loader: 'babel-loader?presets[]=es2015&presets[]=react' 
+        use: 'babel-loader?presets[]=es2015&presets[]=react' 
       }
     ]
   },
