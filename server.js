@@ -1,6 +1,10 @@
+//console.log('For Debugging:', process.versions)
 var express = require('express');
+var expressSanitizer = require('express-sanitizer');
 var path = require('path');
 var bodyParser = require('body-parser');
+var email = require('./email');
+
 var stripeTestKeys = require('./stripeTestKeys');
 
 // Set your secret key: remember to change this to your live secret key in production
@@ -9,6 +13,8 @@ var stripe = require("stripe")(process.env.STRIPE_SECRET_LIVE || stripeTestKeys.
   
 var app = express();
 var jsonParser = bodyParser.json();
+var expressSanitized = expressSanitizer();
+
 app.use(express.static(__dirname));
 
 app.post("/donation", jsonParser, (req, res) => {
@@ -21,7 +27,7 @@ app.post("/donation", jsonParser, (req, res) => {
   stripe.charges.create({
     amount: rb.amount,
     currency: "eur",
-    description: "Example charge",
+    description: "Donation",
     source: rb.stripeToken,
     metadata: {
       "name": rb.name,
@@ -43,6 +49,53 @@ app.post("/donation", jsonParser, (req, res) => {
   });
 });
 
+app.post("/subscription/10", jsonParser, (req, res) => {
+  var customer, rb, subscription;
+  if (!req.body) {return res.sendStatus(400);}
+
+  rb = req.body;
+  
+  customer = stripe.customers.create({
+    email: rb.email,
+    metadata: {
+      "name": rb.name,
+      "company": rb.company,
+      "email": rb.email,
+      "message": rb.message
+    }
+  }, function(err, customer) {
+    if (err) {
+      debugger;
+    }
+    debugger;
+  });
+  
+  // save this into db
+  // customer.id
+  // customer.email
+  // customer.metadata
+
+  subscription = stripe.subscription.create({
+    "customer": customer.id,
+    "items": [{"plan": "subscription-10"}]
+  }, function(err, subscription) {
+    if (err) {
+      debugger;
+    }
+    debugger;
+  });
+});
+
+
+app.post("/stripe/webhooks", jsonParser, expressSanitized, (req, res) => {
+  if (!req.body) {return res.sendStatus(400);}
+  console.log(email.test());
+  console.log(1, req.body);
+  console.log(2, req.sanitize(req.body));
+  
+  //email.webhooks(req.body);
+  res.status(200).end();
+});
 app.get('*', (req, res) => {
   var secure = false;
   if (req.secure || req.headers.host === 'localhost:3000') {
