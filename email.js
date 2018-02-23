@@ -1,6 +1,48 @@
-'use strict';
 const nodemailer = require('nodemailer');
 
+let config = {
+    host: process.env.EMAIL_HOST || "smtp.gmail.com",
+    port: process.env.EMAIL_PORT || 443,
+    secure: process.env.EMAIL_SECURE || true,
+    auth: {
+        user: process.env.EMAIL_USER || "oakenfold.test@gmail.com",
+        pass: process.env.EMAIL_PASS || "Test 123"
+    }  
+};
+console.log("config", config);
+
+function email () {
+    
+    let transporter = nodemailer.createTransport(config);
+
+    function send(text,html) {
+        console.log("email.js > send()");
+        let mailOptions = {
+            "from": '"Scoop Foundation Website" <do-not-reply@scoopfoundation.com>',
+            "to": process.env.EMAIL_TEST || "oakenfold.test@gmail.com",
+            "subject": 'Scoop Foundation: Notification',
+            "text": JSON.stringify(text),
+            "html": (html ? JSON.stringify(html) : JSON.stringify(text))
+        };
+
+        // send mail with defined transport object
+        return transporter.sendMail(mailOptions, (error, info) => {
+            console.log("email.js > transporter.sendMail()");
+            if (error) {
+                console.log('ERROR 1');
+                console.dir(error);
+                return error;
+            }
+            console.log('info:', info);
+            //console.log('Message sent: %s', info.messageId);
+        });
+    }
+
+    return {
+        send
+    }
+
+}
 // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
 function test() {
@@ -8,7 +50,7 @@ function test() {
 
         // create reusable transporter object using the default SMTP transport
         let transporter = nodemailer.createTransport({
-            host: 'smtp.ethereal.email',
+            host: process.env.EMAIL_HOST,
             port: 587,
             secure: false, // true for 465, false for other ports
             auth: {
@@ -132,4 +174,4 @@ function webhooks (reqBody) {
 
 
 
-module.exports = { test, webhooks };
+module.exports = email;
