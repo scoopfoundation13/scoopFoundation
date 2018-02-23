@@ -8,6 +8,7 @@ var stripeTestKeys = require('./stripeTestKeys');
 var stripe = require("stripe")(process.env.STRIPE_SECRET_LIVE || stripeTestKeys.STRIPE_SECRET_TEST);
   
 var app = express();
+app.set('view engine', 'html');
 var jsonParser = bodyParser.json();
 app.use(express.static(__dirname));
 
