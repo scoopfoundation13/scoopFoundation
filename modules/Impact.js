@@ -43,7 +43,7 @@ class Impact extends React.Component {
             <h1 className="purple">Get involved today!</h1>
             <div>
               <NavLink to="/fundraise"><span className="fundraise-btn">Start a fundraiser</span></NavLink>
-              <a href="#donate" className="donate-btn">Make a donation</a>
+              <NavLink className="donate-btn" to="/donate">Make a donation</NavLink>
             </div>
           </section>
           <div className="text-container">

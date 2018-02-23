@@ -84,7 +84,7 @@ of course, those in need – helped!
         </div>
         <section style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center", marginBottom:"8%", fontSize:"1.5em"}}>
           <img src="modules/assets/donationchart.png" style={{width:"50%"}}/>
-          <a href="#donate" className="donate-btn">Make a Donation</a>
+          <NavLink className="donate-btn" to="/donate">Make a Donation</NavLink>
         </section>
         
         {this.state.pdfLightboxIsOpen &&
