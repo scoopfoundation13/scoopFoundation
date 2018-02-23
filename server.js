@@ -1,17 +1,18 @@
 var express = require('express');
 var path = require('path');
+/*
 var bodyParser = require('body-parser');
 var stripeTestKeys = require('./stripeTestKeys');
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here: https://dashboard.stripe.com/account/apikeys
 var stripe = require("stripe")(process.env.STRIPE_SECRET_LIVE || stripeTestKeys.STRIPE_SECRET_TEST);
-  
+*/  
 var app = express();
-app.set('view engine', 'html');
-var jsonParser = bodyParser.json();
 app.use(express.static(__dirname));
 
+/*
+var jsonParser = bodyParser.json();
 app.post("/donation", jsonParser, (req, res) => {
   
   if (!req.body) {return res.sendStatus(400);}
@@ -43,13 +44,14 @@ app.post("/donation", jsonParser, (req, res) => {
     }
   });
 });
-
+*/
 app.get('*', (req, res) => {
-  var secure = false;
+  /*var secure = false;
   if (req.secure || req.headers.host === 'localhost:3000') {
     secure = true;
   }
-  res.render('pages/index', {'secure': secure})
+  res.render('pages/index', {'secure': secure})*/
+  res.sendFile(path.resolve('index.html'));
 });
 
 var port = process.env.PORT || 3000;
