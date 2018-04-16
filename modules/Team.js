@@ -35,7 +35,7 @@ const defaultState = {
     <p>After college, he spent 5 years in Berlin working as a chef and in other hospitality roles. Needing a challenge, he then moved to Port au Prince, Haiti, to work on a sustainable social development project where he trained young adults to cook professionally and developed a Train-the-Trainer program. He is passionate about food, food systems and social justice</p>`
   },
   {
-    image: "/modules/assets/team/Maria.jpg",
+    image: "/modules/assets/team/Maria-2.jpg",
     name: "Maria Drzazga",
     contribution: "Board Secretary",
     biography: `<p>Maria is very passionate about human rights. For many years she was involved with various Amnesty International local groups - first in Poland during her studies, then in London and Dublin. During the year she spent living and traveling in South America she witnessed how commonplace poverty and social injustice was on the continent.</p>
