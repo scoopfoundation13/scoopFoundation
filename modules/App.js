@@ -36,6 +36,7 @@ class App extends React.Component {
                 <li><NavLink to="/about" id="about" className="nav-left">ABOUT US</NavLink></li>
                 <li><NavLink to="/inclass" className="nav-left">IN CLASS</NavLink></li>
                 <li><NavLink to="/buildingprojects" className="nav-left">BUILDING PROJECTS</NavLink></li>
+                <li><a target="_blank" rel="noopener" href="https://scoopfoundation.squarespace.com/">STORE</a></li>
 
                 <li><span className="nav-right"><a target="_blank" rel="noopener" href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x purple icon" aria-hidden="true"></i></a></span></li>
                 <li><span className="nav-right"><a target="_blank" rel="noopener" href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x blue icon" aria-hidden="true"></i></a></span></li>
@@ -51,6 +52,8 @@ class App extends React.Component {
               <li><NavLink to="/about">ABOUT</NavLink></li>
               <li><NavLink to="/inclass">IN CLASS</NavLink></li>
               <li><NavLink to="/buildingprojects">BUILDING PROJECTS</NavLink></li>
+              <li><a target="_blank" rel="noopener" href="https://scoopfoundation.squarespace.com/">STORE</a></li>
+              
               <li><NavLink to="/donate">DONATE</NavLink></li>
               <li><NavLink to="/fundraise">FUNDRAISE</NavLink></li>
               <li><NavLink to="/team" className="nav-sublink">TEAM</NavLink></li>
