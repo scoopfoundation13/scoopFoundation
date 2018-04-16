@@ -49,15 +49,6 @@ class Team extends React.Component{
         </div>
 
         <div className="partner">
-          <div style={{width: "70%"}}>
-            <h2>Claire Seringhaus</h2>
-            <h5 className="purple">BLOG MANAGER</h5>
-            <p>Claire is a professional freelance writer, editor and project manager, having worked with the Canadian Encyclopedia, ICOMOS, Bauhaus University, Youth Science Foundation Canada, MyWorldAbroad.com, and many others. She also works as an interdisciplinary artist, and has performed and exhibited in Canada, the US, Germany and Bosnia. Claire is currently based in Bogotá, Colombia.</p>
-          </div>
-          <div style={{width: "30%", paddingLeft:"30px"}}><img src="/modules/assets/team/claire.jpg"/></div>
-        </div>
-
-        <div className="partner">
           <div style={{width: "30%", paddingRight:"30px"}}><img src="/modules/assets/team/wendy.jpg"/></div>
           <div style={{width: "70%"}}>
             <h2>Wendy Cheung</h2>
