@@ -28,7 +28,7 @@ class Syria extends React.Component {
             <div className="volunteer-box" style={{textAlign:"center", display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
                 <p>Want to support our Syrias Vibes campaign?</p>
                 <p>We are currently not taking volunteers, if you want to get involved with our Syrias Vibes campaign, <a className="orange" href="mailto:calvin@syriasvibes.com">contact us today!</a></p>
-                <span className="purple-inverse-btn"><a target="_blank" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Make a Donation</a></span>
+                <span className="purple-inverse-btn"><a target="_blank" rel="noopener" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Make a Donation</a></span>
             </div>
           </div>
         </div>
