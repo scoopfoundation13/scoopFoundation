@@ -5,7 +5,7 @@ const defaultState = {
   members: [{
     image: "/modules/assets/team/andy2.jpg",
     name: "Andrew Sweeney",
-    contribution: "FOUNDER / EVENTS / SCOOP TOUR",
+    contribution: "FOUNDER / EVENTS",
     biography: `<p>In 2008, right after college, Andy embarked on a trip around the world, ending up in South-East Asia where he came across a small, family run school &mdash; an encounter that led him on the path to creating SCOOP. Andy has a love for running all types events, creating innovative ways of fundraising, and generally loves building an organisation that is open to all to get involved, and that tries out new ideas all the time.</p>
     <p><u><a className="hover-orange" href="mailto:andy@scoopfoundation.com">andy@scoopfoundation.com</a></u></p>`
   },
