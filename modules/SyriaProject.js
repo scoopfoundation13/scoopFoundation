@@ -29,7 +29,7 @@ class SyriaProject extends React.Component {
           <h3>The numbers</h3>
             <p>It will cost 60k to build a 2 story / 4 classroom school, and a further 20k to fit it out with whiteboards, desks, copybooks and all other materials teaching and learning materials.</p>
             <p>There are 500+ children in the area, plus another 300+ teenagers and young adults in the area.</p>
-            <a target="_blank" className="blue-inverse-btn" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Donate now!</a>
+            <a className="blue-inverse-btn" target="_blank" rel="noopener" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Donate now!</a>
           </div>
         </div>
         <br/>
@@ -41,7 +41,7 @@ class SyriaProject extends React.Component {
           <p>The team have learned that among those thousands of 'zidis' who have been captured by ISIS, those who were illiterate or brainwashed (especially young girls) have not been able to to contact their families as they could not even dial a phone number.</p>
 
           <p>This centre will help keep children safe and help kickstart a community on its knees after the conflict in Syria and Iraq.</p>
-          <center><a className="orange-inverse-btn" target="_blank" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Start a fundraiser on our behalf</a></center>
+          <center><a className="orange-inverse-btn" target="_blank" rel="noopener" href="https://www.justgiving.com/campaigns/charity/scoop/syriasvibesschool">Start a fundraiser on our behalf</a></center>
         </div>
         </div>
         <img className = 'home-bk' src = 'modules/assets/img35.jpg' />

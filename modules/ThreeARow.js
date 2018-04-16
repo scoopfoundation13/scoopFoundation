@@ -10,7 +10,7 @@ const ThreeARow = (props) => {
     };
     return (
         <div className="three-a-row" key={obj.img} style={divStyle}>
-          {obj.path[0] === '/' ? <NavLink to={obj.path}>{obj.text}</NavLink> : <a target="_blank" href={obj.path}>{obj.text}</a>}
+          {obj.path[0] === '/' ? <NavLink to={obj.path}>{obj.text}</NavLink> : <a target="_blank" rel="noopener" href={obj.path}>{obj.text}</a>}
           <div className="three-overcast"></div>
         </div>
       );

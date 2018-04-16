@@ -276,7 +276,7 @@ class Home extends React.Component {
             <img width="100%" src="modules/assets/img31.jpg"/>
             <div className="home-bottomCardTxt orange-theme">
               <span>For all our news, project updates and events</span>
-              <a style={{marginTop:"15px"}} className="home-orange-btn" href="http://scoopfoundationblog.wordpress.com" target="_blank">Blog</a>
+              <a style={{marginTop:"15px"}} className="home-orange-btn" href="http://scoopfoundationblog.wordpress.com" target="_blank" rel="noopener">Blog</a>
             </div>
           </div>
           <div className="home-bottomCard">
@@ -290,7 +290,7 @@ class Home extends React.Component {
             <img width="100%" src="modules/assets/img32.jpg"/>
             <div className="home-bottomCardTxt purple-theme">
               <span style={{padding: "0 5px"}}>Support us now by picking up a Tee, our Artists' Cookbook and more!</span>
-              <a href="https://scoopfoundation.squarespace.com/" target="_blank" className="home-purple-btn">Store</a>
+              <a href="https://scoopfoundation.squarespace.com/" target="_blank" rel="noopener" className="home-purple-btn">Store</a>
             </div>
           </div>
         </section>
