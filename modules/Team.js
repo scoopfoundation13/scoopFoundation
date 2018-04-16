@@ -5,7 +5,7 @@ const defaultState = {
   members: [{
     image: "/modules/assets/team/andy2.jpg",
     name: "Andrew Sweeney",
-    contribution: "FOUNDER / EVENTS / SCOOP TOUR",
+    contribution: "FOUNDER / EVENTS",
     biography: `<p>In 2008, right after college, Andy embarked on a trip around the world, ending up in South-East Asia where he came across a small, family run school &mdash; an encounter that led him on the path to creating SCOOP. Andy has a love for running all types events, creating innovative ways of fundraising, and generally loves building an organisation that is open to all to get involved, and that tries out new ideas all the time.</p>
     <p><u><a className="hover-orange" href="mailto:andy@scoopfoundation.com">andy@scoopfoundation.com</a></u></p>`
   },
@@ -50,12 +50,6 @@ const defaultState = {
     <p>He returned to Dublin to pursue a bachelor’s degree in Business and Law in UCD and as part of the international programme spent a year in Toronto – at Osgoode Hall Law School.</p>
     <p>After university, George trained at PwC in advisory services, going on to pass the New York bar exams. He was admitted to the New York State Bar in 2012.</p>
     <p>After that he ran the family business for almost a decade before emigrating to Kenya.</p>`
-  },
-  {
-    image: "/modules/assets/team/wendy.jpg",
-    name: "Wendy Cheung",
-    contribution: "SOFTWARE ENGINEER",
-    biography: `<p>Wendy is a Software Engineer and the creator of scoopfoundation.com website, she is also part of The United Nations Volunteers program (UNV). Currently based in San Francisco, she is a lover of life and believes by supporting one another we can make the world a better place. Check out more of her work <u><a className="hover-purple" href="//wendycheung.me">here</a></u>.</p>`
   }]
 };
 class Image extends React.Component {
