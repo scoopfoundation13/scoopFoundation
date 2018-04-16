@@ -36,9 +36,10 @@ class App extends React.Component {
                 <li><NavLink to="/about" id="about" className="nav-left">ABOUT US</NavLink></li>
                 <li><NavLink to="/inclass" className="nav-left">IN CLASS</NavLink></li>
                 <li><NavLink to="/buildingprojects" className="nav-left">BUILDING PROJECTS</NavLink></li>
-                <li><span className="nav-right"><a target="_blank" href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x purple icon" aria-hidden="true"></i></a></span></li>
-                <li><span className="nav-right"><a target="_blank" href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x blue icon" aria-hidden="true"></i></a></span></li>
-                <li><span className="nav-right"><a target="_blank" href="https://www.instagram.com/scoopfoundation_ireland/?hl=en"><i className="fa fa-instagram fa-2x orange icon" aria-hidden="true"></i></a></span></li>
+
+                <li><span className="nav-right"><a target="_blank" rel="noopener" href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x purple icon" aria-hidden="true"></i></a></span></li>
+                <li><span className="nav-right"><a target="_blank" rel="noopener" href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x blue icon" aria-hidden="true"></i></a></span></li>
+                <li><span className="nav-right"><a target="_blank" rel="noopener" href="https://www.instagram.com/scoopfoundation_ireland/?hl=en"><i className="fa fa-instagram fa-2x orange icon" aria-hidden="true"></i></a></span></li>
                 <li><span className="nav-right"><NavLink className="nav-pill nav-pill--donate" to="/donate">DONATE</NavLink></span></li>
                 <li><span className="nav-right"><NavLink to="/fundraise" className="nav-pill">FUNDRAISE</NavLink></span></li>
               </ul>
@@ -91,11 +92,11 @@ class App extends React.Component {
             </div>
           </div>
           <div className="footer-social">
-          <a target="_blank" href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-          <a target="_blank" href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-          <a target="_blank" href="https://www.instagram.com/scoopfoundation_ireland/?hl=en"><i className="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop"><i className="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+          <a target="_blank" rel="noopener" href="https://www.facebook.com/scoopfoundation"><i className="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a target="_blank" rel="noopener" href="https://twitter.com/scoopfoundation"><i className="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+          <a target="_blank" rel="noopener" href="https://www.instagram.com/scoopfoundation_ireland/?hl=en"><i className="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/the-scoop-foundation?trk=prof-following-company-logo"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+          <a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCU3693Xfnd5e_iWAp41YrbA?app=desktop"><i className="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
           </div>
           <center style={{paddingBottom: "15px"}}>SCOOP is a registered charity in Ireland (CHY 18767) and Australia (ABN 74156239766)</center>
         </footer>
