@@ -1,13 +1,14 @@
 import config from './config';
 
+// Need to setup GAIDs owned by Scoop Foundation
 const GaIds = {
     "dev": {
-        "a":"UA-90734086-4",
-        "b":"UA-90734086-5"
+        "a":"UA-########-#",
+        "b":"UA-########-#"
     },
     "qa": {
-        "a":"UA-90734086-6",
-        "b":"UA-90734086-7"
+        "a":"UA-########-#",
+        "b":"UA-########-#"
     },
     "prod": {
         "a":"UA-90734086-2",
