@@ -9,14 +9,19 @@
     "build": "NODE_ENV=production webpack"
   },
   "author": {
-    "name": "Chad Oakenfold",
-    "url": "http://oakenfold.ca/",
-    "email": "web@oakenfold.ca"
+    "name": "TBD",
+    "url": "http://TBD.COM/",
+    "email": "TBD@TBD.COM"
   },
   "contributors": [
     {
       "name": "Wendy Cheung",
       "url": "http://wendycheung.me/"
+    },
+    {
+      "name": "Chad Oakenfold",
+      "url": "http://oakenfold.ca/",
+      "email": "web@oakenfold.ca"
     }
   ],
   "repository": {
